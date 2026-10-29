@@ -103,7 +103,7 @@ function renderDictionary(entries,word){
   });
  });
  const hasAny=groups.some(g=>g.senses.length);
- if(!hasAny)return '<div class="dictionary"><div class="dict-head"><h2>Dictionary meanings</h2><small>Source-based</small></div><p class="status">No structured definitions were returned for this exact word. The source links below may still help.</p></div>';
+ if(!hasAny)return '';
  return '<section class="dictionary"><div class="dict-head"><h2>'+esc(word)+'</h2><small>Dictionary meanings</small></div>'+(wordTranslations.length?'<div class="entry-group"><div class="pos">Bengali translations found</div><p class="bn">'+esc(wordTranslations.join(' · '))+'</p><p class="source-note">These are word-level translations; they may not match every sense one-to-one.</p></div>':'')+
  groups.filter(g=>g.senses.length).map(g=>'<div class="entry-group"><div class="pos">'+esc(g.label)+'</div>'+
  g.senses.map((s,i)=>'<div class="sense"><strong>'+esc((i+1)+'. '+s.glosses[0])+'</strong>'+
@@ -127,11 +127,7 @@ function hasAudioReference(value,key=''){
  return false;
 }
 function wiktionaryUrl(word){return 'https://de.wiktionary.org/wiki/'+encodeURIComponent(word.replace(/ /g,'_'))}
-function dictionaryFallback(word,message){
- const q=encodeURIComponent(word);
- results.innerHTML='<p class="status">'+esc(message)+'</p>'+card('https://www.duden.de/suchen/dudenonline/'+q,'Duden · Start here','Trusted German dictionary. Please check whether the exact entry has recorded audio.',true)+otherSites(word);
- results.classList.remove('hidden');
-}
+function dictionaryFallback(word,message){results.innerHTML=otherSites(word);results.classList.remove('hidden');}
 form.addEventListener('submit',async event=>{
  event.preventDefault();
  const requestId=++activeSearch;
@@ -139,7 +135,7 @@ form.addEventListener('submit',async event=>{
  if(!word){input.focus();return}
  button.disabled=true;
  results.classList.remove('hidden');
- results.innerHTML='<p class="status">Searching…</p>';
+ results.innerHTML='';
  try{
   // Check both editions and their dedicated pronunciation endpoints.
   const encodedWord=encodeURIComponent(word);
@@ -171,10 +167,10 @@ form.addEventListener('submit',async event=>{
   const audioEntries=exactEntries.filter(entry=>hasAudioReference(entry.sounds||entry.pronunciations||entry.audio,'audio'));
   const dictionaryHtml=renderDictionary(exactEntries,word);
   if(audioEntries.length){
-   results.innerHTML=dictionaryHtml+'<p class="status">Exact German entry found with a recorded-audio reference. Open the original entry to listen.</p>'+
-    card(wiktionaryUrl(audioEntries[0].word),'Wiktionary · Audio verified','Exact German entry · Audio reference found in source data',true)+otherSites(word);
+   results.innerHTML=dictionaryHtml+
+    card(wiktionaryUrl(audioEntries[0].word),'Wiktionary →','',true)+otherSites(word);
   }else if(exactEntries.length){
-   results.innerHTML=dictionaryHtml+'<p class="status">Exact German entry found, but recorded audio was not confirmed.</p>'+card('https://www.duden.de/suchen/dudenonline/'+encodeURIComponent(word),'Duden · Check another source','Verify the exact entry and available audio.',true)+otherSites(word);
+   results.innerHTML=dictionaryHtml+otherSites(word);
   }else{
    dictionaryFallback(word,'No exact German entry was confirmed by the data service. Search Duden directly; this is a fallback, not a verified result.');
   }
