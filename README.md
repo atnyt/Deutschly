@@ -1,6 +1,6 @@
 # German Pronunciation Verifier
 
-A minimal, AMOLED-black search interface for checking German dictionary entries and whether structured pronunciation-audio metadata is available.
+A static, AMOLED-black German-learning tool with a dictionary/example page and a pronunciation-audio lookup page.
 
 ## How the current search works
 
@@ -28,3 +28,16 @@ A minimal, AMOLED-black search interface for checking German dictionary entries 
 ## GitHub Pages
 
 The frontend is a static `index.html` file and requires no build step. Configure GitHub Pages in repository settings if it is not already enabled.
+
+## Dictionary and translation behavior
+
+- The dictionary keeps the bundled A1 vocabulary as a local fallback, including its English glosses and example sentences.
+- Hand-verified Bengali meanings take priority over the local English-to-Bengali map; online machine translation is a fallback only and is labelled as unverified in the interface.
+- Translation fallback tries MyMemory first, then Google's keyless web translation endpoint. The latter is unofficial and may change, rate-limit, or stop working; it is not the Google Cloud Translation API and has no uptime guarantee.
+- The app never stores a private API key. Searching a word or sentence may send that text to the translation provider when fallback translation is needed.
+- Common A1 German verb forms and phrases have explicit lookup mappings. This is helpful coverage, not a complete German morphological analyser; rare forms and context-dependent phrases may still need manual checking.
+- PDF-derived examples and locally added examples should be checked against the original PDF before being labelled as exact source quotations.
+
+## Validation notes
+
+The embedded JavaScript in both HTML pages was syntax-checked after the latest changes. This does not replace live browser testing: third-party API availability, CORS behavior, audio file availability, and the GitHub Pages deployment still need to be checked in a browser.
