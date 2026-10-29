@@ -31,6 +31,18 @@ svg{width:22px;height:22px}
 .card strong{display:block;font-size:15px;font-weight:650;margin-bottom:6px;letter-spacing:.005em}
 .card span{display:block;color:#a7a7b0;font-size:13px;line-height:1.5}
 .status{font-size:13px;color:#a7a7b0;margin:0 0 5px;line-height:1.6}
+.dictionary{margin-bottom:8px;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025))}
+.dict-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:12px}
+.dict-head h2{font-size:17px;margin:0;font-weight:650}
+.dict-head small,.source-note{color:#9999a4;font-size:11px;line-height:1.5}
+.entry-group{padding:12px 0;border-top:1px solid rgba(255,255,255,.10)}
+.entry-group:first-of-type{border-top:0}
+.pos{font-size:11px;color:#c7d0ff;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.sense{margin:8px 0 0;padding-left:10px;border-left:2px solid rgba(190,202,255,.22)}
+.sense strong{display:block;font-size:14px;line-height:1.55;font-weight:550}
+.sense p{font-size:12px;color:#b0b0ba;line-height:1.55;margin:4px 0 0}
+.sense .bn{color:#f2f2f5;font-size:13px}
+.source-note{margin:12px 0 0}
 .hidden{display:none}
 @media(max-width:420px){body{padding-left:16px;padding-right:16px}form{gap:8px}input,button{height:54px}button{width:54px;flex-basis:54px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -56,7 +68,47 @@ let activeSearch=0;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function card(url,title,detail,featured=false){return '<a class="card'+(featured?' featured':'')+'" href="'+url+'" target="_blank" rel="noopener noreferrer">'+(featured?'<span class="tag">Best match</span>':'')+'<strong>'+esc(title)+'</strong><span>'+esc(detail)+'</span></a>'}
 function otherSites(word){const q=encodeURIComponent(word);return [card('https://www.duden.de/suchen/dudenonline/'+q,'Duden','German dictionary · Check the entry for an audio icon.'),card('https://de.pons.com/übersetzung/deutsch-englisch/'+q,'PONS','Dictionary · Check the matching German entry.'),card('https://forvo.com/word/'+q+'/#de','Forvo','Native-speaker recordings · Availability depends on the word.')].join('')}
-function showResults(primaryUrl,primaryTitle,primaryDetail,word,verified){results.innerHTML=card(primaryUrl,primaryTitle,primaryDetail, true)+otherSites(word);results.classList.remove('hidden');}
+function posLabel(pos){return ({noun:'Noun · বিশেষ্য',verb:'Verb · ক্রিয়া',adjective:'Adjective · বিশেষণ',adverb:'Adverb · ক্রিয়া বিশেষণ',preposition:'Preposition · পদান্বয়ী অব্যয়',pronoun:'Pronoun · সর্বনাম',conjunction:'Conjunction · যোজক',interjection:'Interjection · আবেগসূচক শব্দ',particle:'Particle · অব্যয়'}[String(pos||'').toLowerCase()]||String(pos||'Word class not specified'))}
+function collectBengaliTranslations(value,out=[],seen=new Set()){
+ if(!value)return out;
+ if(Array.isArray(value)){value.forEach(v=>collectBengaliTranslations(v,out,seen));return out}
+ if(typeof value!=='object')return out;
+ const code=String(value.lang_code||value.code||value.language_code||'').toLowerCase();
+ const lang=String(value.lang||value.language||'').toLowerCase();
+ const isBn=code==='bn'||code==='ben'||lang==='bengali'||lang==='bangla';
+ if(isBn){
+  const word=String(value.word||value.translation||value.term||value.text||'').trim();
+  if(word&&!seen.has(word)){seen.add(word);out.push(word)}
+ }
+ Object.entries(value).forEach(([k,v])=>{if(k!=='translations')collectBengaliTranslations(v,out,seen)});
+ return out;
+}
+function renderDictionary(entries,word){
+ const groups=[];const groupSeen=new Set();
+ entries.forEach(entry=>{
+  const pos=String(entry.pos||'').toLowerCase();
+  const key=pos||'unknown';
+  let group=groups.find(g=>g.key===key);
+  if(!group){group={key,pos,label:posLabel(pos),senses:[],seen:new Set()};groups.push(group)}
+  (Array.isArray(entry.senses)?entry.senses:[]).forEach(sense=>{
+   const glosses=Array.isArray(sense.glosses)?sense.glosses.filter(x=>typeof x==='string'&&x.trim()):[];
+   const glossKey=glosses.join('|').toLowerCase();
+   if(!glosses.length||group.seen.has(glossKey))return;
+   group.seen.add(glossKey);
+   const bn=collectBengaliTranslations(sense.translations||sense.translation||[]);
+   group.senses.push({glosses,bn,examples:Array.isArray(sense.examples)?sense.examples:[]});
+  });
+ });
+ const hasAny=groups.some(g=>g.senses.length);
+ if(!hasAny)return '<div class="dictionary"><div class="dict-head"><h2>Dictionary meanings</h2><small>Source-based</small></div><p class="status">No structured definitions were returned for this exact word. The source links below may still help.</p></div>';
+ return '<section class="dictionary"><div class="dict-head"><h2>'+esc(word)+'</h2><small>Dictionary meanings</small></div>'+
+ groups.filter(g=>g.senses.length).map(g=>'<div class="entry-group"><div class="pos">'+esc(g.label)+'</div>'+
+ g.senses.map((s,i)=>'<div class="sense"><strong>'+esc((i+1)+'. '+s.glosses[0])+'</strong>'+
+ (s.bn.length?'<p class="bn">বাংলা: '+esc(s.bn.join(' · '))+'</p>':'<p>বাংলা অনুবাদ এই উৎসে পাওয়া যায়নি; উপরের সংজ্ঞাটি মূল অভিধানের ভাষায় দেওয়া হয়েছে।</p>')+
+ (s.glosses.length>1?'<p>Other definitions: '+esc(s.glosses.slice(1).join('; '))+'</p>':'')+
+ (s.examples.length?'<p>Example: '+esc(typeof s.examples[0]==='string'?s.examples[0]:(s.examples[0].text||s.examples[0].example||''))+'</p>':'')+'</div>').join('')+'</div>').join('')+
+ '<p class="source-note">Meanings are taken from Wiktionary data. Coverage and Bengali translations vary by word; missing translations are not guessed.</p></section>';
+}
 function hasAudioReference(value,key=''){
  if(value==null)return false;
  if(typeof value==='string'){
@@ -111,11 +163,12 @@ form.addEventListener('submit',async event=>{
    return langCode==='de'||langCode==='ger'||langName==='german'||langName==='deutsch';
   });
   const audioEntries=exactEntries.filter(entry=>hasAudioReference(entry.sounds||entry.pronunciations||entry.audio,'audio'));
+  const dictionaryHtml=renderDictionary(exactEntries,word);
   if(audioEntries.length){
-   results.innerHTML='<p class="status">Exact German entry found with a recorded-audio reference. Open the original entry to listen.</p>'+
+   results.innerHTML=dictionaryHtml+'<p class="status">Exact German entry found with a recorded-audio reference. Open the original entry to listen.</p>'+
     card(wiktionaryUrl(audioEntries[0].word),'Wiktionary · Audio verified','Exact German entry · Audio reference found in source data',true)+otherSites(word);
   }else if(exactEntries.length){
-   dictionaryFallback(word,'Exact German entry found, but no recorded-audio reference was confirmed. Search Duden as the next option; audio is not yet verified.');
+   results.innerHTML=dictionaryHtml+'<p class="status">Exact German entry found, but recorded audio was not confirmed.</p>'+card('https://www.duden.de/suchen/dudenonline/'+encodeURIComponent(word),'Duden · Check another source','Verify the exact entry and available audio.',true)+otherSites(word);
   }else{
    dictionaryFallback(word,'No exact German entry was confirmed by the data service. Search Duden directly; this is a fallback, not a verified result.');
   }
