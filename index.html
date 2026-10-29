@@ -189,7 +189,7 @@ function setupAudioPlayers(){
 }
 async function wiktionaryPage(word){
  const url='https://de.wiktionary.org/w/api.php?action=parse&page='+encodeURIComponent(word.replace(/ /g,'_'))+'&prop=text&format=json&origin=*';
- const response=await fetch(url,{headers:{Accept:'application/json'}});
+ const response=await fetch(url,{headers:{Accept:'application/json'},signal:AbortSignal.timeout(8000)});
  if(!response.ok)throw new Error('Wiktionary request failed');
  const data=await response.json();
  if(data.error||!data.parse||!data.parse.text||!data.parse.text['*'])return null;
