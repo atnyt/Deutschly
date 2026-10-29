@@ -85,6 +85,7 @@ function collectBengaliTranslations(value,out=[],seen=new Set()){
 }
 function renderDictionary(entries,word){
  const groups=[];const groupSeen=new Set();
+ const wordTranslations=collectBengaliTranslations(entries.flatMap(entry=>entry.translations||[]));
  entries.forEach(entry=>{
   const pos=String(entry.pos||'').toLowerCase();
   const key=pos||'unknown';
@@ -101,7 +102,7 @@ function renderDictionary(entries,word){
  });
  const hasAny=groups.some(g=>g.senses.length);
  if(!hasAny)return '<div class="dictionary"><div class="dict-head"><h2>Dictionary meanings</h2><small>Source-based</small></div><p class="status">No structured definitions were returned for this exact word. The source links below may still help.</p></div>';
- return '<section class="dictionary"><div class="dict-head"><h2>'+esc(word)+'</h2><small>Dictionary meanings</small></div>'+
+ return '<section class="dictionary"><div class="dict-head"><h2>'+esc(word)+'</h2><small>Dictionary meanings</small></div>'+(wordTranslations.length?'<div class="entry-group"><div class="pos">Bengali translations found</div><p class="bn">'+esc(wordTranslations.join(' · '))+'</p><p class="source-note">These are word-level translations; they may not match every sense one-to-one.</p></div>':'')+
  groups.filter(g=>g.senses.length).map(g=>'<div class="entry-group"><div class="pos">'+esc(g.label)+'</div>'+
  g.senses.map((s,i)=>'<div class="sense"><strong>'+esc((i+1)+'. '+s.glosses[0])+'</strong>'+
  (s.bn.length?'<p class="bn">বাংলা: '+esc(s.bn.join(' · '))+'</p>':'<p>বাংলা অনুবাদ এই উৎসে পাওয়া যায়নি; উপরের সংজ্ঞাটি মূল অভিধানের ভাষায় দেওয়া হয়েছে।</p>')+
