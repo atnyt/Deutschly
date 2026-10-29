@@ -44,6 +44,21 @@ svg{width:22px;height:22px}
 .sense .bn{color:#f2f2f5;font-size:13px}
 .source-note{margin:12px 0 0}
 .loading-state{display:flex;align-items:center;justify-content:center;gap:12px;padding:22px 0;color:#bfc3d5;font-size:14px}
+.audio-card{display:flex;align-items:center;gap:12px;min-width:0;padding:12px 13px;border:1px solid rgba(180,195,255,.24);border-radius:16px;background:linear-gradient(135deg,rgba(120,140,205,.13),rgba(255,255,255,.035));box-shadow:inset 0 1px 0 rgba(255,255,255,.07)}
+.audio-play{display:grid;place-items:center;width:42px;height:42px;flex:0 0 42px;border:0;border-radius:50%;background:#c4caff;color:#111321;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.audio-play svg{width:19px;height:19px}
+.audio-track{flex:1;min-width:0}
+.audio-wave{height:27px;display:flex;align-items:center;justify-content:space-between;gap:2px;overflow:hidden;opacity:.82}
+.audio-wave i{display:block;width:3px;min-width:2px;height:var(--h);border-radius:4px;background:#b9bfff;transform:scaleY(.55);transform-origin:center;transition:transform .15s}
+.audio-card.is-playing .audio-wave i{animation:waveBounce .72s ease-in-out infinite alternate;animation-delay:var(--d)}
+.audio-card.is-playing .audio-wave i:nth-child(3n){animation-duration:.53s}
+.audio-card.is-playing .audio-wave i:nth-child(4n){animation-duration:.9s}
+@keyframes waveBounce{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
+.audio-meta{display:flex;align-items:center;gap:8px;margin-top:7px}
+.audio-time{font-size:11px;color:#a7a7b0;font-variant-numeric:tabular-nums;white-space:nowrap}
+.audio-seek{width:100%;height:4px;margin:0;accent-color:#c4caff;cursor:pointer}
+.audio-error{font-size:11px;color:#b8b8c2;margin-top:5px}
+@media(prefers-reduced-motion:reduce){.audio-card.is-playing .audio-wave i{animation:none;transform:scaleY(.7)}}
 .loading-spinner{position:relative;display:block;width:36px;height:36px;flex:0 0 36px;animation:loadingTurn 1s steps(12) infinite}
 .loading-spinner i{position:absolute;left:16px;top:1px;width:4px;height:10px;border-radius:4px;background:#a7b5ff;transform-origin:2px 17px}
 @keyframes loadingTurn{to{transform:rotate(360deg)}}
@@ -143,9 +158,32 @@ function sourceCards(word){
   card('https://forvo.com/word/'+q+'/#de','Forvo ↗','Open German speaker recordings for this word.')
  ].join('');
 }
-function audioPlayer(url){
+function audioPlayer(url,index){
  const safe=esc(url);
- return '<section class="card featured"><strong>🔊 German audio found</strong><audio controls preload="none" style="display:block;width:100%;margin-top:12px" src="'+safe+'">Your browser does not support audio playback.</audio><span style="margin-top:8px">Audio hosted by Wikimedia Commons.</span></section>';
+ const bars=Array.from({length:34},(_,i)=>'<i style="--h:'+([7,12,17,10,21,14,8,18,24,12,16,9,22,13,7,19,25,11,16,8,20,14,23,10,17,7,13,21,9,18,12,24,15,8][i%34])+'px;--d:'+((i%9)*-.07)+'s"></i>').join('');
+ return '<section class="audio-card" data-audio-card><button class="audio-play" type="button" aria-label="Play pronunciation" data-play><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg></button><div class="audio-track"><div class="audio-wave" aria-hidden="true">'+bars+'</div><div class="audio-meta"><span class="audio-time" data-time>0:00 / --:--</span><input class="audio-seek" type="range" min="0" max="1000" value="0" aria-label="Seek audio" data-seek></div><audio preload="none" src="'+safe+'"></audio><div class="audio-error hidden" data-error>Audio could not be loaded.</div></div></section>';
+}
+function setupAudioPlayers(){
+ results.querySelectorAll('[data-audio-card]').forEach(card=>{
+  const audio=card.querySelector('audio'),play=card.querySelector('[data-play]'),seek=card.querySelector('[data-seek]'),time=card.querySelector('[data-time]'),error=card.querySelector('[data-error]');
+  const fmt=n=>{if(!Number.isFinite(n)||n<0)return '--:--';return Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0')};
+  const paint=()=>{
+   const duration=audio.duration;
+   time.textContent=fmt(audio.currentTime)+' / '+fmt(duration);
+   seek.value=duration>0?String(Math.round(audio.currentTime/duration*1000)):'0';
+   seek.disabled=!(duration>0);
+  };
+  play.addEventListener('click',async()=>{
+   if(audio.paused){try{await audio.play()}catch(e){error.classList.remove('hidden')}}else audio.pause();
+  });
+  audio.addEventListener('play',()=>{card.classList.add('is-playing');play.setAttribute('aria-label','Pause pronunciation');play.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM14 5h4v14h-4z" fill="currentColor"/></svg>'});
+  audio.addEventListener('pause',()=>{card.classList.remove('is-playing');play.setAttribute('aria-label','Play pronunciation');play.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg>'});
+  audio.addEventListener('timeupdate',paint);audio.addEventListener('loadedmetadata',paint);audio.addEventListener('durationchange',paint);
+  audio.addEventListener('ended',()=>{audio.currentTime=0;paint()});
+  audio.addEventListener('error',()=>error.classList.remove('hidden'));
+  seek.addEventListener('input',()=>{if(audio.duration>0)audio.currentTime=(Number(seek.value)/1000)*audio.duration});
+  paint();
+ });
 }
 async function wiktionaryPage(word){
  const url='https://de.wiktionary.org/w/api.php?action=parse&page='+encodeURIComponent(word.replace(/ /g,'_'))+'&prop=text&format=json&origin=*';
@@ -179,13 +217,14 @@ form.addEventListener('submit',async event=>{
   let status='';
   if(page&&page.audio.length){
    audioHtml=page.audio.map(audioPlayer).join('');
-   status='<section class="card"><strong>Audio available</strong><span>Found an audio file attached to the Wiktionary page.</span></section>';
+   status='';
   }else if(page){
    status='<section class="card"><strong>No audio file found in Wiktionary</strong><span>The word page was reached, but it did not expose a playable audio file. Check the other source links below.</span></section>';
   }else{
    status='<section class="card"><strong>Could not verify the Wiktionary entry automatically</strong><span>This can happen if the source is unavailable or the word has no entry. The links below open each source directly.</span></section>';
   }
   results.innerHTML=audioHtml+status+sourceCards(word);
+  setupAudioPlayers();
  }catch(error){
   if(requestId===activeSearch)results.innerHTML='<section class="card"><strong>Online check failed</strong><span>Could not contact Wiktionary right now. Open one of the direct source links below to check the word.</span></section>'+sourceCards(word);
  }finally{
