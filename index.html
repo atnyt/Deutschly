@@ -166,7 +166,7 @@ async function wiktionaryPage(word){
 form.addEventListener('submit',async event=>{
  event.preventDefault();
  const requestId=++activeSearch;
- const word=input.value.trim().replace(/\\s+/g,' ');
+ const word=input.value.trim().replace(/\s+/g,' ');
  if(!word){input.focus();return}
  button.disabled=true;
  results.classList.remove('hidden');
