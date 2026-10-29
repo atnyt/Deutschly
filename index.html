@@ -92,7 +92,8 @@ function renderDictionary(entries,word){
   let group=groups.find(g=>g.key===key);
   if(!group){group={key,pos,label:posLabel(pos),senses:[],seen:new Set()};groups.push(group)}
   (Array.isArray(entry.senses)?entry.senses:[]).forEach(sense=>{
-   const glosses=Array.isArray(sense.glosses)?sense.glosses.filter(x=>typeof x==='string'&&x.trim()):[];
+   const glossSource=Array.isArray(sense.glosses)&&sense.glosses.length?sense.glosses:sense.raw_glosses;
+   const glosses=Array.isArray(glossSource)?glossSource.filter(x=>typeof x==='string'&&x.trim()):[];
    const glossKey=glosses.join('|').toLowerCase();
    if(!glosses.length||group.seen.has(glossKey))return;
    group.seen.add(glossKey);
