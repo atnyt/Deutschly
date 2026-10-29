@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#101b32">
-<meta name="description" content="Search a German word and open its dictionary entry directly on Duden.">
+<meta name="description" content="Find a reliable German pronunciation dictionary entry for any word.">
 <title>German Pronunciation Verifier</title>
 <style>
-:root{--ink:#18243b;--muted:#68758c;--line:#e1e7f0;--bg:#f4f6fb;--navy:#101b32;--blue:#315be8;--blue2:#2448c6}
+:root{--ink:#18243b;--muted:#68758c;--line:#e1e7f0;--bg:#f4f6fb;--blue:#315be8;--blue2:#2448c6}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,a{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:var(--blue)}.shell{width:min(100% - 28px,760px);margin:auto}.hero{background:radial-gradient(ellipse at 85% 10%,#2c477e 0,transparent 36%),linear-gradient(135deg,#101b32,#17284b 68%,#243c6d);color:white;padding:28px 0 76px}.brandrow{display:flex;align-items:center;gap:12px}.mark{width:42px;height:42px;border:1px solid #ffffff42;background:#ffffff12;border-radius:14px;display:grid;place-items:center;font-size:21px}.brand{font-size:13px;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:#d7e1ff}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#b7c7ff;font-weight:800;margin:28px 0 6px}.hero h1{font-size:clamp(32px,6vw,48px);letter-spacing:-.045em;line-height:1.08;margin:0}.hero p{max-width:620px;color:#d4ddf0;margin:12px 0 0;font-size:15px}.main{margin-top:-42px;padding-bottom:32px}.panel{background:white;border:1px solid var(--line);border-radius:22px;box-shadow:0 16px 44px #1424470b;padding:clamp(18px,4vw,28px)}.labelrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:9px}.labelrow label{font-weight:800}.tiny{font-size:12px;color:var(--muted)}.searchform{display:flex;gap:10px}.searchbox{display:flex;align-items:center;gap:10px;flex:1;min-width:0;border:1px solid #cbd4e4;background:#fbfcff;border-radius:14px;padding:0 14px}.searchbox:focus-within{border-color:#8099ff;box-shadow:0 0 0 4px #315be815}.searchbox input{width:100%;min-width:0;border:0;outline:0;background:transparent;padding:14px 0;color:var(--ink);font-size:16px}.primary,.secondary,.chip{border:0;border-radius:13px;font-weight:750;cursor:pointer}.primary{background:var(--blue);color:white;padding:13px 20px;box-shadow:0 7px 16px #315be82a}.primary:hover{background:var(--blue2)}.secondary{display:inline-block;text-decoration:none;background:#edf1ff;color:#2443a5;padding:10px 13px}.hint{margin:10px 0 0;color:var(--muted);font-size:13px}.quickrow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:16px}.quicklabel{font-size:12px;color:var(--muted);font-weight:750}.chip{background:#f1f4fa;border:1px solid #e4e9f2;color:#33415e;padding:7px 11px;font-size:13px}.note{display:flex;gap:10px;align-items:flex-start;margin-top:18px;padding:13px 14px;border-radius:13px;background:#f4f7ff;color:#4c5d7a;font-size:13px}.note strong{color:#243a78}.sources{margin-top:14px;border-top:1px solid var(--line);padding-top:15px}.sources p{margin:0 0 9px;color:var(--muted);font-size:13px}.source-links{display:flex;flex-wrap:wrap;gap:8px}.foot{text-align:center;color:var(--muted);font-size:12px;padding:0 0 28px}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #8ca5ff;outline-offset:3px}@media(max-width:600px){.hero{padding:25px 0 70px}.searchform{flex-direction:column}.primary{width:100%}.labelrow{align-items:flex-start}.shell{width:min(100% - 22px,760px)}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
@@ -15,33 +15,32 @@
 <header class="hero"><div class="shell">
 <div class="brandrow"><div class="mark" aria-hidden="true">音</div><div class="brand">Language Lab · German</div></div>
 <div class="eyebrow">German pronunciation</div><h1>Pronunciation Verifier</h1>
-<p>Search a German word and go straight to its Duden dictionary entry. Listen to the original pronunciation on the dictionary website—this app does not play or generate audio.</p>
+<p>Search a German word and find a reliable dictionary page with recorded pronunciation. This app itself does not play or generate audio.</p>
 </div></header>
 <main class="shell main">
 <section class="panel" aria-labelledby="searchTitle">
 <div class="labelrow"><label id="searchTitle" for="word">Enter a German word</label><span class="tiny">Deutsch · de-DE</span></div>
 <form class="searchform" id="lookupForm">
 <div class="searchbox"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input id="word" name="word" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Try: Autobahn, Entschuldigung, sprechen" required maxlength="100" aria-label="German word to look up"></div>
-<button class="primary" type="submit">Open Duden entry ↗</button>
+<button class="primary" type="submit">Find best dictionary page ↗</button>
 </form>
-<p class="hint">Keep the original spelling, including ä, ö, ü and ß. Press Search and the dictionary opens directly.</p>
+<p class="hint">Keep the original spelling, including ä, ö, ü and ß.</p>
 <div class="quickrow" aria-label="Example words"><span class="quicklabel">TRY A WORD</span><button class="chip" type="button" data-example="Autobahn">Autobahn</button><button class="chip" type="button" data-example="Entschuldigung">Entschuldigung</button><button class="chip" type="button" data-example="Mädchen">Mädchen</button><button class="chip" type="button" data-example="sprechen">sprechen</button></div>
-<div class="note"><span aria-hidden="true">↗</span><div><strong>No audio inside this app.</strong><br>Search redirects to Duden's word page. If Duden does not have that entry, use the alternate PONS or Duden search links below.</div></div>
-<div class="sources"><p>Alternative dictionary links (for the word currently entered):</p><div class="source-links"><a class="secondary" id="ponsLink" href="https://de.pons.com/" target="_blank" rel="noopener noreferrer">Search on PONS ↗</a><a class="secondary" id="dudenSearchLink" href="https://www.duden.de/woerterbuch" target="_blank" rel="noopener noreferrer">Duden search ↗</a></div></div>
+<div class="note"><span aria-hidden="true">↗</span><div><strong>Smart search, not a guaranteed automatic judge.</strong><br>Search prioritizes established dictionary sources (Duden, PONS, DWDS and Wiktionary). The search engine chooses the destination; check that the exact word and audio are present. A static GitHub Pages app cannot reliably inspect every live result without a search API/backend.</div></div>
+<div class="sources"><p>Search one source directly if needed:</p><div class="source-links"><a class="secondary" id="dudenLink" href="https://www.duden.de/woerterbuch" target="_blank" rel="noopener noreferrer">Duden ↗</a><a class="secondary" id="ponsLink" href="https://de.pons.com/" target="_blank" rel="noopener noreferrer">PONS ↗</a><a class="secondary" id="dwdsLink" href="https://www.dwds.de/" target="_blank" rel="noopener noreferrer">DWDS ↗</a><a class="secondary" id="wikiLink" href="https://de.wiktionary.org/" target="_blank" rel="noopener noreferrer">Wiktionary ↗</a></div></div>
 </section>
 </main>
-<footer class="shell foot">A simple shortcut to dictionary-hosted pronunciation. Audio, if available, plays only on the dictionary website.</footer>
+<footer class="shell foot">Audio, if available, plays only on the dictionary website. No audio is embedded in this app.</footer>
 <script>
 'use strict';
 const input=document.getElementById('word');
 function cleanWord(value){return String(value||'').trim().replace(/\s+/g,' ')}
-function dudenEntryUrl(word){const slug=word.replace(/\s+/g,'-');return 'https://www.duden.de/rechtschreibung/'+encodeURIComponent(slug)}
-function updateFallbackLinks(){const word=cleanWord(input.value);const q=encodeURIComponent(word);document.getElementById('ponsLink').href=word?'https://de.pons.com/übersetzung/deutsch-englisch/'+q:'https://de.pons.com/';document.getElementById('dudenSearchLink').href=word?'https://www.duden.de/suchen/dudenonline/'+q:'https://www.duden.de/woerterbuch'}
-function openEntry(value){const word=cleanWord(value);if(!word){input.focus();return}updateFallbackLinks();window.location.assign(dudenEntryUrl(word))}
-document.getElementById('lookupForm').addEventListener('submit',event=>{event.preventDefault();openEntry(input.value)});
-document.querySelectorAll('[data-example]').forEach(button=>button.addEventListener('click',()=>{input.value=button.dataset.example;openEntry(input.value)}));
-input.addEventListener('input',updateFallbackLinks);
-updateFallbackLinks();
+function updateSourceLinks(){const word=cleanWord(input.value);const q=encodeURIComponent(word);document.getElementById('dudenLink').href=word?'https://www.duden.de/suchen/dudenonline/'+q:'https://www.duden.de/woerterbuch';document.getElementById('ponsLink').href=word?'https://de.pons.com/übersetzung/deutsch-englisch/'+q:'https://de.pons.com/';document.getElementById('dwdsLink').href=word?'https://www.dwds.de/wb/'+q:'https://www.dwds.de/';document.getElementById('wikiLink').href=word?'https://de.wiktionary.org/wiki/'+q:'https://de.wiktionary.org/'}
+function openSmartSearch(value){const word=cleanWord(value);if(!word){input.focus();return}updateSourceLinks();const q='"'+word+'" German pronunciation audio (site:duden.de OR site:pons.com OR site:dwds.de OR site:de.wiktionary.org)';window.location.assign('https://www.google.com/search?btnI=1&q='+encodeURIComponent(q))}
+document.getElementById('lookupForm').addEventListener('submit',event=>{event.preventDefault();openSmartSearch(input.value)});
+document.querySelectorAll('[data-example]').forEach(button=>button.addEventListener('click',()=>{input.value=button.dataset.example;openSmartSearch(input.value)}));
+input.addEventListener('input',updateSourceLinks);
+updateSourceLinks();
 </script>
 </body>
 </html>
