@@ -1,46 +1,80 @@
 <!doctype html>
-<html lang="bn">
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
 <title>German Pronunciation Verifier</title>
 <style>
-*{box-sizing:border-box}
-:root{color-scheme:light}
-html,body{margin:0;min-height:100%;background:#fff;color:#171717;font-family:Arial,Helvetica,sans-serif}
-body{min-height:100vh;display:grid;place-items:center;padding:22px}
-main{width:min(100%,620px)}
-form{display:flex;align-items:center;gap:10px;width:100%}
-input{flex:1;min-width:0;height:54px;border:1px solid #d5d5d5;border-radius:14px;padding:0 17px;font-size:16px;outline:none;background:#fff;color:#171717}
-input:focus{border-color:#777;box-shadow:0 0 0 3px #0000000b}
-input::placeholder{color:#888}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#fff;color:#171717;font-family:Arial,Helvetica,sans-serif}
+body{min-height:100vh;padding:22px;display:flex;justify-content:center;align-items:flex-start}
+main{width:min(100%,620px);margin:auto;transform:translateY(min(22vh,180px))}
+form{display:flex;gap:9px;width:100%}
+input{flex:1;min-width:0;height:54px;border:1px solid #d5d5d5;border-radius:14px;padding:0 16px;font-size:16px;outline:none;background:#fff;color:#171717}
+input:focus{border-color:#777;box-shadow:0 0 0 3px #0000000b}input::placeholder{color:#888}
 button{width:54px;height:54px;flex:0 0 54px;border:0;border-radius:14px;background:#171717;color:white;display:grid;place-items:center;cursor:pointer}
-button:active{transform:scale(.98)}
-button:focus-visible{outline:3px solid #999;outline-offset:3px}
-svg{width:22px;height:22px}
-@media(max-width:420px){form{gap:8px}input{height:50px;padding:0 13px}button{width:50px;height:50px;flex-basis:50px}}
+svg{width:22px;height:22px}.results{margin-top:18px;display:grid;gap:10px}
+.card{border:1px solid #e1e1e1;border-radius:14px;padding:15px 16px;text-decoration:none;color:inherit;display:block}
+.card:active{background:#f7f7f7}.card strong{display:block;font-size:15px;margin-bottom:5px}.card span{display:block;color:#666;font-size:13px;line-height:1.45}
+.status{font-size:13px;color:#555;margin:0 0 10px;line-height:1.5}.hidden{display:none}
+@media(max-width:420px){input,button{height:50px}button{width:50px;flex-basis:50px}}
 </style>
 </head>
 <body>
 <main>
 <form id="searchForm" role="search">
-<input id="word" name="word" type="search" placeholder="জার্মান শব্দ লিখুন..." aria-label="জার্মান শব্দ" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="100" required>
-<button type="submit" aria-label="সার্চ করুন" title="সার্চ করুন">
+<input id="word" name="word" type="search" placeholder="Deutsches Wort suchen" aria-label="Deutsches Wort" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="100" required>
+<button type="submit" aria-label="Suchen">
 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
 </button>
 </form>
+<section id="results" class="results hidden" aria-live="polite"></section>
 </main>
 <script>
 'use strict';
 const form=document.getElementById('searchForm');
 const input=document.getElementById('word');
-form.addEventListener('submit',function(event){
+const results=document.getElementById('results');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function card(url,title,detail){return '<a class="card" href="'+url+'" target="_blank" rel="noopener noreferrer"><strong>'+esc(title)+'</strong><span>'+esc(detail)+'</span></a>'}
+function showLinks(word,message){
+ const q=encodeURIComponent(word);
+ results.innerHTML='<p class="status">'+esc(message)+'</p>'+
+ card('https://www.duden.de/suchen/dudenonline/'+q,'Duden','Offizielle Wörterbuchsuche · Audio auf der Eintragsseite prüfen')+
+ card('https://de.pons.com/übersetzung/deutsch-englisch/'+q,'PONS','Offizielle Wörterbuchsuche · Audio auf der Eintragsseite prüfen')+
+ card('https://de.wiktionary.org/wiki/'+q,'Wiktionary','Direkter Eintrag · Audio auf der Eintragsseite prüfen');
+ results.classList.remove('hidden');
+}
+form.addEventListener('submit',async event=>{
  event.preventDefault();
  const word=input.value.trim().replace(/\s+/g,' ');
- if(!word){input.focus();return;}
- const query='"'+word+'" German pronunciation audio (site:duden.de OR site:pons.com OR site:dwds.de OR site:de.wiktionary.org)';
- window.location.href='https://www.google.com/search?q='+encodeURIComponent(query);
+ if(!word){input.focus();return}
+ results.classList.remove('hidden');
+ results.innerHTML='';
+ const loading=document.createElement('p');loading.className='status';loading.textContent='Suche nach einem passenden Wörterbucheintrag …';results.appendChild(loading);
+ try{
+  const api='https://de.wiktionary.org/w/api.php?action=parse&page='+encodeURIComponent(word)+'&prop=wikitext%7Cdisplaytitle&format=json&origin=*';
+  const response=await fetch(api,{headers:{Accept:'application/json'}});
+  if(!response.ok)throw new Error('lookup failed');
+  const data=await response.json();
+  if(data.error||!data.parse||data.parse.title.toLocaleLowerCase('de-DE')!==word.toLocaleLowerCase('de-DE')){
+   showLinks(word,'Kein exakt passender Wiktionary-Eintrag bestätigt. Hier sind offizielle Wörterbuchsuchen; prüfe den exakten Eintrag und das Lautsprecher-Symbol.');
+   return;
+  }
+  const wikitext=typeof data.parse.wikitext==='string'?data.parse.wikitext:(data.parse.wikitext&&data.parse.wikitext['*'])||'';
+  const audioPattern=/(?:\[\[(?:Datei|Datei|File):|\{\{(?:Audio|audio|Aussprache|Hörbeispiel)\s*\|\s*)([^\]|}]+\.(?:ogg|oga|mp3|wav))/i;
+  const audioMatch=wikitext.match(audioPattern);
+  if(audioMatch){
+   results.innerHTML='<p class="status">Exakter Eintrag gefunden; im Eintrag wurde ein Audio-Verweis erkannt. Öffne die Seite, um die Aussprache anzuhören.</p>'+
+    card('https://de.wiktionary.org/wiki/'+encodeURIComponent(data.parse.title),'Wiktionary · Eintrag mit Audio-Verweis','Exakter Wörterbucheintrag · Audio-Verweis im Eintrag erkannt')+
+    card('https://www.duden.de/suchen/dudenonline/'+encodeURIComponent(word),'Duden','Offizielle Wörterbuchsuche · Audio-Verfügbarkeit hier nicht automatisch geprüft')+
+    card('https://de.pons.com/übersetzung/deutsch-englisch/'+encodeURIComponent(word),'PONS','Offizielle Wörterbuchsuche · Audio-Verfügbarkeit hier nicht automatisch geprüft');
+  }else{
+   showLinks(word,'Exakter Wiktionary-Eintrag gefunden, aber ein Audio-Verweis wurde nicht zuverlässig erkannt. Prüfe diese Wörterbuchseiten direkt; es wird nicht behauptet, dass Audio verfügbar ist.');
+  }
+ }catch(error){
+  showLinks(word,'Die automatische Prüfung ist momentan nicht erreichbar. Öffne eine der offiziellen Wörterbuchsuchen und prüfe, ob der exakte Eintrag ein Lautsprecher-Symbol hat.');
+ }
 });
 </script>
 </body>
