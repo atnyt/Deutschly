@@ -219,14 +219,14 @@ form.addEventListener('submit',async event=>{
    audioHtml=page.audio.map(audioPlayer).join('');
    status='';
   }else if(page){
-   status='<section class="card"><strong>No audio file found in Wiktionary</strong><span>The word page was reached, but it did not expose a playable audio file. Check the other source links below.</span></section>';
+   status='';
   }else{
-   status='<section class="card"><strong>Could not verify the Wiktionary entry automatically</strong><span>This can happen if the source is unavailable or the word has no entry. The links below open each source directly.</span></section>';
+   status='';
   }
   results.innerHTML=audioHtml+status+sourceCards(word);
   setupAudioPlayers();
  }catch(error){
-  if(requestId===activeSearch)results.innerHTML='<section class="card"><strong>Online check failed</strong><span>Could not contact Wiktionary right now. Open one of the direct source links below to check the word.</span></section>'+sourceCards(word);
+  if(requestId===activeSearch)results.innerHTML=sourceCards(word);
  }finally{
   if(requestId===activeSearch)button.disabled=false;
  }
