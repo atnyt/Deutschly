@@ -134,53 +134,60 @@ function hasAudioReference(value,key=''){
  return false;
 }
 function wiktionaryUrl(word){return 'https://de.wiktionary.org/wiki/'+encodeURIComponent(word.replace(/ /g,'_'))}
-function dictionaryFallback(word,message){results.innerHTML=card(wiktionaryUrl(word),'Wiktionary','German entry · Audio availability not confirmed.')+otherSites(word);results.classList.remove('hidden');}
+function sourceCards(word){
+ const q=encodeURIComponent(word.trim());
+ return [
+  card(wiktionaryUrl(word),'Wiktionary ↗','Open the German Wiktionary entry.'),
+  card('https://www.duden.de/suchen/dudenonline/'+q,'Duden ↗','Open Duden search results for this word.'),
+  card('https://de.pons.com/übersetzung/deutsch-englisch/'+q,'PONS ↗','Open PONS dictionary results for this word.'),
+  card('https://forvo.com/word/'+q+'/#de','Forvo ↗','Open German speaker recordings for this word.')
+ ].join('');
+}
+function audioPlayer(url){
+ const safe=esc(url);
+ return '<section class="card featured"><strong>🔊 German audio found</strong><audio controls preload="none" style="display:block;width:100%;margin-top:12px" src="'+safe+'">Your browser does not support audio playback.</audio><span style="margin-top:8px">Audio hosted by Wikimedia Commons.</span></section>';
+}
+async function wiktionaryPage(word){
+ const url='https://de.wiktionary.org/w/api.php?action=parse&page='+encodeURIComponent(word.replace(/ /g,'_'))+'&prop=text&format=json&origin=*';
+ const response=await fetch(url,{headers:{Accept:'application/json'}});
+ if(!response.ok)throw new Error('Wiktionary request failed');
+ const data=await response.json();
+ if(data.error||!data.parse||!data.parse.text||!data.parse.text['*'])return null;
+ const html=data.parse.text['*'];
+ const doc=new DOMParser().parseFromString(html,'text/html');
+ const candidates=[];
+ doc.querySelectorAll('audio[src],audio source[src],a[href]').forEach(el=>{
+  const raw=el.getAttribute('src')||el.getAttribute('href')||'';
+  const absolute=raw.startsWith('//')?'https:'+raw:raw;
+  if(/^https?:\/\//i.test(absolute)&&/upload\.wikimedia\.org/i.test(absolute)&&/\.(ogg|oga|mp3|wav|opus)(?:[?#].*)?$/i.test(absolute))candidates.push(absolute);
+ });
+ return {html,hasEntry:!!doc.body.textContent.trim(),audio:[...new Set(candidates)]};
+}
 form.addEventListener('submit',async event=>{
  event.preventDefault();
  const requestId=++activeSearch;
- const word=input.value.trim().replace(/\s+/g,' ');
+ const word=input.value.trim().replace(/\\s+/g,' ');
  if(!word){input.focus();return}
  button.disabled=true;
  results.classList.remove('hidden');
- results.innerHTML='<div class="loading-state" role="status"><span class="loading-spinner" aria-hidden="true">'+Array.from({length:12},(_,i)=>'<i style="transform:rotate('+(i*30)+'deg);opacity:'+((i+1)/12)+'"></i>').join('')+'</span><span>Loading</span></div>';
+ results.innerHTML='<div class="loading-state" role="status"><span class="loading-spinner" aria-hidden="true">'+Array.from({length:12},(_,i)=>'<i style="transform:rotate('+(i*30)+'deg);opacity:'+((i+1)/12)+'"></i>').join('')+'</span><span>Searching Wiktionary for a real entry and audio…</span></div>';
  try{
-  // Check both editions and their dedicated pronunciation endpoints.
-  const encodedWord=encodeURIComponent(word);
-  const editions=['de','en'];
-  const fetchJson=async url=>{const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),4500);try{const response=await fetch(url,{headers:{Accept:'application/json'},signal:controller.signal});return response.ok?await response.json():null}catch{return null}finally{clearTimeout(timer)}};
-  const payloads=await Promise.all(editions.flatMap(edition=>[
-   fetchJson('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'?lang=de'),
-   fetchJson('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'/definitions?lang=de'),
-   fetchJson('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'/pronunciations?lang=de')
-  ]));
+  let page=null;
+  try{page=await wiktionaryPage(word)}catch(error){page=null}
   if(requestId!==activeSearch)return;
-  const entries=payloads.flatMap(data=>{
-   if(!data)return [];
-   if(Array.isArray(data.entries))return data.entries;
-   if(Array.isArray(data.pronunciations))return [{word:data.word||word,lang:data.lang||'German',lang_code:data.lang_code||'de',sounds:data.pronunciations}];
-   if(Array.isArray(data.senses))return [{word:data.word||word,lang:data.lang||'German',lang_code:data.lang_code||'de',pos:data.pos||'',senses:data.senses,translations:data.translations||[]}];
-   if(typeof data.word==='string')return [data];
-   return [];
-  });
-  const normalizedWord=word.normalize('NFC').toLocaleLowerCase('de-DE');
-  const exactEntries=entries.filter(entry=>{
-   if(!entry||typeof entry.word!=='string'||entry.word.normalize('NFC').toLocaleLowerCase('de-DE')!==normalizedWord)return false;
-   const langCode=String(entry.lang_code||'').toLocaleLowerCase('de-DE');
-   const langName=String(entry.lang||'').toLocaleLowerCase('de-DE');
-   return langCode==='de'||langCode==='ger'||langName==='german'||langName==='deutsch';
-  });
-  const audioEntries=exactEntries.filter(entry=>hasAudioReference(entry.sounds||entry.pronunciations||entry.audio,'audio'));
-  const dictionaryHtml=renderDictionary(exactEntries,word);
-  if(audioEntries.length){
-   results.innerHTML=dictionaryHtml+
-    card(wiktionaryUrl(audioEntries[0].word),'Wiktionary →','',true)+otherSites(word);
-  }else if(exactEntries.length){
-   results.innerHTML=dictionaryHtml+card(wiktionaryUrl(word),'Wiktionary','German entry · Audio availability not confirmed.')+otherSites(word);
+  let audioHtml='';
+  let status='';
+  if(page&&page.audio.length){
+   audioHtml=page.audio.map(audioPlayer).join('');
+   status='<section class="card"><strong>Audio available</strong><span>Found an audio file attached to the Wiktionary page.</span></section>';
+  }else if(page){
+   status='<section class="card"><strong>No audio file found in Wiktionary</strong><span>The word page was reached, but it did not expose a playable audio file. Check the other source links below.</span></section>';
   }else{
-   dictionaryFallback(word,'No exact German entry was confirmed by the data service. Search Duden directly; this is a fallback, not a verified result.');
+   status='<section class="card"><strong>Could not verify the Wiktionary entry automatically</strong><span>This can happen if the source is unavailable or the word has no entry. The links below open each source directly.</span></section>';
   }
+  results.innerHTML=audioHtml+status+sourceCards(word);
  }catch(error){
-  if(requestId===activeSearch)dictionaryFallback(word,'Automatic audio verification is currently unavailable. Search Duden directly; audio is not verified.');
+  if(requestId===activeSearch)results.innerHTML='<section class="card"><strong>Online check failed</strong><span>Could not contact Wiktionary right now. Open one of the direct source links below to check the word.</span></section>'+sourceCards(word);
  }finally{
   if(requestId===activeSearch)button.disabled=false;
  }
