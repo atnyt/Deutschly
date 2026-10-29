@@ -57,7 +57,9 @@ function hasAudioReference(value,key=''){
   const s=value.trim();
   if(!s)return false;
   const audioKey=/audio|sound|file|ogg|mp3|wav|opus/i.test(key);
-  return audioKey&&(/\.(ogg|oga|mp3|wav|opus)(?:[?#].*)?$/i.test(s)||/^https?:\\/\\//i.test(s)||/^File:/i.test(s)||/^Audio:/i.test(s)||s.length>3);
+  const lower=s.toLowerCase();
+  const looksLikeAudio=lower.endsWith('.ogg')||lower.endsWith('.oga')||lower.endsWith('.mp3')||lower.endsWith('.wav')||lower.endsWith('.opus')||lower.includes('.ogg?')||lower.includes('.mp3?')||lower.startsWith('http://')||lower.startsWith('https://')||lower.startsWith('file:')||lower.startsWith('audio:');
+  return audioKey&&looksLikeAudio;
  }
  if(Array.isArray(value))return value.some(item=>hasAudioReference(item,key));
  if(typeof value==='object')return Object.entries(value).some(([k,v])=>hasAudioReference(v,k));
@@ -77,7 +79,7 @@ form.addEventListener('submit',async event=>{
  if(!word){input.focus();return}
  button.disabled=true;
  results.classList.remove('hidden');
- results.innerHTML='<p class="status">Checking the exact German dictionary entry and audio data…</p>';
+ results.innerHTML='<p class="status">Searching…</p>';
  try{
   // Check both editions and their dedicated pronunciation endpoints.
   const encodedWord=encodeURIComponent(word);
@@ -103,7 +105,7 @@ form.addEventListener('submit',async event=>{
    const langName=String(entry.lang||'').toLocaleLowerCase('de-DE');
    return langCode==='de'||langCode==='ger'||langName==='german'||langName==='deutsch';
   });
-  const audioEntries=exactEntries.filter(entry=>hasAudioReference([entry.sounds,entry.pronunciations,entry.audio],'audio'));
+  const audioEntries=exactEntries.filter(entry=>hasAudioReference(entry.sounds||entry.pronunciations||entry.audio,'audio'));
   if(audioEntries.length){
    results.innerHTML='<p class="status">Exact German entry found. Structured pronunciation data includes an audio reference; open the source entry to listen.</p>'+
     card(wiktionaryUrl(audioEntries[0].word),'Wiktionary · Audio reference found','Exact German entry · Listen on the original page');
