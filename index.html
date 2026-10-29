@@ -219,13 +219,13 @@ form.addEventListener('submit',async event=>{
   let status='';
   if(page&&page.audio.length){
    audioHtml=page.audio.map(audioPlayer).join('');
-   status='';
-  }else if(page){
-   status='';
+   status='<p class="status">অডিওর লিংক পাওয়া গেছে। প্লে বোতাম চাপলে বোঝা যাবে ফাইলটি চালু হচ্ছে কি না।</p>';
+  }else if(page&&page.hasEntry){
+   status='<p class="status">Wiktionary-তে পেজ পাওয়া গেছে, কিন্তু স্বয়ংক্রিয়ভাবে শনাক্তযোগ্য উচ্চারণের অডিও পাওয়া যায়নি। নিচের অভিধানগুলোতে শব্দটি পরীক্ষা করো।</p>';
   }else{
-   status='';
+   status='<p class="status">Wiktionary থেকে এই শব্দের পেজ নিশ্চিত করা যায়নি বা সংযোগ ব্যর্থ হয়েছে। নিচের উৎসগুলোতে সরাসরি খুঁজে দেখো।</p>';
   }
-  results.innerHTML=audioHtml+status+sourceCards(word);
+  results.innerHTML=(status?'<div class="dictionary">'+status+'</div>':'')+audioHtml+sourceCards(word);
   setupAudioPlayers();
  }catch(error){
   if(requestId===activeSearch)results.innerHTML=sourceCards(word);
