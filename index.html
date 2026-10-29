@@ -163,7 +163,7 @@ function sourceCards(word){
 function audioPlayer(url,index){
  const safe=esc(url);
  const bars=Array.from({length:34},(_,i)=>'<i style="--h:'+([7,12,17,10,21,14,8,18,24,12,16,9,22,13,7,19,25,11,16,8,20,14,23,10,17,7,13,21,9,18,12,24,15,8][i%34])+'px;--d:'+((i%9)*-.07)+'s"></i>').join('');
- return '<section class="audio-card" data-audio-card style="background:#111;border-color:#303030;box-shadow:none;border-radius:12px;padding:10px 12px"><button class="audio-play" type="button" aria-label="Play pronunciation" data-play><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg></button><div class="audio-track"><div class="audio-wave" aria-hidden="true">'+bars+'</div><div class="audio-meta"><span class="audio-time" data-time>0:00 / --:--</span><input class="audio-seek" type="range" min="0" max="1000" value="0" aria-label="Seek audio" data-seek></div><audio preload="none" src="'+safe+'"></audio><div class="audio-error hidden" data-error>Audio could not be loaded.</div></div></section>';
+ return '<section class="audio-card" data-audio-card style="background:#111;border-color:#303030;box-shadow:none;border-radius:12px;padding:10px 12px"><button class="audio-play" type="button" aria-label="Play pronunciation" data-play><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg></button><div class="audio-track"><div class="audio-wave" aria-hidden="true">'+bars+'</div><div class="audio-meta"><span class="audio-time" data-time>0:00 / --:--</span><input class="audio-seek" type="range" min="0" max="1000" value="0" aria-label="Seek audio" data-seek></div><audio preload="none" src="'+safe+'"></audio><div class="audio-error hidden" data-error>অডিও চালানো যায়নি। অন্য রেকর্ডিং চেষ্টা করো।</div></div></section>';
 }
 function setupAudioPlayers(){
  results.querySelectorAll('[data-audio-card]').forEach(card=>{
@@ -171,7 +171,7 @@ function setupAudioPlayers(){
   const fmt=n=>{if(!Number.isFinite(n)||n<0)return '--:--';return Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0')};
   const paint=()=>{
    const duration=audio.duration;
-   time.textContent=fmt(audio.currentTime)+' / '+fmt(duration);
+   time.textContent=fmt(audio.currentTime)+' / '+(Number.isFinite(duration)&&duration>0?fmt(duration):'--:--');
    seek.value=duration>0?String(Math.round(audio.currentTime/duration*1000)):'0';
    seek.disabled=!(duration>0);
   };
