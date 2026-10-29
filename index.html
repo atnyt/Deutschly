@@ -43,7 +43,11 @@ svg{width:22px;height:22px}
 .sense p{font-size:12px;color:#b0b0ba;line-height:1.55;margin:4px 0 0}
 .sense .bn{color:#f2f2f5;font-size:13px}
 .source-note{margin:12px 0 0}
-.loading-state{margin:0;padding:18px 0;text-align:center;color:#bfc3d5;font-size:14px}
+.loading-state{display:flex;align-items:center;justify-content:center;gap:12px;padding:22px 0;color:#bfc3d5;font-size:14px}
+.loading-spinner{position:relative;display:block;width:36px;height:36px;flex:0 0 36px;animation:loadingTurn 1s steps(12) infinite}
+.loading-spinner i{position:absolute;left:16px;top:1px;width:4px;height:10px;border-radius:4px;background:#a7b5ff;transform-origin:2px 17px}
+@keyframes loadingTurn{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.loading-spinner{animation-duration:2.5s}}
 .hidden{display:none}
 @media(max-width:420px){body{padding-left:16px;padding-right:16px}form{gap:8px}input,button{height:54px}button{width:54px;flex-basis:54px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -130,7 +134,7 @@ function hasAudioReference(value,key=''){
  return false;
 }
 function wiktionaryUrl(word){return 'https://de.wiktionary.org/wiki/'+encodeURIComponent(word.replace(/ /g,'_'))}
-function dictionaryFallback(word,message){results.innerHTML=otherSites(word);results.classList.remove('hidden');}
+function dictionaryFallback(word,message){results.innerHTML=card(wiktionaryUrl(word),'Wiktionary','German entry · Audio availability not confirmed.')+otherSites(word);results.classList.remove('hidden');}
 form.addEventListener('submit',async event=>{
  event.preventDefault();
  const requestId=++activeSearch;
@@ -138,18 +142,16 @@ form.addEventListener('submit',async event=>{
  if(!word){input.focus();return}
  button.disabled=true;
  results.classList.remove('hidden');
- results.innerHTML='<p class="loading-state" role="status" aria-live="polite">Loading</p>';
+ results.innerHTML='<div class="loading-state" role="status"><span class="loading-spinner" aria-hidden="true">'+Array.from({length:12},(_,i)=>'<i style="transform:rotate('+(i*30)+'deg);opacity:'+((i+1)/12)+'"></i>').join('')+'</span><span>Loading</span></div>';
  try{
   // Check both editions and their dedicated pronunciation endpoints.
   const encodedWord=encodeURIComponent(word);
-  const editions=['en','de'];
+  const editions=['de','en'];
+  const fetchJson=async url=>{const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),4500);try{const response=await fetch(url,{headers:{Accept:'application/json'},signal:controller.signal});return response.ok?await response.json():null}catch{return null}finally{clearTimeout(timer)}};
   const payloads=await Promise.all(editions.flatMap(edition=>[
-   fetch('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'?lang=de',{headers:{Accept:'application/json'}})
-    .then(async response=>response.ok?await response.json():null).catch(()=>null),
-   fetch('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'/definitions?lang=de',{headers:{Accept:'application/json'}})
-    .then(async response=>response.ok?await response.json():null).catch(()=>null),
-   fetch('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'/pronunciations?lang=de',{headers:{Accept:'application/json'}})
-    .then(async response=>response.ok?await response.json():null).catch(()=>null)
+   fetchJson('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'?lang=de'),
+   fetchJson('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'/definitions?lang=de'),
+   fetchJson('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'/pronunciations?lang=de')
   ]));
   if(requestId!==activeSearch)return;
   const entries=payloads.flatMap(data=>{
@@ -173,7 +175,7 @@ form.addEventListener('submit',async event=>{
    results.innerHTML=dictionaryHtml+
     card(wiktionaryUrl(audioEntries[0].word),'Wiktionary →','',true)+otherSites(word);
   }else if(exactEntries.length){
-   results.innerHTML=dictionaryHtml+otherSites(word);
+   results.innerHTML=dictionaryHtml+card(wiktionaryUrl(word),'Wiktionary','German entry · Audio availability not confirmed.')+otherSites(word);
   }else{
    dictionaryFallback(word,'No exact German entry was confirmed by the data service. Search Duden directly; this is a fallback, not a verified result.');
   }
