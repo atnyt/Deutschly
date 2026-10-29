@@ -75,7 +75,7 @@ form.addEventListener('submit',async event=>{
  results.innerHTML='<p class="status">Exakten deutschen Wörterbucheintrag und Audio-Daten werden geprüft …</p>';
  try{
   // Structured pronunciation data; no wikitext/HTML regex guessing.
-  const api='https://api.wiktapi.dev/v1/en/word/'+encodeURIComponent(word)+'?lang=de';
+  const api='https://api.wiktapi.dev/v1/de/word/'+encodeURIComponent(word)+'?lang=de';
   const response=await fetch(api,{headers:{Accept:'application/json'}});
   if(!response.ok)throw new Error('dictionary API unavailable');
   const data=await response.json();
