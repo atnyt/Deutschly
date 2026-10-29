@@ -51,21 +51,13 @@ const results=document.getElementById('results');
 let activeSearch=0;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function card(url,title,detail){return '<a class="card" href="'+url+'" target="_blank" rel="noopener noreferrer"><strong>'+esc(title)+'</strong><span>'+esc(detail)+'</span></a>'}
-function fallbackLinks(word,message){
- const q=encodeURIComponent(word);
- results.innerHTML='<p class="status">'+esc(message)+'</p>'+
- card('https://www.duden.de/suchen/dudenonline/'+q,'Duden','Dictionary search · Check the exact entry and speaker icon')+
- card('https://de.pons.com/übersetzung/deutsch-englisch/'+q,'PONS','Dictionary search · Check the exact entry and speaker icon')+
- card('https://de.wiktionary.org/wiki/'+q,'Wiktionary','Open entry directly · Audio is not verified');
- results.classList.remove('hidden');
-}
 function hasAudioReference(value,key=''){
  if(value==null)return false;
  if(typeof value==='string'){
   const s=value.trim();
   if(!s)return false;
   const audioKey=/audio|sound|file|ogg|mp3|wav|opus/i.test(key);
-  return audioKey&&(/\\.(ogg|oga|mp3|wav|opus)(?:[?#].*)?$/i.test(s)||/^https?:\\/\\//i.test(s)||/^File:/i.test(s)||/^Audio:/i.test(s)||s.length>3);
+  return audioKey&&(/\.(ogg|oga|mp3|wav|opus)(?:[?#].*)?$/i.test(s)||/^https?:\\/\\//i.test(s)||/^File:/i.test(s)||/^Audio:/i.test(s)||s.length>3);
  }
  if(Array.isArray(value))return value.some(item=>hasAudioReference(item,key));
  if(typeof value==='object')return Object.entries(value).some(([k,v])=>hasAudioReference(v,k));
@@ -111,7 +103,7 @@ form.addEventListener('submit',async event=>{
    const langName=String(entry.lang||'').toLocaleLowerCase('de-DE');
    return langCode==='de'||langCode==='ger'||langName==='german'||langName==='deutsch';
   });
-  const audioEntries=exactEntries.filter(entry=>hasAudioReference(entry.sounds||entry.pronunciations||entry,'sounds'));
+  const audioEntries=exactEntries.filter(entry=>hasAudioReference([entry.sounds,entry.pronunciations,entry.audio],'audio'));
   if(audioEntries.length){
    results.innerHTML='<p class="status">Exact German entry found. Structured pronunciation data includes an audio reference; open the source entry to listen.</p>'+
     card(wiktionaryUrl(audioEntries[0].word),'Wiktionary · Audio reference found','Exact German entry · Listen on the original page');
@@ -121,7 +113,7 @@ form.addEventListener('submit',async event=>{
    dictionaryFallback(word,'No exact German entry was confirmed by the data service. Search Duden directly; this is a fallback, not a verified result.');
   }
  }catch(error){
-  if(requestId===activeSearch)fallbackLinks(word,'Automatic audio verification is currently unavailable. Only dictionary search links are shown; audio is not verified.');
+  if(requestId===activeSearch)dictionaryFallback(word,'Automatic audio verification is currently unavailable. Search Duden directly; audio is not verified.');
  }finally{
   if(requestId===activeSearch)button.disabled=false;
  }
