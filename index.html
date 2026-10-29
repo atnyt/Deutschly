@@ -145,6 +145,8 @@ form.addEventListener('submit',async event=>{
   const payloads=await Promise.all(editions.flatMap(edition=>[
    fetch('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'?lang=de',{headers:{Accept:'application/json'}})
     .then(async response=>response.ok?await response.json():null).catch(()=>null),
+   fetch('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'/definitions?lang=de',{headers:{Accept:'application/json'}})
+    .then(async response=>response.ok?await response.json():null).catch(()=>null),
    fetch('https://api.wiktapi.dev/v1/'+edition+'/word/'+encodedWord+'/pronunciations?lang=de',{headers:{Accept:'application/json'}})
     .then(async response=>response.ok?await response.json():null).catch(()=>null)
   ]));
@@ -153,6 +155,7 @@ form.addEventListener('submit',async event=>{
    if(!data)return [];
    if(Array.isArray(data.entries))return data.entries;
    if(Array.isArray(data.pronunciations))return [{word:data.word||word,lang:data.lang||'German',lang_code:data.lang_code||'de',sounds:data.pronunciations}];
+   if(Array.isArray(data.senses))return [{word:data.word||word,lang:data.lang||'German',lang_code:data.lang_code||'de',pos:data.pos||'',senses:data.senses,translations:data.translations||[]}];
    if(typeof data.word==='string')return [data];
    return [];
   });
