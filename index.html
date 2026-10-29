@@ -22,8 +22,12 @@ button:focus-visible,input:focus-visible{outline:2px solid rgba(255,255,255,.65)
 button:disabled{opacity:.55;cursor:wait}
 svg{width:22px;height:22px}
 .results{margin-top:18px;display:grid;gap:10px}
-.card{border:1px solid rgba(255,255,255,.12);border-radius:17px;padding:16px 17px;text-decoration:none;color:#f5f5f7;display:block;background:rgba(255,255,255,.045);box-shadow:inset 0 1px 0 rgba(255,255,255,.035);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:background .18s,border-color .18s}
-.card:active{background:rgba(255,255,255,.09)}
+.card{border:1px solid rgba(255,255,255,.10);border-radius:15px;padding:15px 16px;text-decoration:none;color:#f5f5f7;display:block;background:#080808;transition:background .18s,border-color .18s}
+.card:active{background:#111}
+.card.featured{padding:19px 18px;border-color:rgba(180,195,255,.30);background:linear-gradient(135deg,rgba(120,140,205,.16),rgba(255,255,255,.055) 55%,rgba(120,140,205,.08));box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 12px 34px rgba(0,0,0,.45),0 0 24px rgba(115,135,220,.055);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.card.featured strong{font-size:16px}
+.card.featured .tag{display:inline-block;width:max-content;margin:0 0 9px;padding:4px 8px;border:1px solid rgba(190,202,255,.22);border-radius:999px;color:#c7d0ff;font-size:10px;letter-spacing:.09em;text-transform:uppercase}
+.card.featured:active{background:rgba(100,120,190,.18)}
 .card strong{display:block;font-size:15px;font-weight:650;margin-bottom:6px;letter-spacing:.005em}
 .card span{display:block;color:#a7a7b0;font-size:13px;line-height:1.5}
 .status{font-size:13px;color:#a7a7b0;margin:0 0 5px;line-height:1.6}
@@ -50,7 +54,9 @@ const button=document.getElementById('searchButton');
 const results=document.getElementById('results');
 let activeSearch=0;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function card(url,title,detail){return '<a class="card" href="'+url+'" target="_blank" rel="noopener noreferrer"><strong>'+esc(title)+'</strong><span>'+esc(detail)+'</span></a>'}
+function card(url,title,detail,featured=false){return '<a class="card'+(featured?' featured':'')+'" href="'+url+'" target="_blank" rel="noopener noreferrer">'+(featured?'<span class="tag">Best match</span>':'')+'<strong>'+esc(title)+'</strong><span>'+esc(detail)+'</span></a>'}
+function otherSites(word){const q=encodeURIComponent(word);return [card('https://www.duden.de/suchen/dudenonline/'+q,'Duden','German dictionary · Check the entry for an audio icon.'),card('https://de.pons.com/übersetzung/deutsch-englisch/'+q,'PONS','Dictionary · Check the matching German entry.'),card('https://forvo.com/word/'+q+'/#de','Forvo','Native-speaker recordings · Availability depends on the word.')].join('')}
+function showResults(primaryUrl,primaryTitle,primaryDetail,word,verified){results.innerHTML=card(primaryUrl,primaryTitle,primaryDetail, true)+otherSites(word);results.classList.remove('hidden');}
 function hasAudioReference(value,key=''){
  if(value==null)return false;
  if(typeof value==='string'){
@@ -68,8 +74,7 @@ function hasAudioReference(value,key=''){
 function wiktionaryUrl(word){return 'https://de.wiktionary.org/wiki/'+encodeURIComponent(word.replace(/ /g,'_'))}
 function dictionaryFallback(word,message){
  const q=encodeURIComponent(word);
- results.innerHTML='<p class="status">'+esc(message)+'</p>'+
- card('https://www.duden.de/suchen/dudenonline/'+q,'Search Duden','Open the dictionary search and verify the exact entry and speaker icon.');
+ results.innerHTML='<p class="status">'+esc(message)+'</p>'+card('https://www.duden.de/suchen/dudenonline/'+q,'Duden · Start here','Trusted German dictionary. Please check whether the exact entry has recorded audio.',true)+otherSites(word);
  results.classList.remove('hidden');
 }
 form.addEventListener('submit',async event=>{
@@ -107,8 +112,8 @@ form.addEventListener('submit',async event=>{
   });
   const audioEntries=exactEntries.filter(entry=>hasAudioReference(entry.sounds||entry.pronunciations||entry.audio,'audio'));
   if(audioEntries.length){
-   results.innerHTML='<p class="status">Exact German entry found. Structured pronunciation data includes an audio reference; open the source entry to listen.</p>'+
-    card(wiktionaryUrl(audioEntries[0].word),'Wiktionary · Audio reference found','Exact German entry · Listen on the original page');
+   results.innerHTML='<p class="status">Exact German entry found with a recorded-audio reference. Open the original entry to listen.</p>'+
+    card(wiktionaryUrl(audioEntries[0].word),'Wiktionary · Audio verified','Exact German entry · Audio reference found in source data',true)+otherSites(word);
   }else if(exactEntries.length){
    dictionaryFallback(word,'Exact German entry found, but no recorded-audio reference was confirmed. Search Duden as the next option; audio is not yet verified.');
   }else{
