@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#142a43">
+<meta name="description" content="German word pronunciation lookup with IPA and available recorded audio.">
+<title>German Pronunciation Verifier</title>
+<style>
+:root{--ink:#17283c;--muted:#63748a;--line:#dce5ef;--blue:#1759a8;--bg:#f4f7fb;--green:#176b50}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:linear-gradient(135deg,#142a43,#245e8a);color:white;padding:32px 18px 38px}header .inner,main,.foot{max-width:850px;margin:auto}.eyebrow{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;opacity:.82;font-weight:700}h1{font-size:clamp(1.8rem,5vw,2.65rem);line-height:1.12;margin:10px 0}header p{max-width:620px;color:#e2ecf7;margin:12px 0 0}
+main{padding:22px 14px 38px}.panel,.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 26px #1938580a;margin-bottom:16px}label{font-weight:700;display:block;margin-bottom:8px}form{display:flex;gap:9px}input{min-width:0;flex:1;border:1px solid #b9c8d9;border-radius:12px;padding:14px;font:inherit}button{border:0;border-radius:12px;padding:12px 17px;font:inherit;font-weight:700;cursor:pointer;background:var(--blue);color:white}button:disabled{opacity:.55;cursor:wait}.secondary{background:#edf3fa;color:#173d69}.hint,.muted{color:var(--muted);font-size:.9rem}.status{margin-top:13px;color:var(--muted)}.error{color:#a52d2d}.wordline{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.wordline h2{font-size:2rem;margin:0;overflow-wrap:anywhere}.tag{font-size:.76rem;font-weight:700;padding:4px 8px;border-radius:99px;background:#e8f3ed;color:var(--green)}.ipa{font-size:1.55rem;font-weight:650;margin:8px 0;overflow-wrap:anywhere}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.source{border-top:1px solid var(--line);padding-top:14px;margin-top:15px}.source h3{margin:0 0 6px;font-size:1rem}a{color:#1457a2;overflow-wrap:anywhere}.audio{display:block;width:100%;max-width:440px;margin:10px 0}.small{font-size:.84rem}.hidden{display:none!important}.foot{padding:0 16px 28px;color:var(--muted);font-size:.85rem}
+@media(max-width:520px){form{flex-direction:column}form button{width:100%}.panel,.card{padding:16px}header{padding-top:24px}}
+</style>
+</head>
+<body>
+<header><div class="inner"><div class="eyebrow">German language toolkit</div><h1>German Pronunciation Verifier</h1><p>Look up a German word, inspect dictionary IPA, and play recorded pronunciation when the source provides it. Missing data is shown honestly—not guessed.</p></div></header>
+<main>
+<section class="panel">
+<label for="word">German word</label>
+<form id="lookupForm"><input id="word" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="e.g. ich, schön, sprechen, München" required maxlength="100"><button id="searchBtn" type="submit">Look up</button></form>
+<p class="hint">Keep ä, ö, ü and ß as written. Internet access is required for live lookup.</p>
+<div id="status" class="status" role="status" aria-live="polite">Ready. Try “Hallo” or “Entschuldigung”.</div>
+</section>
+<section id="results" class="hidden" aria-live="polite"></section>
+<section class="card"><h2>About the results</h2><p>The app queries Wiktapi's structured Wiktionary data. IPA and recorded audio vary by word. A device voice is offered separately as synthesized speech, not as a native-speaker recording.</p><p class="muted small">This is a study aid, not a certified pronunciation assessment. Regional and context-dependent variants may exist.</p></section>
+</main>
+<div class="foot">Sources: <a href="https://wiktapi.dev/quickstart" target="_blank" rel="noopener noreferrer">Wiktapi documentation</a> · <a href="https://en.wiktionary.org/" target="_blank" rel="noopener noreferrer">Wiktionary</a>. Browser and device support may vary.</div>
+<script>
+const $=id=>document.getElementById(id), form=$('lookupForm'), input=$('word'), status=$('status'), results=$('results'), btn=$('searchBtn');
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl=s=>{try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}};
+function soundUrl(s){let url=s.ogg_url||s.mp3_url||s.audio_url||'';if(!url&&typeof s.audio==='string'&&/^https?:\/\//i.test(s.audio))url=s.audio;return safeUrl(url)}
+function getIPA(e){return [...new Set((e.sounds||[]).map(s=>s.ipa).filter(Boolean))]}
+function getAudio(e){return (e.sounds||[]).map(s=>({url:soundUrl(s),ipa:s['audio-ipa']||s.ipa||'',tags:Array.isArray(s.tags)?s.tags.join(', '):''})).filter(s=>s.url)}
+function getGlosses(e){return (e.senses||[]).flatMap(s=>s.glosses||[]).slice(0,5)}
+function render(word,entries,apiUrl,pronData){
+ results.classList.remove('hidden');
+ if(!entries.length){results.innerHTML='<article class="card"><h2>No matching German entry</h2><p>The dictionary did not return a German entry for this spelling. Check the word and umlauts, or try its base form.</p><p><a href="'+esc('https://en.wiktionary.org/wiki/'+encodeURIComponent(word))+'" target="_blank" rel="noopener noreferrer">Open Wiktionary entry</a></p></article>';return}
+ results.innerHTML=entries.slice(0,8).map((e,i)=>{
+ const ipa=getIPA(e), aud=getAudio(e), gloss=getGlosses(e), title=e.word||word;
+ const pronSounds=(pronData&&Array.isArray(pronData.pronunciations))?pronData.pronunciations:[];
+ const pronIpa=pronSounds.map(s=>s.ipa).filter(Boolean);
+ const allIpa=[...new Set([...ipa,...pronIpa])];
+ const audioHtml=aud.length?aud.map(a=>'<div class="small muted">Recorded audio'+(a.tags?' · '+esc(a.tags):'')+'</div><audio class="audio" controls preload="none" src="'+esc(a.url)+'">Audio playback is not supported by this browser.</audio>'+(a.ipa?'<div class="muted small">Associated IPA: '+esc(a.ipa)+'</div>':'')).join(''):'<p class="muted small">No direct audio URL was returned by the API for this entry. The source page may still contain a recording.</p>';
+ return '<article class="card"><div class="wordline"><h2>'+esc(title)+'</h2><span class="tag">'+esc(e.pos||'German entry')+'</span></div><p class="muted small">Entry '+(i+1)+' · '+esc(e.lang||'German')+'</p><div class="source"><h3>IPA pronunciation</h3>'+(allIpa.length?allIpa.map(x=>'<div class="ipa">'+esc(x)+'</div>').join(''):'<p class="muted">No IPA was supplied by the available dictionary data. The app will not guess it.</p>')+'<div class="actions"><button type="button" class="secondary speak" data-word="'+esc(title)+'">🔊 Speak with device voice</button><button type="button" class="secondary copy" data-copy="'+esc(allIpa.join(' / '))+'">Copy IPA</button></div><p class="muted small voiceNote">Device speech is synthesized and depends on your browser and installed German voices.</p></div>'+audioHtml+(gloss.length?'<div class="source"><h3>Meaning / gloss</h3><p>'+gloss.map(esc).join('; ')+'</p></div>':'')+'<div class="source"><h3>Sources</h3><a href="'+esc('https://en.wiktionary.org/wiki/'+encodeURIComponent(title))+'" target="_blank" rel="noopener noreferrer">Wiktionary entry</a><br><a href="'+esc(apiUrl)+'" target="_blank" rel="noopener noreferrer">Raw dictionary response</a></div></article>';
+ }).join('');
+ results.querySelectorAll('.speak').forEach(b=>b.addEventListener('click',()=>{
+ const note=b.closest('.card').querySelector('.voiceNote');
+ if(!window.speechSynthesis||!window.SpeechSynthesisUtterance){note.textContent='Speech synthesis is not available in this browser. Try a browser/device with a German text-to-speech voice.';return}
+ const synth=window.speechSynthesis;synth.cancel();const u=new SpeechSynthesisUtterance(b.dataset.word);u.lang='de-DE';u.rate=.82;
+ const voice=synth.getVoices().find(v=>(v.lang||'').toLowerCase().startsWith('de'));if(voice)u.voice=voice;
+ u.onerror=()=>note.textContent='The device could not play synthesized speech. Try the recorded audio if one is available above.';
+ synth.speak(u);
+ }));
+ results.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',async()=>{
+ const v=b.dataset.copy;if(!v){b.textContent='No IPA available';return}
+ try{await navigator.clipboard.writeText(v);b.textContent='Copied!'}catch{b.textContent=v}
+ }));
+}
+form.addEventListener('submit',async ev=>{
+ ev.preventDefault();const word=input.value.trim();if(!word)return;
+ btn.disabled=true;btn.textContent='Searching…';status.className='status';status.textContent='Searching dictionary data…';results.classList.add('hidden');results.innerHTML='';
+ const base='https://api.wiktapi.dev/v1/en/word/'+encodeURIComponent(word);
+ const apiUrl=base+'?lang=de';
+ try{
+ const controller=new AbortController(), timer=setTimeout(()=>controller.abort(),18000);
+ const response=await fetch(apiUrl,{headers:{Accept:'application/json'},signal:controller.signal});clearTimeout(timer);
+ if(!response.ok)throw new Error(response.status===404?'No matching entry found (HTTP 404).':'Dictionary service returned HTTP '+response.status+'.');
+ const data=await response.json();
+ const entries=Array.isArray(data.entries)?data.entries.filter(e=>(e.lang_code||'').toLowerCase()==='de'):[];
+ let pronData=null;
+ try{const pr=await fetch(base+'/pronunciations?lang=de',{headers:{Accept:'application/json'}});if(pr.ok)pronData=await pr.json()}catch{}
+ status.textContent=entries.length?'Lookup complete. '+entries.length+' German entr'+(entries.length===1?'y':'ies')+' found.':'The API responded, but no German entry was found for this spelling.';
+ if(!entries.length)status.className='status error';
+ render(word,entries,apiUrl,pronData);
+ }catch(err){
+ status.className='status error';status.textContent=err.name==='AbortError'?'The lookup timed out. Please try again.':err.message==='Failed to fetch'?'Could not connect to the dictionary service. Check internet access or try again later.':err.message;
+ results.classList.remove('hidden');results.innerHTML='<article class="card"><h2>Live lookup unavailable</h2><p>The app could not retrieve current dictionary data, so it will not invent IPA or audio.</p><p><a href="'+esc('https://en.wiktionary.org/wiki/'+encodeURIComponent(word))+'" target="_blank" rel="noopener noreferrer">Open Wiktionary directly</a></p><p><a href="'+esc(apiUrl)+'" target="_blank" rel="noopener noreferrer">Try dictionary API</a></p></article>';
+ }finally{btn.disabled=false;btn.textContent='Look up'}
+});
+</script>
+</body></html>
