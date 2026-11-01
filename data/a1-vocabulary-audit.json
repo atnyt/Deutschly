@@ -33,7 +33,7 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 48,
+      "source_checked": 53,
       "needs_verification": 1
     }
   },
@@ -285,6 +285,77 @@
         "https://www.duden.de/rechtschreibung/Meer",
         "https://www.duden.de/rechtschreibung/Schiff",
         "https://www.duden.de/rechtschreibung/Zug_Kolonne"
+      ]
+    },
+    {
+      "batch": 5,
+      "source": "Duden Online",
+      "checked_on": "2026-11-02",
+      "verified_fields": [
+        "article",
+        "plural",
+        "contextual_bengali_meaning"
+      ],
+      "checked_headwords": [
+        "Brötchen",
+        "Butter",
+        "Ei",
+        "Gemüse",
+        "Brot"
+      ],
+      "results": [
+        {
+          "headword": "Brötchen",
+          "article": "das",
+          "plural": "die Brötchen",
+          "bengali_meaning": "পাউরুটির ছোট রুটি; ব্রেড রোল",
+          "source": "https://www.duden.de/rechtschreibung/Broetchen",
+          "source_note": "Duden gives das Brötchen and unchanged plural die Brötchen; definition is a small round or elongated bread roll."
+        },
+        {
+          "headword": "Butter",
+          "article": "die",
+          "plural": "ohne Plural (সাধারণ অর্থে)",
+          "bengali_meaning": "মাখন",
+          "source": "https://www.duden.de/rechtschreibung/Butter",
+          "source_note": "Duden gives die Butter and explicitly marks the ordinary food sense as ohne Plural; treat as a mass noun, not a missing plural."
+        },
+        {
+          "headword": "Ei",
+          "article": "das",
+          "plural": "die Eier",
+          "bengali_meaning": "ডিম",
+          "source": "https://www.duden.de/rechtschreibung/Ei",
+          "source_note": "Duden gives das Ei and plural die Eier for the egg sense; other colloquial senses differ."
+        },
+        {
+          "headword": "Gemüse",
+          "article": "das",
+          "plural": "die Gemüse (বিশেষ প্রসঙ্গে)",
+          "bengali_meaning": "শাকসবজি; সবজি",
+          "source": "https://www.duden.de/rechtschreibung/Gemuese",
+          "source_note": "Duden gives das Gemüse and plural die Gemüse. In everyday collective use it is commonly treated as a mass/collective noun; plural refers to kinds or varieties."
+        },
+        {
+          "headword": "Brot",
+          "article": "das",
+          "plural": "die Brote",
+          "bengali_meaning": "রুটি; পাউরুটি",
+          "source": "https://www.duden.de/rechtschreibung/Brot",
+          "source_note": "Duden gives das Brot and plural die Brote; the ordinary food sense may be used without plural, while Brote counts loaves/types."
+        }
+      ],
+      "notes": [
+        "এই ব্যাচে পাঁচটি খাদ্য-সম্পর্কিত শব্দের Article, Plural এবং অর্থ Duden দিয়ে যাচাই করা হয়েছে।",
+        "Butter সাধারণ অর্থে বহুবচনহীন—এটি অনুপস্থিত plural নয়।",
+        "Gemüse এবং Brot-এর plural অভিধানে আছে, কিন্তু দৈনন্দিন সামষ্টিক/খাদ্য অর্থে অনেক সময় একবচন mass noun হিসেবে ব্যবহৃত হয়।"
+      ],
+      "sources": [
+        "https://www.duden.de/rechtschreibung/Broetchen",
+        "https://www.duden.de/rechtschreibung/Butter",
+        "https://www.duden.de/rechtschreibung/Ei",
+        "https://www.duden.de/rechtschreibung/Gemuese",
+        "https://www.duden.de/rechtschreibung/Brot"
       ]
     }
   ]
