@@ -4,7 +4,7 @@
   "source_pdf": "A1 Vocabulary list_Deutsch mit Shakil(3).pdf",
   "source_pdf_pages": 40,
   "source_rows": 1715,
-  "unique_normalized_headwords": 1705,
+  "unique_normalized_headwords": 1706,
   "status": "second_stage_dictionary_verification_in_progress",
   "checks": {
     "json_valid": true,
@@ -33,7 +33,7 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 80,
+      "source_checked": 81,
       "needs_verification": 1
     }
   },
@@ -727,5 +727,17 @@
         "https://www.duden.de/rechtschreibung/Ausflug"
       ]
     }
-  ]
+  ],
+  "missing_source_entries_recovered": [
+    {
+      "headword": "Aussagesatz",
+      "source_pdf_page": 2,
+      "chapter": "1",
+      "section": "4b",
+      "recovered_on": "2026-11-02",
+      "dictionary_source": "https://www.duden.de/rechtschreibung/Aussagesatz",
+      "note": "Found in supplied PDF but absent from main JSON; added with der, die Aussagesätze, Bengali meaning and source example."
+    }
+  ],
+  "reconciliation_note": "Aussagesatz was identified on PDF page 2 but absent from the 1,705-record main JSON. It has been restored; main record count and unique normalized headword count are now 1,706. A full 40-page reconciliation is still required before claiming all source entries are represented."
 }
