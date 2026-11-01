@@ -41,9 +41,9 @@ button{height:48px;border:1px solid rgba(255,255,255,.18);border-radius:14px;bac
   fetch('./data/grammar-terms.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{records:[]}),
   fetch('./data/compound-analysis.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{records:[]})
  ]).then(([config,vocab,grammar,compounds])=>{
-   endpoint=typeof config.endpoint==='string'?config.endpoint.trim():'';
+   endpoint=typeof config.endpoint==='string'&&/^https:\/\//i.test(config.endpoint.trim())?config.endpoint.trim():'';
    window.__deutschlyLocalData={vocab,grammar,compounds};
-   if(endpoint){connection.className='status';connection.textContent='AI endpoint পাওয়া গেছে। প্রশ্ন পাঠাতে পারো।';send.disabled=false;}
+   if(endpoint){connection.className='status';connection.textContent='নিরাপদ HTTPS AI endpoint পাওয়া গেছে। প্রশ্ন পাঠাতে পারো।';send.disabled=false;}
    else{connection.className='status warn';connection.textContent='AI এখনো সংযুক্ত নয়। নিরাপদ backend template তৈরি আছে; Cloudflare Worker deploy করে data/ai-config.json-এ endpoint বসাতে হবে।';}
  }).catch(()=>{connection.textContent='Configuration load করা যায়নি। পৃষ্ঠাটি refresh করো।';});
  function localContext(question){
