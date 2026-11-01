@@ -33,7 +33,7 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 59,
+      "source_checked": 68,
       "needs_verification": 1
     }
   },
@@ -437,6 +437,118 @@
         "https://www.duden.de/rechtschreibung/Sahne",
         "https://www.duden.de/rechtschreibung/Salz",
         "https://www.duden.de/rechtschreibung/Wurst"
+      ]
+    },
+    {
+      "batch": 7,
+      "source": "Duden Online",
+      "checked_on": "2026-11-02",
+      "verified_fields": [
+        "article",
+        "plural",
+        "contextual_bengali_meaning"
+      ],
+      "checked_headwords": [
+        "Station",
+        "Adresse",
+        "Angabe",
+        "Journalist",
+        "Ingenieur",
+        "E-Mail",
+        "Formular",
+        "Hausnummer",
+        "Schule"
+      ],
+      "results": [
+        {
+          "headword": "Station",
+          "article": "die",
+          "plural": "die Stationen",
+          "bengali_meaning": "স্টেশন; যাত্রাবিরতির স্থান",
+          "source": "https://www.duden.de/rechtschreibung/Station",
+          "source_note": "Duden gives die Station and plural die Stationen; the PDF context is a station/stop."
+        },
+        {
+          "headword": "Adresse",
+          "article": "die",
+          "plural": "die Adressen",
+          "bengali_meaning": "ঠিকানা",
+          "source": "https://www.duden.de/rechtschreibung/Adresse",
+          "source_note": "Duden gives die Adresse and plural die Adressen; relevant meaning is a person's name and residential/mailing address."
+        },
+        {
+          "headword": "Angabe",
+          "article": "die",
+          "plural": "die Angaben",
+          "bengali_meaning": "তথ্য; বিবরণ; প্রদত্ত তথ্য",
+          "source": "https://www.duden.de/rechtschreibung/Angabe",
+          "source_note": "Duden gives die Angabe and plural die Angaben for information/statement; a separate colloquial boast sense is marked without plural."
+        },
+        {
+          "headword": "Journalist",
+          "article": "der",
+          "plural": "die Journalisten",
+          "bengali_meaning": "সাংবাদিক (পুরুষবাচক রূপ)",
+          "source": "https://www.duden.de/rechtschreibung/Journalist",
+          "source_note": "Duden gives der Journalist and plural die Journalisten; it is a masculine person designation. Feminine form: die Journalistin."
+        },
+        {
+          "headword": "Ingenieur",
+          "article": "der",
+          "plural": "die Ingenieure",
+          "bengali_meaning": "প্রকৌশলী (পুরুষবাচক রূপ)",
+          "source": "https://www.duden.de/rechtschreibung/Ingenieur",
+          "source_note": "Duden gives der Ingenieur and plural die Ingenieure; definition is a technically trained professional. Feminine form: die Ingenieurin."
+        },
+        {
+          "headword": "E-Mail",
+          "article": "die বা das",
+          "plural": "die E-Mails",
+          "bengali_meaning": "ই-মেইল; ইলেকট্রনিক বার্তা",
+          "source": "https://www.duden.de/rechtschreibung/E_Mail",
+          "source_note": "Duden accepts feminine die E-Mail and also neuter das E-Mail (especially southern Germany, Austria, Switzerland); plural is E-Mails for both."
+        },
+        {
+          "headword": "Formular",
+          "article": "das",
+          "plural": "die Formulare",
+          "bengali_meaning": "ফরম; নির্দিষ্ট তথ্য পূরণের ছক",
+          "source": "https://www.duden.de/rechtschreibung/Formular",
+          "source_note": "Duden gives das Formular and plural die Formulare; a printed or digital form for entering information."
+        },
+        {
+          "headword": "Hausnummer",
+          "article": "die",
+          "plural": "die Hausnummern",
+          "bengali_meaning": "বাড়ির নম্বর",
+          "source": "https://www.duden.de/rechtschreibung/Hausnummer",
+          "source_note": "Duden gives die Hausnummer and plural die Hausnummern; number used to identify houses in a street."
+        },
+        {
+          "headword": "Schule",
+          "article": "die",
+          "plural": "die Schulen",
+          "bengali_meaning": "বিদ্যালয়; স্কুল",
+          "source": "https://www.duden.de/rechtschreibung/Schule",
+          "source_note": "Duden gives die Schule and plural die Schulen for the institution/building sense. Some other senses (such as schooling/teaching) are explicitly marked without plural."
+        }
+      ],
+      "notes": [
+        "এই ব্যাচে ৯টি শব্দের Article, Plural এবং PDF-এ ব্যবহৃত অর্থ Duden দিয়ে যাচাই করা হয়েছে।",
+        "E-Mail-এর ক্ষেত্রে Duden দুইটি grammatical gender স্বীকার করে: die অথবা das; দুই ক্ষেত্রেই plural die E-Mails।",
+        "Schule ও Angabe-এর কিছু পৃথক অর্থে Duden plural ব্যবহার না থাকার কথা জানায়; এখানে PDF-এর নির্দিষ্ট অর্থ অনুযায়ী plural দেওয়া হয়েছে।",
+        "Journalist ও Ingenieur পেশাবাচক পুরুষবাচক রূপ; সংশ্লিষ্ট স্ত্রীবাচক রূপ আলাদা।"
+      ],
+      "sources": [
+        "https://www.duden.de/rechtschreibung/Station",
+        "https://www.duden.de/rechtschreibung/Adresse",
+        "https://www.duden.de/rechtschreibung/Angabe",
+        "https://www.duden.de/rechtschreibung/Journalist",
+        "https://www.duden.de/rechtschreibung/Ingenieur",
+        "https://www.duden.de/rechtschreibung/E_Mail",
+        "https://www.duden.de/rechtschreibung/Formular",
+        "https://www.duden.de/rechtschreibung/Hausnummer",
+        "https://www.duden.de/rechtschreibung/Schule"
       ]
     }
   ]
