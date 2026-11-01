@@ -33,7 +33,7 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 78,
+      "source_checked": 80,
       "needs_verification": 1
     }
   },
@@ -686,6 +686,45 @@
         "https://www.duden.de/rechtschreibung/Geburtstag",
         "https://www.duden.de/rechtschreibung/Kalender",
         "https://www.duden.de/rechtschreibung/Uhr"
+      ]
+    },
+    {
+      "batch": 10,
+      "source": "Duden Online",
+      "checked_on": "2026-11-02",
+      "verified_fields": [
+        "article",
+        "plural",
+        "contextual_bengali_meaning"
+      ],
+      "checked_headwords": [
+        "Datum",
+        "Ausflug"
+      ],
+      "results": [
+        {
+          "headword": "Datum",
+          "article": "das",
+          "plural": "die Daten",
+          "bengali_meaning": "তারিখ; দিন-তারিখ",
+          "source": "https://www.duden.de/rechtschreibung/Datum",
+          "source_note": "The A1 calendar-date sense is das Datum; plural die Daten. The plural also overlaps with the common information/data sense."
+        },
+        {
+          "headword": "Ausflug",
+          "article": "der",
+          "plural": "die Ausflüge",
+          "bengali_meaning": "ভ্রমণ; আনন্দভ্রমণ; বেড়াতে যাওয়া",
+          "source": "https://www.duden.de/rechtschreibung/Ausflug",
+          "source_note": "Duden gives der Ausflug and plural die Ausflüge; the PDF context is a trip or excursion."
+        }
+      ],
+      "notes": [
+        "দুটি শব্দের Article, Plural ও PDF-এ ব্যবহৃত বাংলা অর্থ অভিধানের সঙ্গে মিলিয়ে সংরক্ষণ করা হয়েছে।"
+      ],
+      "sources": [
+        "https://www.duden.de/rechtschreibung/Datum",
+        "https://www.duden.de/rechtschreibung/Ausflug"
       ]
     }
   ]
