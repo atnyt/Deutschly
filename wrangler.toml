@@ -9,3 +9,8 @@ ENABLE_WEB_SEARCH = "true"
 # Set these in the Cloudflare Worker dashboard, never in this repository:
 # OPENAI_API_KEY = (Secret)
 # OPENAI_MODEL = (Variable, choose a model available to your API project)
+
+[[ratelimits]]
+name = "AI_RATE_LIMITER"
+namespace_id = "1001"
+simple = { limit = 12, period = 60 }
