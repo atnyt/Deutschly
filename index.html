@@ -91,6 +91,8 @@ const input=document.getElementById('word');
 const button=document.getElementById('searchButton');
 const results=document.getElementById('results');
 let activeSearch=0;
+const vocabularyDatabasePromise=fetch('./data/a1-vocabulary.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
+
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function card(url,title,detail,featured=false){return '<a class="card'+(featured?' featured':'')+'" href="'+url+'" target="_blank" rel="noopener noreferrer">'+(featured?'<span class="tag">Best match</span>':'')+'<strong>'+esc(title)+'</strong><span>'+esc(detail)+'</span></a>'}
 function otherSites(word){const q=encodeURIComponent(word);return [card('https://www.duden.de/suchen/dudenonline/'+q,'Duden','German dictionary · Check the entry for an audio icon.'),card('https://de.pons.com/übersetzung/deutsch-englisch/'+q,'PONS','Dictionary · Check the matching German entry.'),card('https://forvo.com/word/'+q+'/#de','Forvo','Native-speaker recordings · Availability depends on the word.')].join('')}
@@ -152,7 +154,7 @@ function hasAudioReference(value,key=''){
  return false;
 }
 function germanSpeechCard(word){return '<section class="speech-card" data-german-speech data-word="'+esc(word)+'"><button type="button" data-speak>শুনুন · de-DE</button><div><p><strong>ডিভাইসের জার্মান কণ্ঠ</strong></p><p class="speech-status" data-speech-status>এটি সিস্টেমের জার্মান TTS; native speaker recording নয়।</p></div></section>'}
-function setupGermanSpeech(root=document){root.querySelectorAll('[data-german-speech]').forEach(card=>{if(card.dataset.ready)return;card.dataset.ready='1';const button=card.querySelector('[data-speak]'),status=card.querySelector('[data-speech-status]'),word=card.dataset.word;button.addEventListener('click',()=>{if(!('speechSynthesis'in window)||!('SpeechSynthesisUtterance'in window)){status.textContent='এই ব্রাউজারে Text-to-Speech সমর্থিত নয়।';return}const voices=window.speechSynthesis.getVoices();const german=voices.filter(v=>/^de(?:-|$)/i.test(v.lang)).sort((a,b)=>(/^de-DE$/i.test(b.lang)?1:0)-(/^de-DE$/i.test(a.lang)?1:0));if(!german.length){status.textContent='ডিভাইসে জার্মান (de) কণ্ঠ পাওয়া যায়নি। ইংরেজি কণ্ঠ ব্যবহার করা হবে না।';return}window.speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(word);utterance.lang='de-DE';utterance.voice=german[0];utterance.rate=.88;utterance.onstart=()=>{status.textContent='জার্মান কণ্ঠ: '+german[0].name+' ('+german[0].lang+')'};utterance.onerror=()=>{status.textContent='জার্মান অডিও চালানো যায়নি।'};window.speechSynthesis.speak(utterance)})})}
+function setupGermanSpeech(root=document){root.querySelectorAll('[data-german-speech]').forEach(card=>{if(card.dataset.ready)return;card.dataset.ready='1';const button=card.querySelector('[data-speak]'),status=card.querySelector('[data-speech-status]'),word=card.dataset.word;button.addEventListener('click',async()=>{if(!('speechSynthesis'in window)||!('SpeechSynthesisUtterance'in window)){status.textContent='এই ব্রাউজারে Text-to-Speech সমর্থিত নয়।';return}const synth=window.speechSynthesis;const pick=()=>synth.getVoices().filter(v=>/^de(?:-|$)/i.test(v.lang)).sort((a,b)=>(/^de-DE$/i.test(b.lang)?1:0)-(/^de-DE$/i.test(a.lang)?1:0))[0]||null;let voice=pick();if(!voice){status.textContent='জার্মান কণ্ঠ খোঁজা হচ্ছে…';voice=await new Promise(resolve=>{let settled=false;const finish=()=>{if(settled)return;const found=pick();if(found){settled=true;synth.removeEventListener('voiceschanged',finish);resolve(found)}};synth.addEventListener('voiceschanged',finish);setTimeout(()=>{if(!settled){settled=true;synth.removeEventListener('voiceschanged',finish);resolve(pick())}},1800)})}if(!voice){status.textContent='ডিভাইসে de-DE কণ্ঠ নেই। জার্মান কণ্ঠ ইনস্টল করো, অথবা native recording ব্যবহার করো; ইংরেজি কণ্ঠ চালানো হবে না।';return}synth.cancel();const utterance=new SpeechSynthesisUtterance(word);utterance.lang=voice.lang||'de-DE';utterance.voice=voice;utterance.rate=.88;utterance.onstart=()=>{status.textContent='জার্মান কণ্ঠ: '+voice.name+' ('+voice.lang+')'};utterance.onerror=()=>{status.textContent='জার্মান TTS অডিও চালানো যায়নি।'};synth.speak(utterance)})})}
 function wiktionaryUrl(word){return 'https://de.wiktionary.org/wiki/'+encodeURIComponent(word.replace(/ /g,'_'))}
 function sourceCards(word){
  const q=encodeURIComponent(word.trim());
@@ -217,14 +219,23 @@ form.addEventListener('submit',async event=>{
  results.classList.remove('hidden');
  results.innerHTML='<div class="loading-state" role="status"><span class="loading-spinner" aria-hidden="true">'+Array.from({length:12},(_,i)=>'<i style="transform:rotate('+(i*30)+'deg);opacity:'+((i+1)/12)+'"></i>').join('')+'</span><span>Searching Wiktionary for a real entry and audio…</span></div>';
  try{
+  const vocabularyDatabase=await vocabularyDatabasePromise;
+  const normalizedWord=word.normalize('NFC').toLocaleLowerCase('de-DE');
+  const pluralRecord=vocabularyDatabase&&Array.isArray(vocabularyDatabase.records)?vocabularyDatabase.records.find(r=>String(r.plural||'').replace(/^die\s+/i,'').normalize('NFC').toLocaleLowerCase('de-DE')===normalizedWord):null;
+  const lemma=pluralRecord?String(pluralRecord.headword):word;
   let page=null;
   try{page=await wiktionaryPage(word)}catch(error){page=null}
+  if((!page||!page.audio.length)&&lemma.toLocaleLowerCase('de-DE')!==word.toLocaleLowerCase('de-DE')){try{page=await wiktionaryPage(lemma)}catch(error){page=null}}
   if(requestId!==activeSearch)return;
   let audioHtml='';
   let status='';
   if(page&&page.audio.length){
    audioHtml=page.audio.map(audioPlayer).join('');
-   status='';
+   status=lemma.toLocaleLowerCase('de-DE')!==word.toLocaleLowerCase('de-DE')?'<p class="status">“'+esc(word)+'” হলো “'+esc(lemma)+'”-এর বহুবচন। এখানে মূল শব্দের native recording দেখানো হচ্ছে; বহুবচনটির আলাদা রেকর্ডিং পাওয়া যায়নি।</p>':'';
+  }else if(pluralRecord&&Array.isArray(pluralRecord.audio_sources)&&pluralRecord.audio_sources.some(a=>a&&a.recording_type==='native_recording'&&a.url)){
+   const source=pluralRecord.audio_sources.find(a=>a&&a.recording_type==='native_recording'&&a.url);
+   audioHtml=audioPlayer(source.url,0);
+   status='<p class="status">“'+esc(word)+'” হলো “'+esc(lemma)+'”-এর বহুবচন। এটি মূল শব্দের native recording; বহুবচনটির আলাদা recording নয়।</p>';
   }else if(page&&page.hasEntry){
    status='<p class="status">Wiktionary-তে পেজ পাওয়া গেছে, কিন্তু স্বয়ংক্রিয়ভাবে শনাক্তযোগ্য উচ্চারণের অডিও পাওয়া যায়নি। নিচের অভিধানগুলোতে শব্দটি পরীক্ষা করো।</p>';
   }else{
