@@ -17667,7 +17667,7 @@
       "number_note": "Pluraletantum; সাধারণ ব্যবহারে একবচন নেই।"
     },
     {
-      "headword": "t-shirt",
+      "headword": "T-Shirt",
       "english_gloss": "T-shirt",
       "bengali_meaning": "টি-শার্ট",
       "bengali_status": "source_checked_draft",
@@ -17675,12 +17675,13 @@
       "example_bn": "টি-শার্টটি সস্তা।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 34",
-      "review_status": "source_checked_page_34_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "das",
-      "plural": "die T-Shirts"
+      "plural": "die T-Shirts",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "geschirr",
+      "headword": "Geschirr",
       "english_gloss": "dishes; crockery; tableware",
       "bengali_meaning": "থালা-বাসন; বাসনপত্র",
       "bengali_status": "source_checked_draft",
@@ -17688,11 +17689,15 @@
       "example_bn": "থালা-বাসন পরিষ্কার।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 37",
-      "review_status": "source_checked_page_37_batch_1",
-      "article": "das"
+      "review_status": "second_stage_review_batch_14",
+      "article": "das",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "grammatical_number": "singular",
+      "number_note": "সামষ্টিক বিশেষ্য; সাধারণত একবচন।",
+      "plural": ""
     },
     {
-      "headword": "handy-akku",
+      "headword": "Handy-Akku",
       "english_gloss": "mobile phone battery",
       "bengali_meaning": "মোবাইল ফোনের ব্যাটারি",
       "bengali_status": "source_checked_draft",
@@ -17700,9 +17705,10 @@
       "example_bn": "আমার মোবাইলের ব্যাটারির চার্জ শেষ।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 39",
-      "review_status": "source_checked_page_39_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Handy-Akkus"
+      "plural": "die Handy-Akkus",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "Telefonnummer",
@@ -17715,7 +17721,8 @@
       "example_bn": "এখানে আমার টেলিফোন নম্বর।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 3",
-      "review_status": "source_checked_page_3_batch_4"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "Punkt",
@@ -17728,7 +17735,8 @@
       "example_bn": "এটি একটি বিন্দু।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 3",
-      "review_status": "source_checked_page_3_batch_4"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "ein bisschen",
@@ -17739,7 +17747,8 @@
       "example_bn": "আমি একটু কথা বলি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 3",
-      "review_status": "source_checked_page_3_batch_4"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "Redemittel",
@@ -17752,7 +17761,8 @@
       "example_bn": "এটি একটি দরকারি বাক্যাংশ।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 3",
-      "review_status": "source_checked_page_3_batch_4"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "sich verabschieden",
@@ -17763,7 +17773,8 @@
       "example_bn": "আমরা বিদায় নিচ্ছি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 3",
-      "review_status": "source_checked_page_3_batch_4"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "gern",
@@ -17774,7 +17785,8 @@
       "example_bn": "আমি শিখতে ভালোবাসি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 3",
-      "review_status": "source_checked_page_3_batch_4"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "Leute",
@@ -17786,7 +17798,11 @@
       "example_bn": "এখানে অনেক লোকজন আছে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 3",
-      "review_status": "source_checked_page_3_batch_4"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "article": "die",
+      "grammatical_number": "plural",
+      "number_note": "Pluraletantum; সাধারণ ব্যবহারে একবচন নেই।"
     },
     {
       "headword": "Freund",
@@ -17799,10 +17815,11 @@
       "example_bn": "এটি আমার বন্ধু।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 3",
-      "review_status": "source_checked_page_3_batch_4"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "wochenende",
+      "headword": "Wochenende",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
       "english_gloss": "weekend",
@@ -17812,7 +17829,8 @@
       "example_de": "Schönes Wochenende!",
       "example_bn": "তোমার সপ্তাহান্ত সুন্দর কাটুক!",
       "bengali_status": "source_checked_draft",
-      "review_status": "source_checked_page_4_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "achten auf",
@@ -17823,10 +17841,11 @@
       "example_de": "Achten Sie auf die Endung.",
       "example_bn": "শব্দের শেষাংশের দিকে মনোযোগ দিন।",
       "source": "Deutsch mit Shakil A1 PDF, page 5",
-      "review_status": "source_checked_page_5_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "verabredung",
+      "headword": "Verabredung",
       "level": "A1",
       "english_gloss": "appointment; arrangement; date",
       "bengali_meaning": "আগে থেকে ঠিক করা সাক্ষাৎ; দেখা করার নির্ধারিত সময়",
@@ -17834,12 +17853,13 @@
       "example_de": "Ich habe eine Verabredung.",
       "example_bn": "আমার একটি নির্ধারিত সাক্ষাৎ আছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 5",
-      "review_status": "source_checked_page_5_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Verabredungen"
+      "plural": "die Verabredungen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "straße",
+      "headword": "Straße",
       "level": "A1",
       "english_gloss": "street; road",
       "bengali_meaning": "রাস্তা; সড়ক",
@@ -17847,12 +17867,13 @@
       "example_de": "Die Straße ist lang.",
       "example_bn": "রাস্তাটি দীর্ঘ।",
       "source": "Deutsch mit Shakil A1 PDF, page 5",
-      "review_status": "source_checked_page_5_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Straßen"
+      "plural": "die Straßen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "taxifahrer",
+      "headword": "Taxifahrer",
       "level": "A1",
       "english_gloss": "taxi driver (male)",
       "bengali_meaning": "ট্যাক্সিচালক (পুরুষ)",
@@ -17860,12 +17881,13 @@
       "example_de": "Der Taxifahrer wartet.",
       "example_bn": "ট্যাক্সিচালক অপেক্ষা করছেন।",
       "source": "Deutsch mit Shakil A1 PDF, page 6",
-      "review_status": "source_checked_page_6_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Taxifahrer"
+      "plural": "die Taxifahrer",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "taxifahrerin",
+      "headword": "Taxifahrerin",
       "level": "A1",
       "english_gloss": "taxi driver (female)",
       "bengali_meaning": "ট্যাক্সিচালক (নারী)",
@@ -17873,12 +17895,13 @@
       "example_de": "Sie ist Taxifahrerin.",
       "example_bn": "তিনি একজন নারী ট্যাক্সিচালক।",
       "source": "Deutsch mit Shakil A1 PDF, page 6",
-      "review_status": "source_checked_page_6_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Taxifahrerinnen"
+      "plural": "die Taxifahrerinnen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "markieren",
+      "headword": "Markieren",
       "level": "A1",
       "english_gloss": "to mark; to highlight",
       "bengali_meaning": "চিহ্নিত করা; দাগ দিয়ে দেখানো",
@@ -17886,10 +17909,11 @@
       "example_de": "Bitte markieren Sie das Wort.",
       "example_bn": "অনুগ্রহ করে শব্দটি চিহ্নিত করুন।",
       "source": "Deutsch mit Shakil A1 PDF, page 6",
-      "review_status": "source_checked_page_6_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "lernwortschatz",
+      "headword": "Lernwortschatz",
       "level": "A1",
       "english_gloss": "learning vocabulary; vocabulary for learning",
       "bengali_meaning": "শেখার শব্দভাণ্ডার",
@@ -17897,12 +17921,15 @@
       "example_de": "Das ist mein Lernwortschatz.",
       "example_bn": "এটি আমার শেখার শব্দভাণ্ডার।",
       "source": "Deutsch mit Shakil A1 PDF, page 6",
-      "review_status": "source_checked_page_6_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Lernwortschätze"
+      "plural": "",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "grammatical_number": "singular",
+      "number_note": "এই অর্থে সাধারণত একবচন; Lernwortschätze বিরল/বিশেষায়িত।"
     },
     {
-      "headword": "von … bis",
+      "headword": "Von … bis",
       "level": "A1",
       "english_gloss": "from … to; from … until",
       "bengali_meaning": "থেকে … পর্যন্ত",
@@ -17910,10 +17937,11 @@
       "example_de": "Von Montag bis Freitag.",
       "example_bn": "সোমবার থেকে শুক্রবার পর্যন্ত।",
       "source": "Deutsch mit Shakil A1 PDF, page 6",
-      "review_status": "source_checked_page_6_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "friseur",
+      "headword": "Friseur",
       "level": "A1",
       "english_gloss": "hairdresser (male); barber",
       "bengali_meaning": "নরসুন্দর; চুল কাটার কারিগর (পুরুষ)",
@@ -17921,12 +17949,13 @@
       "example_de": "Ich gehe zum Friseur.",
       "example_bn": "আমি নরসুন্দরের কাছে যাচ্ছি।",
       "source": "Deutsch mit Shakil A1 PDF, page 7",
-      "review_status": "source_checked_page_7_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Friseure"
+      "plural": "die Friseure",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "friseurin",
+      "headword": "Friseurin",
       "level": "A1",
       "english_gloss": "hairdresser (female)",
       "bengali_meaning": "নরসুন্দর; চুল কাটার কারিগর (নারী)",
@@ -17934,12 +17963,13 @@
       "example_de": "Sie ist Friseurin.",
       "example_bn": "তিনি একজন নারী নরসুন্দর।",
       "source": "Deutsch mit Shakil A1 PDF, page 7",
-      "review_status": "source_checked_page_7_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Friseurinnen"
+      "plural": "die Friseurinnen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "informatiker",
+      "headword": "Informatiker",
       "level": "A1",
       "english_gloss": "IT specialist; computer scientist (male)",
       "bengali_meaning": "তথ্যপ্রযুক্তি বিশেষজ্ঞ; কম্পিউটারবিজ্ঞানী (পুরুষ)",
@@ -17947,12 +17977,13 @@
       "example_de": "Er arbeitet als Informatiker.",
       "example_bn": "তিনি তথ্যপ্রযুক্তি বিশেষজ্ঞ হিসেবে কাজ করেন।",
       "source": "Deutsch mit Shakil A1 PDF, page 7",
-      "review_status": "source_checked_page_7_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Informatiker"
+      "plural": "die Informatiker",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "elektriker",
+      "headword": "Elektriker",
       "level": "A1",
       "english_gloss": "electrician (male)",
       "bengali_meaning": "বিদ্যুৎকর্মী; ইলেকট্রিশিয়ান (পুরুষ)",
@@ -17960,12 +17991,13 @@
       "example_de": "Er ist Elektriker.",
       "example_bn": "তিনি একজন ইলেকট্রিশিয়ান।",
       "source": "Deutsch mit Shakil A1 PDF, page 7",
-      "review_status": "source_checked_page_7_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Elektriker"
+      "plural": "die Elektriker",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "polizist",
+      "headword": "Polizist",
       "level": "A1",
       "english_gloss": "police officer (male)",
       "bengali_meaning": "পুলিশ কর্মকর্তা (পুরুষ)",
@@ -17973,12 +18005,13 @@
       "example_de": "Er ist Polizist.",
       "example_bn": "তিনি একজন পুলিশ কর্মকর্তা।",
       "source": "Deutsch mit Shakil A1 PDF, page 7",
-      "review_status": "source_checked_page_7_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Polizisten"
+      "plural": "die Polizisten",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "familienname",
+      "headword": "Familienname",
       "level": "A1",
       "english_gloss": "family name; surname",
       "bengali_meaning": "পারিবারিক নাম; পদবি",
@@ -17986,12 +18019,13 @@
       "example_de": "Mein Familienname ist Khan.",
       "example_bn": "আমার পদবি খান।",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "source_checked_page_8_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Familiennamen"
+      "plural": "die Familiennamen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "zusammenpassen",
+      "headword": "Zusammenpassen",
       "level": "A1",
       "english_gloss": "to match; to go together",
       "bengali_meaning": "একে অপরের সঙ্গে মানানসই হওয়া; মিল থাকা",
@@ -17999,7 +18033,8 @@
       "example_de": "Die Farben passen zusammen.",
       "example_bn": "রংগুলো একে অপরের সঙ্গে মানানসই।",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "source_checked_page_8_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "männlich",
@@ -18010,10 +18045,11 @@
       "example_de": "Bitte kreuzen Sie „männlich“ an.",
       "example_bn": "অনুগ্রহ করে „পুরুষ“ ঘরে টিক দিন।",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "source_checked_page_8_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "schule",
+      "headword": "Schule",
       "level": "A1",
       "english_gloss": "school",
       "bengali_meaning": "বিদ্যালয়; স্কুল",
@@ -18021,12 +18057,13 @@
       "example_de": "Die Schule ist aus.",
       "example_bn": "স্কুল ছুটি হয়েছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "source_checked_page_8_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Schulen"
+      "plural": "die Schulen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "stadttour",
+      "headword": "Stadttour",
       "level": "A1",
       "english_gloss": "city tour",
       "bengali_meaning": "শহর ভ্রমণ; শহর ঘুরে দেখা",
@@ -18034,12 +18071,13 @@
       "example_de": "Wir machen eine Stadttour.",
       "example_bn": "আমরা শহর ঘুরে দেখছি।",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "source_checked_page_8_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Stadttouren"
+      "plural": "die Stadttouren",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "bis (+ dat.)",
+      "headword": "Bis (+ dat.)",
       "level": "A1",
       "english_gloss": "until; up to",
       "bengali_meaning": "পর্যন্ত; অবধি (এখানে Dativ ব্যবহৃত হয়)",
@@ -18047,20 +18085,22 @@
       "example_de": "Bis demnächst!",
       "example_bn": "আবার শিগগিরই দেখা হবে!",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "source_checked_page_8_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "kunst",
+      "headword": "Kunst",
       "level": "A1",
       "english_gloss": "art",
-      "bengali_meaning": "শিল্পকলা",
+      "bengali_meaning": "শিল্পকলা; চারুকলা",
       "bengali_status": "source_checked_draft",
       "example_de": "Das ist moderne Kunst.",
       "example_bn": "এটি আধুনিক শিল্পকলা।",
       "source": "Deutsch mit Shakil A1 PDF, page 39",
-      "review_status": "source_checked_page_39_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Künste"
+      "plural": "die Künste",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "auf (+ dat.)",
@@ -18071,10 +18111,11 @@
       "example_de": "Das Buch liegt auf dem Tisch.",
       "example_bn": "বইটি টেবিলের ওপর রাখা আছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "source_checked_page_8_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "bis zu",
+      "headword": "Bis zu",
       "level": "A1",
       "english_gloss": "up to; as far as",
       "bengali_meaning": "পর্যন্ত; সর্বোচ্চ",
@@ -18082,10 +18123,11 @@
       "example_de": "Bis zu 100 Leute kommen.",
       "example_bn": "সর্বোচ্চ ১০০ জন মানুষ আসবেন।",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "source_checked_page_8_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "nach (+ dat.)",
+      "headword": "Nach (+ dat.)",
       "level": "A1",
       "english_gloss": "to; towards (with dative for destinations)",
       "bengali_meaning": "দিকে; অভিমুখে (এখানে Dativ)",
@@ -18093,10 +18135,11 @@
       "example_de": "Ich fahre nach Berlin.",
       "example_bn": "আমি বার্লিনে যাচ্ছি।",
       "source": "Deutsch mit Shakil A1 PDF, page 9",
-      "review_status": "source_checked_page_9_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "sehen",
+      "headword": "Sehen",
       "level": "A1",
       "english_gloss": "to see; to watch",
       "bengali_meaning": "দেখা",
@@ -18104,10 +18147,11 @@
       "example_de": "Er sieht den Film.",
       "example_bn": "সে চলচ্চিত্রটি দেখছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 9",
-      "review_status": "source_checked_page_9_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "über (+ akk.)",
+      "headword": "Über (+ akk.)",
       "level": "A1",
       "english_gloss": "over; across; about",
       "bengali_meaning": "ওপর দিয়ে; অতিক্রম করে; সম্পর্কে (এখানে Akkusativ)",
@@ -18115,10 +18159,11 @@
       "example_de": "Wir gehen über die Brücke.",
       "example_bn": "আমরা সেতুর ওপর দিয়ে যাচ্ছি।",
       "source": "Deutsch mit Shakil A1 PDF, page 9",
-      "review_status": "source_checked_page_9_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "grüezi",
+      "headword": "Grüezi",
       "level": "A1",
       "english_gloss": "hello (Swiss German greeting)",
       "bengali_meaning": "সুইস জার্মানিতে ব্যবহৃত অভিবাদন: নমস্কার/হ্যালো",
@@ -18126,18 +18171,20 @@
       "example_de": "Grüezi! Wie geht es?",
       "example_bn": "হ্যালো! কেমন আছেন?",
       "source": "Deutsch mit Shakil A1 PDF, page 9",
-      "review_status": "source_checked_page_9_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "moin",
+      "headword": "Moin",
       "level": "A1",
       "english_gloss": "hello; good day (Northern German greeting)",
-      "bengali_meaning": "উত্তর জার্মানির আঞ্চলিক অভিবাদন: হ্যালো/শুভ দিন",
+      "bengali_meaning": "উত্তর জার্মানিতে প্রচলিত অভিবাদন: হ্যালো",
       "bengali_status": "source_checked_draft",
       "example_de": "Moin! Alles gut?",
       "example_bn": "হ্যালো! সব ঠিক আছে?",
       "source": "Deutsch mit Shakil A1 PDF, page 9",
-      "review_status": "source_checked_page_9_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "vor (+ dat.)",
@@ -18148,10 +18195,11 @@
       "example_de": "Das Auto steht vor dem Haus.",
       "example_bn": "গাড়িটি বাড়ির সামনে দাঁড়িয়ে আছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 9",
-      "review_status": "source_checked_page_9_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "negationsartikel",
+      "headword": "Negationsartikel",
       "level": "A1",
       "english_gloss": "negative article/determiner",
       "bengali_meaning": "নেতিবাচক আর্টিকেল/নির্ধারক",
@@ -18159,12 +18207,13 @@
       "example_de": "„Kein“ ist ein Negationsartikel.",
       "example_bn": "„Kein“ একটি নেতিবাচক আর্টিকেল।",
       "source": "Deutsch mit Shakil A1 PDF, page 10",
-      "review_status": "source_checked_page_10_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Negationsartikel"
+      "plural": "die Negationsartikel",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "würfeln",
+      "headword": "Würfeln",
       "level": "A1",
       "english_gloss": "to roll dice",
       "bengali_meaning": "পাশা নিক্ষেপ করা",
@@ -18172,10 +18221,11 @@
       "example_de": "Wir würfeln jetzt.",
       "example_bn": "আমরা এখন পাশা ফেলছি।",
       "source": "Deutsch mit Shakil A1 PDF, page 10",
-      "review_status": "source_checked_page_10_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "ziel",
+      "headword": "Ziel",
       "level": "A1",
       "english_gloss": "goal; destination",
       "bengali_meaning": "লক্ষ্য; গন্তব্য",
@@ -18183,12 +18233,13 @@
       "example_de": "Das Ziel ist nah.",
       "example_bn": "গন্তব্যটি কাছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 10",
-      "review_status": "source_checked_page_10_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "das",
-      "plural": "die Ziele"
+      "plural": "die Ziele",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "deutschsprachig",
+      "headword": "Deutschsprachig",
       "level": "A1",
       "english_gloss": "German-speaking",
       "bengali_meaning": "জার্মানভাষী",
@@ -18196,7 +18247,8 @@
       "example_de": "Das Land ist deutschsprachig.",
       "example_bn": "দেশটি জার্মানভাষী।",
       "source": "Deutsch mit Shakil A1 PDF, page 10",
-      "review_status": "source_checked_page_10_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "diese, dieser",
@@ -18207,10 +18259,11 @@
       "example_de": "Dieser Film ist gut.",
       "example_bn": "এই চলচ্চিত্রটি ভালো।",
       "source": "Deutsch mit Shakil A1 PDF, page 10",
-      "review_status": "source_checked_page_10_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "requiem",
+      "headword": "Requiem",
       "level": "A1",
       "english_gloss": "requiem (musical composition/service)",
       "bengali_meaning": "রেকুইয়েম; মৃত ব্যক্তির স্মরণে ধর্মীয় সংগীত",
@@ -18218,12 +18271,13 @@
       "example_de": "Wir hören ein Requiem.",
       "example_bn": "আমরা একটি রেকুইয়েম শুনছি।",
       "source": "Deutsch mit Shakil A1 PDF, page 10",
-      "review_status": "source_checked_page_10_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "das",
-      "plural": "die Requiems"
+      "plural": "die Requiems",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "sein, seine",
+      "headword": "Sein, seine",
       "level": "A1",
       "english_gloss": "his; its (possessive determiner, inflected forms)",
       "bengali_meaning": "তার; এর (পুরুষবাচক/নপুংসক একবচন অধিকার বোঝাতে)",
@@ -18231,10 +18285,11 @@
       "example_de": "Das ist seine Tasche.",
       "example_bn": "ওটি তার ব্যাগ।",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
-      "review_status": "source_checked_page_11_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "solist",
+      "headword": "Solist",
       "level": "A1",
       "english_gloss": "soloist",
       "bengali_meaning": "একক সংগীতশিল্পী",
@@ -18242,12 +18297,13 @@
       "example_de": "Der Solist singt schön.",
       "example_bn": "একক সংগীতশিল্পীটি সুন্দর গান করেন।",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
-      "review_status": "source_checked_page_11_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Solisten"
+      "plural": "die Solisten",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "jahreszeit",
+      "headword": "Jahreszeit",
       "level": "A1",
       "english_gloss": "season",
       "bengali_meaning": "ঋতু",
@@ -18255,12 +18311,13 @@
       "example_de": "Was ist deine Lieblingsjahreszeit?",
       "example_bn": "তোমার সবচেয়ে প্রিয় ঋতু কোনটি?",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
-      "review_status": "source_checked_page_11_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Jahreszeiten"
+      "plural": "die Jahreszeiten",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "metzgerei",
+      "headword": "Metzgerei",
       "level": "A1",
       "english_gloss": "butcher's shop",
       "bengali_meaning": "মাংসের দোকান; কসাইখানা",
@@ -18268,12 +18325,13 @@
       "example_de": "Das Fleisch ist aus der Metzgerei.",
       "example_bn": "মাংসটি মাংসের দোকান থেকে আনা।",
       "source": "Deutsch mit Shakil A1 PDF, page 12",
-      "review_status": "source_checked_page_12_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Metzgereien"
+      "plural": "die Metzgereien",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "fertig",
+      "headword": "Fertig",
       "level": "A1",
       "english_gloss": "ready; finished; done",
       "bengali_meaning": "প্রস্তুত; শেষ",
@@ -18281,7 +18339,8 @@
       "example_de": "Ich bin fertig.",
       "example_bn": "আমার কাজ শেষ।",
       "source": "Deutsch mit Shakil A1 PDF, page 12",
-      "review_status": "source_checked_page_12_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "planen",
@@ -18292,10 +18351,11 @@
       "example_de": "Wir planen eine Reise.",
       "example_bn": "আমরা একটি ভ্রমণের পরিকল্পনা করছি।",
       "source": "Deutsch mit Shakil A1 PDF, page 12",
-      "review_status": "source_checked_page_12_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "stimmen",
+      "headword": "Stimmen",
       "level": "A1",
       "english_gloss": "to be correct; to be right; to agree",
       "bengali_meaning": "সঠিক হওয়া; ঠিক হওয়া; একমত হওয়া",
@@ -18303,10 +18363,11 @@
       "example_de": "Das stimmt.",
       "example_bn": "এটি ঠিক।",
       "source": "Deutsch mit Shakil A1 PDF, page 12",
-      "review_status": "source_checked_page_12_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "essen",
+      "headword": "Essen",
       "level": "A1",
       "english_gloss": "to eat",
       "bengali_meaning": "খাওয়া",
@@ -18314,10 +18375,11 @@
       "example_de": "Was essen Sie?",
       "example_bn": "আপনি কী খাবেন?",
       "source": "Deutsch mit Shakil A1 PDF, page 13",
-      "review_status": "source_checked_page_13_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "zusammen",
+      "headword": "Zusammen",
       "level": "A1",
       "english_gloss": "together",
       "bengali_meaning": "একসঙ্গে",
@@ -18325,10 +18387,11 @@
       "example_de": "Wir essen zusammen.",
       "example_bn": "আমরা একসঙ্গে খাই।",
       "source": "Deutsch mit Shakil A1 PDF, page 13",
-      "review_status": "source_checked_page_13_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "momentan",
+      "headword": "Momentan",
       "level": "A1",
       "english_gloss": "current; temporary; at the moment",
       "bengali_meaning": "বর্তমান; এই মুহূর্তের; সাময়িক",
@@ -18336,7 +18399,8 @@
       "example_de": "Das ist der momentane Preis.",
       "example_bn": "এটি বর্তমান দাম।",
       "source": "Deutsch mit Shakil A1 PDF, page 13",
-      "review_status": "source_checked_page_13_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "gerne",
@@ -18347,10 +18411,11 @@
       "example_de": "Ich helfe gerne.",
       "example_bn": "আমি আনন্দের সঙ্গে সাহায্য করি।",
       "source": "Deutsch mit Shakil A1 PDF, page 13",
-      "review_status": "source_checked_page_13_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "zum wohl",
+      "headword": "zum Wohl",
       "level": "A1",
       "english_gloss": "to your health; cheers",
       "bengali_meaning": "আপনার সুস্বাস্থ্যের জন্য; চিয়ার্স",
@@ -18358,10 +18423,11 @@
       "example_de": "Zum Wohl!",
       "example_bn": "আপনার সুস্বাস্থ্যের জন্য!",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "döner",
+      "headword": "Döner",
       "level": "A1",
       "english_gloss": "döner kebab",
       "bengali_meaning": "ডোনার কাবাব; তুর্কি ধাঁচের মাংসের খাবার",
@@ -18369,12 +18435,13 @@
       "example_de": "Der Döner schmeckt gut.",
       "example_bn": "ডোনার কাবাবটির স্বাদ ভালো।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Döner"
+      "plural": "die Döner",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "frühstücken",
+      "headword": "Frühstücken",
       "level": "A1",
       "english_gloss": "to have breakfast",
       "bengali_meaning": "সকালের নাশতা করা",
@@ -18382,7 +18449,8 @@
       "example_de": "Wir frühstücken um 8 Uhr.",
       "example_bn": "আমরা সকাল আটটায় নাশতা করি।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "gesund",
@@ -18393,7 +18461,8 @@
       "example_de": "Obst ist gesund.",
       "example_bn": "ফল স্বাস্থ্যকর।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "vormittags",
@@ -18404,7 +18473,8 @@
       "example_de": "Er lernt vormittags.",
       "example_bn": "সে সকালে পড়াশোনা করে।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "erzählen",
@@ -18415,10 +18485,11 @@
       "example_de": "Erzählen Sie bitte.",
       "example_bn": "অনুগ্রহ করে বলুন।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "vormittag",
+      "headword": "Vormittag",
       "level": "A1",
       "english_gloss": "morning; before noon",
       "bengali_meaning": "পূর্বাহ্ণ; সকাল (দুপুরের আগের সময়)",
@@ -18426,12 +18497,13 @@
       "example_de": "Am Vormittag arbeite ich.",
       "example_bn": "সকালে আমি কাজ করি।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Vormittage"
+      "plural": "die Vormittage",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "mindmap",
+      "headword": "Mindmap",
       "level": "A1",
       "english_gloss": "mind map",
       "bengali_meaning": "মাইন্ড ম্যাপ; ধারণার মানচিত্র",
@@ -18439,12 +18511,13 @@
       "example_de": "Wir machen eine Mindmap.",
       "example_bn": "আমরা একটি মাইন্ড ম্যাপ তৈরি করি।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Mindmaps"
+      "plural": "die Mindmaps",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "einfallen",
+      "headword": "Einfallen",
       "level": "A1",
       "english_gloss": "to occur to someone; to come to mind",
       "bengali_meaning": "মনে আসা; মাথায় আসা",
@@ -18452,7 +18525,8 @@
       "example_de": "Mir fällt nichts ein.",
       "example_bn": "আমার কিছুই মনে আসছে না।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "rund um",
@@ -18463,7 +18537,8 @@
       "example_de": "Rund um das Essen.",
       "example_bn": "খাবারকে ঘিরে।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "als",
@@ -18474,10 +18549,11 @@
       "example_de": "Er arbeitet als Koch.",
       "example_bn": "তিনি রাঁধুনি হিসেবে কাজ করেন।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "altstadt",
+      "headword": "Altstadt",
       "level": "A1",
       "english_gloss": "old town; historic centre",
       "bengali_meaning": "পুরোনো শহর; ঐতিহাসিক শহরকেন্দ্র",
@@ -18485,12 +18561,13 @@
       "example_de": "Die Altstadt ist schön.",
       "example_bn": "পুরোনো শহরটি সুন্দর।",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Altstädte"
+      "plural": "die Altstädte",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "arbeitszeit",
+      "headword": "Arbeitszeit",
       "level": "A1",
       "english_gloss": "working hours; work time",
       "bengali_meaning": "কর্মঘণ্টা; কাজের সময়",
@@ -18498,12 +18575,13 @@
       "example_de": "Wie ist Ihre Arbeitszeit?",
       "example_bn": "আপনার কর্মঘণ্টা কেমন?",
       "source": "Deutsch mit Shakil A1 PDF, page 14",
-      "review_status": "source_checked_page_14_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Arbeitszeiten"
+      "plural": "die Arbeitszeiten",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "beantworten",
+      "headword": "Beantworten",
       "level": "A1",
       "english_gloss": "to answer",
       "bengali_meaning": "উত্তর দেওয়া",
@@ -18511,10 +18589,11 @@
       "example_de": "Bitte beantworten Sie das.",
       "example_bn": "অনুগ্রহ করে এটির উত্তর দিন।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "champignon",
+      "headword": "Champignon",
       "level": "A1",
       "english_gloss": "champignon; mushroom",
       "bengali_meaning": "শ্যাম্পিনিয়ন মাশরুম",
@@ -18522,12 +18601,13 @@
       "example_de": "Ich mag Champignons.",
       "example_bn": "আমি শ্যাম্পিনিয়ন মাশরুম পছন্দ করি।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Champignons"
+      "plural": "die Champignons",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "chef",
+      "headword": "Chef",
       "level": "A1",
       "english_gloss": "boss; chef (male)",
       "bengali_meaning": "কর্মকর্তা; বস; প্রধান রাঁধুনি (পুরুষ)",
@@ -18535,12 +18615,13 @@
       "example_de": "Mein Chef ist nett.",
       "example_bn": "আমার বস অমায়িক।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Chefs"
+      "plural": "die Chefs",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "chefin",
+      "headword": "Chefin",
       "level": "A1",
       "english_gloss": "boss; chef (female)",
       "bengali_meaning": "কর্মকর্তা; বস; প্রধান রাঁধুনি (নারী)",
@@ -18548,12 +18629,13 @@
       "example_de": "Die Chefin kommt gleich.",
       "example_bn": "মহিলা বস এখনই আসছেন।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Chefinnen"
+      "plural": "die Chefinnen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "dessert",
+      "headword": "Dessert",
       "level": "A1",
       "english_gloss": "dessert",
       "bengali_meaning": "মিষ্টান্ন; খাবারের পরের মিষ্টি পদ",
@@ -18561,12 +18643,13 @@
       "example_de": "Möchten Sie ein Dessert?",
       "example_bn": "আপনি কি মিষ্টান্ন খাবেন?",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "das",
-      "plural": "die Desserts"
+      "plural": "die Desserts",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "echt",
+      "headword": "Echt",
       "level": "A1",
       "english_gloss": "real; genuine; really",
       "bengali_meaning": "আসল; সত্যিকারের; সত্যিই",
@@ -18574,10 +18657,11 @@
       "example_de": "Das ist echt gut.",
       "example_bn": "এটি সত্যিই ভালো।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "fischgericht",
+      "headword": "Fischgericht",
       "level": "A1",
       "english_gloss": "fish dish",
       "bengali_meaning": "মাছের পদ",
@@ -18585,12 +18669,13 @@
       "example_de": "Das Fischgericht ist neu.",
       "example_bn": "মাছের পদটি নতুন।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "das",
-      "plural": "die Fischgerichte"
+      "plural": "die Fischgerichte",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "frisch",
+      "headword": "Frisch",
       "level": "A1",
       "english_gloss": "fresh",
       "bengali_meaning": "তাজা",
@@ -18598,10 +18683,11 @@
       "example_de": "Das Gemüse ist frisch.",
       "example_bn": "সবজিটি তাজা।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "gericht",
+      "headword": "Gericht",
       "level": "A1",
       "english_gloss": "dish; meal; court (context-dependent)",
       "bengali_meaning": "খাবারের পদ; আদালত (প্রসঙ্গভেদে)",
@@ -18609,12 +18695,13 @@
       "example_de": "Das Gericht schmeckt gut.",
       "example_bn": "খাবারের পদটির স্বাদ ভালো।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "das",
-      "plural": "die Gerichte"
+      "plural": "die Gerichte",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "helfen",
+      "headword": "Helfen",
       "level": "A1",
       "english_gloss": "to help",
       "bengali_meaning": "সাহায্য করা",
@@ -18622,10 +18709,11 @@
       "example_de": "Ich helfe dir.",
       "example_bn": "আমি তোমাকে সাহায্য করি।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "klein",
+      "headword": "Klein",
       "level": "A1",
       "english_gloss": "small; little",
       "bengali_meaning": "ছোট; ক্ষুদ্র",
@@ -18633,7 +18721,8 @@
       "example_de": "Das Zimmer ist klein.",
       "example_bn": "ঘরটি ছোট।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "kreativ",
@@ -18644,7 +18733,8 @@
       "example_de": "Er ist sehr kreativ.",
       "example_bn": "সে খুব সৃজনশীল।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "länger",
@@ -18655,7 +18745,8 @@
       "example_de": "Ich bleibe länger.",
       "example_bn": "আমি আরও কিছুক্ষণ থাকব।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "natürlich",
@@ -18666,7 +18757,8 @@
       "example_de": "Ja, natürlich!",
       "example_bn": "হ্যাঁ, অবশ্যই!",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "nett",
@@ -18677,7 +18769,8 @@
       "example_de": "Meine Nachbarn sind nett.",
       "example_bn": "আমার প্রতিবেশীরা অমায়িক।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "normalerweise",
@@ -18688,7 +18781,8 @@
       "example_de": "Ich esse normalerweise Obst.",
       "example_bn": "আমি সাধারণত ফল খাই।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "probieren",
@@ -18699,7 +18793,8 @@
       "example_de": "Möchten Sie probieren?",
       "example_bn": "আপনি কি চেখে দেখতে চান?",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "schälen",
@@ -18710,7 +18805,8 @@
       "example_de": "Ich schäle die Kartoffel.",
       "example_bn": "আমি আলুর খোসা ছাড়াই।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "schneiden",
@@ -18721,7 +18817,8 @@
       "example_de": "Er schneidet das Brot.",
       "example_bn": "সে রুটি কাটে।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "seit (+ dat.)",
@@ -18732,10 +18829,11 @@
       "example_de": "Ich lerne seit einem Jahr.",
       "example_bn": "আমি এক বছর ধরে শিখছি।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "spaß",
+      "headword": "Spaß",
       "level": "A1",
       "english_gloss": "fun; enjoyment",
       "bengali_meaning": "মজা; আনন্দ",
@@ -18743,8 +18841,12 @@
       "example_de": "Deutsch macht Spaß.",
       "example_bn": "জার্মান শেখা আনন্দদায়ক।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1",
-      "article": "der"
+      "review_status": "second_stage_review_batch_14",
+      "article": "der",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "grammatical_number": "singular",
+      "number_note": "'মজা/আনন্দ' অর্থে সাধারণত একবচন; Späße অন্য অর্থে 'কৌতুক/দুষ্টুমি'।",
+      "plural": ""
     },
     {
       "headword": "stressig",
@@ -18755,10 +18857,11 @@
       "example_de": "Die Arbeit ist stressig.",
       "example_bn": "কাজটি চাপপূর্ণ।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "team",
+      "headword": "Team",
       "level": "A1",
       "english_gloss": "team",
       "bengali_meaning": "দল",
@@ -18766,12 +18869,13 @@
       "example_de": "Unser Team gewinnt.",
       "example_bn": "আমাদের দল জিতছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "das",
-      "plural": "die Teams"
+      "plural": "die Teams",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "waschen",
+      "headword": "Waschen",
       "level": "A1",
       "english_gloss": "to wash",
       "bengali_meaning": "ধোয়া",
@@ -18779,10 +18883,11 @@
       "example_de": "Ich wasche meine Hände.",
       "example_bn": "আমি আমার হাত ধুই।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "wichtig",
+      "headword": "Wichtig",
       "level": "A1",
       "english_gloss": "important",
       "bengali_meaning": "গুরুত্বপূর্ণ",
@@ -18790,7 +18895,8 @@
       "example_de": "Wasser ist wichtig.",
       "example_bn": "পানি গুরুত্বপূর্ণ।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "zubereiten",
@@ -18801,7 +18907,8 @@
       "example_de": "Wir bereiten das Essen zu.",
       "example_bn": "আমরা খাবার প্রস্তুত করছি।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "zurück",
@@ -18812,10 +18919,11 @@
       "example_de": "Ich gehe zurück.",
       "example_bn": "আমি ফিরে যাচ্ছি।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "zwiebel",
+      "headword": "Zwiebel",
       "level": "A1",
       "english_gloss": "onion",
       "bengali_meaning": "পেঁয়াজ",
@@ -18823,12 +18931,13 @@
       "example_de": "Die Zwiebel ist scharf.",
       "example_bn": "পেঁয়াজটি ঝাঁঝালো।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Zwiebeln"
+      "plural": "die Zwiebeln",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "führen",
+      "headword": "Führen",
       "level": "A1",
       "english_gloss": "to lead; to conduct; to manage",
       "bengali_meaning": "নেতৃত্ব দেওয়া; পরিচালনা করা",
@@ -18836,7 +18945,8 @@
       "example_de": "Sie führen ein Interview.",
       "example_bn": "তারা একটি সাক্ষাৎকার পরিচালনা করছেন।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "duschen",
@@ -18847,10 +18957,11 @@
       "example_de": "Ich dusche morgens.",
       "example_bn": "আমি সকালে গোসল করি।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "mensa",
+      "headword": "Mensa",
       "level": "A1",
       "english_gloss": "university canteen; cafeteria",
       "bengali_meaning": "বিশ্ববিদ্যালয়ের ক্যান্টিন",
@@ -18858,12 +18969,13 @@
       "example_de": "Wir essen in der Mensa.",
       "example_bn": "আমরা বিশ্ববিদ্যালয়ের ক্যান্টিনে খাই।",
       "source": "Deutsch mit Shakil A1 PDF, page 15",
-      "review_status": "source_checked_page_15_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Mensen"
+      "plural": "die Mensen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "viertel",
+      "headword": "Viertel",
       "level": "A1",
       "english_gloss": "quarter; quarter of an hour",
       "bengali_meaning": "এক-চতুর্থাংশ; ১৫ মিনিট",
@@ -18871,12 +18983,13 @@
       "example_de": "Es ist Viertel nach eins.",
       "example_bn": "এখন সোয়া একটা।",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "source_checked_page_16_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "das",
-      "plural": "die Viertel"
+      "plural": "die Viertel",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "musikschule",
+      "headword": "Musikschule",
       "level": "A1",
       "english_gloss": "music school",
       "bengali_meaning": "সংগীত বিদ্যালয়",
@@ -18884,9 +18997,10 @@
       "example_de": "Er geht in die Musikschule.",
       "example_bn": "সে সংগীত বিদ্যালয়ে যায়।",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "source_checked_page_16_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Musikschulen"
+      "plural": "die Musikschulen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "telefonieren",
@@ -18897,10 +19011,11 @@
       "example_de": "Ich telefoniere mit Mama.",
       "example_bn": "আমি মায়ের সঙ্গে ফোনে কথা বলি।",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "source_checked_page_16_batch_1"
+      "review_status": "second_stage_review_batch_14",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "trompetenunterricht",
+      "headword": "Trompetenunterricht",
       "level": "A1",
       "english_gloss": "trumpet lessons",
       "bengali_meaning": "ট্রাম্পেট শেখার পাঠ",
@@ -18908,11 +19023,15 @@
       "example_de": "Heute ist Trompetenunterricht.",
       "example_bn": "আজ ট্রাম্পেট শেখার ক্লাস আছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "source_checked_page_16_batch_1",
-      "article": "der"
+      "review_status": "second_stage_review_batch_14",
+      "article": "der",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "grammatical_number": "singular",
+      "number_note": "শিক্ষা/পাঠ বোঝাতে সাধারণত একবচন।",
+      "plural": ""
     },
     {
-      "headword": "possessivartikel",
+      "headword": "Possessivartikel",
       "level": "A1",
       "english_gloss": "possessive determiner/article",
       "bengali_meaning": "অধিকারসূচক নির্ধারক/আর্টিকেল",
@@ -18920,12 +19039,13 @@
       "example_de": "Das ist ein Possessivartikel.",
       "example_bn": "এটি একটি অধিকারসূচক আর্টিকেল।",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "source_checked_page_16_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Possessivartikel"
+      "plural": "die Possessivartikel",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "techniker",
+      "headword": "Techniker",
       "level": "A1",
       "english_gloss": "technician (male)",
       "bengali_meaning": "প্রযুক্তিবিদ; টেকনিশিয়ান (পুরুষ)",
@@ -18933,9 +19053,10 @@
       "example_de": "Er arbeitet als Techniker.",
       "example_bn": "তিনি টেকনিশিয়ান হিসেবে কাজ করেন।",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "source_checked_page_16_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Techniker"
+      "plural": "die Techniker",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "technikerin",
@@ -18946,12 +19067,13 @@
       "example_de": "Sie ist eine Technikerin.",
       "example_bn": "তিনি একজন নারী টেকনিশিয়ান।",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "source_checked_page_16_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Technikerinnen"
+      "plural": "die Technikerinnen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
-      "headword": "großeltern",
+      "headword": "Großeltern",
       "level": "A1",
       "english_gloss": "grandparents",
       "bengali_meaning": "দাদা-দাদি; নানা-নানি",
@@ -18959,12 +19081,15 @@
       "example_de": "Meine Großeltern sind alt.",
       "example_bn": "আমার দাদা-দাদি/নানা-নানি বয়স্ক।",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "source_checked_page_16_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "die",
-      "plural": "die Großeltern"
+      "plural": "die Großeltern",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "grammatical_number": "plural",
+      "number_note": "Pluraletantum; একবচন হিসেবে Großmutter/Großvater ব্যবহৃত হয়।"
     },
     {
-      "headword": "opa",
+      "headword": "Opa",
       "level": "A1",
       "english_gloss": "grandpa; grandfather (affectionate)",
       "bengali_meaning": "দাদু; নানা (স্নেহের সম্বোধন)",
@@ -18972,9 +19097,10 @@
       "example_de": "Mein Opa ist nett.",
       "example_bn": "আমার দাদু/নানা অমায়িক।",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "source_checked_page_16_batch_1",
+      "review_status": "second_stage_review_batch_14",
       "article": "der",
-      "plural": "die Opas"
+      "plural": "die Opas",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
     },
     {
       "headword": "regel",
@@ -22513,6 +22639,13 @@
       "records_updated": 110,
       "meaning_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42",
       "note": "Reviewed retail, travel, transport and weather vocabulary. Corrected noun capitalization, plural-only entries (Öffnungszeiten, Daten, Papiere, Eltern), singular-only mass/directional nouns, and normalized the plural form Berge to the lemma Berg; clarified regional article variation for Tram."
+    },
+    {
+      "batch": "A1 second-stage review batch 14 (records 1331–1440)",
+      "date": "2026-11-01",
+      "records_updated": 110,
+      "meaning_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46",
+      "note": "Reviewed communication, appointments, occupations, food, meals and lessons vocabulary. Corrected noun capitalization and compounds, marked Leute/Großeltern as plural-only, clarified singular collective nouns (Geschirr, Spaß, Trompetenunterricht) and corrected Kunst, Döner and other plural forms."
     }
   ],
   "pronunciation_schema": {
