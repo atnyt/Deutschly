@@ -8,7 +8,7 @@
     "data_note": "1,715 source rows consolidated into 1,705 unique normalized headwords. Duplicate source rows are retained as source_variants on the canonical record. Source transcription is distinct from independent dictionary verification; unverified records remain explicitly flagged.",
     "policy": "Do not label machine translation as verified. Keep source transcription distinct from independently reviewed linguistic additions."
   },
-  "record_count": 1705,
+  "record_count": 1706,
   "records": [
     {
       "headword": "deutsch",
@@ -1172,6 +1172,32 @@
       "review_status": "second_stage_review_batch_2",
       "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage",
       "confidence_status": "reviewed_draft"
+    },
+    {
+      "headword": "Aussagesatz",
+      "english_gloss": "declarative sentence",
+      "bengali_meaning": "বিবৃতিমূলক বাক্য",
+      "bengali_status": "independently_reviewed_draft",
+      "example_de": "Das ist ein Aussagesatz.",
+      "example_bn": "এটি একটি বিবৃতিমূলক বাক্য।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 2, Kapitel 1, Abschnitt 4b",
+      "review_status": "missing_source_entry_recovery_2026_11_02",
+      "article": "der",
+      "plural": "die Aussagesätze",
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "source_checked",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Aussagesatz",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-02"
+      },
+      "review_note": "PDF-তে থাকা শব্দটি মূল ডেটাবেসে অনুপস্থিত ছিল। PDF থেকে বাংলা অর্থ ও উদাহরণ পুনরুদ্ধার; Duden-এ Article, Plural ও অর্থ যাচাই।"
     },
     {
       "headword": "Interview",
@@ -25995,6 +26021,22 @@
         "Retained the one explicitly unverified record for manual review."
       ],
       "policy": "No record was discarded without preserving its source provenance."
+    },
+    {
+      "batch": "missing_source_entry_recovery_2026_11_02",
+      "date": "2026-11-02",
+      "records_added": 1,
+      "headwords": [
+        "Aussagesatz"
+      ],
+      "changes": [
+        "Restored an A1 headword present on PDF page 2 (Kapitel 1, 4b) but absent from the main vocabulary JSON.",
+        "Added Duden-verified article der, plural die Aussagesätze, and dictionary meaning; restored the PDF example and Bengali meaning."
+      ],
+      "source_pdf": "A1 Vocabulary list_Deutsch mit Shakil(3).pdf",
+      "external_sources": [
+        "https://www.duden.de/rechtschreibung/Aussagesatz"
+      ]
     }
   ],
   "pronunciation_schema": {
