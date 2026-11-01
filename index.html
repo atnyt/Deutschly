@@ -224,14 +224,15 @@ form.addEventListener('submit',async event=>{
   const pluralRecord=vocabularyDatabase&&Array.isArray(vocabularyDatabase.records)?vocabularyDatabase.records.find(r=>String(r.plural||'').replace(/^die\s+/i,'').normalize('NFC').toLocaleLowerCase('de-DE')===normalizedWord):null;
   const lemma=pluralRecord?String(pluralRecord.headword):word;
   let page=null;
+  let audioLookupWord=word;
   try{page=await wiktionaryPage(word)}catch(error){page=null}
-  if((!page||!page.audio.length)&&lemma.toLocaleLowerCase('de-DE')!==word.toLocaleLowerCase('de-DE')){try{page=await wiktionaryPage(lemma)}catch(error){page=null}}
+  if((!page||!page.audio.length)&&lemma.toLocaleLowerCase('de-DE')!==word.toLocaleLowerCase('de-DE')){try{page=await wiktionaryPage(lemma);audioLookupWord=lemma}catch(error){page=null}}
   if(requestId!==activeSearch)return;
   let audioHtml='';
   let status='';
   if(page&&page.audio.length){
    audioHtml=page.audio.map(audioPlayer).join('');
-   status=lemma.toLocaleLowerCase('de-DE')!==word.toLocaleLowerCase('de-DE')?'<p class="status">“'+esc(word)+'” হলো “'+esc(lemma)+'”-এর বহুবচন। এখানে মূল শব্দের native recording দেখানো হচ্ছে; বহুবচনটির আলাদা রেকর্ডিং পাওয়া যায়নি।</p>':'';
+   status=audioLookupWord.toLocaleLowerCase('de-DE')!==word.toLocaleLowerCase('de-DE')?'<p class="status">“'+esc(word)+'” হলো “'+esc(lemma)+'”-এর বহুবচন। এখানে মূল শব্দের native recording দেখানো হচ্ছে; বহুবচনটির আলাদা রেকর্ডিং পাওয়া যায়নি।</p>':'';
   }else if(pluralRecord&&Array.isArray(pluralRecord.audio_sources)&&pluralRecord.audio_sources.some(a=>a&&a.recording_type==='native_recording'&&a.url)){
    const source=pluralRecord.audio_sources.find(a=>a&&a.recording_type==='native_recording'&&a.url);
    audioHtml=audioPlayer(source.url,0);
