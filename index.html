@@ -202,7 +202,9 @@ async function wiktionaryPage(word){
  doc.querySelectorAll('audio[src],audio source[src],a[href]').forEach(el=>{
   const raw=el.getAttribute('src')||el.getAttribute('href')||'';
   const absolute=raw.startsWith('//')?'https:'+raw:raw;
-  if(/^https?:\/\//i.test(absolute)&&/upload\.wikimedia\.org/i.test(absolute)&&/\.(ogg|oga|mp3|wav|opus)(?:[?#].*)?$/i.test(absolute))candidates.push(absolute);
+  const filename=absolute.split('/').pop().split(/[?#]/)[0];
+  const germanFilename=/^(?:de|german)[-_]/i.test(filename);
+  if(/^https?:\/\//i.test(absolute)&&/upload\.wikimedia\.org/i.test(absolute)&&/\.(ogg|oga|mp3|wav|opus)(?:[?#].*)?$/i.test(absolute)&&germanFilename)candidates.push(absolute);
  });
  return {html,hasEntry:!!doc.body.textContent.trim(),audio:[...new Set(candidates)]};
 }
