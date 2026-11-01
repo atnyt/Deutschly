@@ -1380,11 +1380,22 @@
       "example_bn": "এটি এক সংখ্যা।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "second_stage_review_batch_2",
+      "review_status": "second_stage_review_batch_28",
       "article": "die",
       "plural": "die Zahlen",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Zahl",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Zahl-এর গাণিতিক অর্থে die Zahlen; 'Anzahl/Menge' অর্থে কিছু ব্যবহার ohne Plural।"
     },
     {
       "headword": "dein, deine",
@@ -2439,11 +2450,22 @@
       "example_bn": "আমার শখ হলো বই পড়া।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_28",
       "article": "das",
       "plural": "die Hobbys",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Hobby",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "mit",
@@ -2480,11 +2502,22 @@
       "example_bn": "আজ সপ্তাহের কোন দিন?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_28",
       "article": "der",
       "plural": "die Wochentage",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Wochentag",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "Frage",
@@ -2752,11 +2785,22 @@
       "example_bn": "রবিবার আমি অনেকক্ষণ ঘুমাই।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 5",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_28",
       "article": "der",
       "plural": "die Sonntage",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Sonntag",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "für",
