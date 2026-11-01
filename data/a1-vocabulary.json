@@ -1339,11 +1339,22 @@
       "example_bn": "এটি একটি বর্ণ।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "second_stage_review_batch_2",
+      "review_status": "second_stage_review_batch_29",
       "article": "der",
       "plural": "die Buchstaben",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Buchstabe",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "dann",
@@ -2850,11 +2861,22 @@
       "example_bn": "আমরা ক্যাফেতে যাচ্ছি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 5",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_29",
       "article": "das",
       "plural": "die Cafés",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Cafe",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "durch",
@@ -2936,11 +2958,22 @@
       "example_bn": "রেস্তোরাঁটি ভালো।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 5",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_29",
       "article": "das",
       "plural": "die Restaurants",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Restaurant",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "Schwimmbad",
