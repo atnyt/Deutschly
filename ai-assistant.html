@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Deutschly · AI Grammar Assistant</title>
+<style>
+*{box-sizing:border-box}:root{color-scheme:dark}html,body{margin:0;min-height:100%;background:#000;color:#f5f5f7;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+body{padding:calc(18px + env(safe-area-inset-top)) 16px calc(24px + env(safe-area-inset-bottom))}
+main{width:min(100%,700px);margin:10px auto}.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.nav a{color:#c7d0ff;text-decoration:none;border:1px solid rgba(190,202,255,.22);border-radius:999px;padding:9px 13px;font-size:13px}
+h1{font-size:24px;margin:0 0 7px}.intro,.muted{font-size:13px;color:#a4a4af;line-height:1.65}.panel{border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:16px;background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.02));margin-top:14px}
+.status{font-size:13px;line-height:1.6;padding:11px 13px;border-radius:12px;background:rgba(255,255,255,.05);color:#d8d8e0}.status.warn{border:1px solid rgba(230,180,80,.25);color:#f1d7a3}
+form{display:grid;gap:10px;margin-top:14px}textarea{width:100%;min-height:104px;resize:vertical;border:1px solid rgba(255,255,255,.17);border-radius:14px;padding:14px;background:#101014;color:#fff;font:inherit;font-size:15px;line-height:1.6;outline:none}textarea:focus{border-color:#9aa8e8}
+button{height:48px;border:1px solid rgba(255,255,255,.18);border-radius:14px;background:#e8e9f0;color:#111;font-size:14px;font-weight:650;cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}
+.answer{white-space:pre-wrap;font-size:14px;line-height:1.8;color:#f0f0f4}.sources a{display:block;color:#c7d0ff;font-size:13px;margin:8px 0;overflow-wrap:anywhere}.small{font-size:11px;color:#8f8f9a;line-height:1.6}
+</style>
+</head>
+<body><main>
+<div class="nav"><a href="./dictionary.html">← অভিধান</a><a href="./index.html">উচ্চারণ</a></div>
+<h1>AI Grammar Assistant</h1>
+<p class="intro">জার্মান শব্দ, Article, Plural, ব্যাকরণ ও বাক্য নিয়ে বাংলায় প্রশ্ন করো। AI উত্তরকে যাচাইকৃত অভিধানের তথ্যের সঙ্গে গুলিয়ে ফেলা হবে না।</p>
+<div id="connection" class="status warn">সংযোগ পরীক্ষা করা হচ্ছে…</div>
+<section class="panel">
+  <form id="askForm">
+    <textarea id="question" maxlength="1200" placeholder="যেমন: Personalpronomen কী? ich, du, er কীভাবে ব্যবহার হয়?" required></textarea>
+    <button id="send" type="submit" disabled>প্রশ্ন পাঠাও</button>
+  </form>
+  <p class="small">তোমার প্রশ্ন ও প্রয়োজনে স্থানীয় অভিধানের প্রাসঙ্গিক তথ্য AI সেবায় পাঠানো হবে। API key এই ওয়েবসাইটে রাখা হয় না।</p>
+</section>
+<section id="result" aria-live="polite"></section>
+</main>
+<script>
+(function(){
+ const connection=document.getElementById('connection'),form=document.getElementById('askForm'),input=document.getElementById('question'),send=document.getElementById('send'),result=document.getElementById('result');
+ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ let endpoint='';
+ Promise.all([
+  fetch('./data/ai-config.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{}),
+  fetch('./data/a1-vocabulary.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{records:[]}),
+  fetch('./data/grammar-terms.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{records:[]}),
+  fetch('./data/compound-analysis.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{records:[]})
+ ]).then(([config,vocab,grammar,compounds])=>{
+   endpoint=typeof config.endpoint==='string'?config.endpoint.trim():'';
+   window.__deutschlyLocalData={vocab,grammar,compounds};
+   if(endpoint){connection.className='status';connection.textContent='AI endpoint পাওয়া গেছে। প্রশ্ন পাঠাতে পারো।';send.disabled=false;}
+   else{connection.className='status warn';connection.textContent='AI এখনো সংযুক্ত নয়। নিরাপদ backend template তৈরি আছে; Cloudflare Worker deploy করে data/ai-config.json-এ endpoint বসাতে হবে।';}
+ }).catch(()=>{connection.textContent='Configuration load করা যায়নি। পৃষ্ঠাটি refresh করো।';});
+ function localContext(question){
+   const data=window.__deutschlyLocalData||{},q=question.toLocaleLowerCase('de-DE').normalize('NFC');
+   const all=[...(data.vocab?.records||[]).map(x=>({kind:'vocabulary',x})),...(data.grammar?.records||[]).map(x=>({kind:'grammar',x})),...(data.compounds?.records||[]).map(x=>({kind:'compound',x}))];
+   const hits=all.filter(({x})=>{
+     const terms=[x.headword,x.term,x.word,...(x.aliases||[])].filter(Boolean);
+     return terms.some(t=>q.includes(String(t).toLocaleLowerCase('de-DE').normalize('NFC')));
+   }).slice(0,3);
+   return hits.map(({kind,x})=>JSON.stringify({kind,entry:x})).join('\n').slice(0,3500);
+ }
+ form.addEventListener('submit',async e=>{
+   e.preventDefault();if(!endpoint)return;
+   const question=input.value.trim();if(!question)return;
+   send.disabled=true;result.innerHTML='<section class="panel"><p class="muted">উত্তর তৈরি হচ্ছে…</p></section>';
+   try{
+     const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question,context:localContext(question)})});
+     const data=await response.json();if(!response.ok)throw new Error(data.error||'AI request failed');
+     const sources=(data.sources||[]).map(s=>'<a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.title||s.url)+' ↗</a>').join('');
+     const label=data.confidence==='source_supported_ai'?'উৎসসহ AI উত্তর':'AI-তৈরি · যাচাই প্রয়োজন';
+     result.innerHTML='<section class="panel"><span class="small">'+esc(label)+'</span><div class="answer">'+esc(data.answer)+'</div>'+(data.note?'<p class="muted">'+esc(data.note)+'</p>':'')+(sources?'<div class="sources"><p class="small">উৎস</p>'+sources+'</div>':'')+'</section>';
+   }catch(error){result.innerHTML='<section class="panel"><p class="muted">'+esc(error.message||'সংযোগে সমস্যা হয়েছে।')+'</p></section>';}
+   finally{send.disabled=false;}
+ });
+})();
+</script>
+</body></html>
