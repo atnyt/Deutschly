@@ -1,0 +1,11 @@
+name = "deutschly-ai-assistant"
+main = "worker/src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://atnyt.github.io"
+ENABLE_WEB_SEARCH = "true"
+
+# Set these in the Cloudflare Worker dashboard, never in this repository:
+# OPENAI_API_KEY = (Secret)
+# OPENAI_MODEL = (Variable, choose a model available to your API project)
