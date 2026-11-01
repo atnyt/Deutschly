@@ -33,7 +33,7 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 75,
+      "source_checked": 78,
       "needs_verification": 1
     }
   },
@@ -640,6 +640,52 @@
         "https://www.duden.de/rechtschreibung/Dose",
         "https://www.duden.de/rechtschreibung/Preis",
         "https://www.duden.de/rechtschreibung/Tuete"
+      ]
+    },
+    {
+      "batch": 9,
+      "source": "Duden Online",
+      "checked_on": "2026-11-02",
+      "verified_fields": [
+        "article",
+        "plural",
+        "contextual_bengali_meaning"
+      ],
+      "checked_headwords": [
+        "Geburtstag",
+        "Kalender",
+        "Uhr"
+      ],
+      "results": [
+        {
+          "headword": "Geburtstag",
+          "article": "der",
+          "plural": "die Geburtstage",
+          "bengali_meaning": "জন্মদিন",
+          "source": "https://www.duden.de/rechtschreibung/Geburtstag"
+        },
+        {
+          "headword": "Kalender",
+          "article": "der",
+          "plural": "die Kalender",
+          "bengali_meaning": "ক্যালেন্ডার; দিন-তারিখের তালিকা",
+          "source": "https://www.duden.de/rechtschreibung/Kalender"
+        },
+        {
+          "headword": "Uhr",
+          "article": "die",
+          "plural": "die Uhren",
+          "bengali_meaning": "ঘড়ি; সময় নির্দেশক যন্ত্র",
+          "source": "https://www.duden.de/rechtschreibung/Uhr"
+        }
+      ],
+      "notes": [
+        "তিনটি শব্দের Article, Plural ও প্রসঙ্গভিত্তিক বাংলা অর্থ Duden-এর তথ্যের সঙ্গে মিলিয়ে নথিভুক্ত করা হয়েছে।"
+      ],
+      "sources": [
+        "https://www.duden.de/rechtschreibung/Geburtstag",
+        "https://www.duden.de/rechtschreibung/Kalender",
+        "https://www.duden.de/rechtschreibung/Uhr"
       ]
     }
   ]
