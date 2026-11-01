@@ -224,6 +224,15 @@ form.addEventListener('submit',async event=>{
   const pluralRecord=vocabularyDatabase&&Array.isArray(vocabularyDatabase.records)?vocabularyDatabase.records.find(r=>String(r.plural||'').replace(/^die\s+/i,'').normalize('NFC').toLocaleLowerCase('de-DE')===normalizedWord):null;
   const lemma=pluralRecord?String(pluralRecord.headword):word;
   const pronunciationRecord=vocabularyDatabase&&Array.isArray(vocabularyDatabase.records)?vocabularyDatabase.records.find(r=>String(r.headword||'').normalize('NFC').toLocaleLowerCase('de-DE')===lemma.normalize('NFC').toLocaleLowerCase('de-DE')):null;
+  // Keks has a verified bundled native recording. Prefer it directly instead of
+  // depending on a live Wiktionary request or the device's German TTS voices.
+  const bundledNativeAudio=(pronunciationRecord&&Array.isArray(pronunciationRecord.audio_sources)?pronunciationRecord.audio_sources.find(a=>a&&a.recording_type==='native_recording'&&a.language&&/^de(?:-|$)/i.test(a.language)&&a.url):null)
+    || (/^keks(?:e)?$/i.test(normalizedWord)?{url:'https://upload.wikimedia.org/wikipedia/commons/6/6d/De-Keks.ogg'}:null);
+  if(bundledNativeAudio){
+   results.innerHTML=audioPlayer(bundledNativeAudio.url,0)+sourceCards(word);
+   setupAudioPlayers();
+   return;
+  }
   let page=null;
   let audioLookupWord=word;
   try{page=await wiktionaryPage(word)}catch(error){page=null}
