@@ -159,6 +159,37 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     }
     return null;
   }
+  var compoundDatabasePromise = fetch('./data/compound-analysis.json', { cache: 'no-cache' })
+    .then(function (response) { if (!response.ok) throw new Error('Compound database HTTP ' + response.status); return response.json(); })
+    .then(function (database) { return database && Array.isArray(database.records) ? database : { records: [] }; })
+    .catch(function () { return { records: [] }; });
+  function findCompound(records, query) {
+    var wanted = compactKey(query);
+    for (var i = 0; i < records.length; i++) {
+      if (compactKey(records[i].word) === wanted) return records[i];
+    }
+    return null;
+  }
+  function renderCompoundAnalysis(item) {
+    var parts = (item.parts || []).map(function (part, index) {
+      return '<div class="group"><span class="tag">অংশ ' + (index + 1) + '</span><strong>' +
+        escapeHTML(part.form) + '</strong><p class="bn">' + escapeHTML(part.meaning_bn) + '</p></div>';
+    }).join('');
+    return '<div class="panel"><span class="tag">যৌগিক শব্দ বিশ্লেষণ · সম্পাদিত</span>' +
+      '<h2 class="word-title">' + escapeHTML(item.word) + '</h2>' +
+      '<div class="meaning-glass"><div class="meaning-item">' + escapeHTML(item.meaning_bn) + '</div></div>' +
+      '<p class="definition">' + escapeHTML(item.explanation_bn || '') + '</p>' + parts +
+      (item.note ? '<p class="muted">' + escapeHTML(item.note) + '</p>' : '') +
+      '<p class="source">এটি সম্পাদিত শব্দগঠন বিশ্লেষণ; সব জার্মান যৌগিক শব্দের জন্য স্বয়ংক্রিয়ভাবে একই নিয়ম প্রয়োগ করা হয় না।</p></div>';
+  }
+  function renderGrammarWithCompound(item, compound) {
+    var html = renderGrammarTerm(item);
+    if (!compound) return html;
+    return html + '<div class="panel"><span class="tag">শব্দগঠন</span><h3 style="margin:0 0 10px;font-size:16px">শব্দটি কীভাবে গঠিত?</h3>' +
+      (compound.parts || []).map(function (part) {
+        return '<p class="bn"><strong>' + escapeHTML(part.form) + '</strong> — ' + escapeHTML(part.meaning_bn) + '</p>';
+      }).join('') + '<p class="muted">' + escapeHTML(compound.explanation_bn || '') + '</p></div>';
+  }
   function renderGrammarTerm(item) {
     var examples = '<div class="group"><h3 style="font-size:16px;line-height:1.6;margin:0 0 6px">' + escapeHTML(item.example_de || '') + '</h3>' +
       (item.example_bn ? '<p class="bn">' + escapeHTML(item.example_bn) + '</p>' : '') +
@@ -253,11 +284,16 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     var thisRequest = ++requestId;
     button.disabled = true;
     results.innerHTML = '<div class="panel"><p class="bn" role="status">অভিধান খোঁজা হচ্ছে…</p></div>';
-    Promise.all([databasePromise, grammarDatabasePromise]).then(function (loaded) {
+    Promise.all([databasePromise, grammarDatabasePromise, compoundDatabasePromise]).then(function (loaded) {
       if (thisRequest !== requestId) return;
       var grammarTerm = findGrammarTerm(loaded[1].records, searched);
+      var compoundTerm = findCompound(loaded[2].records, searched);
       if (grammarTerm) {
-        results.innerHTML = renderGrammarTerm(grammarTerm);
+        results.innerHTML = renderGrammarWithCompound(grammarTerm, compoundTerm);
+        return;
+      }
+      if (compoundTerm) {
+        results.innerHTML = renderCompoundAnalysis(compoundTerm);
         return;
       }
       var match = findMatches(loaded[0].records, searched);
