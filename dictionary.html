@@ -223,6 +223,8 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     var confidence = record.confidence_status === 'source_checked' ? 'উৎসের সঙ্গে মিলিয়ে সংশোধিত' :
       record.confidence_status === 'reviewed_draft' ? 'পর্যালোচিত খসড়া · পুনরায় যাচাই করা উচিত' : 'যাচাই প্রয়োজন';
     var dudenUrl = 'https://www.duden.de/suchen/dudenonline/' + encodeURIComponent(record.headword || '');
+    var mergedSources = Array.isArray(record.source_variants) && record.source_variants.length ?
+      '<p class="source">একাধিক উৎস-রেকর্ড একত্র করা হয়েছে; মূল উৎস-তথ্য সংরক্ষিত: ' + record.source_variants.length + 'টি</p>' : '';
     return '<div class="panel"><h2 class="word-title">' + escapeHTML(title) +
       '</h2><div class="meaning-glass"><div class="meaning-item">' +
       escapeHTML(record.bengali_meaning || 'বাংলা অর্থ যোগ করা হচ্ছে।') +
@@ -234,7 +236,7 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       (record.article_note ? '<p class="definition">' + escapeHTML(record.article_note) + '</p>' : '') +
       (audioUrl ? '<div class="group"><p class="definition">জার্মান মাতৃভাষীর রেকর্ডিং</p><audio controls preload="none" style="width:100%;height:42px" src="' + escapeHTML(audioUrl) + '">অডিও চালানো যায়নি।</audio></div>' : '') +
       (record.example_de ? '<div class="group"><h3 style="font-size:16px;line-height:1.6;margin:0 0 6px">' + escapeHTML(record.example_de) + '</h3>' +
-        (record.example_bn ? '<p class="bn">' + escapeHTML(record.example_bn) + '</p>' : '') + '</div>' : '') +
+        (record.example_bn ? '<p class="bn">' + escapeHTML(record.example_bn) + '</p>' : '') + '</div>' : '') + mergedSources +
       '<p class="source"><a href="' + escapeHTML(dudenUrl) + '" target="_blank" rel="noopener noreferrer" style="color:#c7d0ff">Duden-এ আলাদাভাবে যাচাই করো ↗</a></p></div>';
   }
   function dictionarySourceLinks(query) {
