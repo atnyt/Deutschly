@@ -33,7 +33,7 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 68,
+      "source_checked": 75,
       "needs_verification": 1
     }
   },
@@ -549,6 +549,97 @@
         "https://www.duden.de/rechtschreibung/Formular",
         "https://www.duden.de/rechtschreibung/Hausnummer",
         "https://www.duden.de/rechtschreibung/Schule"
+      ]
+    },
+    {
+      "batch": 8,
+      "source": "Duden Online",
+      "checked_on": "2026-11-02",
+      "verified_fields": [
+        "article",
+        "plural",
+        "contextual_bengali_meaning"
+      ],
+      "checked_headwords": [
+        "Birne",
+        "Hähnchen",
+        "Olive",
+        "Saft",
+        "Dose",
+        "Preis",
+        "Tüte"
+      ],
+      "results": [
+        {
+          "headword": "Birne",
+          "article": "die",
+          "plural": "die Birnen",
+          "bengali_meaning": "নাশপাতি",
+          "source": "https://www.duden.de/rechtschreibung/Birne",
+          "source_note": "Duden gives die Birne and plural die Birnen; the relevant meaning is the fruit of the pear tree."
+        },
+        {
+          "headword": "Hähnchen",
+          "article": "das",
+          "plural": "die Hähnchen",
+          "bengali_meaning": "মুরগির মাংস; ভাজা/রোস্ট করা মুরগি",
+          "source": "https://www.duden.de/rechtschreibung/Haehnchen",
+          "source_note": "Duden gives das Hähnchen and unchanged plural die Hähnchen; the relevant culinary meaning is Brathähnchen."
+        },
+        {
+          "headword": "Olive",
+          "article": "die",
+          "plural": "die Oliven",
+          "bengali_meaning": "জলপাই; অলিভ",
+          "source": "https://www.duden.de/rechtschreibung/Olive",
+          "source_note": "Duden gives die Olive and plural die Oliven; the relevant meaning is the fruit of the olive tree."
+        },
+        {
+          "headword": "Saft",
+          "article": "der",
+          "plural": "die Säfte",
+          "bengali_meaning": "রস; ফলের রস",
+          "source": "https://www.duden.de/rechtschreibung/Saft",
+          "source_note": "Duden gives der Saft and plural die Säfte; the PDF context is fruit juice. The plural also occurs in other senses."
+        },
+        {
+          "headword": "Dose",
+          "article": "die",
+          "plural": "die Dosen",
+          "bengali_meaning": "কৌটা; টিনের ক্যান",
+          "source": "https://www.duden.de/rechtschreibung/Dose",
+          "source_note": "Duden gives die Dose and plural die Dosen; the PDF example 'eine Dose Cola' uses the container/can sense."
+        },
+        {
+          "headword": "Preis",
+          "article": "der",
+          "plural": "die Preise",
+          "bengali_meaning": "দাম; মূল্য",
+          "source": "https://www.duden.de/rechtschreibung/Preis",
+          "source_note": "Duden gives der Preis and plural die Preise; the PDF context is the amount paid when buying goods."
+        },
+        {
+          "headword": "Tüte",
+          "article": "die",
+          "plural": "die Tüten",
+          "bengali_meaning": "থলে; কাগজ/প্লাস্টিকের ব্যাগ",
+          "source": "https://www.duden.de/rechtschreibung/Tuete",
+          "source_note": "Duden gives die Tüte and plural die Tüten; the relevant meaning is a bag-like packaging container."
+        }
+      ],
+      "notes": [
+        "এই ব্যাচে সাতটি শব্দের Article, Plural এবং PDF-এ ব্যবহৃত অর্থ Duden দিয়ে যাচাই করা হয়েছে।",
+        "Hähnchen-এর plural অপরিবর্তিত থাকে: das Hähnchen → die Hähnchen।",
+        "Saft-এর বহুবচন die Säfte অভিধানে আছে; দৈনন্দিন পানীয়/রসের অর্থে অনেক সময় mass noun হিসেবেও ব্যবহৃত হয়।"
+      ],
+      "sources": [
+        "https://www.duden.de/rechtschreibung/Birne",
+        "https://www.duden.de/rechtschreibung/Haehnchen",
+        "https://www.duden.de/rechtschreibung/Olive",
+        "https://www.duden.de/rechtschreibung/Saft",
+        "https://www.duden.de/rechtschreibung/Dose",
+        "https://www.duden.de/rechtschreibung/Preis",
+        "https://www.duden.de/rechtschreibung/Tuete"
       ]
     }
   ]
