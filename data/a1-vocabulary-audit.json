@@ -4,7 +4,7 @@
   "source_pdf": "A1 Vocabulary list_Deutsch mit Shakil(3).pdf",
   "source_pdf_pages": 40,
   "source_rows": 1715,
-  "unique_normalized_headwords": 1706,
+  "unique_normalized_headwords": 1711,
   "status": "second_stage_dictionary_verification_in_progress",
   "checks": {
     "json_valid": true,
@@ -33,8 +33,14 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 81,
+      "source_checked": 86,
       "needs_verification": 1
+    },
+    "source_json_reconciliation_pass_1": {
+      "pages_compared": 40,
+      "valid_missing_entries_recovered": 6,
+      "main_json_records_after_recovery": 1711,
+      "remaining_manual_layout_review": true
     }
   },
   "interpretation": {
@@ -735,9 +741,48 @@
       "chapter": "1",
       "section": "4b",
       "recovered_on": "2026-11-02",
-      "dictionary_source": "https://www.duden.de/rechtschreibung/Aussagesatz",
-      "note": "Found in supplied PDF but absent from main JSON; added with der, die Aussagesätze, Bengali meaning and source example."
+      "dictionary_source": "https://www.duden.de/rechtschreibung/Aussagesatz"
+    },
+    {
+      "headword": "Guten Tag",
+      "source_pdf_page": 1,
+      "chapter": "1",
+      "section": "1a",
+      "recovered_on": "2026-11-02",
+      "note": "Greeting phrase; no article or plural."
+    },
+    {
+      "headword": "zuordnen",
+      "source_pdf_page": 1,
+      "chapter": "1",
+      "section": "1a",
+      "recovered_on": "2026-11-02",
+      "note": "Verb; normalized to lowercase."
+    },
+    {
+      "headword": "zusammengehören",
+      "source_pdf_page": 1,
+      "chapter": "1",
+      "section": "1a",
+      "recovered_on": "2026-11-02",
+      "dictionary_source": "https://www.duden.de/rechtschreibung/zusammengehoeren"
+    },
+    {
+      "headword": "Reiseführer",
+      "source_pdf_page": 2,
+      "chapter": "1",
+      "section": "4a",
+      "recovered_on": "2026-11-02",
+      "dictionary_source": "https://www.duden.de/rechtschreibung/Reisefuehrer"
+    },
+    {
+      "headword": "Reiseführerin",
+      "source_pdf_page": 2,
+      "chapter": "1",
+      "section": "4a",
+      "recovered_on": "2026-11-02",
+      "dictionary_source": "https://de.wiktionary.org/wiki/Reisef%C3%BChrerin"
     }
   ],
-  "reconciliation_note": "Aussagesatz was identified on PDF page 2 but absent from the 1,705-record main JSON. It has been restored; main record count and unique normalized headword count are now 1,706. A full 40-page reconciliation is still required before claiming all source entries are represented."
+  "reconciliation_note": "A full-page PDF-to-JSON comparison pass identified six valid source entries absent from the JSON; all six have been added. Several apparent mismatches were confirmed as existing canonical entries or source spelling/inflection variants (e.g. Stadttour, Kunst/Künste, sehen, sich verabschieden, Würstel). The parser-based pass can miss layout/line-wrap cases, so this is not yet a guarantee that every one of the 1,715 source rows has been individually matched."
 }
