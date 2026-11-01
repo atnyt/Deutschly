@@ -33,7 +33,7 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 42,
+      "source_checked": 48,
       "needs_verification": 1
     }
   },
@@ -204,6 +204,87 @@
         "https://www.duden.de/rechtschreibung/Besucher",
         "https://www.duden.de/rechtschreibung/Kirche",
         "https://www.duden.de/rechtschreibung/Konzerthaus"
+      ]
+    },
+    {
+      "batch": 4,
+      "source": "Duden Online",
+      "checked_on": "2026-11-02",
+      "verified_fields": [
+        "article",
+        "plural",
+        "contextual_bengali_meaning"
+      ],
+      "checked_headwords": [
+        "Fluss",
+        "Hafen",
+        "Brücke",
+        "Meer",
+        "Schiff",
+        "Zug"
+      ],
+      "results": [
+        {
+          "headword": "Fluss",
+          "article": "der",
+          "plural": "die Flüsse",
+          "bengali_meaning": "নদী",
+          "source": "https://www.duden.de/rechtschreibung/Fluss",
+          "source_note": "Duden gives der Fluss and plural die Flüsse for the natural watercourse sense used in the PDF; other abstract/technical senses can be without plural."
+        },
+        {
+          "headword": "Hafen",
+          "article": "der",
+          "plural": "die Häfen",
+          "bengali_meaning": "বন্দর; জাহাজ নোঙর ও পণ্য ওঠানামার স্থান",
+          "source": "https://www.duden.de/rechtschreibung/Hafen_Anlegestelle",
+          "source_note": "Duden gives der Hafen and plural die Häfen; definition is a natural or artificial anchorage/berth for ships."
+        },
+        {
+          "headword": "Brücke",
+          "article": "die",
+          "plural": "die Brücken",
+          "bengali_meaning": "সেতু",
+          "source": "https://www.duden.de/rechtschreibung/Bruecke",
+          "source_note": "Duden gives die Brücke and plural die Brücken; the relevant sense is a structure carrying a route across an obstacle."
+        },
+        {
+          "headword": "Meer",
+          "article": "das",
+          "plural": "die Meere",
+          "bengali_meaning": "সমুদ্র",
+          "source": "https://www.duden.de/rechtschreibung/Meer",
+          "source_note": "Duden gives das Meer and plural die Meere; definition is the large body of salt water surrounding the continents."
+        },
+        {
+          "headword": "Schiff",
+          "article": "das",
+          "plural": "die Schiffe",
+          "bengali_meaning": "জাহাজ",
+          "source": "https://www.duden.de/rechtschreibung/Schiff",
+          "source_note": "Duden gives das Schiff and plural die Schiffe; relevant sense is a large watercraft."
+        },
+        {
+          "headword": "Zug",
+          "article": "der",
+          "plural": "die Züge",
+          "bengali_meaning": "ট্রেন; রেলগাড়ি",
+          "source": "https://www.duden.de/rechtschreibung/Zug_Kolonne",
+          "source_note": "Duden gives der Zug and plural die Züge; the vocabulary context is the train/railway sense."
+        }
+      ],
+      "notes": [
+        "এই ব্যাচে ছয়টি শব্দের Article, Plural এবং PDF-এ ব্যবহৃত অর্থ অভিধান দিয়ে যাচাই করা হয়েছে।",
+        "Fluss-এর Duden-এ একাধিক অর্থ আছে; এখানে প্রাকৃতিক নদী অর্থে plural die Flüsse নেওয়া হয়েছে।",
+        "Zug শব্দের একাধিক অর্থ আছে; এখানে PDF-এর ট্রেন অর্থের Article ও Plural নথিভুক্ত।"
+      ],
+      "sources": [
+        "https://www.duden.de/rechtschreibung/Fluss",
+        "https://www.duden.de/rechtschreibung/Hafen_Anlegestelle",
+        "https://www.duden.de/rechtschreibung/Bruecke",
+        "https://www.duden.de/rechtschreibung/Meer",
+        "https://www.duden.de/rechtschreibung/Schiff",
+        "https://www.duden.de/rechtschreibung/Zug_Kolonne"
       ]
     }
   ]
