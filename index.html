@@ -65,6 +65,7 @@ svg{width:22px;height:22px}
 .loading-spinner i{position:absolute;left:16px;top:1px;width:4px;height:10px;border-radius:4px;background:#a7b5ff;transform-origin:2px 17px}
 @keyframes loadingTurn{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.loading-spinner{animation-duration:2.5s}}
+.speech-card{display:flex;align-items:center;gap:12px;padding:12px 13px;border:1px solid rgba(180,195,255,.2);border-radius:14px;background:#0c0c0f}.speech-card button{width:auto;height:40px;flex:0 0 auto;padding:0 14px;border-radius:12px;background:#e9e9ee;color:#111;font-size:13px;font-weight:650}.speech-card p{margin:0;color:#aaaab4;font-size:12px;line-height:1.5}.speech-card .speech-status{color:#d5d5dc;margin-top:3px}
 .hidden{display:none}
 @media(max-width:420px){body{padding-left:16px;padding-right:16px}form{gap:8px}input,button{height:54px}button{width:54px;flex-basis:54px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -150,6 +151,8 @@ function hasAudioReference(value,key=''){
  if(typeof value==='object')return Object.entries(value).some(([k,v])=>hasAudioReference(v,k));
  return false;
 }
+function germanSpeechCard(word){return '<section class="speech-card" data-german-speech data-word="'+esc(word)+'"><button type="button" data-speak>শুনুন · de-DE</button><div><p><strong>ডিভাইসের জার্মান কণ্ঠ</strong></p><p class="speech-status" data-speech-status>এটি সিস্টেমের জার্মান TTS; native speaker recording নয়।</p></div></section>'}
+function setupGermanSpeech(root=document){root.querySelectorAll('[data-german-speech]').forEach(card=>{if(card.dataset.ready)return;card.dataset.ready='1';const button=card.querySelector('[data-speak]'),status=card.querySelector('[data-speech-status]'),word=card.dataset.word;button.addEventListener('click',()=>{if(!('speechSynthesis'in window)||!('SpeechSynthesisUtterance'in window)){status.textContent='এই ব্রাউজারে Text-to-Speech সমর্থিত নয়।';return}const voices=window.speechSynthesis.getVoices();const german=voices.filter(v=>/^de(?:-|$)/i.test(v.lang)).sort((a,b)=>(/^de-DE$/i.test(b.lang)?1:0)-(/^de-DE$/i.test(a.lang)?1:0));if(!german.length){status.textContent='ডিভাইসে জার্মান (de) কণ্ঠ পাওয়া যায়নি। ইংরেজি কণ্ঠ ব্যবহার করা হবে না।';return}window.speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(word);utterance.lang='de-DE';utterance.voice=german[0];utterance.rate=.88;utterance.onstart=()=>{status.textContent='জার্মান কণ্ঠ: '+german[0].name+' ('+german[0].lang+')'};utterance.onerror=()=>{status.textContent='জার্মান অডিও চালানো যায়নি।'};window.speechSynthesis.speak(utterance)})})}
 function wiktionaryUrl(word){return 'https://de.wiktionary.org/wiki/'+encodeURIComponent(word.replace(/ /g,'_'))}
 function sourceCards(word){
  const q=encodeURIComponent(word.trim());
@@ -225,8 +228,8 @@ form.addEventListener('submit',async event=>{
   }else{
    status='<p class="status">Wiktionary থেকে এই শব্দের পেজ নিশ্চিত করা যায়নি বা সংযোগ ব্যর্থ হয়েছে। নিচের উৎসগুলোতে সরাসরি খুঁজে দেখো।</p>';
   }
-  results.innerHTML=(status?'<div class="dictionary">'+status+'</div>':'')+audioHtml+sourceCards(word);
-  setupAudioPlayers();
+  results.innerHTML=(status?'<div class="dictionary">'+status+'</div>':'')+audioHtml+(!audioHtml?germanSpeechCard(word):'')+sourceCards(word);
+  setupAudioPlayers();setupGermanSpeech(results);
  }catch(error){
   if(requestId===activeSearch)results.innerHTML=sourceCards(word);
  }finally{
