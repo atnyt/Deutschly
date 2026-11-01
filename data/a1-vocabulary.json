@@ -222,7 +222,14 @@
         ],
         "checked_on": "2026-11-01"
       },
-      "review_note": "Duden-এ Article ও Plural যাচাই করা হয়েছে; বাংলা অর্থ ও উদাহরণ আলাদাভাবে যাচাইাধীন।"
+      "review_note": "Duden-এ Article ও Plural যাচাই করা হয়েছে; বাংলা অর্থ ও উদাহরণ আলাদাভাবে যাচাইাধীন।",
+      "source_variants": [
+        {
+          "source_headword": "der/die Kranke",
+          "source": "Deutsch mit Shakil A1 PDF, page 1",
+          "note": "Source gender notation retained as a source variant of the existing substantivized adjective record."
+        }
+      ]
     },
     {
       "headword": "Nudel",
@@ -298,7 +305,14 @@
         ],
         "checked_on": "2026-11-01"
       },
-      "review_note": "Duden-এ বিশেষত অস্ট্রীয় ব্যবহারের Würstel, das; Plural die Würstel। উদাহরণটি A1 স্তরের সহজ বাক্য হিসেবে যোগ করা হয়েছে।"
+      "review_note": "Duden-এ বিশেষত অস্ট্রীয় ব্যবহারের Würstel, das; Plural die Würstel। উদাহরণটি A1 স্তরের সহজ বাক্য হিসেবে যোগ করা হয়েছে।",
+      "source_variants": [
+        {
+          "source_headword": "Wörstel",
+          "source": "Deutsch mit Shakil A1 PDF, page 1",
+          "note": "PDF spelling transcribed as Wörstel; normalized to standard Austrian/regional form Würstel."
+        }
+      ]
     },
     {
       "headword": "Ihr, Ihre",
@@ -4845,6 +4859,11 @@
           "source": "Deutsch mit Shakil A1 PDF, page 8",
           "review_status": "second_stage_review_batch_14",
           "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
+        },
+        {
+          "source_headword": "Städtour",
+          "source": "Deutsch mit Shakil A1 PDF, page 8",
+          "note": "Source spelling normalized to canonical compound Stadttour."
         }
       ],
       "confidence_status": "source_checked"
@@ -5243,6 +5262,11 @@
           "source": "Deutsch mit Shakil A1 PDF, page 9",
           "review_status": "second_stage_review_batch_14",
           "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
+        },
+        {
+          "source_headword": "sehen, er sieht",
+          "source": "Deutsch mit Shakil A1 PDF, page 9",
+          "note": "Source includes the third-person present form; canonical headword remains the infinitive sehen."
         }
       ],
       "confidence_status": "source_checked"
@@ -8210,6 +8234,11 @@
           "source": "Deutsch mit Shakil A1 PDF, page 13",
           "review_status": "second_stage_review_batch_14",
           "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually"
+        },
+        {
+          "source_headword": "Momentaner",
+          "source": "Deutsch mit Shakil A1 PDF, page 13",
+          "note": "Source line has an inflected/capitalized form; canonical headword is the adjective/adverb momentan."
         }
       ],
       "confidence_status": "source_checked"
@@ -20406,7 +20435,14 @@
       "source": "Deutsch mit Shakil A1 PDF, page 3",
       "review_status": "second_stage_review_batch_14",
       "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed_draft",
+      "source_variants": [
+        {
+          "source_headword": "verabschieden",
+          "source": "Deutsch mit Shakil A1 PDF, page 3",
+          "note": "Source example is reflexive (Wir verabschieden uns.); canonical lemma includes sich."
+        }
+      ]
     },
     {
       "headword": "gern",
@@ -20727,7 +20763,14 @@
       "source": "Deutsch mit Shakil A1 PDF, page 8",
       "review_status": "second_stage_review_batch_14",
       "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed_draft",
+      "source_variants": [
+        {
+          "source_headword": "bis (+ D.)",
+          "source": "Deutsch mit Shakil A1 PDF, page 8",
+          "note": "Source abbreviation/capitalization variant of the existing entry."
+        }
+      ]
     },
     {
       "headword": "Kunst",
@@ -20742,7 +20785,14 @@
       "article": "die",
       "plural": "die Künste",
       "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed_draft",
+      "source_variants": [
+        {
+          "source_headword": "Künsten",
+          "source": "Deutsch mit Shakil A1 PDF, page 8",
+          "note": "Source lists Künsten in an accusative example; standard form in this context is die Künste. Canonical noun record Kunst already carries plural die Künste."
+        }
+      ]
     },
     {
       "headword": "auf (+ dat.)",
