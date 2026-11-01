@@ -279,25 +279,26 @@
       "english_gloss": "sausage",
       "bengali_meaning": "সসেজ (দক্ষিণ জার্মান/অস্ট্রিয়ান আঞ্চলিক রূপ)",
       "bengali_status": "independently_reviewed_draft",
-      "example_de": null,
-      "example_bn": null,
+      "example_de": "Ich esse ein Würstel.",
+      "example_bn": "আমি একটি সসেজ খাই।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "second_stage_review_batch_1",
+      "review_status": "second_stage_review_batch_24",
       "article": "das",
       "plural": "die Würstel",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pp. 1–3 (noun forms and contextual usage); cross-check: Duden/standard German grammar where applicable",
-      "confidence_status": "reviewed_draft",
+      "review_source": "Duden Online-Wörterbuch (Würstel, das; Plural die Würstel)",
+      "confidence_status": "reviewed",
       "dictionary_check": {
         "source": "Duden",
         "url": "https://www.duden.de/rechtschreibung/Wuerstel",
         "checked_fields": [
           "article",
-          "plural"
+          "plural",
+          "meaning"
         ],
         "checked_on": "2026-11-01"
       },
-      "review_note": "Duden-এ Article ও Plural যাচাই করা হয়েছে; বাংলা অর্থ ও উদাহরণ আলাদাভাবে যাচাইাধীন।"
+      "review_note": "Duden-এ বিশেষত অস্ট্রীয় ব্যবহারের Würstel, das; Plural die Würstel। উদাহরণটি A1 স্তরের সহজ বাক্য হিসেবে যোগ করা হয়েছে।"
     },
     {
       "headword": "Ihr, Ihre",
@@ -22420,14 +22421,14 @@
       "example_de": "Ich liebe die Natur.",
       "example_bn": "আমি প্রকৃতিকে ভালোবাসি।",
       "source": "Deutsch mit Shakil A1 PDF, page 21",
-      "review_status": "second_stage_review_batch_19",
+      "review_status": "second_stage_review_batch_24",
       "article": "die",
       "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "সাধারণ অর্থে প্রকৃতি বোঝাতে একবচন ব্যবহৃত হয়।",
-      "plural": "kein Plural (সাধারণ অর্থে; Duden-এ বিশেষ অর্থে die Naturen)",
+      "plural": "die Naturen (বিশেষ অর্থে; সাধারণ প্রকৃতি অর্থে ohne Plural)",
       "confidence_status": "reviewed",
-      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।",
+      "review_note": "Duden-এ সাধারণ প্রকৃতি অর্থে ohne Plural; ব্যক্তি/জীবের স্বভাব বা প্রকৃতি বোঝালে Plural die Naturen হতে পারে।",
       "dictionary_check": {
         "source": "Duden",
         "url": "https://www.duden.de/rechtschreibung/Natur",
