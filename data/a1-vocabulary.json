@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6.0",
+  "schema_version": "1.7.0",
   "title": "Deutschly German–Bangla A1 Vocabulary",
   "language_pair": "de-BN",
   "level": "A1",
@@ -14871,5 +14871,17 @@
       "meaning_source": "User-provided Deutsch mit Shakil A1 Vocabulary PDF, page 3",
       "note": "Added eight source-listed entries missing from the structured database, with Bengali meanings and source examples."
     }
-  ]
+  ],
+  "pronunciation_schema": {
+    "policy": "Do not invent IPA, Bengali phonetic spellings, syllable boundaries, stress, or audio. Populate only from a traceable German-language source and keep generated device TTS distinct from native recordings.",
+    "fields": {
+      "ipa": "Optional IPA transcription from a checked German pronunciation source.",
+      "bengali_pronunciation": "Optional learner-friendly Bengali approximation; never a substitute for IPA or audio.",
+      "syllables": "Optional syllable segmentation verified against the German pronunciation.",
+      "stress_syllable": "Optional 1-based index of the stressed syllable.",
+      "audio_sources": "Optional array of source URL, source name, language tag, and recording type (native_recording or generated_tts).",
+      "pronunciation_status": "Use missing, source_found, source_checked, or independently_verified."
+    },
+    "audio_language_requirement": "de or de-* only. Never use an English voice as a German pronunciation fallback."
+  }
 }
