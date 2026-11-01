@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "title": "Deutschly German–Bangla A1 Vocabulary",
   "language_pair": "de-BN",
   "level": "A1",
@@ -1252,134 +1252,141 @@
     {
       "headword": "befinden",
       "english_gloss": "condition",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "অবস্থা; শারীরিক বা মানসিক অবস্থা",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wie ist das Befinden?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3",
+      "article": "das"
     },
     {
       "headword": "darauf",
       "english_gloss": "upon",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "তার ওপর; সে বিষয়ে",
+      "bengali_status": "source_checked_draft",
       "example_de": "Reagieren Sie darauf.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3"
     },
     {
       "headword": "grammatik",
       "english_gloss": "grammar",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "ব্যাকরণ",
+      "bengali_status": "source_checked_draft",
       "example_de": "Die Grammatik ist schwer.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3",
+      "article": "die"
     },
     {
       "headword": "grüßen",
       "english_gloss": "to greet",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "শুভেচ্ছা জানানো; অভিবাদন করা",
+      "bengali_status": "source_checked_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3"
     },
     {
       "headword": "reagieren",
       "english_gloss": "to react",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "প্রতিক্রিয়া জানানো",
+      "bengali_status": "source_checked_draft",
       "example_de": "Bitte reagieren Sie.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3"
     },
     {
       "headword": "subjekt",
       "english_gloss": "subject",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "কর্তা; বাক্যের উদ্দেশ্য",
+      "bengali_status": "source_checked_draft",
       "example_de": "Das Subjekt steht hier.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3",
+      "article": "das"
     },
     {
       "headword": "w-wort",
       "english_gloss": "question word",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "W-প্রশ্নবোধক শব্দ",
+      "bengali_status": "source_checked_draft",
       "example_de": "\"Wo\" ist ein W-Wort. \"Wo\"",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3",
+      "article": "das"
     },
     {
       "headword": "fotografieren",
       "english_gloss": "to take photos",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "ছবি তোলা",
+      "bengali_status": "source_checked_draft",
       "example_de": "Er fotografiert gern.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3"
     },
     {
       "headword": "freundin",
       "english_gloss": "friend (f)",
       "bengali_meaning": "বন্ধু (নারী)",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Sie ist meine Freundin.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3",
+      "article": "die"
     },
     {
       "headword": "joggen",
       "english_gloss": "to jog",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "জগিং করা; ধীরে দৌড়ানো",
+      "bengali_status": "source_checked_draft",
       "example_de": "Ich jogge gern.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3"
     },
     {
       "headword": "kollege",
       "english_gloss": "colleague (m)",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "সহকর্মী (পুরুষ)",
+      "bengali_status": "source_checked_draft",
       "example_de": "Er ist mein Kollege.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3",
+      "article": "der"
     },
     {
       "headword": "kollegin",
       "english_gloss": "colleague (f)",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "সহকর্মী (নারী)",
+      "bengali_status": "source_checked_draft",
       "example_de": "Sie ist meine Kollegin.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_3",
+      "article": "die"
     },
     {
       "headword": "musik",
@@ -14752,6 +14759,13 @@
       "records_updated": 12,
       "meaning_source": "User-provided Deutsch mit Shakil A1 Vocabulary PDF, page 3",
       "note": "Added/checked Bengali meanings against the source page; noun articles included where clear from the source."
+    },
+    {
+      "batch": "A1 page 3 batch 3",
+      "date": "2026-11-01",
+      "records_updated": 12,
+      "meaning_source": "User-provided Deutsch mit Shakil A1 Vocabulary PDF, page 3",
+      "note": "Added/checked Bengali meanings; articles included where the source page clearly identifies them."
     }
   ]
 }
