@@ -204,7 +204,7 @@
       "bengali_meaning": "ভাষা",
       "bengali_status": "independently_reviewed_draft",
       "example_de": null,
-      "example_bn": "",
+      "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
       "review_status": "second_stage_review_batch_1",
@@ -574,12 +574,13 @@
       "headword": "bekannt",
       "english_gloss": "well-known",
       "bengali_meaning": "পরিচিত; সুপরিচিত",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Der Ort ist bekannt.",
-      "example_bn": null,
+      "example_bn": "জায়গাটি সুপরিচিত।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "name",
@@ -596,23 +597,25 @@
       "headword": "oder",
       "english_gloss": "or",
       "bengali_meaning": "অথবা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Tee oder Kaffee?",
-      "example_bn": null,
+      "example_bn": "চা নাকি কফি?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "auf wiedersehen",
       "english_gloss": "goodbye",
       "bengali_meaning": "বিদায়; আবার দেখা হবে",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Auf Wiedersehen, Herr Schmidt!",
-      "example_bn": null,
+      "example_bn": "বিদায়, জনাব শ্মিট!",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "frau",
@@ -626,37 +629,40 @@
       "review_status": "source_checked_second_batch"
     },
     {
-      "headword": "gute nacht",
+      "headword": "Gute Nacht",
       "english_gloss": "good night",
       "bengali_meaning": "শুভরাত্রি",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Gute Nacht, Mama!",
-      "example_bn": null,
+      "example_bn": "শুভরাত্রি, মা!",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "guten abend",
+      "headword": "Guten Abend",
       "english_gloss": "good evening",
       "bengali_meaning": "শুভ সন্ধ্যা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Guten Abend zusammen!",
-      "example_bn": null,
+      "example_bn": "সবাইকে শুভ সন্ধ্যা!",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "guten morgen",
+      "headword": "Guten Morgen",
       "english_gloss": "good morning",
       "bengali_meaning": "সুপ্রভাত",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Guten Morgen, Papa!",
-      "example_bn": null,
+      "example_bn": "সুপ্রভাত, বাবা!",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "herr",
@@ -673,34 +679,37 @@
       "headword": "ihnen",
       "english_gloss": "you (formal, dat.)",
       "bengali_meaning": "আপনাকে; আপনাদের (সম্মানসূচক)",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Wie geht es Ihnen?",
-      "example_bn": null,
+      "example_bn": "আপনি কেমন আছেন?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "mein, meine",
       "english_gloss": "my",
       "bengali_meaning": "আমার",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das ist meine Tasche.",
-      "example_bn": null,
+      "example_bn": "এটি আমার ব্যাগ।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "formell",
       "english_gloss": "formal",
       "bengali_meaning": "আনুষ্ঠানিক",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das ist sehr formell.",
-      "example_bn": null,
+      "example_bn": "এটি খুব আনুষ্ঠানিক।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "informell",
@@ -714,48 +723,60 @@
       "review_status": "source_checked_second_batch"
     },
     {
-      "headword": "nachname",
+      "headword": "Nachname",
       "english_gloss": "last name",
       "bengali_meaning": "পদবি; শেষ নাম",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "der",
+      "plural": "die Nachnamen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "verb",
+      "headword": "Verb",
       "english_gloss": "verb",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "ক্রিয়া; ক্রিয়াপদ",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "\"Kommen\" ist ein Verb. \"Kommen\"",
-      "example_bn": null,
+      "example_bn": "‘Kommen’ একটি ক্রিয়া।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "second_stage_review_batch_2",
+      "article": "das",
+      "plural": "die Verben",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "vorname",
+      "headword": "Vorname",
       "english_gloss": "first name",
       "bengali_meaning": "নামের প্রথম অংশ",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Mein Vorname ist Ali.",
-      "example_bn": null,
+      "example_bn": "আমার প্রথম নাম আলী।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "der",
+      "plural": "die Vornamen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "antwort",
+      "headword": "Antwort",
       "english_gloss": "answer",
       "bengali_meaning": "উত্তর",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Die Antwort ist richtig.",
-      "example_bn": null,
+      "example_bn": "উত্তরটি সঠিক।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die Antworten",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "aus",
@@ -769,15 +790,16 @@
       "review_status": "source_checked_page_31_batch_1"
     },
     {
-      "headword": "deutschland",
+      "headword": "Deutschland",
       "english_gloss": "Germany",
       "bengali_meaning": "জার্মানি",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Deutschland ist schön.",
-      "example_bn": null,
+      "example_bn": "জার্মানি সুন্দর।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "in",
@@ -813,147 +835,170 @@
       "review_status": "source_checked_page_26_batch_1"
     },
     {
-      "headword": "telefon",
+      "headword": "Telefon",
       "english_gloss": "telephone",
       "bengali_meaning": "টেলিফোন",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das Telefon klingelt.",
-      "example_bn": null,
+      "example_bn": "টেলিফোনটি বাজছে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "das",
+      "plural": "die Telefone",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "welche, welcher",
       "english_gloss": "which",
       "bengali_meaning": "কোন; কোনটি",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Welche Sprache ist das?",
-      "example_bn": null,
+      "example_bn": "এটি কোন ভাষা?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "wo",
       "english_gloss": "where",
       "bengali_meaning": "কোথায়",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Wo wohnen Sie?",
-      "example_bn": null,
+      "example_bn": "আপনি কোথায় থাকেন?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "woher",
       "english_gloss": "from where",
       "bengali_meaning": "কোথা থেকে",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Woher kommst du?",
-      "example_bn": null,
+      "example_bn": "তুমি কোথা থেকে এসেছ?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "wohnen",
       "english_gloss": "to live",
       "bengali_meaning": "বাস করা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Wir wohnen hier.",
-      "example_bn": null,
+      "example_bn": "আমরা এখানে থাকি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "interview",
+      "headword": "Interview",
       "english_gloss": "interview",
       "bengali_meaning": "সাক্ষাৎকার",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das Interview ist kurz.",
-      "example_bn": null,
+      "example_bn": "সাক্ষাৎকারটি সংক্ষিপ্ত।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "das",
+      "plural": "die Interviews",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "variieren",
       "english_gloss": "to vary",
       "bengali_meaning": "ভিন্নভাবে করা; পরিবর্তন করা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Bitte variieren Sie.",
-      "example_bn": null,
+      "example_bn": "অনুগ্রহ করে ভিন্নভাবে করুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "w-frage",
+      "headword": "W-Frage",
       "english_gloss": "W-question",
       "bengali_meaning": "W-প্রশ্ন",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die W-Fragen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "ergänzen",
       "english_gloss": "to complete",
       "bengali_meaning": "পূরণ করা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Bitte ergänzen Sie.",
-      "example_bn": null,
+      "example_bn": "অনুগ্রহ করে পূরণ করুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "notieren",
       "english_gloss": "to note",
       "bengali_meaning": "নোট করা; লিখে রাখা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Notieren Sie den Namen.",
-      "example_bn": null,
+      "example_bn": "নামটি লিখে রাখুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "partner",
+      "headword": "Partner",
       "english_gloss": "partner (m)",
       "bengali_meaning": "সঙ্গী (পুরুষ)",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Mein Partner heißt Tim.",
-      "example_bn": null,
+      "example_bn": "আমার সঙ্গীর নাম টিম।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "der",
+      "plural": "die Partner",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "partnerin",
+      "headword": "Partnerin",
       "english_gloss": "partner (f)",
       "bengali_meaning": "সঙ্গী (নারী)",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Sie ist meine Partnerin.",
-      "example_bn": null,
+      "example_bn": "সে আমার নারী সঙ্গী।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die Partnerinnen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "raten",
       "english_gloss": "to guess",
       "bengali_meaning": "অনুমান করা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Bitte raten Sie mal.",
-      "example_bn": null,
+      "example_bn": "অনুগ্রহ করে একবার অনুমান করুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "vorstellen",
@@ -967,118 +1012,135 @@
       "review_status": "source_checked_second_batch"
     },
     {
-      "headword": "buchstabe",
+      "headword": "Buchstabe",
       "english_gloss": "letter",
       "bengali_meaning": "বর্ণ; অক্ষর",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das ist ein Buchstabe.",
-      "example_bn": null,
+      "example_bn": "এটি একটি বর্ণ।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "der",
+      "plural": "die Buchstaben",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "dann",
       "english_gloss": "then",
       "bengali_meaning": "তারপর; তখন",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Dann gehen wir nach Hause.",
-      "example_bn": null,
+      "example_bn": "তারপর আমরা বাড়ি যাব।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "laut",
       "english_gloss": "loud",
       "bengali_meaning": "উচ্চস্বরে",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Lesen Sie bitte laut.",
-      "example_bn": null,
+      "example_bn": "অনুগ্রহ করে জোরে পড়ুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "zahl",
+      "headword": "Zahl",
       "english_gloss": "number",
       "bengali_meaning": "সংখ্যা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das ist die Zahl eins.",
-      "example_bn": null,
+      "example_bn": "এটি এক সংখ্যা।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die Zahlen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "dein, deine",
       "english_gloss": "your",
       "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Ist das dein Buch?",
-      "example_bn": null,
+      "example_bn": "এটি কি তোমার বই?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "fragen",
       "english_gloss": "to ask",
       "bengali_meaning": "জিজ্ঞাসা করা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_1",
-      "article": "fragen"
+      "review_status": "second_stage_review_batch_2",
+      "article": "fragen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "alphabet",
+      "headword": "Alphabet",
       "english_gloss": "alphabet",
       "bengali_meaning": "বর্ণমালা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_1",
-      "article": "das"
+      "review_status": "second_stage_review_batch_2",
+      "article": "das",
+      "plural": "die Alphabete",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "zuerst",
       "english_gloss": "at first",
       "bengali_meaning": "প্রথমে",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Zuerst hören wir Musik.",
-      "example_bn": null,
+      "example_bn": "প্রথমে আমরা গান শুনি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_1"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "e-mail-adresse",
+      "headword": "E-Mail-Adresse",
       "english_gloss": "email address",
       "bengali_meaning": "ই-মেইল ঠিকানা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_1",
-      "article": "die"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die E-Mail-Adressen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "gespräch",
+      "headword": "Gespräch",
       "english_gloss": "conversation",
       "bengali_meaning": "কথোপকথন; আলাপ",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das Gespräch ist wichtig.",
-      "example_bn": null,
+      "example_bn": "কথোপকথনটি গুরুত্বপূর্ণ।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_1",
-      "article": "das"
+      "review_status": "second_stage_review_batch_2",
+      "article": "das",
+      "plural": "die Gespräche",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "mein",
@@ -1095,59 +1157,66 @@
       "headword": "minus",
       "english_gloss": "minus",
       "bengali_meaning": "বিয়োগ; মাইনাস",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Fünf minus zwei ist drei.",
-      "example_bn": null,
+      "example_bn": "পাঁচ বিয়োগ দুই সমান তিন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_1"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "sagen",
       "english_gloss": "to say",
       "bengali_meaning": "বলা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Was sagen Sie?",
-      "example_bn": null,
+      "example_bn": "আপনি কী বলছেন?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_1"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "schreiben",
       "english_gloss": "to write",
       "bengali_meaning": "লেখা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Schreiben Sie das Wort.",
-      "example_bn": null,
+      "example_bn": "শব্দটি লিখুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_1"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "unterstrich",
+      "headword": "Unterstrich",
       "english_gloss": "underscore",
       "bengali_meaning": "আন্ডারস্কোর (_); নিচের দাগ",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Hier ist ein Unterstrich.",
-      "example_bn": null,
+      "example_bn": "এখানে একটি আন্ডারস্কোর আছে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_1",
-      "article": "der"
+      "review_status": "second_stage_review_batch_2",
+      "article": "der",
+      "plural": "die Unterstriche",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "bitte",
       "english_gloss": "request; please; you're welcome",
-      "bengali_meaning": "অনুরোধ; দয়া করে; স্বাগতম/কোনো কথা নয় (প্রসঙ্গভেদে)",
-      "bengali_status": "source_checked_draft",
-      "example_de": "Eine Bitte, helfen Sie mir.",
-      "example_bn": "একটি অনুরোধ, আমাকে সাহায্য করুন।",
+      "bengali_meaning": "অনুগ্রহ করে; দয়া করে",
+      "bengali_status": "independently_reviewed_draft",
+      "example_de": "Bitte helfen Sie mir.",
+      "example_bn": "অনুগ্রহ করে আমাকে সাহায্য করুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 27",
-      "review_status": "source_checked_page_27_batch_1",
+      "review_status": "second_stage_review_batch_2",
       "article": "die",
-      "plural": "die Bitten"
+      "plural": "die Bitten",
+      "plural_status": "not_applicable_word_is_particle",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "buchstabieren",
@@ -1161,72 +1230,80 @@
       "review_status": "source_checked_page_3_batch_1"
     },
     {
-      "headword": "dialog",
+      "headword": "Dialog",
       "english_gloss": "dialogue",
       "bengali_meaning": "সংলাপ",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Lesen Sie den Dialog.",
-      "example_bn": null,
+      "example_bn": "সংলাপটি পড়ুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_2",
-      "article": "der"
+      "review_status": "second_stage_review_batch_2",
+      "article": "der",
+      "plural": "die Dialoge",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "langsam",
       "english_gloss": "slow",
       "bengali_meaning": "ধীরে; আস্তে",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_2"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "nicht",
       "english_gloss": "not",
       "bengali_meaning": "না; নয়",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das ist nicht gut.",
-      "example_bn": null,
+      "example_bn": "এটি ভালো নয়।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_2"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "noch einmal",
       "english_gloss": "once more",
       "bengali_meaning": "আরেকবার; আবার",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Bitte noch einmal.",
-      "example_bn": null,
+      "example_bn": "অনুগ্রহ করে আরেকবার।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_2"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "verstehen",
       "english_gloss": "to understand",
       "bengali_meaning": "বোঝা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Ich verstehe das nicht.",
-      "example_bn": null,
+      "example_bn": "আমি এটি বুঝতে পারছি না।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_2"
+      "review_status": "second_stage_review_batch_2",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "land",
+      "headword": "Land",
       "english_gloss": "country",
       "bengali_meaning": "দেশ",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das Land ist groß.",
-      "example_bn": null,
+      "example_bn": "দেশটি বড়।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_2",
-      "article": "das"
+      "review_status": "second_stage_review_batch_2",
+      "article": "das",
+      "plural": "die Länder",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "lernen",
@@ -1240,16 +1317,18 @@
       "review_status": "source_checked_page_3_batch_2"
     },
     {
-      "headword": "tabelle",
+      "headword": "Tabelle",
       "english_gloss": "table, chart",
       "bengali_meaning": "সারণি; টেবিল",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Ergänzen Sie die Tabelle.",
-      "example_bn": null,
+      "example_bn": "সারণিটি পূরণ করুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_2",
-      "article": "die"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die Tabellen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "zweit",
@@ -1274,40 +1353,47 @@
       "review_status": "source_checked_page_3_batch_2"
     },
     {
-      "headword": "stadt",
+      "headword": "Stadt",
       "english_gloss": "city",
       "bengali_meaning": "শহর",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Berlin ist eine Stadt.",
-      "example_bn": null,
+      "example_bn": "বার্লিন একটি শহর।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_2",
-      "article": "die"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die Städte",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "text",
+      "headword": "Text",
       "english_gloss": "text",
       "bengali_meaning": "পাঠ্য; লেখা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Lesen Sie den Text.",
-      "example_bn": null,
+      "example_bn": "লেখাটি পড়ুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_2",
-      "article": "der"
+      "review_status": "second_stage_review_batch_2",
+      "article": "der",
+      "plural": "die Texte",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "befinden",
+      "headword": "Befinden",
       "english_gloss": "condition",
       "bengali_meaning": "অবস্থা; শারীরিক বা মানসিক অবস্থা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Wie ist das Befinden?",
-      "example_bn": null,
+      "example_bn": "আপনার শরীর কেমন?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_3",
-      "article": "das"
+      "review_status": "second_stage_review_batch_2",
+      "article": "das",
+      "plural_status": "singular_only",
+      "review_note": "Usually used as a singular noun; source marks (Sg.).",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "darauf",
@@ -1321,16 +1407,18 @@
       "review_status": "source_checked_page_3_batch_3"
     },
     {
-      "headword": "grammatik",
+      "headword": "Grammatik",
       "english_gloss": "grammar",
       "bengali_meaning": "ব্যাকরণ",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Die Grammatik ist schwer.",
-      "example_bn": null,
+      "example_bn": "ব্যাকরণ কঠিন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_3",
-      "article": "die"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die Grammatiken",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "grüßen",
@@ -1355,28 +1443,32 @@
       "review_status": "source_checked_page_3_batch_3"
     },
     {
-      "headword": "subjekt",
+      "headword": "Subjekt",
       "english_gloss": "subject",
       "bengali_meaning": "কর্তা; বাক্যের উদ্দেশ্য",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das Subjekt steht hier.",
-      "example_bn": null,
+      "example_bn": "কর্তাটি এখানে আছে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_3",
-      "article": "das"
+      "review_status": "second_stage_review_batch_2",
+      "article": "das",
+      "plural": "die Subjekte",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "w-wort",
+      "headword": "W-Wort",
       "english_gloss": "question word",
       "bengali_meaning": "W-প্রশ্নবোধক শব্দ",
-      "bengali_status": "source_checked_draft",
-      "example_de": "\"Wo\" ist ein W-Wort. \"Wo\"",
-      "example_bn": null,
+      "bengali_status": "independently_reviewed_draft",
+      "example_de": "„Wo“ ist ein W-Wort.",
+      "example_bn": "‘Wo’ একটি W-প্রশ্নবোধক শব্দ।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_3",
-      "article": "das"
+      "review_status": "second_stage_review_batch_2",
+      "article": "das",
+      "plural": "die W-Wörter",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "fotografieren",
@@ -1390,16 +1482,18 @@
       "review_status": "source_checked_page_3_batch_3"
     },
     {
-      "headword": "freundin",
+      "headword": "Freundin",
       "english_gloss": "friend (f)",
       "bengali_meaning": "বন্ধু (নারী)",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Sie ist meine Freundin.",
-      "example_bn": null,
+      "example_bn": "সে আমার বান্ধবী।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_3",
-      "article": "die"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die Freundinnen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "joggen",
@@ -1413,40 +1507,47 @@
       "review_status": "source_checked_page_3_batch_3"
     },
     {
-      "headword": "kollege",
+      "headword": "Kollege",
       "english_gloss": "colleague (m)",
       "bengali_meaning": "সহকর্মী (পুরুষ)",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Er ist mein Kollege.",
-      "example_bn": null,
+      "example_bn": "তিনি আমার সহকর্মী।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_3",
-      "article": "der"
+      "review_status": "second_stage_review_batch_2",
+      "article": "der",
+      "plural": "die Kollegen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "kollegin",
+      "headword": "Kollegin",
       "english_gloss": "colleague (f)",
       "bengali_meaning": "সহকর্মী (নারী)",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Sie ist meine Kollegin.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_page_3_batch_3",
-      "article": "die"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die Kolleginnen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "musik",
+      "headword": "Musik",
       "english_gloss": "music",
       "bengali_meaning": "সংগীত; গানবাজনা",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Ich höre Musik.",
       "example_bn": "আমি গান শুনি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "source_checked_page_4_batch_1",
-      "article": "die"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural_status": "usually_singular",
+      "review_note": "Generally used as a singular/mass noun; plural Musiken is rare and refers to different musical traditions or types.",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
       "headword": "singen",
@@ -20950,6 +21051,13 @@
       "records_updated": 44,
       "meaning_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–3; German usage checked against source context and standard German reference guidance",
       "note": "Reviewed noun capitalization, articles and plural forms where source-listed; corrected können and ganz glosses; refined Bangla meanings and translated available example sentences. Uncertain/variant entries retain explicit qualification."
+    },
+    {
+      "batch": "A1 second-stage review batch 2 (records 45–130)",
+      "date": "2026-11-01",
+      "records_updated": 59,
+      "meaning_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; German noun forms and contextual usage",
+      "note": "Added/checked articles and plural forms for source-listed nouns; corrected the non-noun particle bitte and removed the erroneous article value from fragen; marked Befinden as singular and Musik as usually singular; reviewed Bangla meanings and translated available example sentences."
     }
   ],
   "pronunciation_schema": {
