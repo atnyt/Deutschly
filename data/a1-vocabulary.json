@@ -2052,11 +2052,22 @@
       "example_bn": "আমরা সিনেমা দেখতে যাচ্ছি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_27",
       "article": "das",
       "plural": "die Kinos",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Kino",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ die Kinos; Plural বিরল।"
     },
     {
       "headword": "kochen",
@@ -2200,11 +2211,22 @@
       "example_bn": "এটি এক বিস্ময়কর ঘটনা!",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_27",
       "article": "die",
       "plural": "die Sensationen",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Sensation",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "super",
@@ -2241,11 +2263,22 @@
       "example_bn": "ছবিটি সুন্দর।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_27",
       "article": "das",
       "plural": "die Fotos",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Foto_Fotografie",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "Kommentar",
@@ -2256,11 +2289,22 @@
       "example_bn": "মন্তব্যটি পড়ুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_27",
       "article": "der",
       "plural": "die Kommentare",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Kommentar",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "lustig",
@@ -2574,11 +2618,22 @@
       "example_bn": "মঙ্গলবার আমি কাজ করি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_27",
       "article": "der",
       "plural": "die Dienstage",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Dienstag",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "Donnerstag",
@@ -2604,11 +2659,22 @@
       "example_bn": "শুক্রবার আমি সিনেমা দেখতে যাই।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_27",
       "article": "der",
       "plural": "die Freitage",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Freitag",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "Mittwoch",
@@ -2619,11 +2685,22 @@
       "example_bn": "বুধবার সপ্তাহের মাঝামাঝি দিন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_27",
       "article": "der",
       "plural": "die Mittwoche",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Mittwoch",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "Montag",
@@ -2634,11 +2711,22 @@
       "example_bn": "সোমবার স্কুল শুরু হয়।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "second_stage_review_batch_27",
       "article": "der",
       "plural": "die Montage",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch (Einzelprüfung)",
+      "confidence_status": "reviewed",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Montag",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-01"
+      },
+      "review_note": "Duden-এ Article, Plural ও মূল অর্থ যাচাই করা হয়েছে।"
     },
     {
       "headword": "Samstag",
