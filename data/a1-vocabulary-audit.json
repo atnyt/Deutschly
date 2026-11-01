@@ -4,7 +4,7 @@
   "source_pdf": "A1 Vocabulary list_Deutsch mit Shakil(3).pdf",
   "source_pdf_pages": 40,
   "source_rows": 1715,
-  "unique_normalized_headwords": 1711,
+  "unique_normalized_headwords": 1713,
   "status": "second_stage_dictionary_verification_in_progress",
   "checks": {
     "json_valid": true,
@@ -33,13 +33,13 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 86,
+      "source_checked": 88,
       "needs_verification": 1
     },
     "source_json_reconciliation_pass_1": {
       "pages_compared": 40,
-      "valid_missing_entries_recovered": 6,
-      "main_json_records_after_recovery": 1711,
+      "valid_missing_entries_recovered": 8,
+      "main_json_records_after_recovery": 1713,
       "remaining_manual_layout_review": true
     }
   },
@@ -782,7 +782,23 @@
       "section": "4a",
       "recovered_on": "2026-11-02",
       "dictionary_source": "https://de.wiktionary.org/wiki/Reisef%C3%BChrerin"
+    },
+    {
+      "headword": "Künstler",
+      "source_pdf_page": 31,
+      "chapter": "10",
+      "section": "1b",
+      "recovered_on": "2026-11-02",
+      "dictionary_source": "https://www.duden.de/rechtschreibung/Kuenstler"
+    },
+    {
+      "headword": "Künstlerin",
+      "source_pdf_page": 31,
+      "chapter": "10",
+      "section": "1b",
+      "recovered_on": "2026-11-02",
+      "dictionary_source": "https://www.duden.de/rechtschreibung/Kuenstlerin"
     }
   ],
-  "reconciliation_note": "A full-page PDF-to-JSON comparison pass identified six valid source entries absent from the JSON; all six have been added. Several apparent mismatches were confirmed as existing canonical entries or source spelling/inflection variants (e.g. Stadttour, Kunst/Künste, sehen, sich verabschieden, Würstel). The parser-based pass can miss layout/line-wrap cases, so this is not yet a guarantee that every one of the 1,715 source rows has been individually matched."
+  "reconciliation_note": "Full-page comparison identified eight valid source entries absent from the JSON and recovered them. This pass recovered Künstler and Künstlerin (PDF page 31, chapter 10, section 1b), with article/plural checked against Duden. Apparent mismatches such as Wände, Medien, Rollenkarte, Satzende, and momentan are already represented by canonical database entries. PDF layout and line wraps complicate automated row parsing, so a final page-by-page visual/layout reconciliation is still required before claiming every source row has been individually matched."
 }
