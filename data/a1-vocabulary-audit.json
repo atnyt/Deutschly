@@ -1,1 +1,128 @@
-{"schema_version":"1.0.0","generated_on":"2026-11-01","source_pdf":"A1 Vocabulary list_Deutsch mit Shakil(3).pdf","source_pdf_pages":40,"source_rows":1715,"unique_normalized_headwords":1705,"status":"second_stage_dictionary_verification_in_progress","checks":{"json_valid":true,"source_rows_preserved":true,"duplicate_groups_before_merge":10,"duplicate_rows_consolidated":10,"duplicate_groups_after_merge":0,"missing_bengali_meaning":0,"missing_german_example":1,"missing_bengali_example":1,"records_without_article":654,"noun_records_with_article_but_no_plural":98,"records_needing_manual_review":[{"headword":"Stadtstaatin","reason":"Marked not_individually_verified; keep visibly unverified until checked against a reliable dictionary."}],"remaining_incomplete_examples":[{"headword":"Würstel","missing_german_example":true,"missing_bengali_example":true,"reason":"The supplied PDF identifies it as a dialectal variant of Würstchen but supplies no dedicated example sentence; no example was invented."}],"confidence_status_counts":{"reviewed_draft":1666,"source_checked":38,"needs_verification":1}},"interpretation":{"records_without_article":"Mostly verbs, adjectives, adverbs, phrases and proper names; part-of-speech classification is required before treating these as missing noun articles.","noun_records_with_article_but_no_plural":"98 records have an article but no plural field. These include mass/uncountable and collective nouns, month names, and some context-specific forms; the list requires per-word classification rather than automatic plural generation.","duplicate_policy":"Exact/normalized duplicate rows are consolidated; source provenance remains attached to the canonical record.","confidence_status":"reviewed_draft means included in a second-stage review batch, not individually guaranteed. source_checked means a targeted correction was checked against the cited source. needs_verification must never be displayed as verified."},"externally_checked_corrections":[{"headword":"Satzende","article":"das","plural":"die Satzenden","source":"https://www.duden.de/rechtschreibung/Satzende"},{"headword":"Sandwich","article":"das/der","plural":"die Sandwiches; auch die Sandwiche","source":"https://www.duden.de/rechtschreibung/Sandwich"}],"dictionary_verification_batches":[{"batch":1,"source":"Duden Online","checked_on":"2026-11-01","verified_fields":["article","plural"],"checked_headwords":["Autobahn","Butterbrot","Flasche","Handtuch","Kindergarten","Koffer","Nudel","Person","Sprache","Wort","Entschuldigung","Würstel","Würstchen","Kranke"],"notes":["Wort-এর plural দুটি: Wörter এবং Worte; ব্যবহার অর্থভেদে আলাদা।","Würstel হলো বিশেষত অস্ট্রীয় আঞ্চলিক শব্দ; Duden-এ das Würstel, plural die Würstel।","এই ব্যাচে বাংলা অর্থ ও উদাহরণকে Duden-verified হিসেবে চিহ্নিত করা হয়নি।","Würstchen: das Würstchen, plural die Würstchen; Kranke: substantiviertes Adjektiv, der/die Kranke, plural die Kranken."],"sources":["https://www.duden.de/deklination/substantive/Autobahn","https://www.duden.de/rechtschreibung/Butterbrot","https://www.duden.de/rechtschreibung/Flasche","https://www.duden.de/rechtschreibung/Handtuch","https://www.duden.de/rechtschreibung/Kindergarten","https://www.duden.de/rechtschreibung/Koffer","https://www.duden.de/rechtschreibung/Nudel","https://www.duden.de/rechtschreibung/Person","https://www.duden.de/rechtschreibung/Sprache","https://www.duden.de/rechtschreibung/Wort","https://www.duden.de/rechtschreibung/Entschuldigung","https://www.duden.de/rechtschreibung/Wuerstel","https://www.duden.de/deklination/substantive/Wuerstchen","https://www.duden.de/rechtschreibung/Kranker"]}]}
+{
+  "schema_version": "1.0.0",
+  "generated_on": "2026-11-01",
+  "source_pdf": "A1 Vocabulary list_Deutsch mit Shakil(3).pdf",
+  "source_pdf_pages": 40,
+  "source_rows": 1715,
+  "unique_normalized_headwords": 1705,
+  "status": "second_stage_dictionary_verification_in_progress",
+  "checks": {
+    "json_valid": true,
+    "source_rows_preserved": true,
+    "duplicate_groups_before_merge": 10,
+    "duplicate_rows_consolidated": 10,
+    "duplicate_groups_after_merge": 0,
+    "missing_bengali_meaning": 0,
+    "missing_german_example": 1,
+    "missing_bengali_example": 1,
+    "records_without_article": 654,
+    "noun_records_with_article_but_no_plural": 98,
+    "records_needing_manual_review": [
+      {
+        "headword": "Stadtstaatin",
+        "reason": "Marked not_individually_verified; keep visibly unverified until checked against a reliable dictionary."
+      }
+    ],
+    "remaining_incomplete_examples": [
+      {
+        "headword": "Würstel",
+        "missing_german_example": true,
+        "missing_bengali_example": true,
+        "reason": "The supplied PDF identifies it as a dialectal variant of Würstchen but supplies no dedicated example sentence; no example was invented."
+      }
+    ],
+    "confidence_status_counts": {
+      "reviewed_draft": 1666,
+      "source_checked": 38,
+      "needs_verification": 1
+    }
+  },
+  "interpretation": {
+    "records_without_article": "Mostly verbs, adjectives, adverbs, phrases and proper names; part-of-speech classification is required before treating these as missing noun articles.",
+    "noun_records_with_article_but_no_plural": "98 records have an article but no plural field. These include mass/uncountable and collective nouns, month names, and some context-specific forms; the list requires per-word classification rather than automatic plural generation.",
+    "duplicate_policy": "Exact/normalized duplicate rows are consolidated; source provenance remains attached to the canonical record.",
+    "confidence_status": "reviewed_draft means included in a second-stage review batch, not individually guaranteed. source_checked means a targeted correction was checked against the cited source. needs_verification must never be displayed as verified."
+  },
+  "externally_checked_corrections": [
+    {
+      "headword": "Satzende",
+      "article": "das",
+      "plural": "die Satzenden",
+      "source": "https://www.duden.de/rechtschreibung/Satzende"
+    },
+    {
+      "headword": "Sandwich",
+      "article": "das/der",
+      "plural": "die Sandwiches; auch die Sandwiche",
+      "source": "https://www.duden.de/rechtschreibung/Sandwich"
+    }
+  ],
+  "dictionary_verification_batches": [
+    {
+      "batch": 1,
+      "source": "Duden Online",
+      "checked_on": "2026-11-01",
+      "verified_fields": ["article", "plural"],
+      "checked_headwords": [
+        "Autobahn", "Butterbrot", "Flasche", "Handtuch", "Kindergarten", "Koffer",
+        "Nudel", "Person", "Sprache", "Wort", "Entschuldigung", "Würstel",
+        "Würstchen", "Kranke"
+      ],
+      "notes": [
+        "Wort-এর plural দুটি: Wörter এবং Worte; ব্যবহার অর্থভেদে আলাদা।",
+        "Würstel হলো বিশেষত অস্ট্রীয় আঞ্চলিক শব্দ; Duden-এ das Würstel, plural die Würstel।",
+        "এই ব্যাচে বাংলা অর্থ ও উদাহরণকে Duden-verified হিসেবে চিহ্নিত করা হয়নি।",
+        "Würstchen: das Würstchen, plural die Würstchen; Kranke: substantiviertes Adjektiv, der/die Kranke, plural die Kranken."
+      ],
+      "sources": [
+        "https://www.duden.de/deklination/substantive/Autobahn",
+        "https://www.duden.de/rechtschreibung/Butterbrot",
+        "https://www.duden.de/rechtschreibung/Flasche",
+        "https://www.duden.de/rechtschreibung/Handtuch",
+        "https://www.duden.de/rechtschreibung/Kindergarten",
+        "https://www.duden.de/rechtschreibung/Koffer",
+        "https://www.duden.de/rechtschreibung/Nudel",
+        "https://www.duden.de/rechtschreibung/Person",
+        "https://www.duden.de/rechtschreibung/Sprache",
+        "https://www.duden.de/rechtschreibung/Wort",
+        "https://www.duden.de/rechtschreibung/Entschuldigung",
+        "https://www.duden.de/rechtschreibung/Wuerstel",
+        "https://www.duden.de/deklination/substantive/Wuerstchen",
+        "https://www.duden.de/rechtschreibung/Kranker"
+      ]
+    },
+    {
+      "batch": 2,
+      "source": "Duden Online",
+      "checked_on": "2026-11-01",
+      "verified_fields": ["article", "plural", "contextual_bengali_meaning"],
+      "checked_headwords": ["Interview", "Gespräch"],
+      "results": [
+        {
+          "headword": "Interview",
+          "article": "das",
+          "plural": "die Interviews",
+          "bengali_meaning": "সাক্ষাৎকার",
+          "source": "https://www.duden.de/rechtschreibung/Interview",
+          "source_note": "Duden explicitly gives das Interview and plural die Interviews; its definition is a structured interview/conversation."
+        },
+        {
+          "headword": "Gespräch",
+          "article": "das",
+          "plural": "die Gespräche",
+          "bengali_meaning": "কথোপকথন; আলাপ-আলোচনা",
+          "source": "https://www.duden.de/rechtschreibung/Gespraech",
+          "source_note": "Duden explicitly gives das Gespräch and plural die Gespräche; meaning is oral exchange of thoughts in dialogue."
+        }
+      ],
+      "notes": [
+        "এই ব্যাচে শুধু Article, Plural এবং প্রসঙ্গভিত্তিক বাংলা অর্থ যাচাই করা হয়েছে; উদাহরণ বাক্য আলাদাভাবে যাচাই করা হয়নি।",
+        "PDF-এ Interview-এর বাংলা অর্থ 'সাক্ষাৎকার'—সঠিক। Gespräch-এর 'কথোপকথন' অর্থ সঠিক; আরও স্বাভাবিক অর্থ হিসেবে 'আলাপ-আলোচনা' যোগ করা হয়েছে।"
+      ],
+      "sources": [
+        "https://www.duden.de/rechtschreibung/Interview",
+        "https://www.duden.de/rechtschreibung/Gespraech"
+      ]
+    }
+  ]
+}
