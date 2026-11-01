@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.5.0",
+  "schema_version": "1.6.0",
   "title": "Deutschly German–Bangla A1 Vocabulary",
   "language_pair": "de-BN",
   "level": "A1",
@@ -8,7 +8,7 @@
     "data_note": "The first two reviewed batches were checked against the corresponding pages of the user-provided Deutsch mit Shakil A1 PDF. Other records remain unreviewed or missing.",
     "policy": "Do not label machine translation as verified. Keep source transcription distinct from independently reviewed linguistic additions."
   },
-  "record_count": 1334,
+  "record_count": 1342,
   "records": [
     {
       "headword": "deutsch",
@@ -14730,6 +14730,103 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
       "review_status": "not_individually_verified"
+    },
+    {
+      "headword": "Telefonnummer",
+      "english_gloss": "telephone number",
+      "bengali_meaning": "টেলিফোন নম্বর",
+      "bengali_status": "source_checked_draft",
+      "article": "die",
+      "plural": "die Telefonnummern",
+      "example_de": "Hier ist meine Telefonnummer.",
+      "example_bn": "এখানে আমার টেলিফোন নম্বর।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 3",
+      "review_status": "source_checked_page_3_batch_4"
+    },
+    {
+      "headword": "Punkt",
+      "english_gloss": "period; point",
+      "bengali_meaning": "দাঁড়ি; বিন্দু",
+      "bengali_status": "source_checked_draft",
+      "article": "der",
+      "plural": "die Punkte",
+      "example_de": "Das ist ein Punkt.",
+      "example_bn": "এটি একটি বিন্দু।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 3",
+      "review_status": "source_checked_page_3_batch_4"
+    },
+    {
+      "headword": "ein bisschen",
+      "english_gloss": "a little; a bit",
+      "bengali_meaning": "একটু; সামান্য",
+      "bengali_status": "source_checked_draft",
+      "example_de": "Ich spreche ein bisschen.",
+      "example_bn": "আমি একটু কথা বলি।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 3",
+      "review_status": "source_checked_page_3_batch_4"
+    },
+    {
+      "headword": "Redemittel",
+      "english_gloss": "useful phrase; expression",
+      "bengali_meaning": "কথোপকথনে ব্যবহৃত দরকারি বাক্যাংশ",
+      "bengali_status": "source_checked_draft",
+      "article": "das",
+      "plural": "die Redemittel",
+      "example_de": "Das ist ein Redemittel.",
+      "example_bn": "এটি একটি দরকারি বাক্যাংশ।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 3",
+      "review_status": "source_checked_page_3_batch_4"
+    },
+    {
+      "headword": "sich verabschieden",
+      "english_gloss": "to say goodbye",
+      "bengali_meaning": "বিদায় নেওয়া; বিদায় জানানো",
+      "bengali_status": "source_checked_draft",
+      "example_de": "Wir verabschieden uns.",
+      "example_bn": "আমরা বিদায় নিচ্ছি।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 3",
+      "review_status": "source_checked_page_3_batch_4"
+    },
+    {
+      "headword": "gern",
+      "english_gloss": "gladly; like to (do something)",
+      "bengali_meaning": "সানন্দে; কোনো কাজ করতে ভালো লাগে বোঝাতে",
+      "bengali_status": "source_checked_draft",
+      "example_de": "Ich lerne gern.",
+      "example_bn": "আমি শিখতে ভালোবাসি।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 3",
+      "review_status": "source_checked_page_3_batch_4"
+    },
+    {
+      "headword": "Leute",
+      "english_gloss": "people",
+      "bengali_meaning": "লোকজন; মানুষজন",
+      "bengali_status": "source_checked_draft",
+      "plural": "die Leute",
+      "example_de": "Viele Leute sind hier.",
+      "example_bn": "এখানে অনেক লোকজন আছে।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 3",
+      "review_status": "source_checked_page_3_batch_4"
+    },
+    {
+      "headword": "Freund",
+      "english_gloss": "friend (male)",
+      "bengali_meaning": "বন্ধু (পুরুষ)",
+      "bengali_status": "source_checked_draft",
+      "article": "der",
+      "plural": "die Freunde",
+      "example_de": "Das ist mein Freund.",
+      "example_bn": "এটি আমার বন্ধু।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 3",
+      "review_status": "source_checked_page_3_batch_4"
     }
   ],
   "review_log": [
@@ -14766,6 +14863,13 @@
       "records_updated": 12,
       "meaning_source": "User-provided Deutsch mit Shakil A1 Vocabulary PDF, page 3",
       "note": "Added/checked Bengali meanings; articles included where the source page clearly identifies them."
+    },
+    {
+      "batch": "A1 page 3 batch 4",
+      "date": "2026-11-01",
+      "records_updated": 8,
+      "meaning_source": "User-provided Deutsch mit Shakil A1 Vocabulary PDF, page 3",
+      "note": "Added eight source-listed entries missing from the structured database, with Bengali meanings and source examples."
     }
   ]
 }
