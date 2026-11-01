@@ -1,333 +1,358 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "title": "Deutschly German–Bangla A1 Vocabulary",
   "language_pair": "de-BN",
   "level": "A1",
   "provenance": {
     "primary_source": "User-provided A1 Vocabulary list_Deutsch mit Shakil PDF",
-    "data_note": "German headwords, English glosses and German examples are transcribed from the PDF-derived vocabulary already used by Deutschly. Existing Bengali mappings are drafts and are not certified as error-free.",
-    "policy": "No automatic machine translation is stored as a verified Bengali meaning. Missing Bengali meanings and unverified example translations remain null."
+    "data_note": "Bengali meanings and noun article/plural fields in the first reviewed batch were checked against the user-provided Deutsch mit Shakil A1 PDF; other records remain drafts or missing. This is not a full independent linguistic review.",
+    "policy": "Do not label machine translation as verified. Keep source transcription distinct from independently reviewed linguistic additions."
   },
   "record_count": 1334,
   "records": [
     {
       "headword": "deutsch",
       "english_gloss": "German",
-      "bengali_meaning": "জার্মান ভাষা / জার্মান",
-      "bengali_status": "existing_curated_draft",
+      "bengali_meaning": "জার্মান ভাষা; জার্মান",
+      "bengali_status": "source_checked_draft",
       "example_de": "Ich lerne Deutsch.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "gut",
       "english_gloss": "good",
       "bengali_meaning": "ভালো",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Mir geht es gut.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "was",
       "english_gloss": "what",
       "bengali_meaning": "কী",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Was ist das?",
       "example_bn": "ওটা কী?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "autobahn",
       "english_gloss": "highway",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "মহাসড়ক",
+      "bengali_status": "source_checked_draft",
       "example_de": "Das ist eine Autobahn.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "die",
+      "plural": "die Autobahnen"
     },
     {
       "headword": "butterbrot",
       "english_gloss": "sandwich",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "মাখন লাগানো রুটি; স্যান্ডউইচ",
+      "bengali_status": "source_checked_draft",
       "example_de": "Er isst ein Butterbrot.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "das",
+      "plural": "die Butterbrote"
     },
     {
       "headword": "flasche",
       "english_gloss": "bottle",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "বোতল",
+      "bengali_status": "source_checked_draft",
       "example_de": "Die Flasche ist leer.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "die",
+      "plural": "die Flaschen"
     },
     {
       "headword": "handtuch",
       "english_gloss": "towel",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "তোয়ালে",
+      "bengali_status": "source_checked_draft",
       "example_de": "Das Handtuch ist blau.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "das",
+      "plural": "die Handtücher"
     },
     {
       "headword": "kindergarten",
       "english_gloss": "kindergarten",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "শিশুদের বিদ্যালয়; কিন্ডারগার্টেন",
+      "bengali_status": "source_checked_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "der",
+      "plural": "die Kindergärten"
     },
     {
       "headword": "koffer",
       "english_gloss": "suitcase",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "স্যুটকেস",
+      "bengali_status": "source_checked_draft",
       "example_de": "Mein Koffer ist schwer.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "der",
+      "plural": "die Koffer"
     },
     {
       "headword": "kranke",
       "english_gloss": "sick person",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "অসুস্থ ব্যক্তি",
+      "bengali_status": "source_checked_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "der/die"
     },
     {
       "headword": "nudel",
       "english_gloss": "noodle",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "নুডলস",
+      "bengali_status": "source_checked_draft",
       "example_de": "Ich mag Nudeln.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "die",
+      "plural": "die Nudeln"
     },
     {
       "headword": "würstchen",
       "english_gloss": "sausage",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "ছোট সসেজ",
+      "bengali_status": "source_checked_draft",
       "example_de": "Das Würstchen schmeckt gut.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "das",
+      "plural": "die Würstchen"
     },
     {
       "headword": "wörstel",
       "english_gloss": "sausage",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "সসেজ (আঞ্চলিক রূপ)",
+      "bengali_status": "source_checked_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "das",
+      "plural": "die Wörstel"
     },
     {
       "headword": "ihr, ihre",
       "english_gloss": "your",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "আপনার; আপনাদের (সম্বোধনভেদে)",
+      "bengali_status": "source_checked_draft",
       "example_de": "Ist das Ihr Koffer?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "sprache",
       "english_gloss": "language",
       "bengali_meaning": "ভাষা",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "die",
+      "plural": "die Sprachen"
     },
     {
       "headword": "wie",
       "english_gloss": "how / what",
-      "bengali_meaning": "কেমন / কীভাবে",
-      "bengali_status": "existing_curated_draft",
+      "bengali_meaning": "কেমন; কীভাবে",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wie geht es dir?",
       "example_bn": "তুমি কেমন আছ?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "wort",
       "english_gloss": "word",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "শব্দ",
+      "bengali_status": "source_checked_draft",
       "example_de": "Das Wort ist kurz.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "das",
+      "plural": "die Wörter"
     },
     {
       "headword": "andere",
       "english_gloss": "other",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "অন্য; ভিন্ন",
+      "bengali_status": "source_checked_draft",
       "example_de": "Kennst du andere Wörter?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "können",
       "english_gloss": "to know",
-      "bengali_meaning": "পারা",
-      "bengali_status": "existing_curated_draft",
+      "bengali_meaning": "পারা; সক্ষম হওয়া",
+      "bengali_status": "source_checked_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "kursplakat",
       "english_gloss": "course poster",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "কোর্সের পোস্টার",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wir machen ein Kursplakat.",
       "example_bn": "আমরা একটি কোর্সের পোস্টার তৈরি করি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "das",
+      "plural": "die Kursplakate"
     },
     {
       "headword": "machen",
       "english_gloss": "to make",
-      "bengali_meaning": "করা / তৈরি করা",
-      "bengali_status": "existing_curated_draft",
+      "bengali_meaning": "করা; তৈরি করা",
+      "bengali_status": "source_checked_draft",
       "example_de": "Was machen Sie?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "sammeln",
       "english_gloss": "to collect",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "সংগ্রহ করা",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wir sammeln Wörter.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "und",
       "english_gloss": "and",
       "bengali_meaning": "এবং",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Du und ich.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "auch",
       "english_gloss": "also",
-      "bengali_meaning": "এছাড়াও",
-      "bengali_status": "existing_curated_draft",
+      "bengali_meaning": "এছাড়াও; ও",
+      "bengali_status": "source_checked_draft",
       "example_de": "Ich komme auch.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "bis bald",
       "english_gloss": "see you soon",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "শিগগিরই দেখা হবে",
+      "bengali_status": "source_checked_draft",
       "example_de": "Auf Wiedersehen, bis bald!",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "ciao",
       "english_gloss": "bye",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "বিদায়",
+      "bengali_status": "source_checked_draft",
       "example_de": "Ciao, Maria!",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "danke",
       "english_gloss": "thank you",
       "bengali_meaning": "ধন্যবাদ",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Danke schön!",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "dir",
       "english_gloss": "you (dat.)",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "তোমাকে; তোমার (Dativ)",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wie geht es dir?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "du",
       "english_gloss": "you",
       "bengali_meaning": "তুমি",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wer bist du?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "entschuldigung",
@@ -338,150 +363,155 @@
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "not_individually_verified",
+      "article": "die"
     },
     {
       "headword": "ganz",
       "english_gloss": "pretty",
-      "bengali_meaning": "বেশ / পুরোপুরি",
-      "bengali_status": "existing_curated_draft",
+      "bengali_meaning": "পুরোপুরি; বেশ",
+      "bengali_status": "source_checked_draft",
       "example_de": "Mir geht es ganz gut.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "gehen",
       "english_gloss": "to go",
       "bengali_meaning": "যাওয়া",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wie geht es?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "hallo",
       "english_gloss": "hello",
       "bengali_meaning": "হ্যালো",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Hallo, wie geht's?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "heißen",
       "english_gloss": "to be named",
-      "bengali_meaning": "নাম হওয়া",
-      "bengali_status": "existing_curated_draft",
+      "bengali_meaning": "নাম হওয়া; পরিচিত হওয়া",
+      "bengali_status": "source_checked_draft",
       "example_de": "Ich heiße Anna.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "hören",
       "english_gloss": "to hear",
       "bengali_meaning": "শোনা",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Bitte hören Sie zu.",
       "example_bn": "দয়া করে মন দিয়ে শুনুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "ich",
       "english_gloss": "I",
       "bengali_meaning": "আমি",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Ich bin Student.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "lesen",
       "english_gloss": "to read",
       "bengali_meaning": "পড়া",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Bitte lesen Sie den Text.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "person",
       "english_gloss": "person",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "ব্যক্তি",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wer ist diese Person?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "die",
+      "plural": "die Personen"
     },
     {
       "headword": "sehr",
       "english_gloss": "very",
       "bengali_meaning": "খুব",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Danke, sehr gut.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "sein",
       "english_gloss": "to be",
       "bengali_meaning": "হওয়া",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Das ist mein Freund.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "tschüs",
       "english_gloss": "bye",
       "bengali_meaning": "বিদায়",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Tschüs, bis morgen!",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "wer",
       "english_gloss": "who",
       "bengali_meaning": "কে",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wer ist das?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch"
     },
     {
       "headword": "situation",
       "english_gloss": "situation",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "পরিস্থিতি",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wie ist die Situation?",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_first_batch",
+      "article": "die",
+      "plural": "die Situationen"
     },
     {
       "headword": "spielen",
@@ -14683,6 +14713,15 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
       "review_status": "not_individually_verified"
+    }
+  ],
+  "review_log": [
+    {
+      "batch": "A1 page 1 initial review",
+      "date": "2026-11-01",
+      "records_updated": 42,
+      "meaning_source": "User-provided Deutsch mit Shakil A1 Vocabulary PDF, page 1",
+      "note": "Added Bengali meanings and source-present noun articles/plurals where confidently readable. Remaining records unchanged."
     }
   ]
 }
