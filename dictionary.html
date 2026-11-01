@@ -81,25 +81,32 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     records.forEach(function (item) {
       var lemma = normalize(item.headword);
       var plural = lemmaKey(item.plural);
-      if (!lemma || lemma.length < 4) return;
+      if (!lemma || lemma.length < 4 || wanted.length < 4) return;
       var matchedBy = '';
-      if (wanted.length >= 4 && wanted.indexOf(lemma) !== -1) matchedBy = 'compound';
-      else if (plural.length >= 4 && wanted.length >= 4 && wanted.indexOf(plural) !== -1) matchedBy = 'plural-component';
-      else if (lemma.length >= 4 && lemma.indexOf(wanted) !== -1 && wanted.length >= 4) matchedBy = 'partial';
+      if (wanted.endsWith(lemma) && wanted !== lemma) matchedBy = 'compound';
+      else if (plural.length >= 4 && wanted.endsWith(plural) && wanted !== plural) matchedBy = 'plural-component';
+      else if (lemma.indexOf(wanted) === 0 && lemma !== wanted) matchedBy = 'prefix';
       if (matchedBy) {
         candidates.push({ record: item, matchedBy: matchedBy, score: matchedBy === 'compound' ? 3 : matchedBy === 'plural-component' ? 2 : 1 });
       }
     });
     candidates.sort(function (a, b) {
-      return b.score - a.score || normalize(a.record.headword).length - normalize(b.record.headword).length;
+      return b.score - a.score || normalize(b.record.headword).length - normalize(a.record.headword).length;
     });
     var seen = new Set();
-    var related = candidates.filter(function (candidate) {
+    var deduplicated = candidates.filter(function (candidate) {
       var k = normalize(candidate.record.headword);
       if (seen.has(k)) return false;
       seen.add(k);
       return true;
-    }).slice(0, 6);
+    });
+    var related = deduplicated.filter(function (candidate) {
+      var lemma = normalize(candidate.record.headword);
+      return !deduplicated.some(function (other) {
+        var otherLemma = normalize(other.record.headword);
+        return other !== candidate && otherLemma.length > lemma.length && otherLemma.endsWith(lemma) && wanted.endsWith(otherLemma);
+      });
+    }).slice(0, 5);
     return { exact: null, related: related };
   }
   function safeAudioUrl(value) {
