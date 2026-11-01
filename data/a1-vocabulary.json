@@ -17078,11 +17078,13 @@
       "example_bn": "পোশাকগুলো নতুন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 34",
-      "review_status": "second_stage_review_batch_12",
+      "review_status": "second_stage_review_batch_21",
       "article": "die",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 8–9, pages 34–38; noun forms and usage checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Korrekturen.de Deklination; Duden-এর সাধারণ ব্যবহার-উদাহরণের সঙ্গে অর্থ মিলিয়ে দেখা হয়েছে",
+      "confidence_status": "reviewed",
+      "plural": "die Kleidungen (কম প্রচলিত; বিভিন্ন ধরনের পোশাক/পোশাকব্যবস্থা)",
+      "review_note": "Kleidungen রূপটি ব্যাকরণগতভাবে আছে, তবে দৈনন্দিন সাধারণ অর্থে Kleidung সাধারণত একবচন সমষ্টিবাচকভাবে ব্যবহৃত হয়।"
     },
     {
       "headword": "Krawatte",
@@ -17657,11 +17659,22 @@
       "example_bn": "গহনাটি সোনার তৈরি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 35",
-      "review_status": "second_stage_review_batch_12",
+      "review_status": "second_stage_review_batch_21",
       "article": "der",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 8–9, pages 34–38; noun forms and usage checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch",
+      "confidence_status": "reviewed",
+      "plural": "die Schmucke (Plural selten)",
+      "review_note": "Duden-এ Plural die Schmucke দেওয়া আছে; Plural বিরল, সাধারণ অলংকার অর্থে একবচনই স্বাভাবিক।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Schmuck",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Spielwaren",
@@ -18220,13 +18233,23 @@
       "example_bn": "স্থাপত্যটি পুরোনো।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 37",
-      "review_status": "second_stage_review_batch_13",
+      "review_status": "second_stage_review_batch_21",
       "article": "die",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42; noun forms, capitalization and contextual usage reviewed; exceptions noted individually",
+      "plural": "die Architekturen (বিশেষ অর্থে; সাধারণ Baukunst অর্থে ohne Plural)",
+      "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "A1 অর্থে সাধারণত একবচন; বিশেষ প্রেক্ষাপটে Architekturen সম্ভব।",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed",
+      "review_note": "Duden-এ Plural Architekturen আছে; Baukunst অর্থে সাধারণত Plural হয় না।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Architektur",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Designer",
@@ -18940,13 +18963,23 @@
       "example_bn": "ভবিষ্যৎ উজ্জ্বল।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 38",
-      "review_status": "second_stage_review_batch_13",
+      "review_status": "second_stage_review_batch_21",
       "article": "die",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42; noun forms, capitalization and contextual usage reviewed; exceptions noted individually",
+      "plural": "die Zukünfte (Plural selten)",
+      "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "Im A1-Sinn gewöhnlich Singular; der Plural Zukünfte ist selten und bezeichnet unterschiedliche mögliche Zukünfte.",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed",
+      "review_note": "Duden-এ die Zukünfte; Plural বিরল।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Zukunft",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Ausgang",
@@ -19357,13 +19390,23 @@
       "example_bn": "স্কি করতে মজা লাগে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 39",
-      "review_status": "second_stage_review_batch_13",
+      "review_status": "second_stage_review_batch_21",
       "article": "das",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42; noun forms, capitalization and contextual usage reviewed; exceptions noted individually",
+      "plural": "kein Plural (A1 সাধারণ ব্যবহার)",
+      "review_source": "Duden – Wortbildung/Schreibung; A1 ব্যবহার",
       "grammatical_number": "singular",
       "number_note": "Substantivierter Infinitiv; gewöhnlich Singular. Skifahrten bezeichnet Ski-Ausflüge/Reisen, nicht den Plural von Skifahren.",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed",
+      "review_note": "Skifahren একটি কাজ/ক্রিয়া-নাম; সাধারণ A1 ব্যবহারে Plural নেই।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Ski",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Deutschbuch",
@@ -19437,13 +19480,23 @@
       "example_bn": "পোল্যান্ড পূর্ব দিকে অবস্থিত।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 40",
-      "review_status": "second_stage_review_batch_13",
+      "review_status": "second_stage_review_batch_21",
       "article": "der",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42; noun forms, capitalization and contextual usage reviewed; exceptions noted individually",
+      "plural": "kein Plural (দিক/অঞ্চল অর্থে)",
+      "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "Himmelsrichtung; gewöhnlich Singular.",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed",
+      "review_note": "দিক বা অঞ্চল বোঝানো Osten সাধারণত একবচনে ব্যবহৃত হয়; Duden Deklination-এ Singular-ই দেখানো হয়েছে।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Osten",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Süden",
@@ -23378,13 +23431,23 @@
       "example_de": "Ich habe Physiotherapie.",
       "example_bn": "আমার ফিজিওথেরাপি চলছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 28",
-      "review_status": "second_stage_review_batch_16",
+      "review_status": "second_stage_review_batch_21",
       "article": "die",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 12–13, pages 50–54; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "plural": "die Physiotherapien",
+      "review_source": "Duden Online-Wörterbuch – Deklination",
       "grammatical_number": "singular",
       "number_note": "চিকিৎসাপদ্ধতি/বিষয় হিসেবে সাধারণত একবচন।",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed",
+      "review_note": "Duden-এর Deklination-এ Plural die Physiotherapien দেওয়া আছে।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/deklination/substantive/Physiotherapie",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "untersuchen",
@@ -25161,13 +25224,14 @@
       "example_de": "Ich mag die Hitze nicht.",
       "example_bn": "আমি প্রচণ্ড গরম পছন্দ করি না।",
       "source": "Deutsch mit Shakil A1 PDF, page 40",
-      "review_status": "second_stage_review_batch_17",
+      "review_status": "second_stage_review_batch_21",
       "article": "die",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 8–10, pages 36–40; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Hitze, die (Sg.))",
       "grammatical_number": "singular",
       "number_note": "তাপ/গরম আবহাওয়া বোঝাতে সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "confidence_status": "reviewed",
+      "review_note": "A1 শব্দতালিকায় Hitze একবচন-only হিসেবে চিহ্নিত; সাধারণ তাপ/গরম অর্থে Plural শেখানো হবে না।"
     },
     {
       "headword": "Mistwetter",
