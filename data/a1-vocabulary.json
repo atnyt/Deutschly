@@ -10360,11 +10360,22 @@
       "example_bn": "বৃষ্টি প্রবল।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 19",
-      "review_status": "second_stage_review_batch_8",
+      "review_status": "second_stage_review_batch_20",
       "article": "der",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 5–6, pages 23–27; noun forms and singular/plural source markers checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch; A1-Kurswortschatz-Abgleich",
+      "confidence_status": "reviewed",
+      "plural": "die Regen (Plural selten)",
+      "review_note": "Duden-এ Plural die Regen দেওয়া আছে; Plural বিরল।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Regen_Niederschlag",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "schicken",
@@ -12303,12 +12314,22 @@
       "example_bn": "আমি খুব কম টেলিভিশন দেখি। / আমরা প্রায়ই টেলিভিশন দেখি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, pages 24 and 35",
-      "review_status": "second_stage_review_batch_9",
+      "review_status": "second_stage_review_batch_20",
       "article": "das",
       "plural_status": "singular_only",
-      "review_note": "Mass noun for television/broadcasting; no regular plural in this sense.",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 5–7, pages 21–28; noun forms and contextual use checked",
-      "confidence_status": "reviewed_draft"
+      "review_note": "Klett Netzwerk neu A1 শব্দতালিকায় Fernsehen, das (Sg.) হিসেবে চিহ্নিত।",
+      "review_source": "Duden Online-Wörterbuch; A1-Kurswortschatz-Abgleich",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1 শব্দতালিকা: Sg.)",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Fernsehen",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "formulieren",
@@ -14073,11 +14094,22 @@
       "example_bn": "আমরা Perfekt কাল শিখছি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 32",
-      "review_status": "second_stage_review_batch_10",
+      "review_status": "second_stage_review_batch_20",
       "article": "das",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 6–7, pages 26–31; noun forms and source plural markers checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch; A1-Kurswortschatz-Abgleich",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1 শব্দতালিকা: Sg.)",
+      "review_note": "Klett Netzwerk neu A1 শব্দতালিকায় das Perfekt (Sg.) হিসেবে চিহ্নিত।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Perfekt",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Schlaftablette",
@@ -14189,11 +14221,22 @@
       "example_bn": "সে রক্ত দান করছে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 28",
-      "review_status": "second_stage_review_batch_10",
+      "review_status": "second_stage_review_batch_20",
       "article": "das",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 6–7, pages 26–31; noun forms and source plural markers checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch; A1-Kurswortschatz-Abgleich",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (সাধারণ অর্থে)",
+      "review_note": "Duden-এ সাধারণ রক্ত অর্থে Plural নেই; Fachsprache-এ Blute রূপের উল্লেখ আছে।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Blut",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Ergebnis",
@@ -16619,11 +16662,22 @@
       "example_bn": "আমি বিদেশে যাচ্ছি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 33",
-      "review_status": "second_stage_review_batch_12",
+      "review_status": "second_stage_review_batch_20",
       "article": "das",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 8–9, pages 34–38; noun forms and usage checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch; A1-Kurswortschatz-Abgleich",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1 শব্দতালিকার সাধারণ অর্থে)",
+      "review_note": "A1 শব্দতালিকার 'বিদেশ/বিদেশে' অর্থে একবচন-ব্যবহার।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Ausland",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "berühmt",
@@ -17242,11 +17296,22 @@
       "example_bn": "এটি আজেবাজে কথা!",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 34",
-      "review_status": "second_stage_review_batch_12",
+      "review_status": "second_stage_review_batch_20",
       "article": "der",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 8–9, pages 34–38; noun forms and usage checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch; A1-Kurswortschatz-Abgleich",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural",
+      "review_note": "Duden-এ Quatsch-এর সাধারণ কথ্য অর্থে Plural উল্লেখ নেই।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Quatsch",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Schal",
@@ -19551,13 +19616,23 @@
       "example_bn": "তুষার সাদা।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 40",
-      "review_status": "second_stage_review_batch_13",
+      "review_status": "second_stage_review_batch_20",
       "article": "der",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42; noun forms, capitalization and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Duden Online-Wörterbuch; A1-Kurswortschatz-Abgleich",
       "grammatical_number": "singular",
       "number_note": "A1 অর্থে অগণনীয়; সাধারণত বহুবচন নেই।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein Plural (সাধারণ অর্থে)",
+      "confidence_status": "reviewed",
+      "review_note": "Duden-এ সাধারণ তুষার অর্থে Plural উল্লেখ নেই।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Schnee",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "windig",
@@ -22032,13 +22107,23 @@
       "example_de": "Ich habe Hunger.",
       "example_bn": "আমার ক্ষুধা লেগেছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 20",
-      "review_status": "second_stage_review_batch_15",
+      "review_status": "second_stage_review_batch_20",
       "article": "der",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 11–12, pages 46–50; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Duden Online-Wörterbuch; A1-Kurswortschatz-Abgleich",
       "grammatical_number": "singular",
       "number_note": "অবস্থা বোঝানো বিশেষ্য; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein Plural (সাধারণ অর্থে)",
+      "confidence_status": "reviewed",
+      "review_note": "Duden-এর সাধারণ ক্ষুধা অর্থে Plural উল্লেখ নেই।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Hunger",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Bank",
