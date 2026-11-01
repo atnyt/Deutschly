@@ -27,6 +27,80 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
 <section id="results" aria-live="polite"></section>
 </main>
 <script>
+/* Independent local dictionary handler: runs before the advanced online script. */
+(function () {
+  var form = document.getElementById('form');
+  var input = document.getElementById('word');
+  var button = document.getElementById('submit');
+  var results = document.getElementById('results');
+  if (!form || !input || !button || !results) return;
+  var databasePromise = fetch('./data/a1-vocabulary.json', { cache: 'no-store' })
+    .then(function (response) {
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      return response.json();
+    });
+  function escapeHTML(value) {
+    return String(value == null ? '' : value).replace(/[&<>"']/g, function (c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  function key(value) {
+    return String(value || '').normalize('NFC').toLocaleLowerCase('de-DE')
+      .replace(/^(der|die|das|ein|eine|einen|einem|einer)\s+/i, '')
+      .replace(/\s+/g, ' ').trim();
+  }
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    var searched = input.value.trim().replace(/\s+/g, ' ');
+    if (!searched) return;
+    button.disabled = true;
+    results.innerHTML = '<div class="panel"><p class="bn">অভিধান খোঁজা হচ্ছে…</p></div>';
+    databasePromise.then(function (database) {
+      var records = database && Array.isArray(database.records) ? database.records : [];
+      var wanted = key(searched);
+      var record = records.find(function (item) { return key(item.headword) === wanted; });
+      if (!record) {
+        record = records.find(function (item) {
+          return key(item.plural).replace(/^die\s+/i, '') === wanted;
+        });
+      }
+      if (!record) {
+        results.innerHTML = '<div class="panel"><h2 class="word-title">' + escapeHTML(searched) +
+          '</h2><p class="bn">এই শব্দটি Deutschly-এর A1 স্থানীয় ডেটাবেসে পাওয়া যায়নি।</p></div>';
+        return;
+      }
+      var title = (record.article ? record.article + ' ' : '') + record.headword;
+      var grammar = [];
+      if (record.article) grammar.push('Article · ' + record.article);
+      if (record.plural) grammar.push('Plural · ' + record.plural);
+      if (record.ipa) grammar.push('IPA · ' + record.ipa);
+      var audio = Array.isArray(record.audio_sources) ? record.audio_sources.find(function (item) {
+        return item && item.url && item.recording_type === 'native_recording';
+      }) : null;
+      results.innerHTML = '<div class="panel"><h2 class="word-title">' + escapeHTML(title) +
+        '</h2><div class="meaning-glass"><div class="meaning-item">' +
+        escapeHTML(record.bengali_meaning || 'বাংলা অর্থ যোগ করা হচ্ছে।') +
+        '</div></div>' +
+        (record.english_gloss ? '<p class="definition">English: ' + escapeHTML(record.english_gloss) + '</p>' : '') +
+        (grammar.length ? '<p>' + grammar.map(function (item) {
+          return '<span class="tag">' + escapeHTML(item) + '</span>';
+        }).join('') + '</p>' : '') +
+        (record.article_note ? '<p class="definition">' + escapeHTML(record.article_note) + '</p>' : '') +
+        (audio ? '<div class="group"><p class="definition">জার্মান মাতৃভাষীর রেকর্ডিং</p><audio controls preload="none" style="width:100%;height:42px" src="' + escapeHTML(audio.url) + '"></audio></div>' : '') +
+        (record.example_de ? '<div class="group"><h3 style="font-size:16px;line-height:1.6;margin:0 0 6px">' + escapeHTML(record.example_de) + '</h3>' +
+          (record.example_bn ? '<p class="bn">' + escapeHTML(record.example_bn) + '</p>' : '') + '</div>' : '') +
+        '<p class="source">Deutschly A1 Vocabulary Database · ' + escapeHTML(record.source || '') + '</p></div>';
+    }).catch(function (error) {
+      results.innerHTML = '<div class="panel"><p class="bn">স্থানীয় অভিধান লোড করা যায়নি। পৃষ্ঠাটি রিফ্রেশ করে আবার চেষ্টা করো।</p><p class="source">' +
+        escapeHTML(error && error.message ? error.message : 'Database loading error') + '</p></div>';
+    }).finally(function () {
+      button.disabled = false;
+    });
+  }, true);
+})();
+</script>
+<script>
 'use strict';
 const form=document.getElementById('form'),input=document.getElementById('word'),button=document.getElementById('submit'),results=document.getElementById('results');let searchId=0;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
