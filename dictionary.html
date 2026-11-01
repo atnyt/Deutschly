@@ -27,75 +27,162 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
 <section id="results" aria-live="polite"></section>
 </main>
 <script>
-/* Independent local dictionary handler: runs before the advanced online script. */
+/* Reliable local dictionary search: exact, plural, normalized and compound-component matches. */
 (function () {
   var form = document.getElementById('form');
   var input = document.getElementById('word');
   var button = document.getElementById('submit');
   var results = document.getElementById('results');
   if (!form || !input || !button || !results) return;
-  var databasePromise = fetch('./data/a1-vocabulary.json', { cache: 'no-store' })
+
+  var requestId = 0;
+  var databasePromise = fetch('./data/a1-vocabulary.json', { cache: 'no-cache' })
     .then(function (response) {
       if (!response.ok) throw new Error('HTTP ' + response.status);
       return response.json();
+    })
+    .then(function (database) {
+      if (!database || !Array.isArray(database.records)) throw new Error('Invalid vocabulary database');
+      return database;
     });
+
   function escapeHTML(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, function (c) {
       return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
     });
   }
-  function key(value) {
+  function normalize(value) {
     return String(value || '').normalize('NFC').toLocaleLowerCase('de-DE')
-      .replace(/^(der|die|das|ein|eine|einen|einem|einer)\s+/i, '')
-      .replace(/\s+/g, ' ').trim();
+      .replace(/[’‘]/g, "'")
+      .replace(/^(?:(?:der|die|das)(?:\/(?:der|die|das))?|ein|eine|einen|einem|einer)\s+/i, '')
+      .replace(/[‐‑‒–—]/g, '-')
+      .replace(/\s+/g, ' ')
+      .replace(/^[\s.,;:!?]+|[\s.,;:!?]+$/g, '')
+      .trim();
   }
+  function lemmaKey(value) {
+    return normalize(value).replace(/^die\s+/i, '');
+  }
+  function findMatches(records, query) {
+    var wanted = normalize(query);
+    var exact = null;
+    for (var i = 0; i < records.length; i++) {
+      var item = records[i];
+      if (normalize(item.headword) === wanted) { exact = item; break; }
+    }
+    if (!exact) {
+      for (var j = 0; j < records.length; j++) {
+        if (lemmaKey(records[j].plural) === wanted) { exact = records[j]; break; }
+      }
+    }
+    if (exact) return { exact: exact, related: [] };
+
+    var candidates = [];
+    records.forEach(function (item) {
+      var lemma = normalize(item.headword);
+      var plural = lemmaKey(item.plural);
+      if (!lemma || lemma.length < 4) return;
+      var matchedBy = '';
+      if (wanted.length >= 4 && wanted.indexOf(lemma) !== -1) matchedBy = 'compound';
+      else if (plural.length >= 4 && wanted.length >= 4 && wanted.indexOf(plural) !== -1) matchedBy = 'plural-component';
+      else if (lemma.length >= 4 && lemma.indexOf(wanted) !== -1 && wanted.length >= 4) matchedBy = 'partial';
+      if (matchedBy) {
+        candidates.push({ record: item, matchedBy: matchedBy, score: matchedBy === 'compound' ? 3 : matchedBy === 'plural-component' ? 2 : 1 });
+      }
+    });
+    candidates.sort(function (a, b) {
+      return b.score - a.score || normalize(a.record.headword).length - normalize(b.record.headword).length;
+    });
+    var seen = new Set();
+    var related = candidates.filter(function (candidate) {
+      var k = normalize(candidate.record.headword);
+      if (seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    }).slice(0, 6);
+    return { exact: null, related: related };
+  }
+  function safeAudioUrl(value) {
+    try {
+      var url = new URL(String(value || ''), window.location.href);
+      return url.protocol === 'https:' || url.protocol === 'http:' ? url.href : '';
+    } catch (e) { return ''; }
+  }
+  function renderRecord(record) {
+    var title = (record.article ? record.article + ' ' : '') + (record.headword || '');
+    var grammar = [];
+    if (record.article) grammar.push('Article · ' + record.article);
+    if (record.plural) grammar.push('Plural · ' + record.plural);
+    if (record.ipa) grammar.push('IPA · ' + record.ipa);
+    var audio = Array.isArray(record.audio_sources) ? record.audio_sources.find(function (item) {
+      return item && item.recording_type === 'native_recording' && /^de(?:-|$)/i.test(String(item.language || 'de')) && safeAudioUrl(item.url);
+    }) : null;
+    var audioUrl = audio ? safeAudioUrl(audio.url) : '';
+    return '<div class="panel"><h2 class="word-title">' + escapeHTML(title) +
+      '</h2><div class="meaning-glass"><div class="meaning-item">' +
+      escapeHTML(record.bengali_meaning || 'বাংলা অর্থ যোগ করা হচ্ছে।') +
+      '</div></div>' +
+      (record.english_gloss ? '<p class="definition">English: ' + escapeHTML(record.english_gloss) + '</p>' : '') +
+      (grammar.length ? '<p>' + grammar.map(function (item) {
+        return '<span class="tag">' + escapeHTML(item) + '</span>';
+      }).join('') + '</p>' : '') +
+      (record.article_note ? '<p class="definition">' + escapeHTML(record.article_note) + '</p>' : '') +
+      (audioUrl ? '<div class="group"><p class="definition">জার্মান মাতৃভাষীর রেকর্ডিং</p><audio controls preload="none" style="width:100%;height:42px" src="' + escapeHTML(audioUrl) + '">অডিও চালানো যায়নি।</audio></div>' : '') +
+      (record.example_de ? '<div class="group"><h3 style="font-size:16px;line-height:1.6;margin:0 0 6px">' + escapeHTML(record.example_de) + '</h3>' +
+        (record.example_bn ? '<p class="bn">' + escapeHTML(record.example_bn) + '</p>' : '') + '</div>' : '') +
+      '<p class="source">Deutschly A1 Vocabulary Database · ' + escapeHTML(record.source || '') + '</p></div>';
+  }
+  function renderRelated(related, query) {
+    if (!related.length) {
+      return '<div class="panel"><h2 class="word-title">' + escapeHTML(query) +
+        '</h2><p class="bn">এই বানানে কোনো হুবহু শব্দ পাওয়া যায়নি। বানান, Umlaut (ä/ö/ü) ও শব্দের রূপ পরীক্ষা করে আবার চেষ্টা করো।</p>' +
+        '<p class="muted">তুমি চাইলে শব্দটির মূল রূপ (যেমন ক্রিয়ার Infinitiv) দিয়েও খুঁজতে পারো।</p></div>';
+    }
+    return '<div class="panel"><h2 class="word-title">' + escapeHTML(query) +
+      '</h2><p class="bn">এই বানানে হুবহু কোনো A1 এন্ট্রি নেই। তবে নিচের শব্দটি তোমার সার্চের ভেতরে পাওয়া গেছে:</p>' +
+      related.map(function (candidate) {
+        var r = candidate.record;
+        var label = (r.article ? r.article + ' ' : '') + r.headword;
+        var reason = candidate.matchedBy === 'compound' ? 'যৌগিক শব্দের অংশ' :
+          candidate.matchedBy === 'plural-component' ? 'Plural রূপের অংশ' : 'আংশিক বানান মিল';
+        return '<div class="group"><p><span class="tag">' + escapeHTML(reason) + '</span></p>' +
+          '<strong>' + escapeHTML(label) + '</strong>' +
+          (r.bengali_meaning ? '<p class="bn">' + escapeHTML(r.bengali_meaning) + '</p>' : '') +
+          '<button type="button" data-dict-suggestion="' + escapeHTML(r.headword) +
+          '" style="height:38px;margin-top:6px">এই শব্দটি খুলুন</button></div>';
+      }).join('') +
+      '<p class="source">সম্পর্কিত শব্দ দেখানো হয়েছে; এগুলো সার্চ করা শব্দের সমার্থক বা একই শব্দ—এমন দাবি করা হচ্ছে না।</p></div>';
+  }
+
+  results.addEventListener('click', function (event) {
+    var target = event.target.closest('[data-dict-suggestion]');
+    if (!target) return;
+    input.value = target.getAttribute('data-dict-suggestion') || '';
+    form.requestSubmit();
+  });
+
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     event.stopImmediatePropagation();
     var searched = input.value.trim().replace(/\s+/g, ' ');
     if (!searched) return;
+    var thisRequest = ++requestId;
     button.disabled = true;
-    results.innerHTML = '<div class="panel"><p class="bn">অভিধান খোঁজা হচ্ছে…</p></div>';
+    results.innerHTML = '<div class="panel"><p class="bn" role="status">অভিধান খোঁজা হচ্ছে…</p></div>';
     databasePromise.then(function (database) {
-      var records = database && Array.isArray(database.records) ? database.records : [];
-      var wanted = key(searched);
-      var record = records.find(function (item) { return key(item.headword) === wanted; });
-      if (!record) {
-        record = records.find(function (item) {
-          return key(item.plural).replace(/^die\s+/i, '') === wanted;
-        });
+      if (thisRequest !== requestId) return;
+      var match = findMatches(database.records, searched);
+      if (match.exact) {
+        results.innerHTML = renderRecord(match.exact);
+      } else {
+        results.innerHTML = renderRelated(match.related, searched);
       }
-      if (!record) {
-        results.innerHTML = '<div class="panel"><h2 class="word-title">' + escapeHTML(searched) +
-          '</h2><p class="bn">এই শব্দটি Deutschly-এর A1 স্থানীয় ডেটাবেসে পাওয়া যায়নি।</p></div>';
-        return;
-      }
-      var title = (record.article ? record.article + ' ' : '') + record.headword;
-      var grammar = [];
-      if (record.article) grammar.push('Article · ' + record.article);
-      if (record.plural) grammar.push('Plural · ' + record.plural);
-      if (record.ipa) grammar.push('IPA · ' + record.ipa);
-      var audio = Array.isArray(record.audio_sources) ? record.audio_sources.find(function (item) {
-        return item && item.url && item.recording_type === 'native_recording';
-      }) : null;
-      results.innerHTML = '<div class="panel"><h2 class="word-title">' + escapeHTML(title) +
-        '</h2><div class="meaning-glass"><div class="meaning-item">' +
-        escapeHTML(record.bengali_meaning || 'বাংলা অর্থ যোগ করা হচ্ছে।') +
-        '</div></div>' +
-        (record.english_gloss ? '<p class="definition">English: ' + escapeHTML(record.english_gloss) + '</p>' : '') +
-        (grammar.length ? '<p>' + grammar.map(function (item) {
-          return '<span class="tag">' + escapeHTML(item) + '</span>';
-        }).join('') + '</p>' : '') +
-        (record.article_note ? '<p class="definition">' + escapeHTML(record.article_note) + '</p>' : '') +
-        (audio ? '<div class="group"><p class="definition">জার্মান মাতৃভাষীর রেকর্ডিং</p><audio controls preload="none" style="width:100%;height:42px" src="' + escapeHTML(audio.url) + '"></audio></div>' : '') +
-        (record.example_de ? '<div class="group"><h3 style="font-size:16px;line-height:1.6;margin:0 0 6px">' + escapeHTML(record.example_de) + '</h3>' +
-          (record.example_bn ? '<p class="bn">' + escapeHTML(record.example_bn) + '</p>' : '') + '</div>' : '') +
-        '<p class="source">Deutschly A1 Vocabulary Database · ' + escapeHTML(record.source || '') + '</p></div>';
     }).catch(function (error) {
-      results.innerHTML = '<div class="panel"><p class="bn">স্থানীয় অভিধান লোড করা যায়নি। পৃষ্ঠাটি রিফ্রেশ করে আবার চেষ্টা করো।</p><p class="source">' +
+      if (thisRequest !== requestId) return;
+      results.innerHTML = '<div class="panel"><p class="bn">স্থানীয় অভিধান লোড করা যায়নি। ইন্টারনেট সংযোগ পরীক্ষা করে পৃষ্ঠাটি রিফ্রেশ করো।</p><p class="source">' +
         escapeHTML(error && error.message ? error.message : 'Database loading error') + '</p></div>';
     }).finally(function () {
-      button.disabled = false;
+      if (thisRequest === requestId) button.disabled = false;
     });
   }, true);
 })();
