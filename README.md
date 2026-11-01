@@ -48,3 +48,28 @@ The frontend is a static `index.html` file and requires no build step. Configure
 ## Validation notes
 
 The embedded JavaScript in both HTML pages was syntax-checked after the latest changes. This does not replace live browser testing: third-party API availability, CORS behavior, audio file availability, and the GitHub Pages deployment still need to be checked in a browser.
+
+
+## Deutschly learning data and search
+
+- `data/a1-vocabulary.json` contains the consolidated local A1 word list. The original PDF contained 1,715 source rows; 10 duplicate rows were consolidated, leaving 1,705 unique normalized headwords. Original duplicate source provenance is retained in each affected record.
+- `data/grammar-terms.json` contains curated German–Bangla grammar terminology. It is a separate data source and does not inflate the A1 vocabulary count.
+- `data/compound-analysis.json` contains curated exact compound-word analyses. It does not guess arbitrary word splits.
+- `data/a1-vocabulary-audit.json` records the first-pass audit and unresolved items. A blank plural is not automatically an error: many entries are mass nouns, collective nouns, months, or have uncommon/context-specific plurals.
+- Dictionary records expose a confidence label: source-checked correction, reviewed draft, or needs verification. A review batch is not the same as a guarantee that every grammatical detail has been independently verified.
+
+## Optional AI assistant deployment
+
+The AI assistant interface is `ai-assistant.html`. It is deliberately shown as **not connected** until a private backend is deployed and configured.
+
+1. Create a Cloudflare Worker from `worker/src/index.js` (the included `wrangler.toml` is a starting configuration).
+2. Add `OPENAI_API_KEY` as a Worker **secret** and `OPENAI_MODEL` as a Worker variable in the Cloudflare dashboard. Never add the API key to GitHub, `data/ai-config.json`, or browser JavaScript.
+3. Keep `ALLOWED_ORIGIN` set to `https://atnyt.github.io`. The Worker includes an optional rate-limit binding and limits question length.
+4. Enable web search with `ENABLE_WEB_SEARCH=true` when source-backed answers are required. Web search adds usage cost; OpenAI's published pricing lists web search at $10 per 1,000 calls, plus retrieved-content token usage.
+5. After deployment, set the Worker HTTPS URL in `data/ai-config.json` under `endpoint`. Until this is done, the page remains disabled rather than pretending AI is connected.
+
+The backend uses the OpenAI Responses API with `store:false`, returns source URLs when available, and labels answers without sources as AI-generated and needing verification. API model availability and pricing depend on the OpenAI API project. The Assistants API was sunset on 26 August 2026; new integrations should use Responses.
+
+## Current validation boundary
+
+JavaScript syntax and local database invariants are checked after code changes. This repository has not been authenticated to a Cloudflare account, no API key has been supplied, and the Worker has not been deployed or live-tested. GitHub Pages deployment and the actual mobile browser experience must still be checked after deployment.
