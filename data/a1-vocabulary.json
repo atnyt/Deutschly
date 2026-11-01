@@ -4710,8 +4710,8 @@
       "english_gloss": "time; occasion; instance",
       "bengali_meaning": "বার; উপলক্ষ",
       "bengali_status": "source_checked_draft",
-      "example_de": "Malen Sie ein Bild.",
-      "example_bn": "একটি ছবি আঁকুন।",
+      "example_de": "Ich war schon drei Mal dort.",
+      "example_bn": "আমি সেখানে ইতিমধ্যে তিনবার গিয়েছি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 10",
       "review_status": "source_checked_page_10_batch_1",
@@ -4994,8 +4994,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die Aprile"
+      "article": "der"
     },
     {
       "headword": "august",
@@ -5007,8 +5006,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die Auguste"
+      "article": "der"
     },
     {
       "headword": "dezember",
@@ -5020,8 +5018,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die Dezember"
+      "article": "der"
     },
     {
       "headword": "februar",
@@ -5033,8 +5030,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die Februare"
+      "article": "der"
     },
     {
       "headword": "frühling",
@@ -5072,8 +5068,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die Januare"
+      "article": "der"
     },
     {
       "headword": "juli",
@@ -5085,8 +5080,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die Julis"
+      "article": "der"
     },
     {
       "headword": "juni",
@@ -5098,8 +5092,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die Junis"
+      "article": "der"
     },
     {
       "headword": "mai",
@@ -5111,8 +5104,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die Mais"
+      "article": "der"
     },
     {
       "headword": "märz",
@@ -5124,8 +5116,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die Märze"
+      "article": "der"
     },
     {
       "headword": "monat",
@@ -5150,8 +5141,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die November"
+      "article": "der"
     },
     {
       "headword": "oktober",
@@ -5163,8 +5153,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die Oktober"
+      "article": "der"
     },
     {
       "headword": "september",
@@ -5176,8 +5165,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 11",
       "review_status": "source_checked_page_11_batch_1",
-      "article": "der",
-      "plural": "die September"
+      "article": "der"
     },
     {
       "headword": "sommer",
@@ -15577,7 +15565,7 @@
       "bengali_meaning": "উপর; ওপরে (অবস্থান বোঝালে Dativ)",
       "bengali_status": "source_checked_draft",
       "example_de": "Das Buch liegt auf dem Tisch.",
-      "example_bn": "বইটি টেবিলের ওপর лежে আছে।",
+      "example_bn": "বইটি টেবিলের ওপর রাখা আছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
       "review_status": "source_checked_page_8_batch_1"
     },
