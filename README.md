@@ -10,6 +10,13 @@ A static, AMOLED-black German-learning tool with a dictionary/example page and a
 4. Only labels the Wiktionary entry as having an audio reference when the structured metadata check passes.
 5. If the exact entry or audio metadata cannot be confirmed, it clearly says so and shows manual dictionary search links.
 
+## Pronunciation fallback
+
+- The pronunciation page prioritizes an actual German audio file linked from the German Wiktionary entry when one is found.
+- When no native recording is detected, the page offers browser/device speech synthesis only if an installed voice has a German language tag (`de-*`). It never silently falls back to an English voice.
+- Device speech synthesis is labelled as generated TTS, not a native-speaker recording. Voice quality and availability depend on the user's operating system and browser.
+- The dictionary page uses the same strict German-only TTS fallback. IPA and Bengali phonetic spellings are not fabricated when a reviewed source is unavailable.
+
 ## Accuracy and limitations
 
 - WiktApi is a third-party API based on processed Wiktionary data; it is not an official Duden, PONS, or DWDS API.
