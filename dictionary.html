@@ -231,7 +231,6 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       escapeHTML(record.bengali_meaning || 'বাংলা অর্থ যোগ করা হচ্ছে।') +
       '</div></div>' +
       '<p><span class="tag">তথ্যের অবস্থা · ' + escapeHTML(confidence) + '</span></p>' +
-      (record.english_gloss ? '<p class="definition">English: ' + escapeHTML(record.english_gloss) + '</p>' : '') +
       (grammar.length ? '<p>' + grammar.map(function (item) {
         return '<span class="tag">' + escapeHTML(item) + '</span>';
       }).join('') + '</p>' : '') +
@@ -239,7 +238,6 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       (audioUrl ? '<div class="group"><p class="definition">জার্মান মাতৃভাষীর রেকর্ডিং</p><audio controls preload="none" style="width:100%;height:42px" src="' + escapeHTML(audioUrl) + '">অডিও চালানো যায়নি।</audio></div>' : '') +
       (record.example_de ? '<div class="group"><h3 style="font-size:16px;line-height:1.6;margin:0 0 6px">' + escapeHTML(record.example_de) + '</h3>' +
         (record.example_bn ? '<p class="bn">' + escapeHTML(record.example_bn) + '</p>' : '') + '</div>' : '') +
-      '<p class="source">মূল উৎস: ' + escapeHTML(record.source || 'উৎস-তথ্য অনুপস্থিত') + '</p>' + reviewDetail + mergedSources +
       '<p class="source"><a href="' + escapeHTML(dudenUrl) + '" target="_blank" rel="noopener noreferrer" style="color:#c7d0ff">Duden-এ আলাদাভাবে যাচাই করো ↗</a></p></div>';
   }
   function dictionarySourceLinks(query) {
