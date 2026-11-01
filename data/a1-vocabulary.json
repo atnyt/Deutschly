@@ -8,7 +8,7 @@
     "data_note": "1,715 source rows consolidated into 1,705 unique normalized headwords. Duplicate source rows are retained as source_variants on the canonical record. Source transcription is distinct from independent dictionary verification; unverified records remain explicitly flagged.",
     "policy": "Do not label machine translation as verified. Keep source transcription distinct from independently reviewed linguistic additions."
   },
-  "record_count": 1706,
+  "record_count": 1711,
   "records": [
     {
       "headword": "deutsch",
@@ -25819,6 +25819,108 @@
       "review_status": "second_stage_review_batch_17",
       "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 8–10, pages 36–40; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
       "confidence_status": "reviewed_draft"
+    },
+    {
+      "headword": "Guten Tag",
+      "english_gloss": "good day; hello",
+      "bengali_meaning": "শুভ দিন; হ্যালো",
+      "bengali_status": "source_transcribed",
+      "example_de": "Guten Tag, Herr Land!",
+      "example_bn": "শুভ দিন, জনাব লান্ড!",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 1, Kapitel 1, Abschnitt 1a",
+      "review_status": "missing_source_entry_recovery_2026_11_02",
+      "confidence_status": "source_checked",
+      "review_source": "Supplied PDF source entry; standard German greeting orthography checked against Duden spelling guidance",
+      "review_note": "Greeting phrase; not a noun, so no article or plural."
+    },
+    {
+      "headword": "zuordnen",
+      "english_gloss": "to assign; to match",
+      "bengali_meaning": "মিলিয়ে দেওয়া; বরাদ্দ করা",
+      "bengali_status": "source_transcribed",
+      "example_de": "Bitte ordnen Sie zu.",
+      "example_bn": "অনুগ্রহ করে মিলিয়ে দিন।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 1, Kapitel 1, Abschnitt 1a",
+      "review_status": "missing_source_entry_recovery_2026_11_02",
+      "confidence_status": "source_checked",
+      "review_source": "Supplied PDF source entry; infinitive normalized to lowercase and separable-verb usage preserved",
+      "review_note": "Verb; no article or plural."
+    },
+    {
+      "headword": "zusammengehören",
+      "english_gloss": "to belong together; to form a unit",
+      "bengali_meaning": "একসঙ্গে সম্পর্কিত হওয়া; একসঙ্গে মানানসই হওয়া",
+      "bengali_status": "source_transcribed",
+      "example_de": "Was gehört zusammen?",
+      "example_bn": "কোনগুলো একসঙ্গে সম্পর্কিত?",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 1, Kapitel 1, Abschnitt 1a",
+      "review_status": "missing_source_entry_recovery_2026_11_02",
+      "confidence_status": "source_checked",
+      "review_source": "Duden Online-Wörterbuch",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/zusammengehoeren",
+        "checked_fields": [
+          "lemma",
+          "meaning",
+          "verb_forms"
+        ],
+        "checked_on": "2026-11-02"
+      },
+      "review_note": "Verb; no article or plural."
+    },
+    {
+      "headword": "Reiseführer",
+      "english_gloss": "tour guide; travel guidebook",
+      "bengali_meaning": "ভ্রমণ-নির্দেশক; পর্যটক-গাইড; ভ্রমণবিষয়ক নির্দেশিকা",
+      "bengali_status": "source_transcribed",
+      "example_de": "Der Reiseführer ist neu.",
+      "example_bn": "ভ্রমণ-নির্দেশিকাটি নতুন।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 2, Kapitel 1, Abschnitt 4a",
+      "review_status": "missing_source_entry_recovery_2026_11_02",
+      "article": "der",
+      "plural": "die Reiseführer",
+      "confidence_status": "source_checked",
+      "review_source": "Duden Online-Wörterbuch",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Reisefuehrer",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-02"
+      }
+    },
+    {
+      "headword": "Reiseführerin",
+      "english_gloss": "female tour guide",
+      "bengali_meaning": "নারী পর্যটক-গাইড; ভ্রমণ-নির্দেশিকা",
+      "bengali_status": "source_transcribed",
+      "example_de": "Sie ist eine Reiseführerin.",
+      "example_bn": "তিনি একজন নারী পর্যটক-গাইড।",
+      "level": "A1",
+      "source": "Deutsch mit Shakil A1 PDF, page 2, Kapitel 1, Abschnitt 4a",
+      "review_status": "missing_source_entry_recovery_2026_11_02",
+      "article": "die",
+      "plural": "die Reiseführerinnen",
+      "confidence_status": "source_checked",
+      "review_source": "Wiktionary; derived feminine form cross-checked with Duden Reiseführer entry",
+      "dictionary_check": {
+        "source": "Wiktionary / Duden",
+        "url": "https://de.wiktionary.org/wiki/Reisef%C3%BChrerin",
+        "checked_fields": [
+          "article",
+          "plural",
+          "meaning"
+        ],
+        "checked_on": "2026-11-02"
+      }
     }
   ],
   "review_log": [
@@ -26037,6 +26139,24 @@
       "external_sources": [
         "https://www.duden.de/rechtschreibung/Aussagesatz"
       ]
+    },
+    {
+      "batch": "pdf_json_reconciliation_pass_1_2026_11_02",
+      "date": "2026-11-02",
+      "records_added": 5,
+      "headwords": [
+        "Guten Tag",
+        "zuordnen",
+        "zusammengehören",
+        "Reiseführer",
+        "Reiseführerin"
+      ],
+      "changes": [
+        "Compared all 40 PDF pages with the main JSON using normalized headword matching.",
+        "Recovered five valid source entries absent from the main JSON: Guten Tag, zuordnen, zusammengehören, Reiseführer, Reiseführerin.",
+        "Did not duplicate existing canonical entries or import source typos/variants as separate words (e.g. Stadttour, Kunst, sehen, sich verabschieden, Würstel)."
+      ],
+      "source_pdf": "A1 Vocabulary list_Deutsch mit Shakil(3).pdf"
     }
   ],
   "pronunciation_schema": {
