@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_on": "2026-11-01",
+  "generated_on": "2026-11-02",
   "source_pdf": "A1 Vocabulary list_Deutsch mit Shakil(3).pdf",
   "source_pdf_pages": 40,
   "source_rows": 1715,
@@ -33,7 +33,7 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 38,
+      "source_checked": 42,
       "needs_verification": 1
     }
   },
@@ -62,11 +62,25 @@
       "batch": 1,
       "source": "Duden Online",
       "checked_on": "2026-11-01",
-      "verified_fields": ["article", "plural"],
+      "verified_fields": [
+        "article",
+        "plural"
+      ],
       "checked_headwords": [
-        "Autobahn", "Butterbrot", "Flasche", "Handtuch", "Kindergarten", "Koffer",
-        "Nudel", "Person", "Sprache", "Wort", "Entschuldigung", "Würstel",
-        "Würstchen", "Kranke"
+        "Autobahn",
+        "Butterbrot",
+        "Flasche",
+        "Handtuch",
+        "Kindergarten",
+        "Koffer",
+        "Nudel",
+        "Person",
+        "Sprache",
+        "Wort",
+        "Entschuldigung",
+        "Würstel",
+        "Würstchen",
+        "Kranke"
       ],
       "notes": [
         "Wort-এর plural দুটি: Wörter এবং Worte; ব্যবহার অর্থভেদে আলাদা।",
@@ -95,8 +109,15 @@
       "batch": 2,
       "source": "Duden Online",
       "checked_on": "2026-11-01",
-      "verified_fields": ["article", "plural", "contextual_bengali_meaning"],
-      "checked_headwords": ["Interview", "Gespräch"],
+      "verified_fields": [
+        "article",
+        "plural",
+        "contextual_bengali_meaning"
+      ],
+      "checked_headwords": [
+        "Interview",
+        "Gespräch"
+      ],
       "results": [
         {
           "headword": "Interview",
@@ -122,6 +143,67 @@
       "sources": [
         "https://www.duden.de/rechtschreibung/Interview",
         "https://www.duden.de/rechtschreibung/Gespraech"
+      ]
+    },
+    {
+      "batch": 3,
+      "source": "Duden Online",
+      "checked_on": "2026-11-02",
+      "verified_fields": [
+        "article",
+        "plural",
+        "contextual_bengali_meaning"
+      ],
+      "checked_headwords": [
+        "Bahnhof",
+        "Besucher",
+        "Kirche",
+        "Konzerthaus"
+      ],
+      "results": [
+        {
+          "headword": "Bahnhof",
+          "article": "der",
+          "plural": "die Bahnhöfe",
+          "bengali_meaning": "রেলওয়ে স্টেশন",
+          "source": "https://www.duden.de/rechtschreibung/Bahnhof",
+          "source_note": "Duden identifies Bahnhof as masculine and gives plural Bahnhöfe; definition is the complex of a railway station and associated buildings."
+        },
+        {
+          "headword": "Besucher",
+          "article": "der",
+          "plural": "die Besucher",
+          "bengali_meaning": "দর্শনার্থী; আগন্তুক",
+          "source": "https://www.duden.de/rechtschreibung/Besucher",
+          "source_note": "Duden identifies Besucher as masculine and gives unchanged plural Besucher; meaning is a person who visits someone or a place. The PDF's masculine form is retained; feminine counterpart is Besucherin."
+        },
+        {
+          "headword": "Kirche",
+          "article": "die",
+          "plural": "die Kirchen",
+          "bengali_meaning": "গির্জা; খ্রিস্টীয় উপাসনালয়",
+          "source": "https://www.duden.de/rechtschreibung/Kirche",
+          "source_note": "Duden identifies Kirche as feminine and gives plural Kirchen. Some other senses, such as a church service, are marked without plural; the vocabulary meaning here is the building/institution."
+        },
+        {
+          "headword": "Konzerthaus",
+          "article": "das",
+          "plural": "die Konzerthäuser",
+          "bengali_meaning": "কনসার্ট হল; সঙ্গীতানুষ্ঠানের ভবন",
+          "source": "https://www.duden.de/rechtschreibung/Konzerthaus",
+          "source_note": "Duden identifies Konzerthaus as neuter and gives plural Konzerthäuser; definition is a building for concert events."
+        }
+      ],
+      "notes": [
+        "এই ব্যাচে চারটি শব্দের Article, Plural এবং PDF-এ দেওয়া প্রসঙ্গ অনুযায়ী বাংলা অর্থ অভিধান দিয়ে যাচাই করা হয়েছে।",
+        "Kirche-এর ক্ষেত্রে Duden-এর বহুবচন Kirchen; তবে 'Gottesdienst' অর্থে শব্দটি গণনাতীত/বহুবচনহীন হতে পারে। এখানে PDF-এর 'গির্জা' অর্থে Kirchen প্রযোজ্য।",
+        "Besucher-এর বহুবচন die Besucher; স্ত্রীলিঙ্গ একবচন হলো die Besucherin।"
+      ],
+      "sources": [
+        "https://www.duden.de/rechtschreibung/Bahnhof",
+        "https://www.duden.de/rechtschreibung/Besucher",
+        "https://www.duden.de/rechtschreibung/Kirche",
+        "https://www.duden.de/rechtschreibung/Konzerthaus"
       ]
     }
   ]
