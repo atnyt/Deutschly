@@ -63,16 +63,36 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
   function lemmaKey(value) {
     return normalize(value).replace(/^die\s+/i, '');
   }
+  function compactKey(value) {
+    return normalize(value).replace(/[\s-]+/g, '');
+  }
+  function editDistance(a, b) {
+    if (Math.abs(a.length - b.length) > 2) return 3;
+    var previous = [];
+    for (var j = 0; j <= b.length; j++) previous[j] = j;
+    for (var i = 1; i <= a.length; i++) {
+      var current = [i];
+      var rowMin = i;
+      for (var k = 1; k <= b.length; k++) {
+        current[k] = Math.min(current[k - 1] + 1, previous[k] + 1, previous[k - 1] + (a.charAt(i - 1) === b.charAt(k - 1) ? 0 : 1));
+        if (current[k] < rowMin) rowMin = current[k];
+      }
+      if (rowMin > 2) return 3;
+      previous = current;
+    }
+    return previous[b.length];
+  }
   function findMatches(records, query) {
     var wanted = normalize(query);
+    var wantedCompact = compactKey(query);
     var exact = null;
     for (var i = 0; i < records.length; i++) {
       var item = records[i];
-      if (normalize(item.headword) === wanted) { exact = item; break; }
+      if (normalize(item.headword) === wanted || compactKey(item.headword) === wantedCompact) { exact = item; break; }
     }
     if (!exact) {
       for (var j = 0; j < records.length; j++) {
-        if (lemmaKey(records[j].plural) === wanted) { exact = records[j]; break; }
+        if (lemmaKey(records[j].plural) === wanted || compactKey(records[j].plural) === wantedCompact) { exact = records[j]; break; }
       }
     }
     if (exact) return { exact: exact, related: [] };
@@ -107,6 +127,20 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
         return other !== candidate && otherLemma.length > lemma.length && otherLemma.endsWith(lemma) && wanted.endsWith(otherLemma);
       });
     }).slice(0, 5);
+    if (!related.length && wanted.length >= 4 && /^[a-zäöüß-]+$/i.test(wanted)) {
+      var typoCandidates = records.map(function (item) {
+        var lemma = normalize(item.headword);
+        return { record: item, distance: editDistance(wanted, lemma) };
+      }).filter(function (item) {
+        var limit = wanted.length >= 7 ? 2 : 1;
+        return item.distance > 0 && item.distance <= limit;
+      }).sort(function (a, b) {
+        return a.distance - b.distance || normalize(a.record.headword).length - normalize(b.record.headword).length;
+      }).slice(0, 3);
+      related = typoCandidates.map(function (item) {
+        return { record: item.record, matchedBy: 'typo', score: 0 };
+      });
+    }
     return { exact: null, related: related };
   }
   function safeAudioUrl(value) {
@@ -139,26 +173,39 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
         (record.example_bn ? '<p class="bn">' + escapeHTML(record.example_bn) + '</p>' : '') + '</div>' : '') +
       '<p class="source">Deutschly A1 Vocabulary Database · ' + escapeHTML(record.source || '') + '</p></div>';
   }
+  function dictionarySourceLinks(query) {
+    var q = encodeURIComponent(String(query || '').trim());
+    var links = [
+      ['Wiktionary', 'https://de.wiktionary.org/wiki/' + q.replace(/%20/g, '_')],
+      ['Duden', 'https://www.duden.de/suchen/dudenonline/' + q],
+      ['PONS', 'https://de.pons.com/übersetzung/deutsch-bengali/' + q]
+    ];
+    return '<div class="panel"><p class="muted">স্থানীয় A1 তালিকার বাইরে হলে এই অভিধানগুলোতে সরাসরি যাচাই করতে পারো:</p>' +
+      links.map(function (link) {
+        return '<a href="' + escapeHTML(link[1]) + '" target="_blank" rel="noopener noreferrer" style="display:inline-block;color:#c7d0ff;margin:5px 14px 5px 0">' + escapeHTML(link[0]) + ' ↗</a>';
+      }).join('') + '</div>';
+  }
   function renderRelated(related, query) {
     if (!related.length) {
       return '<div class="panel"><h2 class="word-title">' + escapeHTML(query) +
-        '</h2><p class="bn">এই বানানে কোনো হুবহু শব্দ পাওয়া যায়নি। বানান, Umlaut (ä/ö/ü) ও শব্দের রূপ পরীক্ষা করে আবার চেষ্টা করো।</p>' +
-        '<p class="muted">তুমি চাইলে শব্দটির মূল রূপ (যেমন ক্রিয়ার Infinitiv) দিয়েও খুঁজতে পারো।</p></div>';
+        '</h2><p class="bn">এই বানানে কোনো হুবহু A1 শব্দ পাওয়া যায়নি। বানান, Umlaut (ä/ö/ü) ও শব্দের রূপ পরীক্ষা করে আবার চেষ্টা করো।</p>' +
+        '<p class="muted">ক্রিয়ার ক্ষেত্রে Infinitiv (যেমন gehen) দিয়ে খুঁজে দেখো।</p></div>' + dictionarySourceLinks(query);
     }
     return '<div class="panel"><h2 class="word-title">' + escapeHTML(query) +
-      '</h2><p class="bn">এই বানানে হুবহু কোনো A1 এন্ট্রি নেই। তবে নিচের শব্দটি তোমার সার্চের ভেতরে পাওয়া গেছে:</p>' +
+      '</h2><p class="bn">এই বানানে হুবহু কোনো A1 এন্ট্রি নেই। নিচে সম্ভাব্য সম্পর্কিত ফলাফল দেওয়া হলো:</p>' +
       related.map(function (candidate) {
         var r = candidate.record;
         var label = (r.article ? r.article + ' ' : '') + r.headword;
-        var reason = candidate.matchedBy === 'compound' ? 'যৌগিক শব্দের অংশ' :
-          candidate.matchedBy === 'plural-component' ? 'Plural রূপের অংশ' : 'আংশিক বানান মিল';
+        var reason = candidate.matchedBy === 'compound' ? 'যৌগিক শব্দের শেষ অংশ' :
+          candidate.matchedBy === 'plural-component' ? 'Plural রূপের অংশ' :
+          candidate.matchedBy === 'typo' ? 'সম্ভাব্য বানান সংশোধন' : 'শব্দের শুরু মিলে গেছে';
         return '<div class="group"><p><span class="tag">' + escapeHTML(reason) + '</span></p>' +
           '<strong>' + escapeHTML(label) + '</strong>' +
           (r.bengali_meaning ? '<p class="bn">' + escapeHTML(r.bengali_meaning) + '</p>' : '') +
           '<button type="button" data-dict-suggestion="' + escapeHTML(r.headword) +
           '" style="height:38px;margin-top:6px">এই শব্দটি খুলুন</button></div>';
       }).join('') +
-      '<p class="source">সম্পর্কিত শব্দ দেখানো হয়েছে; এগুলো সার্চ করা শব্দের সমার্থক বা একই শব্দ—এমন দাবি করা হচ্ছে না।</p></div>';
+      '<p class="source">সম্পর্কিত ফলাফলগুলো আলাদা করে চিহ্নিত; এগুলোকে সার্চ করা শব্দের একই অর্থ বা সঠিক বানান ধরে নেওয়া হয়নি।</p></div>' + dictionarySourceLinks(query);
   }
 
   results.addEventListener('click', function (event) {
