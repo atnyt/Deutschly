@@ -8,7 +8,7 @@
     "data_note": "Page 3 and page 4 batches have been checked against the corresponding pages of the user-provided Deutsch mit Shakil A1 PDF. Remaining records are not necessarily reviewed.",
     "policy": "Do not label machine translation as verified. Keep source transcription distinct from independently reviewed linguistic additions."
   },
-  "record_count": 1716,
+  "record_count": 1715,
   "records": [
     {
       "headword": "deutsch",
@@ -5533,8 +5533,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 12",
       "review_status": "source_checked_page_12_batch_1",
-      "article": "der",
-      "plural": "die Pfeffer (Sorten)"
+      "article": "der"
     },
     {
       "headword": "salz",
@@ -6451,8 +6450,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 13",
       "review_status": "source_checked_page_13_batch_1",
-      "article": "das",
-      "plural": "die Fette"
+      "article": "das"
     },
     {
       "headword": "kilo",
@@ -7733,8 +7731,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 17",
       "review_status": "source_checked_page_17_batch_1",
-      "article": "der",
-      "plural": "die Stresssituationen"
+      "article": "der"
     },
     {
       "headword": "wollen",
@@ -8461,8 +8458,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 19",
       "review_status": "source_checked_page_19_batch_1",
-      "article": "der",
-      "plural": "die Misthaufen"
+      "article": "der"
     },
     {
       "headword": "netz",
@@ -8902,8 +8898,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 20",
       "review_status": "source_checked_page_20_batch_1",
-      "article": "die",
-      "plural": "die Sonnen"
+      "article": "die"
     },
     {
       "headword": "typisch",
@@ -8948,8 +8943,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 21",
       "review_status": "source_checked_page_21_batch_1",
-      "article": "das",
-      "plural": "die Wetter"
+      "article": "das"
     },
     {
       "headword": "anmeldung",
@@ -9387,16 +9381,16 @@
     },
     {
       "headword": "leben",
-      "english_gloss": "to live; to reside",
-      "bengali_meaning": "বেঁচে থাকা; বাস করা",
+      "english_gloss": "life (noun); to live (verb)",
+      "bengali_meaning": "জীবন (বিশেষ্য); বাস করা/বেঁচে থাকা (ক্রিয়া)",
       "bengali_status": "source_checked_draft",
-      "example_de": "Er lebt in Berlin.",
-      "example_bn": "সে বার্লিনে থাকে।",
+      "example_de": "Das Leben ist schön. / Er lebt in Berlin.",
+      "example_bn": "জীবন সুন্দর। / সে বার্লিনে থাকে।",
       "level": "A1",
-      "source": "Deutsch mit Shakil A1 PDF, page 24",
-      "review_status": "source_checked_page_24_batch_1",
+      "source": "Deutsch mit Shakil A1 PDF, pages 22 and 24",
+      "review_status": "source_checked_pages_22_24_combined",
       "article": "das",
-      "plural": "die Leben"
+      "plural": "die Leben (individual lives)"
     },
     {
       "headword": "leicht",
@@ -9480,8 +9474,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 22",
       "review_status": "source_checked_page_22_batch_1",
-      "article": "der",
-      "plural": "die Urlaube"
+      "article": "der"
     },
     {
       "headword": "wem",
@@ -9950,14 +9943,14 @@
     },
     {
       "headword": "fernsehen",
-      "english_gloss": "to watch television",
-      "bengali_meaning": "টেলিভিশন দেখা",
+      "english_gloss": "television (noun); to watch TV (verb)",
+      "bengali_meaning": "টেলিভিশন (বিশেষ্য); টেলিভিশন দেখা (ক্রিয়া)",
       "bengali_status": "source_checked_draft",
-      "example_de": "Wir sehen oft fern.",
-      "example_bn": "আমরা প্রায়ই টেলিভিশন দেখি।",
+      "example_de": "Ich schaue selten Fernsehen. / Wir sehen oft fern.",
+      "example_bn": "আমি খুব কম টেলিভিশন দেখি। / আমরা প্রায়ই টেলিভিশন দেখি।",
       "level": "A1",
-      "source": "Deutsch mit Shakil A1 PDF, page 35",
-      "review_status": "source_checked_page_35_batch_1",
+      "source": "Deutsch mit Shakil A1 PDF, pages 24 and 35",
+      "review_status": "source_checked_pages_24_35_combined",
       "article": "das"
     },
     {
@@ -10949,16 +10942,15 @@
     },
     {
       "headword": "husten",
-      "english_gloss": "to cough",
-      "bengali_meaning": "কাশি দেওয়া",
+      "english_gloss": "cough (noun); to cough (verb)",
+      "bengali_meaning": "কাশি (বিশেষ্য); কাশি দেওয়া (ক্রিয়া)",
       "bengali_status": "source_checked_draft",
-      "example_de": "Du hustest viel.",
-      "example_bn": "তুমি অনেক কাশছ।",
+      "example_de": "Er hat starken Husten. / Du hustest viel.",
+      "example_bn": "তার প্রচণ্ড কাশি হয়েছে। / তুমি অনেক কাশছ।",
       "level": "A1",
-      "source": "Deutsch mit Shakil A1 PDF, page 27",
-      "review_status": "source_checked_page_27_batch_1",
-      "article": "der",
-      "plural": "die Husten (rare/medical uses)"
+      "source": "Deutsch mit Shakil A1 PDF, pages 26 and 27",
+      "review_status": "source_checked_pages_26_27_combined",
+      "article": "der"
     },
     {
       "headword": "schnupfen",
@@ -11315,8 +11307,7 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 27",
       "review_status": "source_checked_page_27_batch_1",
-      "article": "der",
-      "plural": "die Honige (varieties)"
+      "article": "der"
     },
     {
       "headword": "nelke, -n",
@@ -15178,17 +15169,6 @@
       "review_status": "source_checked_page_38_batch_1"
     },
     {
-      "headword": "städtereise",
-      "english_gloss": "city trip",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
-      "example_de": "Die Städtereise ist toll.",
-      "example_bn": null,
-      "level": "A1",
-      "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
-    },
-    {
       "headword": "stadtführung",
       "english_gloss": "guided city tour",
       "bengali_meaning": "গাইডসহ শহর ভ্রমণ",
@@ -18063,8 +18043,7 @@
       "example_bn": "আমি একটি আইসক্রিম চাই।",
       "source": "Deutsch mit Shakil A1 PDF, page 20",
       "review_status": "source_checked_page_20_batch_1",
-      "article": "das",
-      "plural": "die Eise (ice creams; uncommon)"
+      "article": "das"
     },
     {
       "headword": "pommes",
@@ -18320,8 +18299,7 @@
       "example_bn": "আমি প্রকৃতিকে ভালোবাসি।",
       "source": "Deutsch mit Shakil A1 PDF, page 21",
       "review_status": "source_checked_page_21_batch_1",
-      "article": "die",
-      "plural": "die Naturen (rare; omit in ordinary use)"
+      "article": "die"
     },
     {
       "headword": "open-air-kino",
@@ -19259,14 +19237,14 @@
     {
       "headword": "deutsche",
       "level": "A1",
-      "english_gloss": "German person; German (substantivized adjective)",
-      "bengali_meaning": "জার্মান ব্যক্তি; জার্মান নাগরিক",
+      "english_gloss": "the German language; German person (substantivized adjective)",
+      "bengali_meaning": "জার্মান ভাষা (das Deutsche); জার্মান ব্যক্তি/নাগরিক (der/die Deutsche)",
       "bengali_status": "source_checked_draft",
-      "example_de": "Er ist ein Deutscher.",
-      "example_bn": "সে একজন জার্মান।",
-      "source": "Deutsch mit Shakil A1 PDF, page 40",
-      "review_status": "source_checked_page_40_batch_1",
-      "article": "der/die",
+      "example_de": "Das Deutsche ist schwer. / Er ist ein Deutscher.",
+      "example_bn": "জার্মান ভাষা কঠিন। / সে একজন জার্মান।",
+      "source": "Deutsch mit Shakil A1 PDF, pages 28 and 40",
+      "review_status": "source_checked_pages_28_40_combined",
+      "article": "das / der/die",
       "plural": "die Deutschen"
     },
     {
