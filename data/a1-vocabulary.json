@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "title": "Deutschly German–Bangla A1 Vocabulary",
   "language_pair": "de-BN",
   "level": "A1",
@@ -1115,134 +1115,139 @@
     {
       "headword": "dialog",
       "english_gloss": "dialogue",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "সংলাপ",
+      "bengali_status": "source_checked_draft",
       "example_de": "Lesen Sie den Dialog.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2",
+      "article": "der"
     },
     {
       "headword": "langsam",
       "english_gloss": "slow",
-      "bengali_meaning": "ধীরে",
-      "bengali_status": "existing_curated_draft",
+      "bengali_meaning": "ধীরে; আস্তে",
+      "bengali_status": "source_checked_draft",
       "example_de": null,
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2"
     },
     {
       "headword": "nicht",
       "english_gloss": "not",
-      "bengali_meaning": "না / নয়",
-      "bengali_status": "existing_curated_draft",
+      "bengali_meaning": "না; নয়",
+      "bengali_status": "source_checked_draft",
       "example_de": "Das ist nicht gut.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2"
     },
     {
       "headword": "noch einmal",
       "english_gloss": "once more",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "আরেকবার; আবার",
+      "bengali_status": "source_checked_draft",
       "example_de": "Bitte noch einmal.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2"
     },
     {
       "headword": "verstehen",
       "english_gloss": "to understand",
       "bengali_meaning": "বোঝা",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Ich verstehe das nicht.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2"
     },
     {
       "headword": "land",
       "english_gloss": "country",
       "bengali_meaning": "দেশ",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Das Land ist groß.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2",
+      "article": "das"
     },
     {
       "headword": "lernen",
       "english_gloss": "to learn",
       "bengali_meaning": "শেখা",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wir lernen heute.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2"
     },
     {
       "headword": "tabelle",
       "english_gloss": "table, chart",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "সারণি; টেবিল",
+      "bengali_status": "source_checked_draft",
       "example_de": "Ergänzen Sie die Tabelle.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2",
+      "article": "die"
     },
     {
       "headword": "zweit",
       "english_gloss": "pair",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "দুজন মিলে; জোড়ায়",
+      "bengali_status": "source_checked_draft",
       "example_de": "Wir arbeiten zu zweit.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2"
     },
     {
       "headword": "kurz",
       "english_gloss": "short",
-      "bengali_meaning": "ছোট / সংক্ষিপ্ত",
-      "bengali_status": "existing_curated_draft",
+      "bengali_meaning": "ছোট; সংক্ষিপ্ত",
+      "bengali_status": "source_checked_draft",
       "example_de": "Der Text ist kurz.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2"
     },
     {
       "headword": "stadt",
       "english_gloss": "city",
       "bengali_meaning": "শহর",
-      "bengali_status": "existing_curated_draft",
+      "bengali_status": "source_checked_draft",
       "example_de": "Berlin ist eine Stadt.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2",
+      "article": "die"
     },
     {
       "headword": "text",
       "english_gloss": "text",
-      "bengali_meaning": null,
-      "bengali_status": "missing",
+      "bengali_meaning": "পাঠ্য; লেখা",
+      "bengali_status": "source_checked_draft",
       "example_de": "Lesen Sie den Text.",
       "example_bn": null,
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "not_individually_verified"
+      "review_status": "source_checked_page_3_batch_2",
+      "article": "der"
     },
     {
       "headword": "befinden",
@@ -14740,6 +14745,13 @@
       "records_updated": 12,
       "meaning_source": "User-provided Deutsch mit Shakil A1 Vocabulary PDF, page 3",
       "note": "Added/checked Bengali meanings against the source page; existing record structure preserved."
+    },
+    {
+      "batch": "A1 page 3 batch 2",
+      "date": "2026-11-01",
+      "records_updated": 12,
+      "meaning_source": "User-provided Deutsch mit Shakil A1 Vocabulary PDF, page 3",
+      "note": "Added/checked Bengali meanings against the source page; noun articles included where clear from the source."
     }
   ]
 }
