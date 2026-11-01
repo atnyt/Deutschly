@@ -53,7 +53,22 @@ function entriesFrom(data,word,edition){
 function collectTranslations(value,out=[],seen=new Set()){if(!value)return out;if(Array.isArray(value)){value.forEach(v=>collectTranslations(v,out,seen));return out}if(typeof value!=='object')return out;const code=String(value.lang_code||value.code||value.language_code||'').toLowerCase(),lang=String(value.lang||value.language||'').toLowerCase();if(['bn','ben'].includes(code)||['bengali','bangla'].includes(lang)){const text=String(value.word||value.translation||value.term||value.text||'').trim();if(text&&!seen.has(text)){seen.add(text);out.push(text)}}Object.entries(value).forEach(([k,v])=>{if(k!=='examples')collectTranslations(v,out,seen)});return out}
 function normalizeSenses(entry){let senses=Array.isArray(entry.senses)?entry.senses:[];return senses.map(s=>{const g=s.glosses||s.raw_glosses||s.definitions||[];const glosses=(Array.isArray(g)?g:[g]).filter(x=>typeof x==='string'&&x.trim());return{glosses,translations:collectTranslations(s.translations||s.translation||[]),examples:Array.isArray(s.examples)?s.examples:[],tags:Array.isArray(s.tags)?s.tags:[]}}).filter(s=>s.glosses.length||s.translations.length)}
 async function translateToBangla(text,sourceLang){if(!text)return '';const query=String(text).trim().slice(0,450),source=sourceLang||'de';if(!query)return '';try{const p=new URLSearchParams({q:query,langpair:source+'|bn'});const r=await fetch('https://api.mymemory.translated.net/get?'+p.toString(),{signal:AbortSignal.timeout(4500)});if(r.ok){const d=await r.json();if(Number(d.responseStatus)===200){const t=String(d.responseData&&d.responseData.translatedText||'').trim();if(t&&t.toLowerCase()!==query.toLowerCase()&&!/MYMEMORY WARNING|PLEASE SELECT/i.test(t))return t}}}catch(e){}try{const p=new URLSearchParams({client:'gtx',sl:source,tl:'bn',dt:'t',q:query});const r=await fetch('https://translate.googleapis.com/translate_a/single?'+p.toString(),{signal:AbortSignal.timeout(4500)});if(!r.ok)return '';const d=await r.json();const t=Array.isArray(d)&&Array.isArray(d[0])?d[0].map(x=>Array.isArray(x)?x[0]||'':'').join('').trim():'';return t&&t.toLowerCase()!==query.toLowerCase()?t:''}catch(e){return ''}}
+const vocabularyDatabasePromise=fetch('./data/a1-vocabulary.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
+function renderLocalVocabularyRecord(record,word){
+ const lemma=String(record.headword||word);
+ const displayLemma=record.article?lemma.charAt(0).toLocaleUpperCase('de-DE')+lemma.slice(1):lemma;
+ const title=record.article?record.article+' '+displayLemma:displayLemma;
+ const grammar=[];
+ if(record.article)grammar.push('Article · '+record.article);
+ if(record.plural)grammar.push('Plural · '+record.plural);
+ const example=record.example_de?'<div class="group"><h3 style="font-size:16px;line-height:1.6;margin:0 0 6px">'+esc(record.example_de)+'</h3>'+(record.example_bn?'<p class="bn">'+esc(record.example_bn)+'</p>':'')+'</div>':'';
+ return '<div class="panel"><h2 class="word-title">'+esc(title)+'</h2><div class="meaning-glass"><div class="meaning-item">'+esc(record.bengali_meaning)+'</div></div>'+(record.english_gloss?'<p class="definition">English: '+esc(record.english_gloss)+'</p>':'')+(grammar.length?'<div>'+grammar.map(x=>'<span class="tag">'+esc(x)+'</span>').join('')+'</div>':'')+example+'<p class="source">Deutschly A1 Vocabulary Database · '+esc(record.source||'')+'</p></div>';
+}
 async function render(entries,word,lookupKey=word){
+ const vocabularyDatabase=await vocabularyDatabasePromise;
+ const databaseKey=normalizeHeadword(lookupKey);
+ const localRecord=vocabularyDatabase&&Array.isArray(vocabularyDatabase.records)?vocabularyDatabase.records.find(r=>normalizeHeadword(r.headword)===databaseKey&&r.bengali_meaning&&r.review_status!=='not_individually_verified'):null;
+ if(localRecord)return renderLocalVocabularyRecord(localRecord,word);
  const grouped=new Map();
  for(const e of entries){if(!e||typeof e.word!=='string'||e.word.normalize('NFC').toLocaleLowerCase('de-DE')!==lookupKey.normalize('NFC').toLocaleLowerCase('de-DE'))continue;const key=String(e.pos||'unknown').toLowerCase();if(!grouped.has(key))grouped.set(key,{label:posLabel(e.pos),senses:[],seen:new Set()});const g=grouped.get(key);for(const s of normalizeSenses(e)){const sig=s.glosses.join('|').toLowerCase()+'#'+s.translations.join('|').toLowerCase();if(g.seen.has(sig))continue;g.seen.add(sig);g.senses.push(s)}}
  const groups=[...grouped.values()].filter(g=>g.senses.length);
