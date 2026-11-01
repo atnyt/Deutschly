@@ -18,6 +18,11 @@ export default {
     }
     if (origin !== allowedOrigin) return json({ error: "Origin not allowed." }, 403);
     if (request.method !== "POST") return json({ error: "Method not allowed." }, 405);
+    if (env.AI_RATE_LIMITER) {
+      const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+      const limit = await env.AI_RATE_LIMITER.limit({ key: ip });
+      if (!limit.success) return json({ error: "অনেকগুলো প্রশ্ন পাঠানো হয়েছে। এক মিনিট পর আবার চেষ্টা করো।" }, 429);
+    }
     if (!env.OPENAI_API_KEY || !env.OPENAI_MODEL) {
       return json({ error: "AI backend is not configured. Add OPENAI_API_KEY and OPENAI_MODEL as Worker secrets/variables." }, 503);
     }
