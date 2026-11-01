@@ -223,9 +223,6 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     var confidence = record.confidence_status === 'source_checked' ? 'উৎসের সঙ্গে মিলিয়ে সংশোধিত' :
       record.confidence_status === 'reviewed_draft' ? 'পর্যালোচিত খসড়া · পুনরায় যাচাই করা উচিত' : 'যাচাই প্রয়োজন';
     var dudenUrl = 'https://www.duden.de/suchen/dudenonline/' + encodeURIComponent(record.headword || '');
-    var reviewDetail = record.review_source ? '<p class="source">পর্যালোচনার ভিত্তি: ' + escapeHTML(record.review_source) + '</p>' : '';
-    var mergedSources = Array.isArray(record.source_variants) && record.source_variants.length ?
-      '<p class="source">একাধিক উৎস-রেকর্ড একত্র করা হয়েছে; মূল উৎস-তথ্য সংরক্ষিত: ' + record.source_variants.length + 'টি</p>' : '';
     return '<div class="panel"><h2 class="word-title">' + escapeHTML(title) +
       '</h2><div class="meaning-glass"><div class="meaning-item">' +
       escapeHTML(record.bengali_meaning || 'বাংলা অর্থ যোগ করা হচ্ছে।') +
