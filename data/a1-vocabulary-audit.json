@@ -33,7 +33,7 @@
     ],
     "confidence_status_counts": {
       "reviewed_draft": 1666,
-      "source_checked": 53,
+      "source_checked": 59,
       "needs_verification": 1
     }
   },
@@ -356,6 +356,87 @@
         "https://www.duden.de/rechtschreibung/Ei",
         "https://www.duden.de/rechtschreibung/Gemuese",
         "https://www.duden.de/rechtschreibung/Brot"
+      ]
+    },
+    {
+      "batch": 6,
+      "source": "Duden Online",
+      "checked_on": "2026-11-02",
+      "verified_fields": [
+        "article",
+        "plural",
+        "contextual_bengali_meaning"
+      ],
+      "checked_headwords": [
+        "Banane",
+        "Kartoffel",
+        "Milch",
+        "Sahne",
+        "Salz",
+        "Wurst"
+      ],
+      "results": [
+        {
+          "headword": "Banane",
+          "article": "die",
+          "plural": "die Bananen",
+          "bengali_meaning": "কলা",
+          "source": "https://www.duden.de/rechtschreibung/Banane",
+          "source_note": "Duden gives die Banane and plural die Bananen; the relevant sense is the elongated tropical fruit."
+        },
+        {
+          "headword": "Kartoffel",
+          "article": "die",
+          "plural": "die Kartoffeln",
+          "bengali_meaning": "আলু",
+          "source": "https://www.duden.de/rechtschreibung/Kartoffel",
+          "source_note": "Duden gives die Kartoffel and plural die Kartoffeln; the relevant sense is the edible tuber."
+        },
+        {
+          "headword": "Milch",
+          "article": "die",
+          "plural": "সাধারণ ব্যবহারে বহুবচন নেই; Fachsprache-এ die Milche[n]",
+          "bengali_meaning": "দুধ",
+          "source": "https://www.duden.de/rechtschreibung/Milch",
+          "source_note": "Duden gives die Milch; plural Milche[n] is explicitly marked Fachsprache. For everyday A1 use, treat as a mass noun."
+        },
+        {
+          "headword": "Sahne",
+          "article": "die",
+          "plural": "সাধারণ ব্যবহারে বহুবচন ব্যবহৃত হয় না",
+          "bengali_meaning": "ক্রিম; দুধের সর",
+          "source": "https://www.duden.de/rechtschreibung/Sahne",
+          "source_note": "Duden gives die Sahne and lists the singular/genitive form without a plural form; everyday food sense is a mass noun."
+        },
+        {
+          "headword": "Salz",
+          "article": "das",
+          "plural": "সাধারণ রান্নার অর্থে বহুবচন নেই",
+          "bengali_meaning": "লবণ",
+          "source": "https://www.duden.de/rechtschreibung/Salz",
+          "source_note": "Duden gives das Salz and explicitly marks the ordinary cooking-salt sense as ohne Plural."
+        },
+        {
+          "headword": "Wurst",
+          "article": "die",
+          "plural": "die Würste",
+          "bengali_meaning": "সসেজ; মাংসের প্রক্রিয়াজাত খাদ্য",
+          "source": "https://www.duden.de/rechtschreibung/Wurst",
+          "source_note": "Duden gives die Wurst and plural die Würste."
+        }
+      ],
+      "notes": [
+        "এই ব্যাচে ছয়টি খাদ্য-সম্পর্কিত শব্দের Article, Plural এবং বাংলা অর্থ Duden দিয়ে যাচাই করা হয়েছে।",
+        "Milch-এর plural Milche[n] কেবল Fachsprache হিসেবে চিহ্নিত; A1-এর সাধারণ অর্থে mass noun হিসেবে শেখানো উচিত।",
+        "Sahne ও Salz-এর সাধারণ খাদ্য-অর্থে plural শেখানো প্রয়োজন নেই।"
+      ],
+      "sources": [
+        "https://www.duden.de/rechtschreibung/Banane",
+        "https://www.duden.de/rechtschreibung/Kartoffel",
+        "https://www.duden.de/rechtschreibung/Milch",
+        "https://www.duden.de/rechtschreibung/Sahne",
+        "https://www.duden.de/rechtschreibung/Salz",
+        "https://www.duden.de/rechtschreibung/Wurst"
       ]
     }
   ]
