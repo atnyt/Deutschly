@@ -5677,12 +5677,22 @@
       "example_bn": "অনেক ধন্যবাদ!",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 10",
-      "review_status": "second_stage_review_batch_5",
+      "review_status": "second_stage_review_batch_22",
       "article": "der",
       "plural_status": "singular_only",
-      "review_note": "Usually used as a singular noun in expressions such as vielen Dank.",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 3–4, pages 14–16; noun forms and preposition examples checked",
-      "confidence_status": "reviewed_draft"
+      "review_note": "কৃতজ্ঞতা/ধন্যবাদ অর্থে সাধারণত একবচন; বহুবচন নয়।",
+      "review_source": "Duden Online-Wörterbuch",
+      "confidence_status": "reviewed_draft",
+      "plural": "kein gebräuchlicher Plural",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Dank",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "einfach",
@@ -8902,11 +8912,13 @@
       "example_bn": "তার বেহালার পাঠ আছে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "second_stage_review_batch_7",
+      "review_status": "second_stage_review_batch_22",
       "article": "der",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 4–5 and 6, pages 19–24; source singular/plural annotations cross-checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "শব্দগঠনভিত্তিক যাচাই: Unterricht + Geigen",
+      "confidence_status": "reviewed_draft",
+      "plural": "kein gebräuchlicher Plural (Unterricht-যৌগিক শব্দ)",
+      "review_note": "Unterricht-কে পাঠদান/শিক্ষা অর্থে গণনাবাচক নয়; যৌগিক Geigenunterricht-ও সাধারণত একবচন।"
     },
     {
       "headword": "Kalender",
@@ -13511,11 +13523,22 @@
       "example_bn": "তার প্রচণ্ড কাশি হয়েছে। / তুমি অনেক কাশছ।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, pages 26 and 27",
-      "review_status": "second_stage_review_batch_10",
+      "review_status": "second_stage_review_batch_22",
       "article": "der",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 6–7, pages 26–31; noun forms and source plural markers checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden/standard usage",
+      "confidence_status": "reviewed_draft",
+      "plural": "kein gebräuchlicher Plural (কাশি অর্থে)",
+      "review_note": "কাশি/উপসর্গ অর্থে Husten সাধারণত একবচন; A1 অর্থে Plural শেখানোর প্রয়োজন নেই।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Husten",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Schnupfen",
@@ -13552,11 +13575,22 @@
       "example_bn": "বসন্তকালে আমার হে ফিভার হয়।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 26",
-      "review_status": "second_stage_review_batch_10",
+      "review_status": "second_stage_review_batch_22",
       "article": "der",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 6–7, pages 26–31; noun forms and source plural markers checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch",
+      "confidence_status": "reviewed_draft",
+      "plural": "die Heuschnupfen",
+      "review_note": "Duden-এ Plural die Heuschnupfen দেওয়া আছে; একবচন ও বহুবচনের রূপ একই।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Heuschnupfen",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Grippe",
@@ -15951,11 +15985,22 @@
       "example_bn": "ক্লাসটি সকাল আটটায় শুরু হয়।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "second_stage_review_batch_11",
+      "review_status": "second_stage_review_batch_22",
       "article": "der",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 7–8, pages 29–34; noun forms and usage checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden/Netzwerk neu A1 usage",
+      "confidence_status": "reviewed_draft",
+      "plural": "kein gebräuchlicher Plural",
+      "review_note": "শিক্ষা/ক্লাস অর্থে Unterricht সাধারণত একবচনে ব্যবহৃত হয়।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Unterricht",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Radiosendung",
@@ -18453,13 +18498,23 @@
       "example_bn": "লাগেজ ভারী।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 37",
-      "review_status": "second_stage_review_batch_13",
+      "review_status": "second_stage_review_batch_22",
       "article": "das",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42; noun forms, capitalization and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "সামষ্টিক/অগণনীয় বিশেষ্য; সাধারণত বহুবচন ব্যবহৃত হয় না।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural (সমষ্টিবাচক অর্থে)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "Duden-এ ভ্রমণের মালপত্রের সমষ্টিবাচক অর্থ; সাধারণ ব্যবহারে Plural নেই।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Gepaeck",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Handtasche",
@@ -20129,13 +20184,14 @@
       "example_de": "Das ist mein Lernwortschatz.",
       "example_bn": "এটি আমার শেখার শব্দভাণ্ডার।",
       "source": "Deutsch mit Shakil A1 PDF, page 6",
-      "review_status": "second_stage_review_batch_14",
+      "review_status": "second_stage_review_batch_22",
       "article": "der",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "plural": "kein gebräuchlicher Plural (সমষ্টিবাচক)",
+      "review_source": "শব্দগঠন ও সাধারণ ব্যবহার",
       "grammatical_number": "singular",
       "number_note": "এই অর্থে সাধারণত একবচন; Lernwortschätze বিরল/বিশেষায়িত।",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed_draft",
+      "review_note": "Wortschatz সমষ্টিবাচক শব্দ; শেখার শব্দভাণ্ডার অর্থে সাধারণত একবচন।"
     },
     {
       "headword": "Von … bis",
@@ -21286,13 +21342,14 @@
       "example_de": "Heute ist Trompetenunterricht.",
       "example_bn": "আজ ট্রাম্পেট শেখার ক্লাস আছে।",
       "source": "Deutsch mit Shakil A1 PDF, page 16",
-      "review_status": "second_stage_review_batch_14",
+      "review_status": "second_stage_review_batch_22",
       "article": "der",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "শব্দগঠনভিত্তিক যাচাই: Unterricht + Trompeten",
       "grammatical_number": "singular",
       "number_note": "শিক্ষা/পাঠ বোঝাতে সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural (Unterricht-যৌগিক শব্দ)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "Unterricht-কে পাঠদান/শিক্ষা অর্থে গণনাবাচক নয়; যৌগিক Trompetenunterricht-ও সাধারণত একবচন।"
     },
     {
       "headword": "Possessivartikel",
@@ -23135,13 +23192,14 @@
       "example_de": "Wo ist mein Zahnputzzeug?",
       "example_bn": "আমার দাঁত পরিষ্কারের সরঞ্জাম কোথায়?",
       "source": "Deutsch mit Shakil A1 PDF, page 26",
-      "review_status": "second_stage_review_batch_16",
+      "review_status": "second_stage_review_batch_22",
       "article": "das",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 12–13, pages 50–54; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "শব্দগঠন ও সাধারণ ব্যবহার",
       "grammatical_number": "singular",
       "number_note": "সামষ্টিক/কথ্য বিশেষ্য; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural (সমষ্টিবাচক)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "Zeug-যুক্ত সমষ্টিবাচক শব্দ হিসেবে দৈনন্দিন অর্থে Plural ব্যবহৃত হয় না।"
     },
     {
       "headword": "Zahnbehandlung",
@@ -23167,13 +23225,23 @@
       "example_de": "Zahnpflege ist wichtig.",
       "example_bn": "দাঁতের যত্ন গুরুত্বপূর্ণ।",
       "source": "Deutsch mit Shakil A1 PDF, page 26",
-      "review_status": "second_stage_review_batch_16",
+      "review_status": "second_stage_review_batch_22",
       "article": "die",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 12–13, pages 50–54; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural",
+      "confidence_status": "reviewed_draft",
+      "review_note": "Duden-এ দাঁতের পরিচর্যা অর্থে একবচন ব্যবহার; Plural উল্লেখ নেই।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Zahnpflege",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Arztbesuch",
@@ -24302,13 +24370,14 @@
       "example_de": "Das ist elegante Abendkleidung.",
       "example_bn": "এটি মার্জিত সন্ধ্যার পোশাক।",
       "source": "Deutsch mit Shakil A1 PDF, page 35",
-      "review_status": "second_stage_review_batch_16",
+      "review_status": "second_stage_review_batch_22",
       "article": "die",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 12–13, pages 50–54; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "শব্দগঠন ও সাধারণ ব্যবহার",
       "grammatical_number": "singular",
       "number_note": "পোশাকের সামষ্টিক শ্রেণি; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural (পোশাকের সমষ্টি)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "পোশাকের ধরন/সমষ্টি বোঝাতে Abendkleidung সাধারণত একবচনে ব্যবহৃত হয়।"
     },
     {
       "headword": "Bademode",
@@ -24319,13 +24388,14 @@
       "example_de": "Wo finde ich Bademode?",
       "example_bn": "আমি সাঁতারের পোশাক কোথায় পাব?",
       "source": "Deutsch mit Shakil A1 PDF, page 35",
-      "review_status": "second_stage_review_batch_16",
+      "review_status": "second_stage_review_batch_22",
       "article": "die",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 12–13, pages 50–54; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "শব্দগঠন ও সাধারণ ব্যবহার",
       "grammatical_number": "singular",
       "number_note": "পোশাকের সামষ্টিক শ্রেণি; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural (ফ্যাশন/পোশাকের সমষ্টি)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "ফ্যাশন/পোশাকের শ্রেণি বোঝাতে Bademode সাধারণত একবচন সমষ্টিবাচক।"
     },
     {
       "headword": "Damenmode",
@@ -24336,13 +24406,14 @@
       "example_de": "Damenmode ist im ersten Stock.",
       "example_bn": "নারীদের পোশাক প্রথম তলায়।",
       "source": "Deutsch mit Shakil A1 PDF, page 35",
-      "review_status": "second_stage_review_batch_16",
+      "review_status": "second_stage_review_batch_22",
       "article": "die",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 12–13, pages 50–54; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "শব্দগঠন ও সাধারণ ব্যবহার",
       "grammatical_number": "singular",
       "number_note": "ফ্যাশনের সামষ্টিক ধারণা; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural (ফ্যাশন শ্রেণি)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "নারীদের ফ্যাশন/পোশাকের শ্রেণি বোঝাতে সাধারণত একবচন।"
     },
     {
       "headword": "Elektrogerät",
@@ -24383,13 +24454,14 @@
       "example_de": "Er braucht Fotozubehör.",
       "example_bn": "তার ফটোগ্রাফির আনুষঙ্গিক সরঞ্জাম প্রয়োজন।",
       "source": "Deutsch mit Shakil A1 PDF, page 35",
-      "review_status": "second_stage_review_batch_16",
+      "review_status": "second_stage_review_batch_22",
       "article": "das",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 12–13, pages 50–54; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Fotozubehör, das (Sg.))",
       "grammatical_number": "singular",
       "number_note": "আনুষঙ্গিক সরঞ্জামের সামষ্টিক নাম; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural (সমষ্টিবাচক)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "A1 শব্দতালিকায় Fotozubehör একবচন-only হিসেবে চিহ্নিত।"
     },
     {
       "headword": "Freizeitkleidung",
@@ -24400,13 +24472,14 @@
       "example_de": "Ich mag Freizeitkleidung.",
       "example_bn": "আমি নৈমিত্তিক পোশাক পছন্দ করি।",
       "source": "Deutsch mit Shakil A1 PDF, page 35",
-      "review_status": "second_stage_review_batch_16",
+      "review_status": "second_stage_review_batch_22",
       "article": "die",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 12–13, pages 50–54; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Freizeitkleidung, die (Sg.))",
       "grammatical_number": "singular",
       "number_note": "পোশাকের সামষ্টিক শ্রেণি; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural (সমষ্টিবাচক)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "A1 শব্দতালিকায় Freizeitkleidung একবচন-only হিসেবে চিহ্নিত।"
     },
     {
       "headword": "Haushaltswaren",
@@ -24434,13 +24507,14 @@
       "example_de": "Herrenmode ist hier.",
       "example_bn": "পুরুষদের পোশাক এখানে।",
       "source": "Deutsch mit Shakil A1 PDF, page 35",
-      "review_status": "second_stage_review_batch_16",
+      "review_status": "second_stage_review_batch_22",
       "article": "die",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 12–13, pages 50–54; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "শব্দগঠন ও সাধারণ ব্যবহার",
       "grammatical_number": "singular",
       "number_note": "ফ্যাশনের সামষ্টিক ধারণা; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural (ফ্যাশন শ্রেণি)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "পুরুষদের ফ্যাশন/পোশাকের শ্রেণি বোঝাতে সাধারণত একবচন।"
     },
     {
       "headword": "Kamera",
@@ -24528,13 +24602,14 @@
       "example_de": "Ich brauche Sportkleidung.",
       "example_bn": "আমার খেলাধুলার পোশাক প্রয়োজন।",
       "source": "Deutsch mit Shakil A1 PDF, page 35",
-      "review_status": "second_stage_review_batch_16",
+      "review_status": "second_stage_review_batch_22",
       "article": "die",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 12–13, pages 50–54; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "শব্দগঠন ও সাধারণ ব্যবহার",
       "grammatical_number": "singular",
       "number_note": "পোশাকের সামষ্টিক শ্রেণি; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein gebräuchlicher Plural (সমষ্টিবাচক)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "খেলাধুলার পোশাকের সমষ্টি বোঝাতে সাধারণত একবচন।"
     },
     {
       "headword": "Bleistift",
@@ -24910,13 +24985,23 @@
       "example_de": "Kofferpacken macht keinen Spaß.",
       "example_bn": "স্যুটকেস গুছানো খুব আনন্দের কাজ নয়।",
       "source": "Deutsch mit Shakil A1 PDF, page 38",
-      "review_status": "second_stage_review_batch_17",
+      "review_status": "second_stage_review_batch_22",
       "article": "das",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 8–10, pages 36–40; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Duden nominalization rules / standard usage",
       "grammatical_number": "singular",
       "number_note": "Substantivierter Infinitiv; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein Plural (ক্রিয়াবাচক বিশেষ্য)",
+      "confidence_status": "reviewed_draft",
+      "review_note": "Kofferpacken হলো কাজ/প্রক্রিয়া বোঝানো substantivierter Infinitiv; সাধারণত Plural হয় না।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/sprachwissen/rechtschreibregeln/gross-und-kleinschreibung",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Städtereise",
