@@ -10880,11 +10880,22 @@
       "example_bn": "আমার তৃষ্ণা পেয়েছে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 20",
-      "review_status": "second_stage_review_batch_8",
+      "review_status": "second_stage_review_batch_23",
       "article": "der",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 5–6, pages 23–27; noun forms and singular/plural source markers checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online-Wörterbuch; Langenscheidt-এও kein Plural নিশ্চিত",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural",
+      "review_note": "তৃষ্ণা অর্থে Durst uncountable; Plural নেই।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Durst",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "wieder",
@@ -22493,13 +22504,23 @@
       "example_de": "Mein Arbeitsalltag ist stressig.",
       "example_bn": "আমার দৈনন্দিন কর্মজীবন চাপপূর্ণ।",
       "source": "Deutsch mit Shakil A1 PDF, page 21",
-      "review_status": "second_stage_review_batch_15",
+      "review_status": "second_stage_review_batch_23",
       "article": "der",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 11–12, pages 46–50; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "plural": "die Arbeitsalltage",
+      "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "দৈনন্দিন কর্মজীবন বোঝাতে সাধারণত একবচন।",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed",
+      "review_note": "Duden-এ Plural die Arbeitsalltage দেওয়া আছে।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Arbeitsalltag",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "doch",
@@ -22551,13 +22572,22 @@
       "example_de": "Ich mag die Computerarbeit.",
       "example_bn": "আমি কম্পিউটারের কাজ পছন্দ করি।",
       "source": "Deutsch mit Shakil A1 PDF, page 22",
-      "review_status": "second_stage_review_batch_15",
+      "review_status": "second_stage_review_batch_23",
       "article": "die",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 11–12, pages 46–50; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "plural": "die Computerarbeiten",
+      "review_source": "Wiktionary; Uni Leipzig/DWDS-ভিত্তিক শব্দতথ্য",
       "grammatical_number": "singular",
       "number_note": "কম্পিউটারের কাজ বোঝাতে সাধারণত একবচন।",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed",
+      "review_note": "Computerarbeit-এর গণনাযোগ্য Plural die Computerarbeiten পাওয়া যায়; সাধারণ অর্থে একবচনও বেশি ব্যবহৃত।",
+      "dictionary_check": {
+        "source": "Wiktionary",
+        "url": "https://de.wiktionary.org/wiki/Computerarbeit",
+        "checked_fields": [
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "zu (+ dat.)",
