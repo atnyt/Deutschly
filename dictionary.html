@@ -220,8 +220,6 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       return item && item.recording_type === 'native_recording' && /^de(?:-|$)/i.test(String(item.language || 'de')) && safeAudioUrl(item.url);
     }) : null;
     var audioUrl = audio ? safeAudioUrl(audio.url) : '';
-    var confidence = record.confidence_status === 'source_checked' ? 'উৎসের সঙ্গে মিলিয়ে সংশোধিত' :
-      record.confidence_status === 'reviewed_draft' ? 'পর্যালোচিত খসড়া · পুনরায় যাচাই করা উচিত' : 'যাচাই প্রয়োজন';
     var dudenUrl = 'https://www.duden.de/suchen/dudenonline/' + encodeURIComponent(record.headword || '');
     var mergedSources = Array.isArray(record.source_variants) && record.source_variants.length ?
       '<p class="source">একাধিক উৎস-রেকর্ড একত্র করা হয়েছে; মূল উৎস-তথ্য সংরক্ষিত: ' + record.source_variants.length + 'টি</p>' : '';
@@ -229,7 +227,6 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       '</h2><div class="meaning-glass"><div class="meaning-item">' +
       escapeHTML(record.bengali_meaning || 'বাংলা অর্থ যোগ করা হচ্ছে।') +
       '</div></div>' +
-      '<p><span class="tag">তথ্যের অবস্থা · ' + escapeHTML(confidence) + '</span></p>' +
       (grammar.length ? '<p>' + grammar.map(function (item) {
         return '<span class="tag">' + escapeHTML(item) + '</span>';
       }).join('') + '</p>' : '') +
