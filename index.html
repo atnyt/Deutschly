@@ -223,6 +223,7 @@ form.addEventListener('submit',async event=>{
   const normalizedWord=word.normalize('NFC').toLocaleLowerCase('de-DE');
   const pluralRecord=vocabularyDatabase&&Array.isArray(vocabularyDatabase.records)?vocabularyDatabase.records.find(r=>String(r.plural||'').replace(/^die\s+/i,'').normalize('NFC').toLocaleLowerCase('de-DE')===normalizedWord):null;
   const lemma=pluralRecord?String(pluralRecord.headword):word;
+  const pronunciationRecord=vocabularyDatabase&&Array.isArray(vocabularyDatabase.records)?vocabularyDatabase.records.find(r=>String(r.headword||'').normalize('NFC').toLocaleLowerCase('de-DE')===lemma.normalize('NFC').toLocaleLowerCase('de-DE')):null;
   let page=null;
   let audioLookupWord=word;
   try{page=await wiktionaryPage(word)}catch(error){page=null}
@@ -233,10 +234,10 @@ form.addEventListener('submit',async event=>{
   if(page&&page.audio.length){
    audioHtml=page.audio.map(audioPlayer).join('');
    status=audioLookupWord.toLocaleLowerCase('de-DE')!==word.toLocaleLowerCase('de-DE')?'<p class="status">“'+esc(word)+'” হলো “'+esc(lemma)+'”-এর বহুবচন। এখানে মূল শব্দের native recording দেখানো হচ্ছে; বহুবচনটির আলাদা রেকর্ডিং পাওয়া যায়নি।</p>':'';
-  }else if(pluralRecord&&Array.isArray(pluralRecord.audio_sources)&&pluralRecord.audio_sources.some(a=>a&&a.recording_type==='native_recording'&&a.url)){
-   const source=pluralRecord.audio_sources.find(a=>a&&a.recording_type==='native_recording'&&a.url);
+  }else if(pronunciationRecord&&Array.isArray(pronunciationRecord.audio_sources)&&pronunciationRecord.audio_sources.some(a=>a&&a.recording_type==='native_recording'&&a.url)){
+   const source=pronunciationRecord.audio_sources.find(a=>a&&a.recording_type==='native_recording'&&a.url);
    audioHtml=audioPlayer(source.url,0);
-   status='<p class="status">“'+esc(word)+'” হলো “'+esc(lemma)+'”-এর বহুবচন। এটি মূল শব্দের native recording; বহুবচনটির আলাদা recording নয়।</p>';
+   status=lemma.toLocaleLowerCase('de-DE')!==word.toLocaleLowerCase('de-DE')?'<p class="status">“'+esc(word)+'” হলো “'+esc(lemma)+'”-এর বহুবচন। এটি মূল শব্দের native recording; বহুবচনটির আলাদা recording নয়।</p>':'';
   }else if(page&&page.hasEntry){
    status='<p class="status">Wiktionary-তে পেজ পাওয়া গেছে, কিন্তু স্বয়ংক্রিয়ভাবে শনাক্তযোগ্য উচ্চারণের অডিও পাওয়া যায়নি। নিচের অভিধানগুলোতে শব্দটি পরীক্ষা করো।</p>';
   }else{
