@@ -583,15 +583,18 @@
       "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "name",
+      "headword": "Name",
       "english_gloss": "name",
       "bengali_meaning": "নাম",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Mein Name ist Peter.",
-      "example_bn": null,
+      "example_bn": "আমার নাম পিটার।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "der",
+      "plural": "die Namen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–3"
     },
     {
       "headword": "oder",
@@ -618,15 +621,18 @@
       "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "frau",
+      "headword": "Frau",
       "english_gloss": "Miss/Mrs/Ms",
       "bengali_meaning": "মহিলা; মিসেস",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Das ist Frau Müller.",
-      "example_bn": null,
+      "example_bn": "ইনি মিসেস মুলার।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "die",
+      "plural": "die Frauen",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–3"
     },
     {
       "headword": "Gute Nacht",
@@ -665,15 +671,18 @@
       "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
-      "headword": "herr",
+      "headword": "Herr",
       "english_gloss": "Mr",
       "bengali_meaning": "জনাব",
-      "bengali_status": "source_checked_draft",
+      "bengali_status": "independently_reviewed_draft",
       "example_de": "Guten Tag, Herr Klein.",
-      "example_bn": null,
+      "example_bn": "শুভদিন, জনাব ক্লাইন।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "source_checked_second_batch"
+      "review_status": "second_stage_review_batch_2",
+      "article": "der",
+      "plural": "die Herren",
+      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–3"
     },
     {
       "headword": "ihnen",
@@ -1085,7 +1094,6 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
       "review_status": "second_stage_review_batch_2",
-      "article": "fragen",
       "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
     {
@@ -1213,8 +1221,6 @@
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 27",
       "review_status": "second_stage_review_batch_2",
-      "article": "die",
-      "plural": "die Bitten",
       "plural_status": "not_applicable_word_is_particle",
       "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage"
     },
@@ -21057,7 +21063,7 @@
       "date": "2026-11-01",
       "records_updated": 59,
       "meaning_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; German noun forms and contextual usage",
-      "note": "Added/checked articles and plural forms for source-listed nouns; corrected the non-noun particle bitte and removed the erroneous article value from fragen; marked Befinden as singular and Musik as usually singular; reviewed Bangla meanings and translated available example sentences."
+      "note": "Added/checked articles and plural forms for source-listed nouns; corrected the non-noun particle bitte and removed the erroneous article value from fragen; marked Befinden as singular and Musik as usually singular; reviewed Bangla meanings and translated available example sentences. Follow-up correction: capitalized and completed Name/Frau/Herr; removed erroneous noun-form fields from the verb fragen and particle bitte."
     }
   ],
   "pronunciation_schema": {
