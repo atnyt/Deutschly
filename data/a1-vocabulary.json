@@ -10504,11 +10504,13 @@
       "example_bn": "কী বাজে ব্যাপার!",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 19",
-      "review_status": "second_stage_review_batch_8",
+      "review_status": "second_stage_review_batch_19",
       "article": "der",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 5–6, pages 23–27; noun forms and singular/plural source markers checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Mist, der (Sg.))",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "Netz",
@@ -12200,11 +12202,13 @@
       "example_bn": "সে রাজনীতিতে আগ্রহী।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 24",
-      "review_status": "second_stage_review_batch_9",
+      "review_status": "second_stage_review_batch_19",
       "article": "die",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 5–7, pages 21–28; noun forms and contextual use checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Klett Netzwerk neu A2 Kursbuch, Kapitelwortschatz (Politik, die (Sg.))",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1/A2-Wortliste: Sg.)",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "Religion",
@@ -12566,11 +12570,13 @@
       "example_bn": "অবসর সময়ে তুমি কী করো?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 24",
-      "review_status": "second_stage_review_batch_9",
+      "review_status": "second_stage_review_batch_19",
       "article": "die",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 5–7, pages 21–28; noun forms and contextual use checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Freizeit, die (Sg.))",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "hurra",
@@ -12920,12 +12926,13 @@
       "example_bn": "তোমার বয়স কত?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 25",
-      "review_status": "second_stage_review_batch_9",
+      "review_status": "second_stage_review_batch_19",
       "article": "das",
       "plural_status": "singular_only",
-      "review_note": "In the sense of age, this is normally singular.",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 5–7, pages 21–28; noun forms and contextual use checked",
-      "confidence_status": "reviewed_draft"
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।",
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Alter, das (Sg.))",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1-Wortliste: Sg.; বয়স অর্থে)"
     },
     {
       "headword": "Gewicht",
@@ -13803,11 +13810,13 @@
       "example_bn": "তার প্রচণ্ড জ্বর হয়েছে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 27",
-      "review_status": "second_stage_review_batch_10",
+      "review_status": "second_stage_review_batch_19",
       "article": "das",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 6–7, pages 26–31; noun forms and source plural markers checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Fieber, das (Sg.))",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "total",
@@ -15068,11 +15077,13 @@
       "example_bn": "রেলস্টেশনটি কাছেই।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 29",
-      "review_status": "second_stage_review_batch_11",
+      "review_status": "second_stage_review_batch_19",
       "article": "die",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 7–8, pages 29–34; noun forms and usage checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Nähe, die (Sg.))",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "renoviert",
@@ -15531,11 +15542,13 @@
       "example_bn": "এটি আসল কাঠ।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 31",
-      "review_status": "second_stage_review_batch_11",
+      "review_status": "second_stage_review_batch_19",
       "article": "das",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 7–8, pages 29–34; noun forms and usage checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Holz, das, -¨er)",
+      "confidence_status": "reviewed",
+      "plural": "die Hölzer (কাঠের ধরন/টুকরা)",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "Loft",
@@ -15824,11 +15837,13 @@
       "example_bn": "সে তার অসন্তুষ্টি প্রকাশ করে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 31",
-      "review_status": "second_stage_review_batch_11",
+      "review_status": "second_stage_review_batch_19",
       "article": "das",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 7–8, pages 29–34; noun forms and usage checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Klett Netzwerk neu A2 Kursbuch, Kapitelwortschatz (Missfallen, das (Sg.))",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "Studium",
@@ -16394,11 +16409,13 @@
       "example_bn": "ইন্টারনেট দ্রুত।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 32",
-      "review_status": "second_stage_review_batch_11",
+      "review_status": "second_stage_review_batch_19",
       "article": "das",
       "plural_status": "singular_only",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 7–8, pages 29–34; noun forms and usage checked",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Internet, das (Sg.))",
+      "confidence_status": "reviewed",
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "Job",
@@ -19337,13 +19354,14 @@
       "example_bn": "হামবুর্গ উত্তর দিকে অবস্থিত।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 40",
-      "review_status": "second_stage_review_batch_13",
+      "review_status": "second_stage_review_batch_19",
       "article": "der",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42; noun forms, capitalization and contextual usage reviewed; exceptions noted individually",
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Norden, der (Sg.))",
       "grammatical_number": "singular",
       "number_note": "Himmelsrichtung; gewöhnlich Singular.",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "Osten",
@@ -19371,13 +19389,14 @@
       "example_bn": "বাভারিয়া দক্ষিণে অবস্থিত।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 40",
-      "review_status": "second_stage_review_batch_13",
+      "review_status": "second_stage_review_batch_19",
       "article": "der",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42; noun forms, capitalization and contextual usage reviewed; exceptions noted individually",
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Süden, der (Sg.))",
       "grammatical_number": "singular",
       "number_note": "Himmelsrichtung; gewöhnlich Singular.",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "Westen",
@@ -19388,13 +19407,14 @@
       "example_bn": "কোলন পশ্চিম দিকে অবস্থিত।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 40",
-      "review_status": "second_stage_review_batch_13",
+      "review_status": "second_stage_review_batch_19",
       "article": "der",
-      "plural": "",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42; noun forms, capitalization and contextual usage reviewed; exceptions noted individually",
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Westen, der (Sg.))",
       "grammatical_number": "singular",
       "number_note": "Himmelsrichtung; gewöhnlich Singular.",
-      "confidence_status": "reviewed_draft"
+      "confidence_status": "reviewed",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "Berg",
@@ -19450,13 +19470,23 @@
       "example_bn": "এটি সত্যিই দুর্ভাগ্য!",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 40",
-      "review_status": "second_stage_review_batch_13",
+      "review_status": "second_stage_review_batch_19",
       "article": "das",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 9–10, pages 38–42; noun forms, capitalization and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "A1 অর্থে অগণনীয়; সাধারণত বহুবচন নেই।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein Plural (দুর্ভাগ্য অর্থে; Duden-এ 'die Peche' শুধু বিভিন্ন প্রকার বোঝাতে)",
+      "confidence_status": "reviewed",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Pech",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "schneien",
@@ -19712,13 +19742,23 @@
       "example_bn": "থালা-বাসন পরিষ্কার।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 37",
-      "review_status": "second_stage_review_batch_14",
+      "review_status": "second_stage_review_batch_19",
       "article": "das",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 10–11, pages 42–46; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "সামষ্টিক বিশেষ্য; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "die Geschirre (বিশেষ/গণনাযোগ্য অর্থে; বাসনপত্রের সমষ্টি অর্থে সাধারণত Plural নয়)",
+      "confidence_status": "reviewed",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Geschirr",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Handy-Akku",
@@ -21875,13 +21915,23 @@
       "example_de": "Ich möchte ein Eis.",
       "example_bn": "আমি একটি আইসক্রিম চাই।",
       "source": "Deutsch mit Shakil A1 PDF, page 20",
-      "review_status": "second_stage_review_batch_15",
+      "review_status": "second_stage_review_batch_19",
       "article": "das",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 11–12, pages 46–50; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "'বরফ/আইসক্রিম' অর্থে সাধারণত একবচন; বিভিন্ন স্বাদের আইসক্রিম বোঝাতে Eissorten বলা হয়।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein Plural (Duden)",
+      "confidence_status": "reviewed",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Eis_Gefrorenes",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Pommes",
@@ -22164,13 +22214,23 @@
       "example_de": "Ich liebe die Natur.",
       "example_bn": "আমি প্রকৃতিকে ভালোবাসি।",
       "source": "Deutsch mit Shakil A1 PDF, page 21",
-      "review_status": "second_stage_review_batch_15",
+      "review_status": "second_stage_review_batch_19",
       "article": "die",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 11–12, pages 46–50; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Duden Online-Wörterbuch",
       "grammatical_number": "singular",
       "number_note": "সাধারণ অর্থে প্রকৃতি বোঝাতে একবচন ব্যবহৃত হয়।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein Plural (সাধারণ অর্থে; Duden-এ বিশেষ অর্থে die Naturen)",
+      "confidence_status": "reviewed",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Natur",
+        "checked_fields": [
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-01"
+      }
     },
     {
       "headword": "Open-Air-Kino",
@@ -25033,13 +25093,14 @@
       "example_de": "Was für ein Mistwetter!",
       "example_bn": "কী বাজে আবহাওয়া!",
       "source": "Deutsch mit Shakil A1 PDF, page 40",
-      "review_status": "second_stage_review_batch_17",
+      "review_status": "second_stage_review_batch_19",
       "article": "das",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 8–10, pages 36–40; capitalization, noun forms and contextual usage reviewed; exceptions noted individually",
+      "review_source": "Klett Netzwerk neu A1 Kursbuch, Kapitelwortschatz (Mistwetter, das (Sg.))",
       "grammatical_number": "singular",
       "number_note": "কথ্য ভাষায় খারাপ আবহাওয়া বোঝানো সামষ্টিক বিশেষ্য; সাধারণত একবচন।",
-      "plural": "",
-      "confidence_status": "reviewed_draft"
+      "plural": "kein Plural (A1-Wortliste: Sg.)",
+      "confidence_status": "reviewed",
+      "review_note": "Plural-সংক্রান্ত তথ্য নির্দিষ্ট অভিধান/শিক্ষাসূত্রের ভিত্তিতে যোগ করা হয়েছে; সাধারণ অর্থ ও বিশেষ অর্থের পার্থক্য নোটে রাখা হয়েছে।"
     },
     {
       "headword": "einmal",
