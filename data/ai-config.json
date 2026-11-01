@@ -1,0 +1,1 @@
+{"endpoint":"","status":"not_connected","note":"After deploying the Cloudflare Worker, set endpoint to its HTTPS URL. Never put an OpenAI API key in this file."}
