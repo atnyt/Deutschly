@@ -52,7 +52,7 @@ The embedded JavaScript in both HTML pages was syntax-checked after the latest c
 
 ## Deutschly learning data and search
 
-- `data/a1-vocabulary.json` contains the maintainer-authored and curated A1 word list. The suggested reference list was compared against the database: 1,715 reference rows were reviewed, 10 duplicate rows were consolidated, and 8 missing vocabulary items were recovered, resulting in 1,713 unique normalized headwords. Page references are retained only for traceability to the suggested reference.
+- `data/a1-vocabulary.json` contains the maintainer-authored and curated A1 word list, with 1,713 unique normalized headwords after duplicate consolidation and recovery of omitted entries.
 - `data/grammar-terms.json` contains curated German–Bangla grammar terminology. It is a separate data source and does not inflate the A1 vocabulary count.
 - `data/compound-analysis.json` contains curated exact compound-word analyses. It does not guess arbitrary word splits.
 - `data/a1-vocabulary-audit.json` records the first-pass audit and unresolved items. A blank plural is not automatically an error: many entries are mass nouns, collective nouns, months, or have uncommon/context-specific plurals.
