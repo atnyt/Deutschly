@@ -77,9 +77,10 @@ JavaScript syntax and local database invariants are checked after code changes. 
 
 ## Licensing and data sources
 
-The MIT License in this repository applies **only to original software code**
+The standard MIT License is intended to cover **only original software code**
 authored by the Deutschly maintainer(s), to the extent they hold the relevant
-rights. It does not automatically cover the `data/` directory, the source
-A1 vocabulary PDF, third-party dictionary content, or audio recordings.
-Review [DATA-SOURCES.md](DATA-SOURCES.md) before reusing or redistributing
-project data. Source citations are not the same as reuse permission.
+rights. See [LICENSE-NOTICE.md](LICENSE-NOTICE.md) for its scope and
+[DATA-SOURCES.md](DATA-SOURCES.md) for third-party data restrictions. The MIT
+License does not automatically cover the `data/` directory, the source A1
+vocabulary PDF, dictionary content, or audio recordings. Source citations are
+not the same as reuse permission.
