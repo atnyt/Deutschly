@@ -1,7 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "purpose": "Register of third-party materials explicitly excluded from the maintainer's CC BY 4.0 grant. The reference PDF is not represented as the author or source of the Deutschly database.",
-  "suggested_reference_role": "The Deutsch mit Shakil A1 PDF was suggested only for coverage comparison. The maintainer has clarified that the Deutschly vocabulary content was independently authored and curated.",
+  "purpose": "Register of third-party materials explicitly excluded from the maintainer's CC BY 4.0 grant.",
   "excluded_headword_english_gloss_example_records": [],
   "excluded_bengali_source_transcribed_fields": [],
   "excluded_external_audio": [
