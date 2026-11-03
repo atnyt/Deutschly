@@ -414,6 +414,11 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     event.stopImmediatePropagation();
     var searched = input.value.trim().replace(/\s+/g, ' ');
     if (!searched) return;
+    // Consume the incoming pronunciation word once; keep the result on screen,
+    // but ensure Refresh starts with a clean Dictionary page.
+    var cleanUrl = new URL(window.location.href);
+    cleanUrl.searchParams.delete('word');
+    window.history.replaceState(null, '', cleanUrl.pathname + cleanUrl.search + cleanUrl.hash);
     var thisRequest = ++requestId;
     button.disabled = true;
     results.innerHTML = '<div class="panel"><p class="bn" role="status">অভিধান খোঁজা হচ্ছে…</p></div>';
