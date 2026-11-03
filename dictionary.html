@@ -280,7 +280,7 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       '<h2 class="word-title">' + escapeHTML(item.term) + '</h2>' +
       '<div class="meaning-glass"><div class="meaning-item">' + escapeHTML(item.bn) + '</div></div>' +
       '<p class="definition">' + escapeHTML(item.explanation_bn || '') + '</p>' + examples +
-      '<p class="source">Deutschly Grammar Terms · সম্পাদিত শিক্ষণ-তথ্য; আনুষ্ঠানিক অভিধান-উদ্ধৃতি নয়। ' + sources + '</p></div>';
+      '<p class="source">' + sources + '</p></div>';
   }
   function safeAudioUrl(value) {
     try {
@@ -299,8 +299,7 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     }) : null;
     var audioUrl = audio ? safeAudioUrl(audio.url) : '';
     var dudenUrl = 'https://www.duden.de/suchen/dudenonline/' + encodeURIComponent(record.headword || '');
-    var mergedSources = Array.isArray(record.source_variants) && record.source_variants.length ?
-      '<p class="source">একাধিক উৎস-রেকর্ড একত্র করা হয়েছে; মূল উৎস-তথ্য সংরক্ষিত: ' + record.source_variants.length + 'টি</p>' : '';
+    var mergedSources = '';
     return '<div class="panel"><h2 class="word-title">' + escapeHTML(title) +
       '</h2><div class="meaning-glass"><div class="meaning-item">' +
       escapeHTML(record.bengali_meaning || 'বাংলা অর্থ যোগ করা হচ্ছে।') +
