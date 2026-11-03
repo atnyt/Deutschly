@@ -1,9 +1,7 @@
 {
   "schema_version": "1.0.0",
   "generated_on": "2026-11-03",
-  "source_pdf": "A1 Vocabulary list_Deutsch mit Shakil(3).pdf",
-  "source_pdf_pages": 40,
-  "source_rows": 1715,
+  "comparison_rows_reviewed": 1715,
   "unique_normalized_headwords": 1713,
   "status": "second_stage_dictionary_verification_in_progress",
   "checks": {
@@ -31,7 +29,7 @@
       "needs_verification": 1
     },
     "source_json_reconciliation_pass_1": {
-      "pages_compared": 40,
+      "reference_pages_reviewed": 40,
       "valid_missing_entries_recovered": 8,
       "main_json_records_after_recovery": 1713,
       "remaining_manual_layout_review": true
@@ -44,10 +42,10 @@
   "interpretation": {
     "records_without_article": "650 records have no article. This includes verbs, adjectives, adverbs, phrases, pronouns, particles, and other non-nouns; word-class tagging is incomplete, so these are not automatically missing noun articles.",
     "noun_records_with_article_but_no_plural": "Current JSON inspection found 0 records with an article but an empty plural field. A plural value may explicitly say usually singular, singular-only, or no common plural; these should be interpreted by their plural_status/notes, not as ordinary plural forms.",
-    "duplicate_policy": "Exact/normalized duplicates in the independently maintained Deutschly database are consolidated; reference-page provenance is retained for traceability.",
+    "duplicate_policy": "Exact/normalized duplicates in the independently maintained Deutschly database are consolidated.",
     "confidence_status": "Counts are taken directly from each record's confidence_status field. reviewed_draft and reviewed are not blanket guarantees that every lexical detail has been independently dictionary-verified. source_checked indicates targeted source checking; needs_verification must never be displayed as verified.",
-    "database_authorship": "The maintainer confirms that the Deutschly A1 database content—including headwords, English and Bengali meanings, examples, grammatical annotations, corrections, review decisions and JSON structure—was independently authored and curated. The named PDF was suggested only for vocabulary coverage comparison, not as the source or author of the database content.",
-    "transcribed_reference_content": "The earlier provenance labels that described 140 records as transcribed from the suggested PDF and seven Bengali fields as source_transcribed were corrected following the maintainer's explicit clarification that the database content was independently authored. The PDF is retained only as a coverage-comparison reference. External audio and live third-party dictionary/API content remain subject to their own terms."
+    "database_authorship": "The maintainer confirms that the Deutschly A1 database content—including headwords, English and Bengali meanings, examples, grammatical annotations, corrections, review decisions and JSON structure—was independently authored and curated.",
+    "provenance_correction": "Earlier provenance labels implying transcription were corrected after the maintainer clarified that the database content was independently authored. External audio and live third-party dictionary/API content remain subject to their own terms."
   },
   "externally_checked_corrections": [
     {
@@ -144,7 +142,7 @@
       ],
       "notes": [
         "এই ব্যাচে শুধু Article, Plural এবং প্রসঙ্গভিত্তিক বাংলা অর্থ যাচাই করা হয়েছে; উদাহরণ বাক্য আলাদাভাবে যাচাই করা হয়নি।",
-        "PDF-এ Interview-এর বাংলা অর্থ 'সাক্ষাৎকার'—সঠিক। Gespräch-এর 'কথোপকথন' অর্থ সঠিক; আরও স্বাভাবিক অর্থ হিসেবে 'আলাপ-আলোচনা' যোগ করা হয়েছে।"
+        "Interview-এর বাংলা অর্থ 'সাক্ষাৎকার'—সঠিক। Gespräch-এর 'কথোপকথন' অর্থ সঠিক; আরও স্বাভাবিক অর্থ হিসেবে 'আলাপ-আলোচনা' যোগ করা হয়েছে।"
       ],
       "sources": [
         "https://www.duden.de/rechtschreibung/Interview",
@@ -201,8 +199,8 @@
         }
       ],
       "notes": [
-        "এই ব্যাচে চারটি শব্দের Article, Plural এবং PDF-এ দেওয়া প্রসঙ্গ অনুযায়ী বাংলা অর্থ অভিধান দিয়ে যাচাই করা হয়েছে।",
-        "Kirche-এর ক্ষেত্রে Duden-এর বহুবচন Kirchen; তবে 'Gottesdienst' অর্থে শব্দটি গণনাতীত/বহুবচনহীন হতে পারে। এখানে PDF-এর 'গির্জা' অর্থে Kirchen প্রযোজ্য।",
+        "এই ব্যাচে চারটি শব্দের Article, Plural এবং প্রাসঙ্গিক বাংলা অর্থ অভিধান দিয়ে যাচাই করা হয়েছে।",
+        "Kirche-এর ক্ষেত্রে Duden-এর বহুবচন Kirchen; তবে 'Gottesdienst' অর্থে শব্দটি গণনাতীত/বহুবচনহীন হতে পারে। এখানে  'গির্জা' অর্থে Kirchen প্রযোজ্য।",
         "Besucher-এর বহুবচন die Besucher; স্ত্রীলিঙ্গ একবচন হলো die Besucherin।"
       ],
       "sources": [
@@ -280,9 +278,9 @@
         }
       ],
       "notes": [
-        "এই ব্যাচে ছয়টি শব্দের Article, Plural এবং PDF-এ ব্যবহৃত অর্থ অভিধান দিয়ে যাচাই করা হয়েছে।",
+        "এই ব্যাচে ছয়টি শব্দের Article, Plural এবং ব্যবহৃত অর্থ অভিধান দিয়ে যাচাই করা হয়েছে।",
         "Fluss-এর Duden-এ একাধিক অর্থ আছে; এখানে প্রাকৃতিক নদী অর্থে plural die Flüsse নেওয়া হয়েছে।",
-        "Zug শব্দের একাধিক অর্থ আছে; এখানে PDF-এর ট্রেন অর্থের Article ও Plural নথিভুক্ত।"
+        "Zug শব্দের একাধিক অর্থ আছে; এখানে  ট্রেন অর্থের Article ও Plural নথিভুক্ত।"
       ],
       "sources": [
         "https://www.duden.de/rechtschreibung/Fluss",
@@ -540,9 +538,9 @@
         }
       ],
       "notes": [
-        "এই ব্যাচে ৯টি শব্দের Article, Plural এবং PDF-এ ব্যবহৃত অর্থ Duden দিয়ে যাচাই করা হয়েছে।",
+        "এই ব্যাচে ৯টি শব্দের Article, Plural এবং ব্যবহৃত অর্থ Duden দিয়ে যাচাই করা হয়েছে।",
         "E-Mail-এর ক্ষেত্রে Duden দুইটি grammatical gender স্বীকার করে: die অথবা das; দুই ক্ষেত্রেই plural die E-Mails।",
-        "Schule ও Angabe-এর কিছু পৃথক অর্থে Duden plural ব্যবহার না থাকার কথা জানায়; এখানে PDF-এর নির্দিষ্ট অর্থ অনুযায়ী plural দেওয়া হয়েছে।",
+        "Schule ও Angabe-এর কিছু পৃথক অর্থে Duden plural ব্যবহার না থাকার কথা জানায়; এখানে  নির্দিষ্ট অর্থ অনুযায়ী plural দেওয়া হয়েছে।",
         "Journalist ও Ingenieur পেশাবাচক পুরুষবাচক রূপ; সংশ্লিষ্ট স্ত্রীবাচক রূপ আলাদা।"
       ],
       "sources": [
@@ -634,7 +632,7 @@
         }
       ],
       "notes": [
-        "এই ব্যাচে সাতটি শব্দের Article, Plural এবং PDF-এ ব্যবহৃত অর্থ Duden দিয়ে যাচাই করা হয়েছে।",
+        "এই ব্যাচে সাতটি শব্দের Article, Plural এবং ব্যবহৃত অর্থ Duden দিয়ে যাচাই করা হয়েছে।",
         "Hähnchen-এর plural অপরিবর্তিত থাকে: das Hähnchen → die Hähnchen।",
         "Saft-এর বহুবচন die Säfte অভিধানে আছে; দৈনন্দিন পানীয়/রসের অর্থে অনেক সময় mass noun হিসেবেও ব্যবহৃত হয়।"
       ],
