@@ -20,19 +20,11 @@ File: `data/a1-vocabulary.json`
 is the maintainer's own work. The maintainer independently created and
 curated the database records, Bengali meanings, German and Bengali examples,
 grammatical annotations, corrections, review decisions, and JSON structure.
-The “A1 Vocabulary list_Deutsch mit Shakil” PDF was suggested as a starting
-reference/inspiration for vocabulary coverage and page-level comparison; it
-was not the author of the Deutschly database and is not being claimed as its
-licensor.
+The database contains 1,713 unique normalized headwords. Ten duplicate
+entries were consolidated and eight vocabulary items were recovered during
+curation.
 
-The database metadata records 1,715 reference-list rows compared with the
-independently maintained database, 10 duplicate rows consolidated, and
-8 vocabulary items recovered, resulting in 1,713 unique normalized
-headwords. Per-record page references are retained for traceability to the
-suggested reference, not as a claim that the PDF author created the Deutschly
-entries.
-
-The maintainer's independently authored contributions are licensed under CC BY 4.0 only to the extent the maintainer holds the relevant rights. The maintainer has clarified that the PDF was used only to compare vocabulary coverage, not as the source of the Deutschly database content. The earlier record-level labels suggesting transcription from the PDF have been corrected. Third-party audio remains excluded; see [data/a1-vocabulary-third-party-exclusions.json](data/a1-vocabulary-third-party-exclusions.json). The PDF itself is not included in this repository.
+The maintainer's independently authored contributions are licensed under CC BY 4.0 only to the extent the maintainer holds the relevant rights. Earlier provenance labels implying transcription have been corrected. Third-party audio remains excluded; see [data/a1-vocabulary-third-party-exclusions.json](data/a1-vocabulary-third-party-exclusions.json). The PDF itself is not included in this repository.
 
 ## 3. Vocabulary audit
 
@@ -40,8 +32,7 @@ File: `data/a1-vocabulary-audit.json`
 
 This audit records the comparison against the suggested reference, duplicate
 consolidation, coverage checks, and review status of the independently
-maintained database. The audit does not claim that the reference PDF's author
-created or owns the Deutschly database. Its independently written analysis
+maintained database. Its independently written analysis
 is the maintainer's work, subject to the same third-party-material caveat.
 
 ## 4. Grammar terminology and compound analysis
