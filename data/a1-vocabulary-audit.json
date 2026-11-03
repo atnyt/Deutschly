@@ -35,11 +35,12 @@
       "valid_missing_entries_recovered": 8,
       "main_json_records_after_recovery": 1713,
       "remaining_manual_layout_review": true
-    }
+    },
+    "records_with_article_but_no_plural_field": 98
   },
   "interpretation": {
     "records_without_article": "Mostly verbs, adjectives, adverbs, phrases and proper names; part-of-speech classification is required before treating these as missing noun articles.",
-    "noun_records_with_article_but_no_plural": "98 records have an article but no plural field. These include mass/uncountable and collective nouns, month names, and some context-specific forms; the list requires per-word classification rather than automatic plural generation.",
+    "noun_records_with_article_but_no_plural": "The audit identifies 98 entries with an article but no plural value recorded. This is a field-completeness count, not 98 confirmed errors: many are mass/uncountable or collective nouns, month names, or context-specific forms. The separate confirmed-missing-plural check remains 0; classify the 98 entries individually before deciding whether a plural should be added.",
     "duplicate_policy": "Exact/normalized duplicates in the independently maintained Deutschly database are consolidated; reference-page provenance is retained for traceability.",
     "confidence_status": "reviewed_draft means included in a second-stage review batch, not individually guaranteed. source_checked means a targeted correction was checked against the cited source. needs_verification must never be displayed as verified.",
     "database_authorship": "The Deutschly maintainer states that the database itself—including its Bengali meanings, examples, grammatical annotations, corrections, review decisions and JSON structure—was independently created. The named PDF was a suggested reference for vocabulary coverage and page comparison."
