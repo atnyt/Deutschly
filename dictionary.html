@@ -151,14 +151,18 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     .then(function (response) { if (!response.ok) throw new Error('Grammar database HTTP ' + response.status); return response.json(); })
     .then(function (database) { return database && Array.isArray(database.records) ? database : { records: [] }; })
     .catch(function () { return { records: [] }; });
-  function findGrammarTerm(records, query) {
+  function findGrammarTerm(database, query) {
     var wanted = normalize(query);
     var compact = compactKey(query);
-    for (var i = 0; i < records.length; i++) {
-      var item = records[i];
-      var aliases = [item.term].concat(Array.isArray(item.aliases) ? item.aliases : []);
-      for (var j = 0; j < aliases.length; j++) {
-        if (normalize(aliases[j]) === wanted || compactKey(aliases[j]) === compact) return item;
+    var collections = [database.records || [], database.grammar_rules || []];
+    for (var c = 0; c < collections.length; c++) {
+      var records = collections[c];
+      for (var i = 0; i < records.length; i++) {
+        var item = records[i];
+        var aliases = [item.term].concat(Array.isArray(item.aliases) ? item.aliases : []);
+        for (var j = 0; j < aliases.length; j++) {
+          if (normalize(aliases[j]) === wanted || compactKey(aliases[j]) === compact) return item;
+        }
       }
     }
     return null;
@@ -292,7 +296,7 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     results.innerHTML = '<div class="panel"><p class="bn" role="status">অভিধান খোঁজা হচ্ছে…</p></div>';
     Promise.all([databasePromise, grammarDatabasePromise, compoundDatabasePromise]).then(function (loaded) {
       if (thisRequest !== requestId) return;
-      var grammarTerm = findGrammarTerm(loaded[1].records, searched);
+      var grammarTerm = findGrammarTerm(loaded[1], searched);
       var compoundTerm = findCompound(loaded[2].records, searched);
       if (grammarTerm) {
         results.innerHTML = renderGrammarWithCompound(grammarTerm, compoundTerm);
