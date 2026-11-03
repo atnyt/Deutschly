@@ -439,8 +439,8 @@
         "Dativ Kasus",
         "Dativregel"
       ],
-      "bn": "সম্প্রদান/পরোক্ষ কর্মকারক",
-      "explanation_bn": "Dativ অনেক ক্ষেত্রে পরোক্ষ কর্ম (Wem?) বোঝায়; কিছু Verb ও Präposition নিজস্বভাবে Dativ দাবি করে। Definite article: dem/der/dem/den। Dativ plural noun-এ সাধারণত -n যোগ হয়, যদি plural form ইতিমধ্যে -n বা -s-এ শেষ না হয়।",
+      "bn": "Dativ — অনেক ক্ষেত্রে পরোক্ষ কর্ম (Wem?)",
+      "explanation_bn": "Dativ অনেক ক্ষেত্রে পরোক্ষ কর্ম (Wem?) বোঝায়; তবে সব Dativ-কে পরোক্ষ কর্ম বলা যায় না। কিছু Verb ও Präposition নিজস্বভাবে Dativ দাবি করে। Definite article: dem/der/dem/den। Dativ plural noun-এ সাধারণত -n যোগ হয়, যদি plural form ইতিমধ্যে -n বা -s-এ শেষ না হয়।",
       "example_de": "Ich helfe dem Mann. Ich spreche mit den Kindern.",
       "example_bn": "আমি লোকটিকে সাহায্য করি। আমি শিশুদের সঙ্গে কথা বলি।",
       "level": "A1",
@@ -636,9 +636,9 @@
         "an auf hinter in neben über unter vor zwischen"
       ],
       "bn": "Dativ ও Akkusativ—দুই Kasus-ই নিতে পারে এমন Preposition",
-      "explanation_bn": "an, auf, hinter, in, neben, über, unter, vor, zwischen—এগুলো অবস্থান/স্থান কোথায় (Wo?) বোঝালে সাধারণত Dativ নেয়; কোনো গন্তব্যে স্থান পরিবর্তন/কোথায় (Wohin?) বোঝালে সাধারণত Akkusativ নেয়। শুধু নড়াচড়া আছে কি না—এটাই একমাত্র পরীক্ষা নয়; অর্থ ও Verb-এর সম্পর্ক দেখতে হয়।",
-      "example_de": "Das Buch liegt auf dem Tisch. Ich lege das Buch auf den Tisch.",
-      "example_bn": "বইটি টেবিলের ওপর পড়ে আছে। আমি বইটি টেবিলের ওপর রাখছি।",
+      "explanation_bn": "an, auf, hinter, in, neben, über, unter, vor, zwischen—এই ৯টি Wechselpräpositionen স্থান বোঝালে Dativ বা Akkusativ নিতে পারে। Wo? (কোথায় অবস্থান/কোন স্থানে কাজটি ঘটছে?)—Dativ; Wohin? (কোন গন্তব্যে যাচ্ছে/স্থান পরিবর্তন হচ্ছে?)—Akkusativ। শুধু নড়াচড়া আছে কি না, তা দিয়ে Kasus নির্ধারণ করা যায় না; অর্থ ও Verb-এর সম্পর্ক দেখতে হয়।",
+      "example_de": "Das Buch liegt auf dem Tisch. Ich lege das Buch auf den Tisch. Ich gehe auf der Straße.",
+      "example_bn": "বইটি টেবিলের ওপর আছে। আমি বইটি টেবিলের ওপর রাখছি। আমি রাস্তায় হাঁটছি।",
       "level": "A1",
       "status": "reviewed",
       "sources": [
