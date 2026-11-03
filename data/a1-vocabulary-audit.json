@@ -15,19 +15,19 @@
     "missing_bengali_meaning": 0,
     "missing_german_example": 0,
     "missing_bengali_example": 0,
-    "records_without_article": 657,
+    "records_without_article": 650,
     "noun_records_with_article_but_no_plural": 0,
     "records_needing_manual_review": [
       {
         "headword": "Stadtstaatin",
-        "reason": "Marked not_individually_verified; keep visibly unverified until checked against a reliable dictionary."
+        "reason": "Retained as unverified; must not be presented as dictionary-confirmed."
       }
     ],
     "remaining_incomplete_examples": [],
     "confidence_status_counts": {
-      "reviewed_draft": 1586,
+      "reviewed_draft": 1579,
+      "reviewed": 87,
       "source_checked": 46,
-      "reviewed": 80,
       "needs_verification": 1
     },
     "source_json_reconciliation_pass_1": {
@@ -36,14 +36,18 @@
       "main_json_records_after_recovery": 1713,
       "remaining_manual_layout_review": true
     },
-    "records_with_article_but_no_plural_field": 98
+    "records_with_article_but_no_plural_field": 0,
+    "records_with_dictionary_check_metadata": 130,
+    "source_transcribed_word_gloss_example": 140,
+    "bengali_source_transcribed": 7
   },
   "interpretation": {
-    "records_without_article": "Mostly verbs, adjectives, adverbs, phrases and proper names; part-of-speech classification is required before treating these as missing noun articles.",
-    "noun_records_with_article_but_no_plural": "The audit identifies 98 entries with an article but no plural value recorded. This is a field-completeness count, not 98 confirmed errors: many are mass/uncountable or collective nouns, month names, or context-specific forms. The separate confirmed-missing-plural check remains 0; classify the 98 entries individually before deciding whether a plural should be added.",
+    "records_without_article": "650 records have no article. This includes verbs, adjectives, adverbs, phrases, pronouns, particles, and other non-nouns; word-class tagging is incomplete, so these are not automatically missing noun articles.",
+    "noun_records_with_article_but_no_plural": "Current JSON inspection found 0 records with an article but an empty plural field. A plural value may explicitly say usually singular, singular-only, or no common plural; these should be interpreted by their plural_status/notes, not as ordinary plural forms.",
     "duplicate_policy": "Exact/normalized duplicates in the independently maintained Deutschly database are consolidated; reference-page provenance is retained for traceability.",
-    "confidence_status": "reviewed_draft means included in a second-stage review batch, not individually guaranteed. source_checked means a targeted correction was checked against the cited source. needs_verification must never be displayed as verified.",
-    "database_authorship": "The Deutschly maintainer states that the database itself—including its Bengali meanings, examples, grammatical annotations, corrections, review decisions and JSON structure—was independently created. The named PDF was a suggested reference for vocabulary coverage and page comparison."
+    "confidence_status": "Counts are taken directly from each record's confidence_status field. reviewed_draft and reviewed are not blanket guarantees that every lexical detail has been independently dictionary-verified. source_checked indicates targeted source checking; needs_verification must never be displayed as verified.",
+    "database_authorship": "The Deutschly maintainer states that the database itself—including its Bengali meanings, examples, grammatical annotations, corrections, review decisions and JSON structure—was independently created. The named PDF was a suggested reference for vocabulary coverage and page comparison.",
+    "transcribed_reference_content": "140 records explicitly identify the headword and English gloss/example as transcribed from the suggested reference; 7 records separately mark Bengali content as source_transcribed. These portions are excluded from the maintainer's CC BY 4.0 grant unless rights and permission are independently confirmed."
   },
   "externally_checked_corrections": [
     {
@@ -797,5 +801,6 @@
     }
   ],
   "reconciliation_note": "The suggested reference PDF was used for page-level vocabulary coverage comparison. This does not mean the PDF author created or owns the Deutschly database. Full-page comparison identified eight vocabulary items to recover and ten duplicate rows to consolidate. Remaining layout review is recorded separately; no third-party PDF text is intentionally relicensed by this audit.",
-  "source_pdf_role": "Suggested reference/inspiration only; not claimed as the author or licensor of the independently created Deutschly database."
+  "source_pdf_role": "Suggested reference/inspiration only; not claimed as the author or licensor of the independently created Deutschly database.",
+  "record_count": 1713
 }
