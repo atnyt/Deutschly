@@ -179,7 +179,7 @@
           "plural": "die Besucher",
           "bengali_meaning": "দর্শনার্থী; আগন্তুক",
           "source": "https://www.duden.de/rechtschreibung/Besucher",
-          "source_note": "Duden identifies Besucher as masculine and gives unchanged plural Besucher; meaning is a person who visits someone or a place. The PDF's masculine form is retained; feminine counterpart is Besucherin."
+          "source_note": "Duden identifies Besucher as masculine and gives unchanged plural Besucher; meaning is a person who visits someone or a place. The masculine form is retained; feminine counterpart is Besucherin."
         },
         {
           "headword": "Kirche",
@@ -234,7 +234,7 @@
           "plural": "die Flüsse",
           "bengali_meaning": "নদী",
           "source": "https://www.duden.de/rechtschreibung/Fluss",
-          "source_note": "Duden gives der Fluss and plural die Flüsse for the natural watercourse sense used in the PDF; other abstract/technical senses can be without plural."
+          "source_note": "Duden gives der Fluss and plural die Flüsse for the natural watercourse sense used in this vocabulary context; other abstract/technical senses can be without plural."
         },
         {
           "headword": "Hafen",
@@ -470,7 +470,7 @@
           "plural": "die Stationen",
           "bengali_meaning": "স্টেশন; যাত্রাবিরতির স্থান",
           "source": "https://www.duden.de/rechtschreibung/Station",
-          "source_note": "Duden gives die Station and plural die Stationen; the PDF context is a station/stop."
+          "source_note": "Duden gives die Station and plural die Stationen; the vocabulary context is a station/stop."
         },
         {
           "headword": "Adresse",
@@ -604,7 +604,7 @@
           "plural": "die Säfte",
           "bengali_meaning": "রস; ফলের রস",
           "source": "https://www.duden.de/rechtschreibung/Saft",
-          "source_note": "Duden gives der Saft and plural die Säfte; the PDF context is fruit juice. The plural also occurs in other senses."
+          "source_note": "Duden gives der Saft and plural die Säfte; the vocabulary context is fruit juice. The plural also occurs in other senses."
         },
         {
           "headword": "Dose",
@@ -620,7 +620,7 @@
           "plural": "die Preise",
           "bengali_meaning": "দাম; মূল্য",
           "source": "https://www.duden.de/rechtschreibung/Preis",
-          "source_note": "Duden gives der Preis and plural die Preise; the PDF context is the amount paid when buying goods."
+          "source_note": "Duden gives der Preis and plural die Preise; the vocabulary context is the amount paid when buying goods."
         },
         {
           "headword": "Tüte",
@@ -720,11 +720,11 @@
           "plural": "die Ausflüge",
           "bengali_meaning": "ভ্রমণ; আনন্দভ্রমণ; বেড়াতে যাওয়া",
           "source": "https://www.duden.de/rechtschreibung/Ausflug",
-          "source_note": "Duden gives der Ausflug and plural die Ausflüge; the PDF context is a trip or excursion."
+          "source_note": "Duden gives der Ausflug and plural die Ausflüge; the vocabulary context is a trip or excursion."
         }
       ],
       "notes": [
-        "দুটি শব্দের Article, Plural ও PDF-এ ব্যবহৃত বাংলা অর্থ অভিধানের সঙ্গে মিলিয়ে সংরক্ষণ করা হয়েছে।"
+        "দুটি শব্দের Article, Plural ও প্রাসঙ্গিক বাংলা অর্থ অভিধানের সঙ্গে মিলিয়ে সংরক্ষণ করা হয়েছে।"
       ],
       "sources": [
         "https://www.duden.de/rechtschreibung/Datum",
@@ -735,7 +735,6 @@
   "missing_source_entries_recovered": [
     {
       "headword": "Aussagesatz",
-      "source_pdf_page": 2,
       "chapter": "1",
       "section": "4b",
       "recovered_on": "2026-11-02",
@@ -743,7 +742,6 @@
     },
     {
       "headword": "Guten Tag",
-      "source_pdf_page": 1,
       "chapter": "1",
       "section": "1a",
       "recovered_on": "2026-11-02",
@@ -751,7 +749,6 @@
     },
     {
       "headword": "zuordnen",
-      "source_pdf_page": 1,
       "chapter": "1",
       "section": "1a",
       "recovered_on": "2026-11-02",
@@ -759,7 +756,6 @@
     },
     {
       "headword": "zusammengehören",
-      "source_pdf_page": 1,
       "chapter": "1",
       "section": "1a",
       "recovered_on": "2026-11-02",
@@ -767,7 +763,6 @@
     },
     {
       "headword": "Reiseführer",
-      "source_pdf_page": 2,
       "chapter": "1",
       "section": "4a",
       "recovered_on": "2026-11-02",
@@ -775,7 +770,6 @@
     },
     {
       "headword": "Reiseführerin",
-      "source_pdf_page": 2,
       "chapter": "1",
       "section": "4a",
       "recovered_on": "2026-11-02",
@@ -783,7 +777,6 @@
     },
     {
       "headword": "Künstler",
-      "source_pdf_page": 31,
       "chapter": "10",
       "section": "1b",
       "recovered_on": "2026-11-02",
@@ -791,14 +784,12 @@
     },
     {
       "headword": "Künstlerin",
-      "source_pdf_page": 31,
       "chapter": "10",
       "section": "1b",
       "recovered_on": "2026-11-02",
       "dictionary_source": "https://www.duden.de/rechtschreibung/Kuenstlerin"
     }
   ],
-  "reconciliation_note": "The suggested reference PDF was used for page-level vocabulary coverage comparison. This does not mean the PDF author created or owns the Deutschly database. Full-page comparison identified eight vocabulary items to recover and ten duplicate rows to consolidate. Remaining layout review is recorded separately; no third-party PDF text is intentionally relicensed by this audit.",
-  "source_pdf_role": "Suggested reference/inspiration only; not claimed as the author or licensor of the independently created Deutschly database.",
+  "reconciliation_note": "The review identified eight vocabulary items to recover and ten duplicate rows to consolidate. Remaining layout review is recorded separately.",
   "record_count": 1713
 }
