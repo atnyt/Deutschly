@@ -39,8 +39,8 @@
           "meaning_bn": "দরজা"
         }
       ],
-      "meaning_bn": "বাড়ির প্রবেশদ্বারের দরজা",
-      "explanation_bn": "Haus + Tür। শেষ অংশ Tür feminine, তাই পুরো শব্দ die Haustür; Plural die Haustüren।",
+      "meaning_bn": "বাড়ির প্রধান দরজা",
+      "explanation_bn": "Haus + Tür। অর্থ: বাড়ির প্রবেশপথের দরজা। শেষ অংশ Tür feminine, তাই পুরো শব্দ die Haustür; Plural die Haustüren।",
       "status": "reviewed",
       "headword_gender": "die",
       "headword_plural": "die Haustüren",
@@ -58,7 +58,7 @@
         },
         {
           "form": "-er-",
-          "meaning_bn": "Wort-এর plural-ভিত্তিক সংযোগ উপাদান"
+          "meaning_bn": "Wort-এর plural রূপ Wörter গঠনের অংশ"
         },
         {
           "form": "Buch",
@@ -66,7 +66,7 @@
         }
       ],
       "meaning_bn": "অভিধান",
-      "explanation_bn": "Wort + -er- + Buch। এখানে -er- সংযোগ উপাদান; শেষ অংশ Buch neuter হওয়ায় das Wörterbuch। Plural: die Wörterbücher।",
+      "explanation_bn": "Wort-এর বহুবচনভিত্তিক রূপ Wörter + Buch। এখানে Wort → Wörter হয়েছে; -er- আলাদা Fugen-element নয়। শেষ অংশ Buch neuter হওয়ায় das Wörterbuch। Plural: die Wörterbücher।",
       "status": "reviewed",
       "headword_gender": "das",
       "headword_plural": "die Wörterbücher",
