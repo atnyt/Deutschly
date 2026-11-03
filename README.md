@@ -73,3 +73,13 @@ The backend uses the OpenAI Responses API with `store:false`, returns source URL
 ## Current validation boundary
 
 JavaScript syntax and local database invariants are checked after code changes. This repository has not been authenticated to a Cloudflare account, no API key has been supplied, and the Worker has not been deployed or live-tested. GitHub Pages deployment and the actual mobile browser experience must still be checked after deployment.
+
+
+## Licensing and data sources
+
+The MIT License in this repository applies **only to original software code**
+authored by the Deutschly maintainer(s), to the extent they hold the relevant
+rights. It does not automatically cover the `data/` directory, the source
+A1 vocabulary PDF, third-party dictionary content, or audio recordings.
+Review [DATA-SOURCES.md](DATA-SOURCES.md) before reusing or redistributing
+project data. Source citations are not the same as reuse permission.
