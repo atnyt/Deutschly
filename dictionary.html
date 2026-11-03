@@ -105,6 +105,31 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     darf:"dürfen", darfst:"dürfen", dürfen:"dürfen", dürft:"dürfen",
     soll:"sollen", sollst:"sollen", sollen:"sollen", sollt:"sollen"
   };
+  // Curated personal-pronoun inflections. These forms are valid words in their own
+  // right even when the source A1 vocabulary list does not contain a separate row.
+  var personalPronounForms = {
+    mich: { lemma: "ich", grammar: "Akkusativ", meaning: "আমাকে", example: "Er sieht mich.", translation: "সে আমাকে দেখছে।" },
+    mir: { lemma: "ich", grammar: "Dativ", meaning: "আমাকে; আমার কাছে", example: "Das gefällt mir.", translation: "এটি আমার ভালো লাগে।" },
+    dich: { lemma: "du", grammar: "Akkusativ", meaning: "তোমাকে", example: "Ich sehe dich.", translation: "আমি তোমাকে দেখি।" },
+    dir: { lemma: "du", grammar: "Dativ", meaning: "তোমাকে; তোমার কাছে", example: "Wie geht es dir?", translation: "তুমি কেমন আছ?" },
+    ihn: { lemma: "er", grammar: "Akkusativ", meaning: "তাকে (পুরুষবাচক)", example: "Ich kenne ihn.", translation: "আমি তাকে চিনি।" },
+    ihm: { lemma: "er / es", grammar: "Dativ", meaning: "তাকে; সেটিকে", example: "Ich helfe ihm.", translation: "আমি তাকে সাহায্য করি।", note: "ihm হলো er অথবা es-এর Dativ রূপ; প্রসঙ্গ অনুযায়ী অর্থ নির্ধারিত হয়।" },
+    uns: { lemma: "wir", grammar: "Akkusativ / Dativ", meaning: "আমাদের; আমাদেরকে", example: "Er hilft uns.", translation: "সে আমাদের সাহায্য করে।" },
+    euch: { lemma: "ihr", grammar: "Akkusativ / Dativ", meaning: "তোমাদের; তোমাদেরকে", example: "Ich helfe euch.", translation: "আমি তোমাদের সাহায্য করি।" },
+    ihnen: { lemma: "sie (Plural)", grammar: "Dativ", meaning: "তাদেরকে; তাঁদের কাছে", example: "Ich helfe ihnen.", translation: "আমি তাদের সাহায্য করি।", note: "সম্মানসূচক Ihnen (বড় হাতের I) আলাদা সম্বোধন; এই অনুসন্ধানটি ছোট হাতের ihnen-এর বহুবচন রূপ দেখায়।" }
+  };
+  function renderPronounForm(query) {
+    var form = personalPronounForms[normalize(query)];
+    if (!form) return null;
+    return '<div class="panel"><span class="tag">Personalpronomen · ব্যক্তিবাচক সর্বনাম</span>' +
+      '<h2 class="word-title">' + escapeHTML(query) + '</h2>' +
+      '<div class="meaning-glass"><div class="meaning-item">' + escapeHTML(form.meaning) + '</div></div>' +
+      '<p><span class="tag">মূল রূপ · ' + escapeHTML(form.lemma) + '</span><span class="tag">' + escapeHTML(form.grammar) + '</span></p>' +
+      (form.note ? '<p class="definition">' + escapeHTML(form.note) + '</p>' : '') +
+      '<div class="group"><h3 style="font-size:16px;line-height:1.6;margin:0 0 6px">' + escapeHTML(form.example) + '</h3><p class="bn">' + escapeHTML(form.translation) + '</p></div>' +
+      '<p class="source">এটি সঠিক জার্মান শব্দরূপ; শুধু মূল A1 শব্দতালিকায় আলাদা এন্ট্রি না থাকলে একে ভুল বানান বলা যাবে না।</p>' +
+      '<details class="source-details"><summary>তথ্যসূত্র</summary><div class="source-links"><a href="https://www.duden.de/rechtschreibung/' + encodeURIComponent(query) + '" target="_blank" rel="noopener noreferrer">Duden ↗</a><a href="https://de.wiktionary.org/wiki/' + encodeURIComponent(query) + '" target="_blank" rel="noopener noreferrer">Wiktionary ↗</a></div></details></div>';
+  }
   function findByLemma(records, lemma) {
     var key = normalize(lemma);
     for (var i = 0; i < records.length; i++) if (normalize(records[i].headword) === key) return records[i];
@@ -401,7 +426,7 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
         results.innerHTML = renderCompoundAnalysis(compoundTerm);
         return;
       }
-      var sentenceMatches = recognizeSentence(loaded[0].records, searched);
+      var pronounResult = renderPronounForm(searched);\n      if (pronounResult) {\n        results.innerHTML = pronounResult;\n        return;\n      }\n      var sentenceMatches = recognizeSentence(loaded[0].records, searched);
       if (sentenceMatches) {
         results.innerHTML = renderSentenceRecognition(sentenceMatches, searched);
         return;
