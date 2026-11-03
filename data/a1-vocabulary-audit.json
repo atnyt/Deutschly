@@ -40,8 +40,9 @@
   "interpretation": {
     "records_without_article": "Mostly verbs, adjectives, adverbs, phrases and proper names; part-of-speech classification is required before treating these as missing noun articles.",
     "noun_records_with_article_but_no_plural": "98 records have an article but no plural field. These include mass/uncountable and collective nouns, month names, and some context-specific forms; the list requires per-word classification rather than automatic plural generation.",
-    "duplicate_policy": "Exact/normalized duplicate rows are consolidated; source provenance remains attached to the canonical record.",
-    "confidence_status": "reviewed_draft means included in a second-stage review batch, not individually guaranteed. source_checked means a targeted correction was checked against the cited source. needs_verification must never be displayed as verified."
+    "duplicate_policy": "Exact/normalized duplicates in the independently maintained Deutschly database are consolidated; reference-page provenance is retained for traceability.",
+    "confidence_status": "reviewed_draft means included in a second-stage review batch, not individually guaranteed. source_checked means a targeted correction was checked against the cited source. needs_verification must never be displayed as verified.",
+    "database_authorship": "The Deutschly maintainer states that the database itself—including its Bengali meanings, examples, grammatical annotations, corrections, review decisions and JSON structure—was independently created. The named PDF was a suggested reference for vocabulary coverage and page comparison."
   },
   "externally_checked_corrections": [
     {
@@ -794,5 +795,6 @@
       "dictionary_source": "https://www.duden.de/rechtschreibung/Kuenstlerin"
     }
   ],
-  "reconciliation_note": "Full-page comparison identified eight valid source entries absent from the JSON and recovered them. This pass recovered Künstler and Künstlerin (PDF page 31, chapter 10, section 1b), with article/plural checked against Duden. Apparent mismatches such as Wände, Medien, Rollenkarte, Satzende, and momentan are already represented by canonical database entries. PDF layout and line wraps complicate automated row parsing, so a final page-by-page visual/layout reconciliation is still required before claiming every source row has been individually matched."
+  "reconciliation_note": "The suggested reference PDF was used for page-level vocabulary coverage comparison. This does not mean the PDF author created or owns the Deutschly database. Full-page comparison identified eight vocabulary items to recover and ten duplicate rows to consolidate. Remaining layout review is recorded separately; no third-party PDF text is intentionally relicensed by this audit.",
+  "source_pdf_role": "Suggested reference/inspiration only; not claimed as the author or licensor of the independently created Deutschly database."
 }
