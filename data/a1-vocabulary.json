@@ -5,7 +5,7 @@
   "level": "A1",
   "provenance": {
     "primary_source": "User-provided A1 Vocabulary list_Deutsch mit Shakil PDF",
-    "data_note": "1,715 source rows consolidated into 1,705 unique normalized headwords. Duplicate source rows are retained as source_variants on the canonical record. Source transcription is distinct from independent dictionary verification; unverified records remain explicitly flagged.",
+    "data_note": "1,715 source rows reconciled with the 40-page source PDF; 8 omitted entries were recovered and 10 duplicate rows consolidated, yielding 1,713 unique normalized headwords. Original source variants are retained on canonical records. Source transcription is distinct from independent dictionary verification; unverified records remain explicitly flagged.",
     "policy": "Do not label machine translation as verified. Keep source transcription distinct from independently reviewed linguistic additions."
   },
   "record_count": 1713,
