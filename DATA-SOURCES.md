@@ -32,7 +32,7 @@ headwords. Per-record page references are retained for traceability to the
 suggested reference, not as a claim that the PDF author created the Deutschly
 entries.
 
-The maintainer's independently authored contributions are licensed under CC BY 4.0 only to the extent the maintainer holds the relevant rights. The repository records 140 entries whose headword and English gloss/example fields are explicitly marked as transcribed from the suggested reference, plus seven Bengali fields marked source_transcribed. Those identified portions are excluded from the grant pending rights confirmation. The field-level register is in [data/a1-vocabulary-third-party-exclusions.json](data/a1-vocabulary-third-party-exclusions.json). The PDF itself is not included in this repository.
+The maintainer's independently authored contributions are licensed under CC BY 4.0 only to the extent the maintainer holds the relevant rights. The maintainer has clarified that the PDF was used only to compare vocabulary coverage, not as the source of the Deutschly database content. The earlier record-level labels suggesting transcription from the PDF have been corrected. Third-party audio remains excluded; see [data/a1-vocabulary-third-party-exclusions.json](data/a1-vocabulary-third-party-exclusions.json). The PDF itself is not included in this repository.
 
 ## 3. Vocabulary audit
 
