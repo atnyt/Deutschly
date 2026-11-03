@@ -82,6 +82,73 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     }
     return previous[b.length];
   }
+  // Curated high-frequency A1 verb forms. These are lookup aliases, not a
+  // general German morphological analyser; unknown forms are never guessed.
+  var verbLemmaAliases = {
+    bin:"sein", bist:"sein", ist:"sein", sind:"sein", seid:"sein", war:"sein", waren:"sein", gewesen:"sein",
+    habe:"haben", hast:"haben", hat:"haben", habt:"haben", hatte:"haben", hatten:"haben", gehabt:"haben",
+    gehe:"gehen", gehst:"gehen", geht:"gehen", ging:"gehen", gingen:"gehen", gegangen:"gehen",
+    komme:"kommen", kommst:"kommen", kommt:"kommen", kam:"kommen", kamen:"kommen", gekommen:"kommen",
+    lerne:"lernen", lernst:"lernen", lernt:"lernen", lernen:"lernen", machte:"machen", mache:"machen", machst:"machen", macht:"machen",
+    spreche:"sprechen", sprichst:"sprechen", spricht:"sprechen", sprechen:"sprechen", sprach:"sprechen", gesprochen:"sprechen",
+    lese:"lesen", liest:"lesen", lesen:"lesen", las:"lesen", gelesen:"lesen",
+    sehe:"sehen", siehst:"sehen", sieht:"sehen", sehen:"sehen", sah:"sehen", gesehen:"sehen",
+    esse:"essen", isst:"essen", esst:"essen", essen:"essen", aß:"essen", gegessen:"essen",
+    fahre:"fahren", fährst:"fahren", fährt:"fahren", fahren:"fahren", fuhr:"fahren", gefahren:"fahren",
+    nehme:"nehmen", nimmst:"nehmen", nimmt:"nehmen", nehmen:"nehmen", nahm:"nehmen", genommen:"nehmen",
+    gebe:"geben", gibst:"geben", gibt:"geben", geben:"geben", gab:"geben", gegeben:"geben",
+    schlafe:"schlafen", schläfst:"schlafen", schläft:"schlafen", schlafen:"schlafen", schlief:"schlafen", geschlafen:"schlafen",
+    kann:"können", kannst:"können", können:"können", könnt:"können",
+    muss:"müssen", musst:"müssen", müssen:"müssen", müsst:"müssen",
+    will:"wollen", willst:"wollen", wollen:"wollen", wollt:"wollen",
+    möchte:"möchten", möchtest:"möchten", möchten:"möchten", möchtet:"möchten",
+    darf:"dürfen", darfst:"dürfen", dürfen:"dürfen", dürft:"dürfen",
+    soll:"sollen", sollst:"sollen", sollen:"sollen", sollt:"sollen"
+  };
+  function findByLemma(records, lemma) {
+    var key = normalize(lemma);
+    for (var i = 0; i < records.length; i++) if (normalize(records[i].headword) === key) return records[i];
+    return null;
+  }
+  function spellingVariantKey(value) {
+    return normalize(value).replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss");
+  }
+  function findSpellingVariant(records, query) {
+    var key = spellingVariantKey(query);
+    if (!key || key === normalize(query)) return null;
+    var matches = records.filter(function (r) { return spellingVariantKey(r.headword) === key; });
+    return matches.length === 1 ? matches[0] : null;
+  }
+  function recognizeSentence(records, query) {
+    var tokens = normalize(query).match(/[a-zäöüßẞ]+(?:-[a-zäöüßẞ]+)*/gi) || [];
+    if (tokens.length < 2 || tokens.length > 16) return null;
+    var found = [];
+    tokens.forEach(function (token) {
+      var form = normalize(token);
+      var record = findByLemma(records, form);
+      var lemma = verbLemmaAliases[form];
+      var matchedBy = "শব্দের সরাসরি মিল";
+      if (!record && lemma) { record = findByLemma(records, lemma); matchedBy = "Verb-এর পরিচিত রূপ → " + lemma; }
+      if (!record) {
+        var variant = findSpellingVariant(records, form);
+        if (variant) { record = variant; matchedBy = "Umlaut/ß-এর বিকল্প টাইপিং"; }
+      }
+      if (record && !found.some(function (x) { return normalize(x.record.headword) === normalize(record.headword); })) {
+        found.push({record:record,token:token,matchedBy:matchedBy});
+      }
+    });
+    return found.length >= 2 ? found : null;
+  }
+  function renderSentenceRecognition(matches, query) {
+    return '<div class="panel"><span class="tag">বাক্যভিত্তিক শব্দ শনাক্তকরণ</span><h2 class="word-title">' +
+      escapeHTML(query) + '</h2><p class="muted">বাক্যের মধ্যে ডেটাবেসে পাওয়া শব্দগুলো দেখানো হয়েছে। এটি পূর্ণ বাক্য-অনুবাদ বা ব্যাকরণগত parse নয়।</p>' +
+      matches.map(function (m) {
+        var r=m.record;
+        return '<div class="group"><strong>' + escapeHTML(m.token) + ' → ' +
+          escapeHTML((r.article ? r.article + ' ' : '') + r.headword) + '</strong><p class="bn">' +
+          escapeHTML(r.bengali_meaning || '') + '</p><p class="source">' + escapeHTML(m.matchedBy) + '</p></div>';
+      }).join('') + '</div>';
+  }
   function findMatches(records, query) {
     var wanted = normalize(query);
     var wantedCompact = compactKey(query);
@@ -306,11 +373,30 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
         results.innerHTML = renderCompoundAnalysis(compoundTerm);
         return;
       }
+      var sentenceMatches = recognizeSentence(loaded[0].records, searched);
+      if (sentenceMatches) {
+        results.innerHTML = renderSentenceRecognition(sentenceMatches, searched);
+        return;
+      }
       var match = findMatches(loaded[0].records, searched);
       if (match.exact) {
         results.innerHTML = renderRecord(match.exact);
       } else {
-        results.innerHTML = renderRelated(match.related, searched);
+        var verbAlias = verbLemmaAliases[normalize(searched)];
+        var verbRecord = verbAlias ? findByLemma(loaded[0].records, verbAlias) : null;
+        if (verbRecord) {
+          results.innerHTML = renderRecord(verbRecord) +
+            '<div class="panel"><p class="bn">“' + escapeHTML(searched) + '” হলো “' +
+            escapeHTML(verbAlias) + '”-এর একটি পরিচিত রূপ।</p></div>';
+        } else {
+          var spellingRecord = findSpellingVariant(loaded[0].records, searched);
+          if (spellingRecord) {
+            results.innerHTML = renderRecord(spellingRecord) +
+              '<div class="panel"><p class="bn">তুমি Umlaut বা ß ছাড়া টাইপ করেছ। এটি সম্ভাব্য বিকল্প বানান-মিল; মূল বানানটি উপরে দেখানো হয়েছে।</p></div>';
+          } else {
+            results.innerHTML = renderRelated(match.related, searched);
+          }
+        }
       }
     }).catch(function (error) {
       if (thisRequest !== requestId) return;
