@@ -127,18 +127,22 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
         return other !== candidate && otherLemma.length > lemma.length && otherLemma.endsWith(lemma) && wanted.endsWith(otherLemma);
       });
     }).slice(0, 5);
-    if (!related.length && wanted.length >= 4 && /^[a-zäöüß-]+$/i.test(wanted)) {
+    // Keep spelling corrections available even when prefix/compound matches exist.
+    // Suggestions are never auto-applied: the learner must choose one explicitly.
+    if (wanted.length >= 4 && /^[a-zäöüß-]+$/i.test(wanted)) {
+      var alreadyRelated = new Set(related.map(function (item) { return normalize(item.record.headword); }));
       var typoCandidates = records.map(function (item) {
         var lemma = normalize(item.headword);
         return { record: item, distance: editDistance(wanted, lemma) };
       }).filter(function (item) {
-        var limit = wanted.length >= 7 ? 2 : 1;
-        return item.distance > 0 && item.distance <= limit;
+        var limit = wanted.length >= 8 ? 2 : 1;
+        return item.distance > 0 && item.distance <= limit &&
+          !alreadyRelated.has(normalize(item.record.headword));
       }).sort(function (a, b) {
         return a.distance - b.distance || normalize(a.record.headword).length - normalize(b.record.headword).length;
       }).slice(0, 3);
-      related = typoCandidates.map(function (item) {
-        return { record: item.record, matchedBy: 'typo', score: 0 };
+      typoCandidates.forEach(function (item) {
+        related.push({ record: item.record, matchedBy: 'typo', score: 0 });
       });
     }
     return { exact: null, related: related };
