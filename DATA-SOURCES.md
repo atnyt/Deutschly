@@ -24,15 +24,14 @@ The database contains 1,713 unique normalized headwords. Ten duplicate
 entries were consolidated and eight vocabulary items were recovered during
 curation.
 
-The maintainer's independently authored contributions are licensed under CC BY 4.0 only to the extent the maintainer holds the relevant rights. Earlier provenance labels implying transcription have been corrected. Third-party audio remains excluded; see [data/a1-vocabulary-third-party-exclusions.json](data/a1-vocabulary-third-party-exclusions.json). The PDF itself is not included in this repository.
+The maintainer's independently authored contributions are licensed under CC BY 4.0 only to the extent the maintainer holds the relevant rights. Earlier provenance labels implying transcription have been corrected. Third-party audio remains excluded; see [data/a1-vocabulary-third-party-exclusions.json](data/a1-vocabulary-third-party-exclusions.json).
 
 ## 3. Vocabulary audit
 
 File: `data/a1-vocabulary-audit.json`
 
-This audit records the comparison against the suggested reference, duplicate
-consolidation, coverage checks, and review status of the independently
-maintained database. Its independently written analysis
+This audit records duplicate consolidation, coverage checks, and review status
+of the independently maintained database. Its independently written analysis
 is the maintainer's work, subject to the same third-party-material caveat.
 
 ## 4. Grammar terminology and compound analysis
