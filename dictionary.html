@@ -114,9 +114,12 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     return normalize(value).replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss");
   }
   function findSpellingVariant(records, query) {
+    var normalizedQuery = normalize(query);
     var key = spellingVariantKey(query);
-    if (!key || key === normalize(query)) return null;
-    var matches = records.filter(function (r) { return spellingVariantKey(r.headword) === key; });
+    if (!key) return null;
+    var matches = records.filter(function (r) {
+      return normalize(r.headword) !== normalizedQuery && spellingVariantKey(r.headword) === key;
+    });
     return matches.length === 1 ? matches[0] : null;
   }
   function recognizeSentence(records, query) {
