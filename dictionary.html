@@ -742,4 +742,19 @@ if(initialWord){
 }
 </script>
 
+<script>
+(function () {
+  function resetDictionaryView() {
+    if (new URLSearchParams(window.location.search).has('word')) return;
+    var field = document.getElementById('word');
+    var output = document.getElementById('results');
+    var searchButton = document.getElementById('submit');
+    if (field) field.value = '';
+    if (output) output.innerHTML = '';
+    if (searchButton) searchButton.disabled = false;
+  }
+  resetDictionaryView();
+  window.addEventListener('pageshow', resetDictionaryView);
+})();
+</script>
 </body></html>
