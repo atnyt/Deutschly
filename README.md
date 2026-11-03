@@ -43,7 +43,7 @@ The frontend is a static `index.html` file and requires no build step. Configure
 - Translation fallback tries MyMemory first, then Google's keyless web translation endpoint. The latter is unofficial and may change, rate-limit, or stop working; it is not the Google Cloud Translation API and has no uptime guarantee.
 - The app never stores a private API key. Searching a word or sentence may send that text to the translation provider when fallback translation is needed.
 - Common A1 German verb forms and phrases have explicit lookup mappings. This is helpful coverage, not a complete German morphological analyser; rare forms and context-dependent phrases may still need manual checking.
-- PDF-derived examples and locally added examples should be checked against the original PDF before being labelled as exact source quotations.
+- Deutschly's Bengali meanings and example sentences are independently authored or curated by the maintainer. Any text copied verbatim from an external source must be separately attributed and checked against that source's reuse terms before redistribution.
 
 ## Validation notes
 
@@ -52,7 +52,7 @@ The embedded JavaScript in both HTML pages was syntax-checked after the latest c
 
 ## Deutschly learning data and search
 
-- `data/a1-vocabulary.json` contains the consolidated local A1 word list. The original PDF contained 1,715 source rows; 10 duplicate rows were consolidated, leaving 1,705 unique normalized headwords. Original duplicate source provenance is retained in each affected record.
+- `data/a1-vocabulary.json` contains the maintainer-authored and curated A1 word list. The suggested reference list was compared against the database: 1,715 reference rows were reviewed, 10 duplicate rows were consolidated, and 8 missing vocabulary items were recovered, resulting in 1,713 unique normalized headwords. Page references are retained only for traceability to the suggested reference.
 - `data/grammar-terms.json` contains curated German–Bangla grammar terminology. It is a separate data source and does not inflate the A1 vocabulary count.
 - `data/compound-analysis.json` contains curated exact compound-word analyses. It does not guess arbitrary word splits.
 - `data/a1-vocabulary-audit.json` records the first-pass audit and unresolved items. A blank plural is not automatically an error: many entries are mass nouns, collective nouns, months, or have uncommon/context-specific plurals.
