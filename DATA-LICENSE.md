@@ -32,9 +32,6 @@ Suggested attribution: “Deutschly A1 German–Bangla learning data by atnyt
 This notice does not license material that the maintainer does not own or
 have authority to license. In particular:
 
-- The “Deutsch mit Shakil” PDF is a coverage-comparison reference only; the
-  maintainer has clarified that the Deutschly vocabulary content was
-  independently authored and curated. It is not being relicensed by Deutschly.
 - The Keks audio recording listed in the exclusions register is third-party
   material and is excluded from this CC BY grant.
 - The Keks audio recording linked from Wikimedia Commons is third-party
