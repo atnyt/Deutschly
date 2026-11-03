@@ -331,8 +331,8 @@
       "aliases": [
         "Dativ"
       ],
-      "bn": "সম্প্রদান কারক (Dativ)",
-      "explanation_bn": "অনেক বাক্যে পরোক্ষ কর্ম Dativ-এ থাকে; কিছু Verb ও Präposition Dativ দাবি করে।",
+      "bn": "Dativ — অনেক ক্ষেত্রে পরোক্ষ কর্ম",
+      "explanation_bn": "Dativ অনেক ক্ষেত্রে Wem? (কাকে/কার জন্য?) প্রশ্নের উত্তর দেওয়া পরোক্ষ কর্ম বোঝায়। তবে সব Dativ-কে পরোক্ষ কর্ম বলা যায় না; কিছু Verb ও Präposition নিজস্বভাবে Dativ দাবি করে। উদাহরণ: helfen + Dativ, mit + Dativ।",
       "example_de": "Ich helfe dem Mann.",
       "example_bn": "আমি লোকটিকে সাহায্য করি।",
       "level": "A1",
