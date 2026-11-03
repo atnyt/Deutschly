@@ -1,1 +1,626 @@
-{"schema_version":"1.0.0","title":"Deutschly German Compound Word Analysis","language_pair":"de-BN","policy":"Only curated exact analyses are presented as reviewed breakdowns. Any future automatic segmentation must be labelled as a hypothesis until verified.","records":[{"word":"Personalpronomen","parts":[{"form":"Personal-","meaning_bn":"ব্যক্তি-সংক্রান্ত / ব্যক্তিবাচক"},{"form":"Pronomen","meaning_bn":"সর্বনাম"}],"meaning_bn":"ব্যক্তিবাচক সর্বনাম","explanation_bn":"এটি Personal + Pronomen দিয়ে গঠিত ব্যাকরণিক পরিভাষা। এখানে Personal অংশটি ব্যক্তি-সম্পর্কিত অর্থ যোগ করে।","status":"curated","note":"এটি শব্দগঠনভিত্তিক ব্যাখ্যা; বাংলা পরিভাষার নির্ভুল রূপ হলো ‘ব্যক্তিবাচক সর্বনাম’।"},{"word":"Haustür","parts":[{"form":"Haus","meaning_bn":"বাড়ি"},{"form":"Tür","meaning_bn":"দরজা"}],"meaning_bn":"বাড়ির দরজা / সদর দরজা","explanation_bn":"দুটি বিশেষ্য যুক্ত হয়ে নতুন বিশেষ্য তৈরি করেছে।","status":"curated"},{"word":"Wörterbuch","parts":[{"form":"Wörter","meaning_bn":"শব্দসমূহ"},{"form":"Buch","meaning_bn":"বই"}],"meaning_bn":"অভিধান","explanation_bn":"Wort-এর বহুবচনধর্মী সংযোগরূপ Wörter + Buch; আক্ষরিকভাবে শব্দের বই।","status":"curated"},{"word":"Bahnhof","parts":[{"form":"Bahn","meaning_bn":"রেল / ট্রেন"},{"form":"Hof","meaning_bn":"প্রাঙ্গণ / চত্বর"}],"meaning_bn":"রেলস্টেশন","explanation_bn":"Bahn + Hof মিলে Bahnhof; আধুনিক অর্থে রেলস্টেশন।","status":"curated"},{"word":"Arbeitsplatz","parts":[{"form":"Arbeit","meaning_bn":"কাজ"},{"form":"-s-","meaning_bn":"সংযোগধ্বনি"},{"form":"Platz","meaning_bn":"স্থান"}],"meaning_bn":"কর্মস্থল / কাজের জায়গা","explanation_bn":"Arbeit + s + Platz। মাঝের -s- হলো সংযোগ উপাদান (Fugen-s), আলাদা শব্দ নয়।","status":"curated"},{"word":"Geburtstag","parts":[{"form":"Geburt","meaning_bn":"জন্ম"},{"form":"Tag","meaning_bn":"দিন"}],"meaning_bn":"জন্মদিন","explanation_bn":"Geburt + Tag মিলে Geburtstag। এখানে কোনো আলাদা s নেই; তাই অংশগুলো Geburt + Tag।","status":"curated","note":"সঠিক ভাঙন: Geburt + Tag।"},{"word":"Fußball","parts":[{"form":"Fuß","meaning_bn":"পা"},{"form":"Ball","meaning_bn":"বল"}],"meaning_bn":"ফুটবল","explanation_bn":"Fuß + Ball মিলে Fußball।","status":"curated"},{"word":"Hausaufgabe","parts":[{"form":"Haus","meaning_bn":"বাড়ি"},{"form":"Aufgabe","meaning_bn":"কাজ / নির্ধারিত কাজ"}],"meaning_bn":"বাড়ির কাজ","explanation_bn":"Haus + Aufgabe মিলে Hausaufgabe; শিক্ষার্থীর বাড়িতে করার কাজ।","status":"curated"},{"word":"Lieblingsfarbe","parts":[{"form":"Liebling","meaning_bn":"প্রিয় ব্যক্তি/বস্তু"},{"form":"s","meaning_bn":"সংযোগ উপাদান"},{"form":"Farbe","meaning_bn":"রং"}],"meaning_bn":"প্রিয় রং","explanation_bn":"Liebling + s + Farbe। -s- হলো সংযোগ উপাদান, আলাদা শব্দ নয়।","status":"curated"},{"word":"Kinderzimmer","parts":[{"form":"Kinder","meaning_bn":"শিশুরা / শিশুদের"},{"form":"Zimmer","meaning_bn":"ঘর"}],"meaning_bn":"শিশুদের ঘর","explanation_bn":"Kind-এর বহুবচন Kinder + Zimmer।","status":"curated"},{"word":"E-Mail-Adresse","parts":[{"form":"E-Mail","meaning_bn":"ই-মেইল"},{"form":"Adresse","meaning_bn":"ঠিকানা"}],"meaning_bn":"ই-মেইল ঠিকানা","explanation_bn":"হাইফেন দিয়ে যুক্ত দুটি বিশেষ্য।","status":"curated"}]}
+{
+  "schema_version": "1.1.0",
+  "title": "Deutschly German Compound Word Analysis",
+  "language_pair": "de-BN",
+  "policy": "Only exact, reviewed analyses are displayed as confirmed. Each record identifies the head/final constituent, grammatical gender where known, linking element and semantic relation. Automatic segmentation of unseen compounds must be labelled as a hypothesis; do not split by substring alone.",
+  "records": [
+    {
+      "word": "Personalpronomen",
+      "parts": [
+        {
+          "form": "Personal",
+          "meaning_bn": "ব্যক্তি/ব্যক্তিগত-সম্পর্কিত"
+        },
+        {
+          "form": "Pronomen",
+          "meaning_bn": "সর্বনাম"
+        }
+      ],
+      "meaning_bn": "ব্যক্তিবাচক সর্বনাম",
+      "explanation_bn": "Personal + Pronomen। এটি একটি ব্যাকরণিক যৌগিক পরিভাষা; Personal অংশটি Pronomen-এর ধরন নির্দিষ্ট করে।",
+      "status": "reviewed",
+      "note": "Personal-কে আলাদা hyphen-যুক্ত শব্দ হিসেবে দেখানো হয়নি।",
+      "headword_gender": "das (Pronomen-এর মতো)",
+      "headword_plural": "die Personalpronomen",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "Haustür",
+      "parts": [
+        {
+          "form": "Haus",
+          "meaning_bn": "বাড়ি"
+        },
+        {
+          "form": "Tür",
+          "meaning_bn": "দরজা"
+        }
+      ],
+      "meaning_bn": "বাড়ির প্রবেশদ্বারের দরজা",
+      "explanation_bn": "Haus + Tür। শেষ অংশ Tür feminine, তাই পুরো শব্দ die Haustür; Plural die Haustüren।",
+      "status": "reviewed",
+      "headword_gender": "die",
+      "headword_plural": "die Haustüren",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "Wörterbuch",
+      "parts": [
+        {
+          "form": "Wort",
+          "meaning_bn": "শব্দ"
+        },
+        {
+          "form": "-er-",
+          "meaning_bn": "Wort-এর plural-ভিত্তিক সংযোগ উপাদান"
+        },
+        {
+          "form": "Buch",
+          "meaning_bn": "বই"
+        }
+      ],
+      "meaning_bn": "অভিধান",
+      "explanation_bn": "Wort + -er- + Buch। এখানে -er- সংযোগ উপাদান; শেষ অংশ Buch neuter হওয়ায় das Wörterbuch। Plural: die Wörterbücher।",
+      "status": "reviewed",
+      "headword_gender": "das",
+      "headword_plural": "die Wörterbücher",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "Bahnhof",
+      "parts": [
+        {
+          "form": "Bahn",
+          "meaning_bn": "রেলপথ/রেল"
+        },
+        {
+          "form": "Hof",
+          "meaning_bn": "প্রাঙ্গণ/আঙিনা"
+        }
+      ],
+      "meaning_bn": "রেলস্টেশন",
+      "explanation_bn": "Bahn + Hof। শেষ অংশ Hof masculine, তাই der Bahnhof; Plural die Bahnhöfe। আধুনিক অর্থটি আক্ষরিক 'রেল-প্রাঙ্গণ' থেকে বিশেষায়িত হয়েছে।",
+      "status": "reviewed",
+      "headword_gender": "der",
+      "headword_plural": "die Bahnhöfe",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "Arbeitsplatz",
+      "parts": [
+        {
+          "form": "Arbeit",
+          "meaning_bn": "কাজ"
+        },
+        {
+          "form": "-s-",
+          "meaning_bn": "Fugen-s: সংযোগ উপাদান"
+        },
+        {
+          "form": "Platz",
+          "meaning_bn": "স্থান"
+        }
+      ],
+      "meaning_bn": "কর্মস্থল/কাজের জায়গা",
+      "explanation_bn": "Arbeit + -s- + Platz। -s- হলো Fugen-s, আলাদা শব্দ নয়। শেষ অংশ Platz masculine, তাই der Arbeitsplatz; Plural die Arbeitsplätze।",
+      "status": "reviewed",
+      "headword_gender": "der",
+      "headword_plural": "die Arbeitsplätze",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "Geburtstag",
+      "parts": [
+        {
+          "form": "Geburt",
+          "meaning_bn": "জন্ম"
+        },
+        {
+          "form": "Tag",
+          "meaning_bn": "দিন"
+        }
+      ],
+      "meaning_bn": "জন্মদিন",
+      "explanation_bn": "Geburt + Tag। এখানে Fugen-s নেই। শেষ অংশ Tag masculine, তাই der Geburtstag; Plural die Geburtstage।",
+      "status": "reviewed",
+      "note": "সঠিক ভাঙন: Geburt + Tag।",
+      "headword_gender": "der",
+      "headword_plural": "die Geburtstage",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "Fußball",
+      "parts": [
+        {
+          "form": "Fuß",
+          "meaning_bn": "পা"
+        },
+        {
+          "form": "Ball",
+          "meaning_bn": "বল"
+        }
+      ],
+      "meaning_bn": "ফুটবল",
+      "explanation_bn": "Fuß + Ball। শেষ অংশ Ball masculine, তাই der Fußball; Plural die Fußbälle।",
+      "status": "reviewed",
+      "headword_gender": "der",
+      "headword_plural": "die Fußbälle",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "Hausaufgabe",
+      "parts": [
+        {
+          "form": "Haus",
+          "meaning_bn": "বাড়ি"
+        },
+        {
+          "form": "Aufgabe",
+          "meaning_bn": "কাজ/নির্ধারিত কাজ"
+        }
+      ],
+      "meaning_bn": "বাড়ির কাজ",
+      "explanation_bn": "Haus + Aufgabe। শেষ অংশ Aufgabe feminine, তাই die Hausaufgabe; Plural die Hausaufgaben।",
+      "status": "reviewed",
+      "headword_gender": "die",
+      "headword_plural": "die Hausaufgaben",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "Lieblingsfarbe",
+      "parts": [
+        {
+          "form": "Liebling",
+          "meaning_bn": "প্রিয় ব্যক্তি/বস্তু"
+        },
+        {
+          "form": "-s-",
+          "meaning_bn": "Fugen-s: সংযোগ উপাদান"
+        },
+        {
+          "form": "Farbe",
+          "meaning_bn": "রং"
+        }
+      ],
+      "meaning_bn": "প্রিয় রং",
+      "explanation_bn": "Liebling + -s- + Farbe। -s- সংযোগ উপাদান; শেষ অংশ Farbe feminine, তাই die Lieblingsfarbe; Plural die Lieblingsfarben।",
+      "status": "reviewed",
+      "headword_gender": "die",
+      "headword_plural": "die Lieblingsfarben",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "Kinderzimmer",
+      "parts": [
+        {
+          "form": "Kind",
+          "meaning_bn": "শিশু"
+        },
+        {
+          "form": "-er-",
+          "meaning_bn": "Kind-এর plural-ভিত্তিক সংযোগ উপাদান"
+        },
+        {
+          "form": "Zimmer",
+          "meaning_bn": "ঘর"
+        }
+      ],
+      "meaning_bn": "শিশুদের ঘর",
+      "explanation_bn": "Kind + -er- + Zimmer। Kinder হলো Kind-এর plural form, এখানে সংযোগে ব্যবহৃত। শেষ অংশ Zimmer neuter, তাই das Kinderzimmer; Plural die Kinderzimmer।",
+      "status": "reviewed",
+      "headword_gender": "das",
+      "headword_plural": "die Kinderzimmer",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "E-Mail-Adresse",
+      "parts": [
+        {
+          "form": "E-Mail",
+          "meaning_bn": "ই-মেইল"
+        },
+        {
+          "form": "Adresse",
+          "meaning_bn": "ঠিকানা"
+        }
+      ],
+      "meaning_bn": "ই-মেইল ঠিকানা",
+      "explanation_bn": "E-Mail + Adresse। হাইফেনযুক্ত প্রথম অংশের সঙ্গে Adresse যুক্ত হয়েছে; শেষ অংশ Adresse feminine, তাই die E-Mail-Adresse; Plural die E-Mail-Adressen।",
+      "status": "reviewed",
+      "headword_gender": "die",
+      "headword_plural": "die E-Mail-Adressen",
+      "sources": [
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive",
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547"
+      ]
+    },
+    {
+      "word": "Kinderarzt",
+      "parts": [
+        {
+          "form": "Kind",
+          "meaning_bn": "শিশু"
+        },
+        {
+          "form": "-er-",
+          "meaning_bn": "plural-ভিত্তিক সংযোগ উপাদান"
+        },
+        {
+          "form": "Arzt",
+          "meaning_bn": "চিকিৎসক"
+        }
+      ],
+      "meaning_bn": "শিশুরোগ চিকিৎসক",
+      "explanation_bn": "Kind + -er- + Arzt। শেষ অংশ Arzt masculine; der Kinderarzt, Plural die Kinderärzte।",
+      "headword_gender": "der",
+      "headword_plural": "die Kinderärzte",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Schlafzimmer",
+      "parts": [
+        {
+          "form": "schlafen",
+          "meaning_bn": "ঘুমানো"
+        },
+        {
+          "form": "-∅-",
+          "meaning_bn": "কোনো সংযোগ উপাদান নেই"
+        },
+        {
+          "form": "Zimmer",
+          "meaning_bn": "ঘর"
+        }
+      ],
+      "meaning_bn": "শোবার ঘর",
+      "explanation_bn": "schlafen-এর stem-ভিত্তিক Schlaf + Zimmer। শেষ অংশ Zimmer neuter; das Schlafzimmer, Plural die Schlafzimmer।",
+      "headword_gender": "das",
+      "headword_plural": "die Schlafzimmer",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Wohnzimmer",
+      "parts": [
+        {
+          "form": "wohnen",
+          "meaning_bn": "বাস করা"
+        },
+        {
+          "form": "-∅-",
+          "meaning_bn": "কোনো সংযোগ উপাদান নেই"
+        },
+        {
+          "form": "Zimmer",
+          "meaning_bn": "ঘর"
+        }
+      ],
+      "meaning_bn": "বসার ঘর",
+      "explanation_bn": "wohnen-এর stem Wohn + Zimmer। শেষ অংশ Zimmer neuter; das Wohnzimmer, Plural die Wohnzimmer।",
+      "headword_gender": "das",
+      "headword_plural": "die Wohnzimmer",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Badewanne",
+      "parts": [
+        {
+          "form": "baden",
+          "meaning_bn": "গোসল করা"
+        },
+        {
+          "form": "-e-",
+          "meaning_bn": "সংযোগ স্বর/গঠনগত উপাদান"
+        },
+        {
+          "form": "Wanne",
+          "meaning_bn": "টব"
+        }
+      ],
+      "meaning_bn": "গোসলের বাথটাব",
+      "explanation_bn": "baden + Wanne → Badewanne। শেষ অংশ Wanne feminine; die Badewanne, Plural die Badewannen।",
+      "headword_gender": "die",
+      "headword_plural": "die Badewannen",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Schreibtisch",
+      "parts": [
+        {
+          "form": "schreiben",
+          "meaning_bn": "লেখা"
+        },
+        {
+          "form": "-∅-",
+          "meaning_bn": "কোনো সংযোগ উপাদান নেই"
+        },
+        {
+          "form": "Tisch",
+          "meaning_bn": "টেবিল"
+        }
+      ],
+      "meaning_bn": "লেখার টেবিল",
+      "explanation_bn": "schreiben-এর stem Schreib + Tisch। শেষ অংশ Tisch masculine; der Schreibtisch, Plural die Schreibtische।",
+      "headword_gender": "der",
+      "headword_plural": "die Schreibtische",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Kühlschrank",
+      "parts": [
+        {
+          "form": "kühl",
+          "meaning_bn": "ঠান্ডা"
+        },
+        {
+          "form": "Schrank",
+          "meaning_bn": "আলমারি/ক্যাবিনেট"
+        }
+      ],
+      "meaning_bn": "ফ্রিজ",
+      "explanation_bn": "kühl + Schrank। শেষ অংশ Schrank masculine; der Kühlschrank, Plural die Kühlschränke।",
+      "headword_gender": "der",
+      "headword_plural": "die Kühlschränke",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Zahnbürste",
+      "parts": [
+        {
+          "form": "Zahn",
+          "meaning_bn": "দাঁত"
+        },
+        {
+          "form": "Bürste",
+          "meaning_bn": "ব্রাশ"
+        }
+      ],
+      "meaning_bn": "দাঁত মাজার ব্রাশ",
+      "explanation_bn": "Zahn + Bürste। শেষ অংশ Bürste feminine; die Zahnbürste, Plural die Zahnbürsten।",
+      "headword_gender": "die",
+      "headword_plural": "die Zahnbürsten",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Regenschirm",
+      "parts": [
+        {
+          "form": "Regen",
+          "meaning_bn": "বৃষ্টি"
+        },
+        {
+          "form": "Schirm",
+          "meaning_bn": "ছাতা/আড়াল"
+        }
+      ],
+      "meaning_bn": "বৃষ্টির ছাতা",
+      "explanation_bn": "Regen + Schirm। শেষ অংশ Schirm masculine; der Regenschirm, Plural die Regenschirme।",
+      "headword_gender": "der",
+      "headword_plural": "die Regenschirme",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Wasserflasche",
+      "parts": [
+        {
+          "form": "Wasser",
+          "meaning_bn": "পানি"
+        },
+        {
+          "form": "Flasche",
+          "meaning_bn": "বোতল"
+        }
+      ],
+      "meaning_bn": "পানির বোতল",
+      "explanation_bn": "Wasser + Flasche। শেষ অংশ Flasche feminine; die Wasserflasche, Plural die Wasserflaschen।",
+      "headword_gender": "die",
+      "headword_plural": "die Wasserflaschen",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Großstadt",
+      "parts": [
+        {
+          "form": "groß",
+          "meaning_bn": "বড়"
+        },
+        {
+          "form": "Stadt",
+          "meaning_bn": "শহর"
+        }
+      ],
+      "meaning_bn": "বড় শহর/মহানগর",
+      "explanation_bn": "groß + Stadt। শেষ অংশ Stadt feminine; die Großstadt, Plural die Großstädte।",
+      "headword_gender": "die",
+      "headword_plural": "die Großstädte",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Postkarte",
+      "parts": [
+        {
+          "form": "Post",
+          "meaning_bn": "ডাক"
+        },
+        {
+          "form": "Karte",
+          "meaning_bn": "কার্ড"
+        }
+      ],
+      "meaning_bn": "ডাককার্ড/পোস্টকার্ড",
+      "explanation_bn": "Post + Karte। শেষ অংশ Karte feminine; die Postkarte, Plural die Postkarten।",
+      "headword_gender": "die",
+      "headword_plural": "die Postkarten",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Handschuh",
+      "parts": [
+        {
+          "form": "Hand",
+          "meaning_bn": "হাত"
+        },
+        {
+          "form": "Schuh",
+          "meaning_bn": "জুতা"
+        }
+      ],
+      "meaning_bn": "হাতমোজা",
+      "explanation_bn": "Hand + Schuh। শেষ অংশ Schuh masculine; der Handschuh, Plural die Handschuhe।",
+      "headword_gender": "der",
+      "headword_plural": "die Handschuhe",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Fahrradhelm",
+      "parts": [
+        {
+          "form": "Fahrrad",
+          "meaning_bn": "সাইকেল"
+        },
+        {
+          "form": "Helm",
+          "meaning_bn": "হেলমেট"
+        }
+      ],
+      "meaning_bn": "সাইকেলের হেলমেট",
+      "explanation_bn": "Fahrrad + Helm। শেষ অংশ Helm masculine; der Fahrradhelm, Plural die Fahrradhelme।",
+      "headword_gender": "der",
+      "headword_plural": "die Fahrradhelme",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Liebesbrief",
+      "parts": [
+        {
+          "form": "Liebe",
+          "meaning_bn": "ভালোবাসা"
+        },
+        {
+          "form": "-s-",
+          "meaning_bn": "Fugen-s"
+        },
+        {
+          "form": "Brief",
+          "meaning_bn": "চিঠি"
+        }
+      ],
+      "meaning_bn": "প্রেমপত্র",
+      "explanation_bn": "Liebe + -s- + Brief। শেষ অংশ Brief masculine; der Liebesbrief, Plural die Liebesbriefe।",
+      "headword_gender": "der",
+      "headword_plural": "die Liebesbriefe",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    },
+    {
+      "word": "Weihnachtslied",
+      "parts": [
+        {
+          "form": "Weihnacht",
+          "meaning_bn": "বড়দিন/Christmas"
+        },
+        {
+          "form": "-s-",
+          "meaning_bn": "Fugen-s"
+        },
+        {
+          "form": "Lied",
+          "meaning_bn": "গান"
+        }
+      ],
+      "meaning_bn": "বড়দিনের গান",
+      "explanation_bn": "Weihnacht + -s- + Lied। শেষ অংশ Lied neuter; das Weihnachtslied, Plural die Weihnachtslieder।",
+      "headword_gender": "das",
+      "headword_plural": "die Weihnachtslieder",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.info/grammar/nouns",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Zusammengesetzte-Substantive"
+      ]
+    }
+  ]
+}
