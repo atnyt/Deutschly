@@ -19,7 +19,7 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
 @media(max-width:420px){body{padding-left:14px;padding-right:14px}form{gap:7px}button{padding:0 13px}}
 
 .corner-brand{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;flex-shrink:0;padding:8px 12px;border:1px solid rgba(190,202,255,.18);border-radius:12px;background:linear-gradient(120deg,rgba(150,115,255,.045),rgba(255,255,255,.018));box-shadow:0 0 2px rgba(145,105,255,.015),inset 0 1px 0 rgba(255,255,255,.035);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);font-size:11px;font-weight:650;letter-spacing:.07em;text-transform:uppercase;color:#e5dcff}.corner-brand:before{content:"";width:6px;height:6px;flex:0 0 6px;border-radius:50%;background:#d0b8ff;box-shadow:none}@keyframes brandGlow{0%,100%{box-shadow:0 0 1px rgba(145,105,255,.01),inset 0 1px 0 rgba(255,255,255,.035)}50%{box-shadow:0 0 2px rgba(145,105,255,.015),inset 0 1px 0 rgba(255,255,255,.04)}}@media(prefers-reduced-motion:reduce){.corner-brand{animation:none}}
-</style>
+.source-details{margin-top:14px;border-top:1px solid rgba(255,255,255,.1);padding-top:10px;color:#aeb7df;font-size:12px}.source-details summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:6px}.source-details summary::-webkit-details-marker{display:none}.source-details summary:after{content:"＋";font-size:13px}.source-details[open] summary:after{content:"−"}.source-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px}.source-links a{color:#c7d0ff;text-decoration:underline}</style>
 </head>
 <body><main>
 <nav style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 14px"><span class="corner-brand">Dictionary &amp; Example</span><div style="display:flex;gap:8px;align-items:center"><a href="./index.html" style="color:#c7d0ff;text-decoration:none;border:1px solid rgba(190,202,255,.24);background:rgba(120,140,205,.09);border-radius:999px;padding:9px 12px;font-size:13px">← Pronunciation</a></div></nav>
@@ -274,13 +274,14 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       (item.examples_note ? '<p class="muted">' + escapeHTML(item.examples_note) + '</p>' : '') + '</div>';
     var sources = (item.sources || []).map(function (url) {
       var safe = /^https:\/\//i.test(url) ? url : '';
-      return safe ? '<a href="' + escapeHTML(safe) + '" target="_blank" rel="noopener noreferrer" style="display:inline-block;color:#c7d0ff;margin:5px 12px 5px 0">Source ↗</a>' : '';
+      return safe ? '<a href="' + escapeHTML(safe) + '" target="_blank" rel="noopener noreferrer">Source ↗</a>' : '';
     }).join('');
+    sources = sources ? '<details class="source-details"><summary>তথ্যসূত্র</summary><div class="source-links">' + sources + '</div></details>' : '';
     return '<div class="panel"><span class="tag">Grammar · ' + escapeHTML(item.level || 'A1') + '</span>' +
       '<h2 class="word-title">' + escapeHTML(item.term) + '</h2>' +
       '<div class="meaning-glass"><div class="meaning-item">' + escapeHTML(item.bn) + '</div></div>' +
       '<p class="definition">' + escapeHTML(item.explanation_bn || '') + '</p>' + examples +
-      '<p class="source">' + sources + '</p></div>';
+      sources + '</div>';
   }
   function safeAudioUrl(value) {
     try {
@@ -300,6 +301,7 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     var audioUrl = audio ? safeAudioUrl(audio.url) : '';
     var dudenUrl = 'https://www.duden.de/suchen/dudenonline/' + encodeURIComponent(record.headword || '');
     var mergedSources = '';
+    var sourcePanel = '<details class="source-details"><summary>তথ্যসূত্র</summary><div class="source-links"><a href="' + escapeHTML(dudenUrl) + '" target="_blank" rel="noopener noreferrer">Duden ↗</a><a href="https://de.wiktionary.org/wiki/' + encodeURIComponent(record.headword || '').replace(/%20/g, '_') + '" target="_blank" rel="noopener noreferrer">Wiktionary ↗</a></div></details>';
     return '<div class="panel"><h2 class="word-title">' + escapeHTML(title) +
       '</h2><div class="meaning-glass"><div class="meaning-item">' +
       escapeHTML(record.bengali_meaning || 'বাংলা অর্থ যোগ করা হচ্ছে।') +
@@ -310,8 +312,7 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       (record.article_note ? '<p class="definition">' + escapeHTML(record.article_note) + '</p>' : '') +
       (audioUrl ? '<div class="group"><p class="definition">জার্মান মাতৃভাষীর রেকর্ডিং</p><audio controls preload="none" style="width:100%;height:42px" src="' + escapeHTML(audioUrl) + '">অডিও চালানো যায়নি।</audio></div>' : '') +
       (record.example_de ? '<div class="group"><h3 style="font-size:16px;line-height:1.6;margin:0 0 6px">' + escapeHTML(record.example_de) + '</h3>' +
-        (record.example_bn ? '<p class="bn">' + escapeHTML(record.example_bn) + '</p>' : '') + '</div>' : '') + mergedSources +
-      '<p class="source"><a href="' + escapeHTML(dudenUrl) + '" target="_blank" rel="noopener noreferrer" style="color:#c7d0ff">Duden-এ আলাদাভাবে যাচাই করো ↗</a></p></div>';
+        (record.example_bn ? '<p class="bn">' + escapeHTML(record.example_bn) + '</p>' : '') + '</div>' : '') + mergedSources + sourcePanel + '</div>';
   }
   function dictionarySourceLinks(query) {
     var q = encodeURIComponent(String(query || '').trim());
@@ -320,10 +321,10 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       ['Duden', 'https://www.duden.de/suchen/dudenonline/' + q],
       ['PONS', 'https://de.pons.com/übersetzung/deutsch-bengali/' + q]
     ];
-    return '<div class="panel"><p class="muted">স্থানীয় A1 তালিকার বাইরে হলে এই অভিধানগুলোতে সরাসরি যাচাই করতে পারো:</p>' +
+    return '<details class="source-details"><summary>তথ্যসূত্র</summary><div class="source-links">' +
       links.map(function (link) {
-        return '<a href="' + escapeHTML(link[1]) + '" target="_blank" rel="noopener noreferrer" style="display:inline-block;color:#c7d0ff;margin:5px 14px 5px 0">' + escapeHTML(link[0]) + ' ↗</a>';
-      }).join('') + '</div>';
+        return '<a href="' + escapeHTML(link[1]) + '" target="_blank" rel="noopener noreferrer">' + escapeHTML(link[0]) + ' ↗</a>';
+      }).join('') + '</div></details>';
   }
   function renderRelated(related, query) {
     if (!related.length) {
