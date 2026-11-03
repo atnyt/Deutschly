@@ -77,10 +77,10 @@ JavaScript syntax and local database invariants are checked after code changes. 
 
 ## Licensing and data sources
 
-The standard MIT License is intended to cover **only original software code**
-authored by the Deutschly maintainer(s), to the extent they hold the relevant
-rights. See [LICENSE-NOTICE.md](LICENSE-NOTICE.md) for its scope and
-[DATA-SOURCES.md](DATA-SOURCES.md) for third-party data restrictions. The MIT
-License does not automatically cover the `data/` directory, the source A1
-vocabulary PDF, dictionary content, or audio recordings. Source citations are
-not the same as reuse permission.
+The standard MIT License covers original software code authored by the
+Deutschly maintainer, to the extent the relevant rights are held. The A1
+German–Bangla vocabulary database is independently created and curated by the
+maintainer; the “Deutsch mit Shakil” list was a suggested reference, not the
+author of the Deutschly database. See [LICENSE-NOTICE.md](LICENSE-NOTICE.md)
+and [DATA-SOURCES.md](DATA-SOURCES.md) for detailed authorship and third-party
+material boundaries.
