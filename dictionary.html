@@ -119,7 +119,7 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     ihnen: { lemma: "sie (Plural)", grammar: "Dativ", meaning: "তাদেরকে; তাঁদের কাছে", example: "Ich helfe ihnen.", translation: "আমি তাদের সাহায্য করি।", note: "সম্মানসূচক Ihnen (বড় হাতের I) আলাদা সম্বোধন; এই অনুসন্ধানটি ছোট হাতের ihnen-এর বহুবচন রূপ দেখায়।" }
   };
   function renderPronounForm(query) {
-    var form = personalPronounForms[normalize(query)];
+    var form = String(query).trim() === "Ihnen" ? { lemma: "Sie (সম্মানসূচক)", grammar: "Dativ", meaning: "আপনাকে; আপনাদেরকে", example: "Ich helfe Ihnen.", translation: "আমি আপনাকে / আপনাদের সাহায্য করি।" } : personalPronounForms[normalize(query)];
     if (!form) return null;
     return '<div class="panel"><span class="tag">Personalpronomen · ব্যক্তিবাচক সর্বনাম</span>' +
       '<h2 class="word-title">' + escapeHTML(query) + '</h2>' +
