@@ -206,7 +206,7 @@
       "confidence_status": "reviewed_draft"
     },
     {
-      "headword": "achtung",
+      "headword": "Achtung",
       "english_gloss": "attention; caution; watch out",
       "bengali_meaning": "সতর্কতা; সাবধান",
       "bengali_status": "independently_reviewed_draft",
@@ -214,9 +214,23 @@
       "example_bn": "সাবধান, একটি গাড়ি!",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 19",
-      "review_status": "second_stage_review_batch_8",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 5–6, pages 23–27; noun forms and singular/plural source markers checked",
-      "confidence_status": "reviewed_draft"
+      "review_status": "dictionary_verified_2026_11_03",
+      "review_source": "Duden Online",
+      "confidence_status": "reviewed",
+      "article": "die",
+      "plural": "kein gebräuchlicher Plural (সতর্কবাণী/সাধারণ অর্থে)",
+      "plural_status": "usually_singular",
+      "word_class": "Nomen",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Achtung",
+        "checked_fields": [
+          "word_class",
+          "article"
+        ],
+        "checked_on": "2026-11-03"
+      },
+      "review_note": "সতর্কবাণী অর্থে ব্যবহৃত হলেও এটি Duden-এ স্ত্রীলিঙ্গ Nomen: die Achtung।"
     },
     {
       "headword": "Adjektiv",
@@ -2219,10 +2233,23 @@
       "example_bn": "আমরা বাস্কেটবল খেলি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "second_stage_review_batch_4",
+      "review_status": "dictionary_verified_2026_11_03",
       "plural_status": "not_applicable_sport_or_activity_name",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 2–3, pages 8–14; source-listed forms checked against standard German usage",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online",
+      "confidence_status": "reviewed",
+      "article": "der",
+      "plural": "kein Plural (খেলার নাম হিসেবে; বল বোঝালে die Basketbälle)",
+      "word_class": "Nomen",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/deklination/substantive/Basketball",
+        "checked_fields": [
+          "word_class",
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-03"
+      }
     },
     {
       "headword": "Bauch",
@@ -4500,9 +4527,22 @@
       "example_bn": "জার্মানি সুন্দর।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF (word and English gloss/example transcribed into existing Deutschly data)",
-      "review_status": "second_stage_review_batch_2",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 1, pages 1–4; source-listed noun forms cross-checked against standard German usage",
-      "confidence_status": "reviewed_draft"
+      "review_status": "dictionary_verified_2026_11_03",
+      "review_source": "Duden Sprachwissen — Genus und Artikel von Staatennamen",
+      "confidence_status": "reviewed",
+      "word_class": "Eigenname (geografischer Ländername; Neutrum)",
+      "article": "সাধারণত Article ছাড়া",
+      "plural": "kein Plural (দেশের নাম)",
+      "plural_status": "proper_name_singular",
+      "dictionary_check": {
+        "source": "Duden Sprachwissen",
+        "url": "https://www.duden.de/sprachwissen/sprachratgeber/Staatennamen",
+        "checked_fields": [
+          "word_class",
+          "article_usage"
+        ],
+        "checked_on": "2026-11-03"
+      }
     },
     {
       "headword": "Deutschsprachig",
@@ -7508,10 +7548,23 @@
       "example_bn": "আমি ফুটবল খেলি。",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 4",
-      "review_status": "second_stage_review_batch_3",
+      "review_status": "dictionary_verified_2026_11_03",
       "plural_status": "not_applicable_sport_as_mass_noun",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, Kapitel 2 and grammar vocabulary, pages 6–8; noun forms checked against source-listed paradigms",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online",
+      "confidence_status": "reviewed",
+      "article": "der",
+      "plural": "kein Plural (খেলার নাম হিসেবে; বল বোঝালে die Fußbälle)",
+      "word_class": "Nomen",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Fuszball",
+        "checked_fields": [
+          "word_class",
+          "article",
+          "plural"
+        ],
+        "checked_on": "2026-11-03"
+      }
     },
     {
       "headword": "Fußballspiel",
@@ -10904,10 +10957,22 @@
       "example_bn": "সে কারাতে শেখে।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "second_stage_review_batch_4",
+      "review_status": "dictionary_verified_2026_11_03",
       "plural_status": "not_applicable_sport_or_activity_name",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 2–3, pages 8–14; source-listed forms checked against standard German usage",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online",
+      "confidence_status": "reviewed",
+      "article": "das",
+      "plural": "kein gebräuchlicher Plural (খেলার নাম)",
+      "word_class": "Nomen",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Karate",
+        "checked_fields": [
+          "word_class",
+          "article"
+        ],
+        "checked_on": "2026-11-03"
+      }
     },
     {
       "headword": "Karriere",
@@ -21815,10 +21880,22 @@
       "example_bn": "তুমি কি টেনিস খেলো?",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "second_stage_review_batch_4",
+      "review_status": "dictionary_verified_2026_11_03",
       "plural_status": "not_applicable_sport_or_activity_name",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 2–3, pages 8–14; source-listed forms checked against standard German usage",
-      "confidence_status": "reviewed_draft"
+      "review_source": "Duden Online",
+      "confidence_status": "reviewed",
+      "article": "das",
+      "plural": "kein gebräuchlicher Plural (খেলার নাম)",
+      "word_class": "Nomen",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Tennis",
+        "checked_fields": [
+          "word_class",
+          "article"
+        ],
+        "checked_on": "2026-11-03"
+      }
     },
     {
       "headword": "Tennisplatz",
@@ -25144,10 +25221,22 @@
       "example_bn": "আমি প্রতিদিন যোগব্যায়াম করি।",
       "level": "A1",
       "source": "Deutsch mit Shakil A1 PDF, page 8",
-      "review_status": "second_stage_review_batch_4",
-      "plural_status": "not_applicable_sport_or_activity_name",
-      "review_source": "Klett Netzwerk neu A1 Kapitelwortschatz, chapters 2–3, pages 8–14; source-listed forms checked against standard German usage",
-      "confidence_status": "reviewed_draft"
+      "review_status": "dictionary_verified_2026_11_03",
+      "plural_status": "usually_singular",
+      "review_source": "Duden Online",
+      "confidence_status": "reviewed",
+      "article": "das/der",
+      "plural": "kein gebräuchlicher Plural (সাধারণ অর্থে)",
+      "word_class": "Nomen",
+      "dictionary_check": {
+        "source": "Duden",
+        "url": "https://www.duden.de/rechtschreibung/Yoga",
+        "checked_fields": [
+          "word_class",
+          "article"
+        ],
+        "checked_on": "2026-11-03"
+      }
     },
     {
       "headword": "Zahl",
@@ -26259,6 +26348,12 @@
         "Did not duplicate existing canonical entries or import source typos/variants as separate words (e.g. Stadttour, Kunst, sehen, sich verabschieden, Würstel)."
       ],
       "source_pdf": "A1 Vocabulary list_Deutsch mit Shakil(3).pdf"
+    },
+    {
+      "date": "2026-11-03",
+      "batch": "dictionary_verified_2026_11_03",
+      "count": 7,
+      "description": "Verified missing noun metadata for Achtung, Basketball, Deutschland, Fußball, Karate, Tennis and Yoga against Duden; Deutschland correctly marked as normally articleless country name."
     }
   ],
   "pronunciation_schema": {
