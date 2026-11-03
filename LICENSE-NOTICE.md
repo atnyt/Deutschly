@@ -1,15 +1,19 @@
 # License scope notice
 
-The standard MIT License in the root `LICENSE` file is intended to cover
-only original software code in this repository authored by the Deutschly
-maintainer(s), to the extent they hold the relevant rights. This includes the
-HTML, JavaScript, CSS, workflow, and configuration code.
+The standard MIT License in the root `LICENSE` file covers original software
+code authored by the Deutschly maintainer(s), to the extent they hold the
+relevant rights. This includes the HTML, JavaScript, CSS, workflow, and
+configuration code.
 
-The MIT License is **not** a license for files in `data/`, third-party
-materials, externally sourced vocabulary or examples, audio recordings,
-dictionary/API content, trademarks, or other material whose rights are held
-by someone else or have not been verified. Those materials retain their own
-rights and license terms. See [DATA-SOURCES.md](DATA-SOURCES.md).
+Original Deutschly-authored data contributions are separately licensed under
+Creative Commons Attribution 4.0 International (CC BY 4.0), only to the extent
+the maintainer holds the relevant rights. See [DATA-LICENSE.md](DATA-LICENSE.md)
+for the scope, attribution instructions, and exclusions.
 
-This notice does not grant permission to use third-party material and does
-not claim that the maintainers own material created by another person.
+Neither license grants rights in third-party material, including the identified
+transcribed reference fields, externally sourced dictionary text, Wiktionary
+content, audio recordings, trademarks, or material whose rights have not been
+verified. See [DATA-SOURCES.md](DATA-SOURCES.md) and
+[data/a1-vocabulary-third-party-exclusions.json](data/a1-vocabulary-third-party-exclusions.json).
+
+This notice does not claim ownership of material created by another person.
