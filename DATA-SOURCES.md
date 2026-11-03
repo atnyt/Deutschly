@@ -2,8 +2,9 @@
 
 Last reviewed: 2026-11-03
 
-This document records authorship and source-reference boundaries for the
-repository. It is not legal advice.
+This document records authorship, license, and source-reference boundaries for the
+repository. It is not legal advice. See [DATA-LICENSE.md](DATA-LICENSE.md) for
+the CC BY 4.0 grant covering original Deutschly-authored data and its exclusions.
 
 ## 1. Original software
 
@@ -31,11 +32,7 @@ headwords. Per-record page references are retained for traceability to the
 suggested reference, not as a claim that the PDF author created the Deutschly
 entries.
 
-The maintainer's original contributions may be licensed by the maintainer,
-to the extent they own the relevant rights. This statement does not grant
-rights to any third-party material that may have been copied verbatim or
-adapted. Any such material, if identified, must be reviewed and handled under
-its actual source terms. The PDF itself is not included in this repository.
+The maintainer's independently authored contributions are licensed under CC BY 4.0 only to the extent the maintainer holds the relevant rights. The repository records 140 entries whose headword and English gloss/example fields are explicitly marked as transcribed from the suggested reference, plus seven Bengali fields marked source_transcribed. Those identified portions are excluded from the grant pending rights confirmation. The field-level register is in [data/a1-vocabulary-third-party-exclusions.json](data/a1-vocabulary-third-party-exclusions.json). The PDF itself is not included in this repository.
 
 ## 3. Vocabulary audit
 
@@ -97,11 +94,7 @@ material that may lawfully be reused.
 
 ## 8. License boundaries
 
-The root MIT License is for original software code; it is not automatically a
-blanket license for every third-party item or external dictionary result.
-The maintainer may license their independently authored database content
-separately, provided all relevant rights are controlled by the maintainer.
-Do not imply that a source citation is a reuse permission.
+The root MIT License covers original software code only. Original Deutschly-authored data contributions are licensed under CC BY 4.0 only where the maintainer controls the relevant rights. The explicit field-level exclusions are recorded in `data/a1-vocabulary-third-party-exclusions.json`. A source citation is not reuse permission.
 
 If any item is incorrectly attributed or should be removed, open an issue
 with the relevant file path and source details.
