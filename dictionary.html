@@ -253,12 +253,12 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       return '<div class="group"><span class="tag">অংশ ' + (index + 1) + '</span><strong>' +
         escapeHTML(part.form) + '</strong><p class="bn">' + escapeHTML(part.meaning_bn) + '</p></div>';
     }).join('');
-    return '<div class="panel"><span class="tag">যৌগিক শব্দ বিশ্লেষণ · সম্পাদিত</span>' +
+    return '<div class="panel"><span class="tag">যৌগিক শব্দ বিশ্লেষণ</span>' +
       '<h2 class="word-title">' + escapeHTML(item.word) + '</h2>' +
       '<div class="meaning-glass"><div class="meaning-item">' + escapeHTML(item.meaning_bn) + '</div></div>' +
       '<p class="definition">' + escapeHTML(item.explanation_bn || '') + '</p>' + parts +
       (item.note ? '<p class="muted">' + escapeHTML(item.note) + '</p>' : '') +
-      '<p class="source">এটি সম্পাদিত শব্দগঠন বিশ্লেষণ; সব জার্মান যৌগিক শব্দের জন্য স্বয়ংক্রিয়ভাবে একই নিয়ম প্রয়োগ করা হয় না।</p></div>';
+      '</div>';
   }
   function renderGrammarWithCompound(item, compound) {
     var html = renderGrammarTerm(item);
@@ -274,7 +274,7 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       (item.examples_note ? '<p class="muted">' + escapeHTML(item.examples_note) + '</p>' : '') + '</div>';
     var sources = (item.sources || []).map(function (url) {
       var safe = /^https:\/\//i.test(url) ? url : '';
-      return safe ? '<a href="' + escapeHTML(safe) + '" target="_blank" rel="noopener noreferrer" style="display:inline-block;color:#c7d0ff;margin:5px 12px 5px 0">উৎস ↗</a>' : '';
+      return safe ? '<a href="' + escapeHTML(safe) + '" target="_blank" rel="noopener noreferrer" style="display:inline-block;color:#c7d0ff;margin:5px 12px 5px 0">Source ↗</a>' : '';
     }).join('');
     return '<div class="panel"><span class="tag">Grammar · ' + escapeHTML(item.level || 'A1') + '</span>' +
       '<h2 class="word-title">' + escapeHTML(item.term) + '</h2>' +
