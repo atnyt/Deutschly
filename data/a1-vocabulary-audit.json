@@ -38,16 +38,16 @@
     },
     "records_with_article_but_no_plural_field": 0,
     "records_with_dictionary_check_metadata": 130,
-    "source_transcribed_word_gloss_example": 140,
-    "bengali_source_transcribed": 7
+    "source_transcribed_word_gloss_example": 0,
+    "bengali_source_transcribed": 0
   },
   "interpretation": {
     "records_without_article": "650 records have no article. This includes verbs, adjectives, adverbs, phrases, pronouns, particles, and other non-nouns; word-class tagging is incomplete, so these are not automatically missing noun articles.",
     "noun_records_with_article_but_no_plural": "Current JSON inspection found 0 records with an article but an empty plural field. A plural value may explicitly say usually singular, singular-only, or no common plural; these should be interpreted by their plural_status/notes, not as ordinary plural forms.",
     "duplicate_policy": "Exact/normalized duplicates in the independently maintained Deutschly database are consolidated; reference-page provenance is retained for traceability.",
     "confidence_status": "Counts are taken directly from each record's confidence_status field. reviewed_draft and reviewed are not blanket guarantees that every lexical detail has been independently dictionary-verified. source_checked indicates targeted source checking; needs_verification must never be displayed as verified.",
-    "database_authorship": "The Deutschly maintainer states that the database itself—including its Bengali meanings, examples, grammatical annotations, corrections, review decisions and JSON structure—was independently created. The named PDF was a suggested reference for vocabulary coverage and page comparison.",
-    "transcribed_reference_content": "140 records explicitly identify the headword and English gloss/example as transcribed from the suggested reference; 7 records separately mark Bengali content as source_transcribed. These portions are excluded from the maintainer's CC BY 4.0 grant unless rights and permission are independently confirmed."
+    "database_authorship": "The maintainer confirms that the Deutschly A1 database content—including headwords, English and Bengali meanings, examples, grammatical annotations, corrections, review decisions and JSON structure—was independently authored and curated. The named PDF was suggested only for vocabulary coverage comparison, not as the source or author of the database content.",
+    "transcribed_reference_content": "The earlier provenance labels that described 140 records as transcribed from the suggested PDF and seven Bengali fields as source_transcribed were corrected following the maintainer's explicit clarification that the database content was independently authored. The PDF is retained only as a coverage-comparison reference. External audio and live third-party dictionary/API content remain subject to their own terms."
   },
   "externally_checked_corrections": [
     {
