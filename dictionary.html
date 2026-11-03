@@ -426,7 +426,12 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
         results.innerHTML = renderCompoundAnalysis(compoundTerm);
         return;
       }
-      var pronounResult = renderPronounForm(searched);\n      if (pronounResult) {\n        results.innerHTML = pronounResult;\n        return;\n      }\n      var sentenceMatches = recognizeSentence(loaded[0].records, searched);
+      var pronounResult = renderPronounForm(searched);
+      if (pronounResult) {
+        results.innerHTML = pronounResult;
+        return;
+      }
+      var sentenceMatches = recognizeSentence(loaded[0].records, searched);
       if (sentenceMatches) {
         results.innerHTML = renderSentenceRecognition(sentenceMatches, searched);
         return;
