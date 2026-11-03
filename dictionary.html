@@ -123,10 +123,35 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     return matches.length === 1 ? matches[0] : null;
   }
   function recognizeSentence(records, query) {
-    var tokens = normalize(query).match(/[a-zäöüßẞ]+(?:-[a-zäöüßẞ]+)*/gi) || [];
+    var normalizedQuery = normalize(query);
+    var tokens = normalizedQuery.match(/[a-zäöüßẞ]+(?:-[a-zäöüßẞ]+)*/gi) || [];
     if (tokens.length < 2 || tokens.length > 16) return null;
     var found = [];
-    tokens.forEach(function (token) {
+    var consumed = {};
+    // Recognize common fixed expressions before token-by-token matching.
+    var phraseDefinitions = [
+      { phrase: "nach hause", display: "nach Hause", meaning: "বাড়ি / বাড়ির দিকে" },
+      { phrase: "zu hause", display: "zu Hause", meaning: "বাড়িতে" }
+    ];
+    phraseDefinitions.forEach(function (phrase) {
+      if ((" " + normalizedQuery + " ").indexOf(" " + phrase.phrase + " ") !== -1) {
+        var phraseTokens = phrase.phrase.split(" ");
+        var start = tokens.findIndex(function (token, index) {
+          return token === phraseTokens[0] && tokens[index + 1] === phraseTokens[1];
+        });
+        if (start !== -1) {
+          consumed[start] = true;
+          consumed[start + 1] = true;
+          found.push({
+            record: { headword: phrase.display, article: "", bengali_meaning: phrase.meaning },
+            token: phrase.display,
+            matchedBy: "পরিচিত শব্দগুচ্ছ"
+          });
+        }
+      }
+    });
+    tokens.forEach(function (token, index) {
+      if (consumed[index]) return;
       var form = normalize(token);
       var record = findByLemma(records, form);
       var lemma = verbLemmaAliases[form];
