@@ -32,13 +32,11 @@ Suggested attribution: “Deutschly A1 German–Bangla learning data by atnyt
 This notice does not license material that the maintainer does not own or
 have authority to license. In particular:
 
-- The 140 A1 vocabulary records identified in
-  `data/a1-vocabulary-third-party-exclusions.json` have headword and English
-  gloss/example fields explicitly recorded as transcribed from the suggested
-  “Deutsch mit Shakil” reference. Those identified fields are excluded from
-  this CC BY grant unless permission or another lawful basis is confirmed.
-- Seven Bengali fields marked `source_transcribed` in the vocabulary JSON
-  are excluded pending confirmation of their reuse rights.
+- The “Deutsch mit Shakil” PDF is a coverage-comparison reference only; the
+  maintainer has clarified that the Deutschly vocabulary content was
+  independently authored and curated. It is not being relicensed by Deutschly.
+- The Keks audio recording listed in the exclusions register is third-party
+  material and is excluded from this CC BY grant.
 - The Keks audio recording linked from Wikimedia Commons is third-party
   material. Its individual file license and attribution requirements apply.
 - Wiktionary-derived text, external dictionary/API results, third-party
