@@ -2,54 +2,50 @@
 
 Last reviewed: 2026-11-03
 
-This file records the known provenance of the data currently present in the
-repository. It is a source inventory, not legal advice and not a grant of
-rights. A source URL or citation does not by itself grant permission to copy,
-adapt, publish, or redistribute that source's content.
+This document records authorship and source-reference boundaries for the
+repository. It is not legal advice.
 
-## 1. Software code
+## 1. Original software
 
-The repository's original software source code is covered by the MIT License
-in the root `LICENSE` file, only to the extent the Deutschly maintainer(s)
-own or control the relevant rights. The MIT License does not cover the data
-files or third-party materials listed below.
+The standard MIT License in the root `LICENSE` file applies to original
+software code authored by the Deutschly maintainer, to the extent the
+maintainer holds the relevant rights. See [LICENSE-NOTICE.md](LICENSE-NOTICE.md).
 
-## 2. A1 vocabulary database
+## 2. A1 German–Bangla vocabulary database
 
 File: `data/a1-vocabulary.json`
 
-The current database identifies its primary source as a user-provided PDF
-titled **“A1 Vocabulary list_Deutsch mit Shakil”**. Its provenance metadata
-records 1,715 source rows reconciled against a 40-page PDF, 10 duplicate rows
-consolidated, and 8 omitted entries recovered, resulting in 1,713 normalized
-headwords. Individual records retain source-page references to
-“Deutsch mit Shakil A1 PDF”.
+**Authorship clarification from the maintainer:** The Deutschly A1 database
+is the maintainer's own work. The maintainer independently created and
+curated the database records, Bengali meanings, German and Bengali examples,
+grammatical annotations, corrections, review decisions, and JSON structure.
+The “A1 Vocabulary list_Deutsch mit Shakil” PDF was suggested as a starting
+reference/inspiration for vocabulary coverage and page-level comparison; it
+was not the author of the Deutschly database and is not being claimed as its
+licensor.
 
-The repository review did not establish that this PDF or its selection,
-translations, examples, or compiled list is licensed for redistribution, nor
-did it establish that the Deutschly maintainer owns those rights or has
-permission from the relevant rights holder. Therefore this database is
-**not licensed under the repository's MIT License**. Do not treat the
-presence of the file in this public repository as proof that it is free to
-reuse. Obtain written permission or verify a license from the actual rights
-holder before granting redistribution or adaptation rights. If permission
-cannot be established, remove or replace the affected source-derived
-material before presenting the dataset as openly licensed.
+The database metadata records 1,715 reference-list rows compared with the
+independently maintained database, 10 duplicate rows consolidated, and
+8 vocabulary items recovered, resulting in 1,713 unique normalized
+headwords. Per-record page references are retained for traceability to the
+suggested reference, not as a claim that the PDF author created the Deutschly
+entries.
 
-The independent grammar checks, corrections, Bengali explanations, and
-examples added by Deutschly should be distinguished from material transcribed
-or adapted from the source PDF. A source citation is not a substitute for
-permission where permission is required.
+The maintainer's original contributions may be licensed by the maintainer,
+to the extent they own the relevant rights. This statement does not grant
+rights to any third-party material that may have been copied verbatim or
+adapted. Any such material, if identified, must be reviewed and handled under
+its actual source terms. The PDF itself is not included in this repository.
 
 ## 3. Vocabulary audit
 
 File: `data/a1-vocabulary-audit.json`
 
-This audit records the source PDF name, page reconciliation, source-row
-counts, and corrections/checks related to the A1 vocabulary database. Because
-it contains provenance and analysis derived from the same source material, it
-is also excluded from the MIT License. Its redistribution status should be
-reviewed together with the A1 vocabulary database.
+This audit records the comparison against the suggested reference, duplicate
+consolidation, coverage checks, and review status of the independently
+maintained database. The audit does not claim that the reference PDF's author
+created or owns the Deutschly database. Its independently written analysis
+is the maintainer's work, subject to the same third-party-material caveat.
 
 ## 4. Grammar terminology and compound analysis
 
@@ -57,17 +53,13 @@ Files:
 - `data/grammar-terms.json`
 - `data/compound-analysis.json`
 
-These files contain curated German–Bengali explanations, examples, and
-analyses with references to sources such as IDS grammis, Goethe-Institut,
-Duden, and the University of Michigan. The references are provided for
-verification; they do not mean those organizations have endorsed Deutschly
-or granted permission to reproduce their protected text.
-
-Only independently written material for which Deutschly's maintainer(s)
-hold the rights may be given a separate open content license. Any text,
-examples, tables, or other material copied or adapted from a source must be
-reviewed under that source's terms. These files are not covered by the root
-MIT License.
+These files contain Deutschly-curated German–Bengali explanations, examples,
+and analyses with references to IDS grammis, Goethe-Institut, Duden, and the
+University of Michigan. The references are for fact-checking; they do not
+mean those organizations endorse Deutschly or grant permission to reproduce
+their protected text. The maintainer's independently written material may
+be licensed by the maintainer, to the extent the relevant rights are owned.
+Copied or adapted source material must be reviewed separately.
 
 ## 5. Wiktionary and WiktApi
 
@@ -84,34 +76,32 @@ of changes, and ShareAlike requirements where applicable.
 - WiktApi documentation: https://wiktapi.dev/quickstart
 
 Do not assume every item returned by WiktApi has identical rights: check the
-underlying entry and any third-party notices when redistributing content.
+underlying entry and third-party notices when redistributing content.
 
 ## 6. Audio recordings
 
-The vocabulary database currently contains a reference to a Wiktionary /
-Wikimedia Commons audio file for “Keks”. The recording itself is not stored
-in this repository, but is linked externally. Wikimedia Commons files have
-individual licenses; verify the exact file-description page and include the
-required creator, source, license, and modification information if the file
-is redistributed or embedded in a way requiring attribution.
+The vocabulary database currently links to a Wiktionary/Wikimedia Commons
+audio file for “Keks”. The recording itself is not stored in this repository.
+Wikimedia Commons files have individual licenses; verify the exact file
+description page and include creator, source, license, and modification
+information if the file is redistributed or embedded in a way requiring
+attribution.
 
 ## 7. External reference sites
 
-Duden, PONS, Goethe-Institut, IDS grammis, and other dictionary or learning
-sites are cited as references for checking facts. A reference link is not a
-license to copy their definitions, examples, explanations, images, or other
-protected content. Keep Deutschly's explanations independently written and
-use only material that may lawfully be reused.
+Duden, PONS, Goethe-Institut, IDS grammis, and other learning sites are cited
+as references for checking facts. A reference link is not a license to copy
+their definitions, examples, explanations, images, or other protected
+content. Keep Deutschly's explanations independently written and use only
+material that may lawfully be reused.
 
-## 8. Before assigning an open content license
+## 8. License boundaries
 
-Do not apply MIT or another blanket license to the entire `data/` directory
-until the provenance and rights for each dataset have been checked. If the
-rights holder grants permission, record the permission and exact license here.
-If a dataset is independently created by Deutschly and all relevant rights
-are controlled by the maintainers, choose and state a suitable content
-license separately (for example, CC BY 4.0 or CC BY-SA 4.0); do not assume
-the software MIT License automatically applies to it.
+The root MIT License is for original software code; it is not automatically a
+blanket license for every third-party item or external dictionary result.
+The maintainer may license their independently authored database content
+separately, provided all relevant rights are controlled by the maintainer.
+Do not imply that a source citation is a reuse permission.
 
-If you believe any item is incorrectly attributed or should be removed,
-please open an issue with the relevant file path and source details.
+If any item is incorrectly attributed or should be removed, open an issue
+with the relevant file path and source details.
