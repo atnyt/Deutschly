@@ -83,5 +83,4 @@ German–Bangla vocabulary database is independently created and curated by the
 maintainer; the “Deutsch mit Shakil” list was a suggested reference, not the
 author of the Deutschly database. See [LICENSE-NOTICE.md](LICENSE-NOTICE.md), [DATA-LICENSE.md](DATA-LICENSE.md),
 and [DATA-SOURCES.md](DATA-SOURCES.md) for data licensing, authorship, and
-third-party material boundaries. Identified transcribed fields and external
-audio are excluded from the CC BY 4.0 grant.
+third-party material boundaries. The external Keks audio recording is excluded from the CC BY 4.0 grant.
