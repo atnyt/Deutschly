@@ -1,1 +1,862 @@
-{"schema_version":"1.0.0","title":"Deutschly A1 Grammar Terminology","language_pair":"de-BN","level":"A1","data_note":"Curated learner-facing grammar terminology. Explanations and examples are authored for learning and should be reviewed before expansion.","records":[{"id":"personalpronomen","term":"Personalpronomen","aliases":["Personalpronomen","Personal-Pronomen"],"bn":"ব্যক্তিবাচক সর্বনাম","explanation_bn":"যে সর্বনাম বক্তা, শ্রোতা বা আলোচ্য ব্যক্তি/বস্তুকে বোঝায়। ব্যক্তি, সংখ্যা ও বাক্যে কাজ অনুযায়ী এর রূপ বদলায়।","example_de":"Ich lerne Deutsch. Sie lernt auch Deutsch.","example_bn":"আমি জার্মান শিখি। সেও জার্মান শেখে।","examples_note":"ich = আমি; sie = সে (নারী) / তারা—প্রসঙ্গ অনুযায়ী","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"pronomen","term":"Pronomen","aliases":["Pronomen"],"bn":"সর্বনাম","explanation_bn":"যে শব্দ কোনো বিশেষ্যকে প্রতিস্থাপন করে বা তার দিকে নির্দেশ করে। Personalpronomen হলো সর্বনামের একটি ধরন।","example_de":"Das ist Anna. Sie ist nett.","example_bn":"এটি আন্না। সে বন্ধুসুলভ।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"nomen","term":"Nomen","aliases":["Nomen","Substantiv"],"bn":"বিশেষ্য","explanation_bn":"মানুষ, প্রাণী, বস্তু, স্থান বা ধারণার নাম বোঝায়। জার্মান ভাষায় Nomen সাধারণত বড় হাতের অক্ষর দিয়ে লেখা হয়।","example_de":"Das Kind spielt.","example_bn":"শিশুটি খেলছে।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"artikel","term":"Artikel","aliases":["Artikel"],"bn":"আর্টিকেল / বিশেষ্যের নির্দেশক শব্দ","explanation_bn":"Nomen-এর আগে বসে তার ব্যাকরণগত লিঙ্গ, সংখ্যা ও নির্দিষ্টতা বোঝাতে সাহায্য করে।","example_de":"Der Mann, eine Frau, das Kind.","example_bn":"পুরুষটি, একজন নারী, শিশুটি।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"bestimmter-artikel","term":"Bestimmter Artikel","aliases":["bestimmter Artikel","der bestimmte Artikel"],"bn":"নির্দিষ্ট আর্টিকেল","explanation_bn":"পরিচিত বা নির্দিষ্ট কোনো Nomen বোঝাতে ব্যবহৃত হয়। মূল রূপ: der, die, das।","example_de":"Das ist der Tisch.","example_bn":"ওটাই নির্দিষ্ট টেবিলটি।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"unbestimmter-artikel","term":"Unbestimmter Artikel","aliases":["unbestimmter Artikel","der unbestimmte Artikel"],"bn":"অনির্দিষ্ট আর্টিকেল","explanation_bn":"অনির্দিষ্ট বা আগে উল্লেখ না করা একবচনীয় Nomen বোঝাতে ব্যবহৃত হয়। মূল রূপ: ein, eine।","example_de":"Das ist ein Tisch.","example_bn":"এটি একটি টেবিল।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"verb","term":"Verb","aliases":["Verb","Verben"],"bn":"ক্রিয়া","explanation_bn":"কোনো কাজ, ঘটনা বা অবস্থা বোঝায়। বাক্যে ব্যক্তি ও কালের সঙ্গে ক্রিয়ার রূপ বদলাতে পারে।","example_de":"Ich lerne Deutsch.","example_bn":"আমি জার্মান শিখি।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"infinitiv","term":"Infinitiv","aliases":["Infinitiv"],"bn":"ক্রিয়ার মূল রূপ","explanation_bn":"ক্রিয়ার অভিধানিক বা অসমাপিকা রূপ; সাধারণত -en বা -n দিয়ে শেষ হয়।","example_de":"lernen, gehen, machen","example_bn":"শেখা, যাওয়া, করা।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"adjektiv","term":"Adjektiv","aliases":["Adjektiv","Adjektive"],"bn":"বিশেষণ","explanation_bn":"কোনো ব্যক্তি বা বস্তুর গুণ, অবস্থা বা বৈশিষ্ট্য বোঝায়।","example_de":"Das Haus ist groß.","example_bn":"বাড়িটি বড়।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"adverb","term":"Adverb","aliases":["Adverb","Adverbien"],"bn":"ক্রিয়া-বিশেষণ","explanation_bn":"কাজ, সময়, স্থান বা মাত্রা সম্পর্কে অতিরিক্ত তথ্য দেয়।","example_de":"Er kommt heute.","example_bn":"সে আজ আসছে।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"praeposition","term":"Präposition","aliases":["Präposition","Präpositionen","Preposition"],"bn":"সম্বন্ধসূচক অব্যয় (Preposition)","explanation_bn":"Nomen বা Pronomen-এর সঙ্গে অন্য শব্দের স্থান, সময় বা সম্পর্ক বোঝায়; অনেক Präposition নির্দিষ্ট Kasus দাবি করে।","example_de":"Das Buch liegt auf dem Tisch.","example_bn":"বইটি টেবিলের ওপর আছে।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"konjunktion","term":"Konjunktion","aliases":["Konjunktion","Konjunktionen"],"bn":"সংযোজক অব্যয়","explanation_bn":"শব্দ, শব্দগুচ্ছ বা বাক্যকে যুক্ত করে।","example_de":"Ich lerne Deutsch und Englisch.","example_bn":"আমি জার্মান ও ইংরেজি শিখি।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"fragewort","term":"Fragewort","aliases":["Fragewort","W-Fragewort","W-Fragewörter"],"bn":"প্রশ্নবাচক শব্দ","explanation_bn":"প্রশ্ন করতে ব্যবহৃত শব্দ; যেমন wer, was, wo, wann, warum।","example_de":"Wo wohnst du?","example_bn":"তুমি কোথায় থাকো?","level":"A1","status":"curated","sources":["https://www.goethe.de/en/spr/ueb.html"]},{"id":"possessivartikel","term":"Possessivartikel","aliases":["Possessivartikel","Possessivbegleiter"],"bn":"অধিকার/সম্পর্কবাচক নির্দেশক","explanation_bn":"Nomen-এর আগে বসে মালিকানা বা সম্পর্ক বোঝায়। A1-এ mein, dein, sein, ihr ইত্যাদি শেখা হয়। এগুলোকে অনেক পাঠ্যবইয়ে Possessivartikel বলা হয়।","example_de":"Das ist mein Buch.","example_bn":"এটি আমার বই।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"negation","term":"Negation","aliases":["Negation","Verneinung"],"bn":"নেতিবাচকতা / অস্বীকৃতি","explanation_bn":"কোনো বক্তব্যকে না-বোধক করে। জার্মানে nicht ও kein গুরুত্বপূর্ণ উপায়।","example_de":"Ich habe kein Auto. Ich komme heute nicht.","example_bn":"আমার কোনো গাড়ি নেই। আমি আজ আসছি না।","level":"A1","status":"curated","sources":["https://www.goethe.de/en/spr/ueb.html"]},{"id":"praesens","term":"Präsens","aliases":["Präsens","Gegenwart"],"bn":"বর্তমান কাল","explanation_bn":"বর্তমান সময়ের কাজ বা অবস্থা বোঝায়; প্রসঙ্গভেদে ভবিষ্যৎ পরিকল্পনাও বোঝাতে পারে।","example_de":"Ich wohne in Dhaka.","example_bn":"আমি ঢাকায় থাকি।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"nominativ","term":"Nominativ","aliases":["Nominativ"],"bn":"কর্তৃকারক","explanation_bn":"বাক্যের কর্তা সাধারণত Nominativ-এ থাকে।","example_de":"Der Mann schläft.","example_bn":"লোকটি ঘুমাচ্ছে।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"akkusativ","term":"Akkusativ","aliases":["Akkusativ"],"bn":"কর্মকারক (Akkusativ)","explanation_bn":"অনেক বাক্যে সরাসরি কর্ম Akkusativ-এ থাকে; কিছু Präposition-ও Akkusativ নেয়।","example_de":"Ich sehe den Mann.","example_bn":"আমি লোকটিকে দেখি।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"dativ","term":"Dativ","aliases":["Dativ"],"bn":"সম্প্রদান কারক (Dativ)","explanation_bn":"অনেক বাক্যে পরোক্ষ কর্ম Dativ-এ থাকে; কিছু Verb ও Präposition Dativ দাবি করে।","example_de":"Ich helfe dem Mann.","example_bn":"আমি লোকটিকে সাহায্য করি।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/","https://www.goethe.de/en/spr/ueb.html"]},{"id":"singular","term":"Singular","aliases":["Singular","Einzahl"],"bn":"একবচন","explanation_bn":"একটি ব্যক্তি বা বস্তু বোঝায়।","example_de":"das Buch","example_bn":"বইটি / একটি বই।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/"]},{"id":"plural","term":"Plural","aliases":["Plural","Mehrzahl"],"bn":"বহুবচন","explanation_bn":"একাধিক ব্যক্তি বা বস্তু বোঝায়।","example_de":"die Bücher","example_bn":"বইগুলো।","level":"A1","status":"curated","sources":["https://grammis.ids-mannheim.de/"]}]}
+{
+  "schema_version": "1.1.0",
+  "title": "Deutschly A1 Grammar Terminology",
+  "language_pair": "de-BN",
+  "level": "A1",
+  "data_note": "A1 learner-facing terminology and grammar rules. Rules include scoped explanations, contrastive examples and authoritative references. A1 scope is pedagogical, not a claim that every construction is exclusive to A1.",
+  "records": [
+    {
+      "id": "personalpronomen",
+      "term": "Personalpronomen",
+      "aliases": [
+        "Personalpronomen",
+        "Personal-Pronomen"
+      ],
+      "bn": "ব্যক্তিবাচক সর্বনাম",
+      "explanation_bn": "যে সর্বনাম বক্তা, শ্রোতা বা আলোচ্য ব্যক্তি/বস্তুকে বোঝায়। ব্যক্তি, সংখ্যা ও বাক্যে কাজ অনুযায়ী এর রূপ বদলায়।",
+      "example_de": "Ich lerne Deutsch. Sie lernt auch Deutsch.",
+      "example_bn": "আমি জার্মান শিখি। সেও জার্মান শেখে।",
+      "examples_note": "ich = আমি; sie = সে (নারী) / তারা—প্রসঙ্গ অনুযায়ী",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "pronomen",
+      "term": "Pronomen",
+      "aliases": [
+        "Pronomen"
+      ],
+      "bn": "সর্বনাম",
+      "explanation_bn": "যে শব্দ কোনো বিশেষ্যকে প্রতিস্থাপন করে বা তার দিকে নির্দেশ করে। Personalpronomen হলো সর্বনামের একটি ধরন।",
+      "example_de": "Das ist Anna. Sie ist nett.",
+      "example_bn": "এটি আন্না। সে বন্ধুসুলভ।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "nomen",
+      "term": "Nomen",
+      "aliases": [
+        "Nomen",
+        "Substantiv"
+      ],
+      "bn": "বিশেষ্য",
+      "explanation_bn": "মানুষ, প্রাণী, বস্তু, স্থান বা ধারণার নাম বোঝায়। জার্মান ভাষায় Nomen সাধারণত বড় হাতের অক্ষর দিয়ে লেখা হয়।",
+      "example_de": "Das Kind spielt.",
+      "example_bn": "শিশুটি খেলছে।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "artikel",
+      "term": "Artikel",
+      "aliases": [
+        "Artikel"
+      ],
+      "bn": "আর্টিকেল / বিশেষ্যের নির্দেশক শব্দ",
+      "explanation_bn": "Nomen-এর আগে বসে তার ব্যাকরণগত লিঙ্গ, সংখ্যা ও নির্দিষ্টতা বোঝাতে সাহায্য করে।",
+      "example_de": "Der Mann, eine Frau, das Kind.",
+      "example_bn": "পুরুষটি, একজন নারী, শিশুটি।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "bestimmter-artikel",
+      "term": "Bestimmter Artikel",
+      "aliases": [
+        "bestimmter Artikel",
+        "der bestimmte Artikel"
+      ],
+      "bn": "নির্দিষ্ট আর্টিকেল",
+      "explanation_bn": "পরিচিত বা নির্দিষ্ট কোনো Nomen বোঝাতে ব্যবহৃত হয়। মূল রূপ: der, die, das।",
+      "example_de": "Das ist der Tisch.",
+      "example_bn": "ওটাই নির্দিষ্ট টেবিলটি।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "unbestimmter-artikel",
+      "term": "Unbestimmter Artikel",
+      "aliases": [
+        "unbestimmter Artikel",
+        "der unbestimmte Artikel"
+      ],
+      "bn": "অনির্দিষ্ট আর্টিকেল",
+      "explanation_bn": "অনির্দিষ্ট বা আগে উল্লেখ না করা একবচনীয় Nomen বোঝাতে ব্যবহৃত হয়। মূল রূপ: ein, eine।",
+      "example_de": "Das ist ein Tisch.",
+      "example_bn": "এটি একটি টেবিল।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "verb",
+      "term": "Verb",
+      "aliases": [
+        "Verb",
+        "Verben"
+      ],
+      "bn": "ক্রিয়া",
+      "explanation_bn": "কোনো কাজ, ঘটনা বা অবস্থা বোঝায়। বাক্যে ব্যক্তি ও কালের সঙ্গে ক্রিয়ার রূপ বদলাতে পারে।",
+      "example_de": "Ich lerne Deutsch.",
+      "example_bn": "আমি জার্মান শিখি।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "infinitiv",
+      "term": "Infinitiv",
+      "aliases": [
+        "Infinitiv"
+      ],
+      "bn": "ক্রিয়ার মূল রূপ",
+      "explanation_bn": "ক্রিয়ার অভিধানিক বা অসমাপিকা রূপ; সাধারণত -en বা -n দিয়ে শেষ হয়।",
+      "example_de": "lernen, gehen, machen",
+      "example_bn": "শেখা, যাওয়া, করা।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "adjektiv",
+      "term": "Adjektiv",
+      "aliases": [
+        "Adjektiv",
+        "Adjektive"
+      ],
+      "bn": "বিশেষণ",
+      "explanation_bn": "কোনো ব্যক্তি বা বস্তুর গুণ, অবস্থা বা বৈশিষ্ট্য বোঝায়।",
+      "example_de": "Das Haus ist groß.",
+      "example_bn": "বাড়িটি বড়।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "adverb",
+      "term": "Adverb",
+      "aliases": [
+        "Adverb",
+        "Adverbien"
+      ],
+      "bn": "ক্রিয়া-বিশেষণ",
+      "explanation_bn": "কাজ, সময়, স্থান বা মাত্রা সম্পর্কে অতিরিক্ত তথ্য দেয়।",
+      "example_de": "Er kommt heute.",
+      "example_bn": "সে আজ আসছে।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "praeposition",
+      "term": "Präposition",
+      "aliases": [
+        "Präposition",
+        "Präpositionen",
+        "Preposition"
+      ],
+      "bn": "সম্বন্ধসূচক অব্যয় (Preposition)",
+      "explanation_bn": "Nomen বা Pronomen-এর সঙ্গে অন্য শব্দের স্থান, সময় বা সম্পর্ক বোঝায়; অনেক Präposition নির্দিষ্ট Kasus দাবি করে।",
+      "example_de": "Das Buch liegt auf dem Tisch.",
+      "example_bn": "বইটি টেবিলের ওপর আছে।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "konjunktion",
+      "term": "Konjunktion",
+      "aliases": [
+        "Konjunktion",
+        "Konjunktionen"
+      ],
+      "bn": "সংযোজক অব্যয়",
+      "explanation_bn": "শব্দ, শব্দগুচ্ছ বা বাক্যকে যুক্ত করে।",
+      "example_de": "Ich lerne Deutsch und Englisch.",
+      "example_bn": "আমি জার্মান ও ইংরেজি শিখি।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "fragewort",
+      "term": "Fragewort",
+      "aliases": [
+        "Fragewort",
+        "W-Fragewort",
+        "W-Fragewörter"
+      ],
+      "bn": "প্রশ্নবাচক শব্দ",
+      "explanation_bn": "প্রশ্ন করতে ব্যবহৃত শব্দ; যেমন wer, was, wo, wann, warum।",
+      "example_de": "Wo wohnst du?",
+      "example_bn": "তুমি কোথায় থাকো?",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "possessivartikel",
+      "term": "Possessivartikel",
+      "aliases": [
+        "Possessivartikel",
+        "Possessivbegleiter"
+      ],
+      "bn": "অধিকার/সম্পর্কবাচক নির্দেশক",
+      "explanation_bn": "Nomen-এর আগে বসে মালিকানা বা সম্পর্ক বোঝায়। A1-এ mein, dein, sein, ihr ইত্যাদি শেখা হয়। এগুলোকে অনেক পাঠ্যবইয়ে Possessivartikel বলা হয়।",
+      "example_de": "Das ist mein Buch.",
+      "example_bn": "এটি আমার বই।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "negation",
+      "term": "Negation",
+      "aliases": [
+        "Negation",
+        "Verneinung"
+      ],
+      "bn": "নেতিবাচকতা / অস্বীকৃতি",
+      "explanation_bn": "কোনো বক্তব্যকে না-বোধক করে। জার্মানে nicht ও kein গুরুত্বপূর্ণ উপায়।",
+      "example_de": "Ich habe kein Auto. Ich komme heute nicht.",
+      "example_bn": "আমার কোনো গাড়ি নেই। আমি আজ আসছি না।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "praesens",
+      "term": "Präsens",
+      "aliases": [
+        "Präsens",
+        "Gegenwart"
+      ],
+      "bn": "বর্তমান কাল",
+      "explanation_bn": "বর্তমান সময়ের কাজ বা অবস্থা বোঝায়; প্রসঙ্গভেদে ভবিষ্যৎ পরিকল্পনাও বোঝাতে পারে।",
+      "example_de": "Ich wohne in Dhaka.",
+      "example_bn": "আমি ঢাকায় থাকি।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "nominativ",
+      "term": "Nominativ",
+      "aliases": [
+        "Nominativ"
+      ],
+      "bn": "কর্তৃকারক",
+      "explanation_bn": "বাক্যের কর্তা সাধারণত Nominativ-এ থাকে।",
+      "example_de": "Der Mann schläft.",
+      "example_bn": "লোকটি ঘুমাচ্ছে।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "akkusativ",
+      "term": "Akkusativ",
+      "aliases": [
+        "Akkusativ"
+      ],
+      "bn": "কর্মকারক (Akkusativ)",
+      "explanation_bn": "অনেক বাক্যে সরাসরি কর্ম Akkusativ-এ থাকে; কিছু Präposition-ও Akkusativ নেয়।",
+      "example_de": "Ich sehe den Mann.",
+      "example_bn": "আমি লোকটিকে দেখি।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "dativ",
+      "term": "Dativ",
+      "aliases": [
+        "Dativ"
+      ],
+      "bn": "সম্প্রদান কারক (Dativ)",
+      "explanation_bn": "অনেক বাক্যে পরোক্ষ কর্ম Dativ-এ থাকে; কিছু Verb ও Präposition Dativ দাবি করে।",
+      "example_de": "Ich helfe dem Mann.",
+      "example_bn": "আমি লোকটিকে সাহায্য করি।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/",
+        "https://www.goethe.de/en/spr/ueb.html"
+      ]
+    },
+    {
+      "id": "singular",
+      "term": "Singular",
+      "aliases": [
+        "Singular",
+        "Einzahl"
+      ],
+      "bn": "একবচন",
+      "explanation_bn": "একটি ব্যক্তি বা বস্তু বোঝায়।",
+      "example_de": "das Buch",
+      "example_bn": "বইটি / একটি বই।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/"
+      ]
+    },
+    {
+      "id": "plural",
+      "term": "Plural",
+      "aliases": [
+        "Plural",
+        "Mehrzahl"
+      ],
+      "bn": "বহুবচন",
+      "explanation_bn": "একাধিক ব্যক্তি বা বস্তু বোঝায়।",
+      "example_de": "die Bücher",
+      "example_bn": "বইগুলো।",
+      "level": "A1",
+      "status": "curated",
+      "sources": [
+        "https://grammis.ids-mannheim.de/"
+      ]
+    }
+  ],
+  "grammar_rules": [
+    {
+      "id": "article-declension",
+      "term": "Artikel-Deklination",
+      "aliases": [
+        "Artikeldeklination",
+        "Artikel Deklination",
+        "Artikel im Kasus"
+      ],
+      "bn": "Article-এর Kasus ও Gender অনুযায়ী রূপ",
+      "explanation_bn": "জার্মান Article বিশেষ্যের grammatical gender, number এবং বাক্যে তার Kasus অনুযায়ী বদলায়। নির্দিষ্ট Article-এর চারটি রূপের ছক: Nominativ der/die/das/die; Akkusativ den/die/das/die; Dativ dem/der/dem/den; Genitiv des/der/des/der। অনির্দিষ্ট ein-এর Plural নেই; kein ও Possessivartikel ein-শব্দের মতো রূপ বদলায়।",
+      "example_de": "Der Mann sieht den Hund. Ich helfe dem Kind.",
+      "example_bn": "লোকটি কুকুরটিকে দেখে। আমি শিশুটিকে সাহায্য করি।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "nominativ-rule",
+      "term": "Nominativ",
+      "aliases": [
+        "Nominativ Kasus",
+        "Nominativregel"
+      ],
+      "bn": "কর্তৃকারক",
+      "explanation_bn": "Nominativ সাধারণত বাক্যের কর্তা নির্দেশ করে। sein, werden, bleiben-এর মতো linking verb-এর পরে subject-কে পরিচয়/অবস্থা দিয়ে বর্ণনা করা Nomen বা Adjektiv-ও Nominativ হতে পারে।",
+      "example_de": "Der Mann schläft. Sie ist eine Lehrerin.",
+      "example_bn": "লোকটি ঘুমাচ্ছে। তিনি একজন শিক্ষিকা।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html",
+        "https://sites.lsa.umich.edu/german-resources/grammatik/standard-case-overview/"
+      ]
+    },
+    {
+      "id": "akkusativ-rule",
+      "term": "Akkusativ",
+      "aliases": [
+        "Akkusativ Kasus",
+        "Akkusativregel"
+      ],
+      "bn": "কর্মকারক",
+      "explanation_bn": "Akkusativ অনেক Verb-এর সরাসরি কর্ম (Wen oder was?) চিহ্নিত করে। Masculine singular definite article der → den এবং ein → einen হয়; feminine, neuter ও plural definite article-এর রূপ Nominativ-এর মতো থাকে। কিছু Präposition সবসময় Akkusativ নেয়।",
+      "example_de": "Ich sehe den Mann. Sie kauft einen Apfel.",
+      "example_bn": "আমি লোকটিকে দেখি। সে একটি আপেল কিনছে।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html",
+        "https://sites.lsa.umich.edu/german-resources/grammatik/standard-case-overview/"
+      ]
+    },
+    {
+      "id": "dativ-rule",
+      "term": "Dativ",
+      "aliases": [
+        "Dativ Kasus",
+        "Dativregel"
+      ],
+      "bn": "সম্প্রদান/পরোক্ষ কর্মকারক",
+      "explanation_bn": "Dativ অনেক ক্ষেত্রে পরোক্ষ কর্ম (Wem?) বোঝায়; কিছু Verb ও Präposition নিজস্বভাবে Dativ দাবি করে। Definite article: dem/der/dem/den। Dativ plural noun-এ সাধারণত -n যোগ হয়, যদি plural form ইতিমধ্যে -n বা -s-এ শেষ না হয়।",
+      "example_de": "Ich helfe dem Mann. Ich spreche mit den Kindern.",
+      "example_bn": "আমি লোকটিকে সাহায্য করি। আমি শিশুদের সঙ্গে কথা বলি।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html",
+        "https://sites.lsa.umich.edu/german-resources/grammatik/standard-case-overview/"
+      ]
+    },
+    {
+      "id": "genitiv-intro",
+      "term": "Genitiv",
+      "aliases": [
+        "Genitiv Kasus",
+        "Genitivregel"
+      ],
+      "bn": "সম্বন্ধ/অধিকারসূচক কারক",
+      "explanation_bn": "Genitiv প্রধানত অধিকার বা সম্পর্ক বোঝায় এবং কিছু Präposition/লিখিত ভাষার গঠনে ব্যবহৃত হয়। Masculine ও neuter singular noun-এ সাধারণত -(e)s যোগ হয়; feminine ও plural noun-এ noun সাধারণত অপরিবর্তিত থাকে। A1-এ পরিচিতি হিসেবে শেখানো যেতে পারে, পূর্ণ প্রয়োগ পরে বিস্তৃত হয়।",
+      "example_de": "Das ist das Auto des Mannes. Die Tasche der Frau ist neu.",
+      "example_bn": "এটি লোকটির গাড়ি। নারীর ব্যাগটি নতুন।",
+      "level": "A1–A2",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "present-tense-conjugation",
+      "term": "Präsens-Konjugation",
+      "aliases": [
+        "Präsens konjugieren",
+        "Verbkonjugation Präsens",
+        "Verb conjugation"
+      ],
+      "bn": "বর্তমান কালে Verb-এর রূপান্তর",
+      "explanation_bn": "নিয়মিত Verb-এর Infinitiv থেকে -en/-n বাদ দিয়ে stem-এর সঙ্গে subject অনুযায়ী ending বসে: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en। Stamm-এ d/t থাকলে উচ্চারণ সহজ করতে অনেক ক্ষেত্রে du/er-এ অতিরিক্ত e আসে (arbeiten → du arbeitest)। অনিয়মিত Verb-এর stem vowel বদলাতে পারে।",
+      "example_de": "Ich lerne Deutsch. Du lernst Deutsch. Er lernt Deutsch.",
+      "example_bn": "আমি জার্মান শিখি। তুমি জার্মান শেখো। সে জার্মান শেখে।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "sein-haben",
+      "term": "sein und haben",
+      "aliases": [
+        "sein",
+        "haben",
+        "Hilfsverben sein haben"
+      ],
+      "bn": "sein ও haben ক্রিয়ার ব্যবহার",
+      "explanation_bn": "sein = হওয়া/থাকা এবং haben = থাকা/অধিকার করা—দুটি অত্যন্ত প্রচলিত অনিয়মিত Verb। Präsens-এ এদের রূপ মুখস্থ করতে হয়। Perfekt গঠনে haben বা sein auxiliary হিসেবেও ব্যবহৃত হয়; কোনটি হবে তা Verb ও অর্থ/গঠন অনুযায়ী নির্ধারিত হয়।",
+      "example_de": "Ich bin müde. Du hast Zeit. Wir sind nach Hause gegangen.",
+      "example_bn": "আমি ক্লান্ত। তোমার সময় আছে। আমরা বাড়ি চলে গেছি।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "modal-verbs",
+      "term": "Modalverben",
+      "aliases": [
+        "Modalverb",
+        "Modalverben Präsens",
+        "können müssen wollen dürfen sollen mögen"
+      ],
+      "bn": "ভাব/সামর্থ্য/অনুমতি/বাধ্যবাধকতা বোঝানো সহায়ক ক্রিয়া",
+      "explanation_bn": "Modalverb সাধারণত আরেকটি Verb-এর Infinitiv-এর সঙ্গে ব্যবহৃত হয়। Modalverb conjugate হয় এবং মূল Verb বাক্যের শেষে Infinitiv হিসেবে থাকে। können = পারা, müssen = বাধ্য হওয়া, dürfen = অনুমতি থাকা, wollen = ইচ্ছা করা, sollen = করা উচিত/নির্দেশ থাকা, mögen = পছন্দ করা। möchten হলো mögen-এর Konjunktiv II-ভিত্তিক ভদ্র ইচ্ছা প্রকাশের রূপ।",
+      "example_de": "Ich kann Deutsch sprechen. Du musst heute lernen.",
+      "example_bn": "আমি জার্মান বলতে পারি। তোমাকে আজ পড়তে হবে।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "verb-second-position",
+      "term": "Verbzweitstellung",
+      "aliases": [
+        "V2",
+        "Verb zweite Position",
+        "Hauptsatz Wortstellung"
+      ],
+      "bn": "মূল বাক্যে finite Verb দ্বিতীয় অবস্থানে",
+      "explanation_bn": "সাধারণ বিবৃতিমূলক Hauptsatz-এ conjugated/finite Verb দ্বিতীয় Satzglied-এ থাকে—দ্বিতীয় শব্দে নয়। বাক্যের শুরুতে সময়/স্থান/কর্ম এলে subject সাধারণত finite Verb-এর পরে আসে।",
+      "example_de": "Heute lerne ich Deutsch. Den Kaffee trinkt Anna.",
+      "example_bn": "আজ আমি জার্মান শিখি। কফিটি আন্না পান করে।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://sites.lsa.umich.edu/german-resources/grammatik/wortstellung/"
+      ]
+    },
+    {
+      "id": "yes-no-questions",
+      "term": "Ja/Nein-Fragen",
+      "aliases": [
+        "Entscheidungsfragen",
+        "Ja Nein Frage",
+        "yes no questions"
+      ],
+      "bn": "হ্যাঁ/না-সূচক প্রশ্ন",
+      "explanation_bn": "হ্যাঁ/না-সূচক সরাসরি প্রশ্নে finite Verb সাধারণত প্রথমে আসে, তারপর subject।",
+      "example_de": "Lernst du Deutsch? Haben Sie Zeit?",
+      "example_bn": "তুমি কি জার্মান শিখছ? আপনার কি সময় আছে?",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "w-questions",
+      "term": "W-Fragen",
+      "aliases": [
+        "W-Frage",
+        "Fragen mit Fragewort",
+        "W Fragen"
+      ],
+      "bn": "প্রশ্নবাচক শব্দ দিয়ে প্রশ্ন",
+      "explanation_bn": "W-Frage-তে Fragewort প্রথমে, finite Verb দ্বিতীয় অবস্থানে এবং subject সাধারণত তার পরে থাকে। wer, was, wann, wo, wohin, woher, warum, wie—প্রশ্নের ধরন অনুযায়ী ব্যবহৃত হয়।",
+      "example_de": "Wo wohnst du? Warum lernst du Deutsch?",
+      "example_bn": "তুমি কোথায় থাকো? তুমি কেন জার্মান শিখছ?",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "nicht-kein",
+      "term": "Negation: nicht und kein",
+      "aliases": [
+        "nicht",
+        "kein",
+        "Negation mit nicht und kein"
+      ],
+      "bn": "nicht ও kein দিয়ে না-বোধক বাক্য",
+      "explanation_bn": "kein সাধারণত ein-Artikel-যুক্ত বা Article-বিহীন Nomen-কে অস্বীকার করে এবং Nomen-এর সঙ্গে gender/number/case অনুযায়ী রূপ বদলায়। nicht Verb, Adjektiv, Adverb, নির্দিষ্ট বাক্যাংশ বা পুরো বক্তব্যকে অস্বীকার করে; এর অবস্থান কোন অংশকে অস্বীকার করা হচ্ছে তার ওপর নির্ভর করে।",
+      "example_de": "Ich habe kein Auto. Das Auto ist nicht neu. Ich komme heute nicht.",
+      "example_bn": "আমার গাড়ি নেই। গাড়িটি নতুন নয়। আমি আজ আসছি না।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://deutsch.lingolia.com/en/grammar/sentence-structure"
+      ]
+    },
+    {
+      "id": "accusative-prepositions",
+      "term": "Präpositionen mit Akkusativ",
+      "aliases": [
+        "Akkusativpräpositionen",
+        "Akkusativ Präpositionen"
+      ],
+      "bn": "Akkusativ-নিয়ন্ত্রিত Preposition",
+      "explanation_bn": "für, durch, gegen, ohne, um সাধারণত Akkusativ নেয়। bis-ও Akkusativ-সহ ব্যবহৃত হতে পারে, তবে প্রায়ই Article-বিহীন গঠনে আসে। Preposition মুখস্থ করার সময় তার Kasus-সহ শেখা উচিত।",
+      "example_de": "Das Geschenk ist für den Vater. Wir gehen ohne einen Schirm.",
+      "example_bn": "উপহারটি বাবার জন্য। আমরা ছাতা ছাড়া যাচ্ছি।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://sites.lsa.umich.edu/german-resources/grammatik/standard-case-overview/"
+      ]
+    },
+    {
+      "id": "dative-prepositions",
+      "term": "Präpositionen mit Dativ",
+      "aliases": [
+        "Dativpräpositionen",
+        "Dativ Präpositionen"
+      ],
+      "bn": "Dativ-নিয়ন্ত্রিত Preposition",
+      "explanation_bn": "A1-এ বহুল ব্যবহৃত mit, nach, bei, seit, von, zu, aus সাধারণত Dativ নেয়। এগুলোর পরে noun phrase-এর article ও pronoun Dativ রূপে থাকে।",
+      "example_de": "Ich fahre mit dem Bus. Sie kommt aus der Schule.",
+      "example_bn": "আমি বাসে যাই। সে স্কুল থেকে আসছে।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "two-way-prepositions",
+      "term": "Wechselpräpositionen",
+      "aliases": [
+        "Wechselpräposition",
+        "two-way prepositions",
+        "an auf hinter in neben über unter vor zwischen"
+      ],
+      "bn": "Dativ ও Akkusativ—দুই Kasus-ই নিতে পারে এমন Preposition",
+      "explanation_bn": "an, auf, hinter, in, neben, über, unter, vor, zwischen—এগুলো অবস্থান/স্থান কোথায় (Wo?) বোঝালে সাধারণত Dativ নেয়; কোনো গন্তব্যে স্থান পরিবর্তন/কোথায় (Wohin?) বোঝালে সাধারণত Akkusativ নেয়। শুধু নড়াচড়া আছে কি না—এটাই একমাত্র পরীক্ষা নয়; অর্থ ও Verb-এর সম্পর্ক দেখতে হয়।",
+      "example_de": "Das Buch liegt auf dem Tisch. Ich lege das Buch auf den Tisch.",
+      "example_bn": "বইটি টেবিলের ওপর পড়ে আছে। আমি বইটি টেবিলের ওপর রাখছি।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://sites.lsa.umich.edu/german-resources/grammatik/standard-case-overview/"
+      ]
+    },
+    {
+      "id": "coordinating-conjunctions",
+      "term": "Nebenordnende Konjunktionen",
+      "aliases": [
+        "und aber oder denn sondern",
+        "coordinating conjunctions"
+      ],
+      "bn": "সমমানের বাক্য/উপাদান যুক্তকারী অব্যয়",
+      "explanation_bn": "und, aber, oder, denn, sondern সমমানের শব্দ/বাক্যাংশ/মূল বাক্য যুক্ত করে। এগুলো যুক্ত হলে সাধারণত পরের Hauptsatz-এর finite Verb দ্বিতীয় অবস্থানেই থাকে; conjunction নিজে Satzglied হিসেবে গণনা হয় না।",
+      "example_de": "Ich lerne Deutsch, aber mein Bruder lernt Englisch.",
+      "example_bn": "আমি জার্মান শিখি, কিন্তু আমার ভাই ইংরেজি শেখে।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://sites.lsa.umich.edu/german-resources/grammatik/wortstellung/"
+      ]
+    },
+    {
+      "id": "subordinate-clause",
+      "term": "Nebensatz und Verbendstellung",
+      "aliases": [
+        "Nebensatz",
+        "Verb am Ende",
+        "weil dass wenn"
+      ],
+      "bn": "উপবাক্যে finite Verb শেষে",
+      "explanation_bn": "weil, dass, wenn-এর মতো subordinating conjunction দিয়ে শুরু Nebensatz-এ finite Verb সাধারণত শেষে যায়। Nebensatz আগে এলে পরের Hauptsatz-এর finite Verb উপবাক্যের পরপরই আসে।",
+      "example_de": "Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte. Wenn ich Zeit habe, lerne ich.",
+      "example_bn": "আমি জার্মান শিখি, কারণ আমি জার্মানিতে কাজ করতে চাই। যখন আমার সময় থাকে, আমি পড়ি।",
+      "level": "A1–A2",
+      "status": "reviewed",
+      "sources": [
+        "https://sites.lsa.umich.edu/german-resources/grammatik/wortstellung/"
+      ]
+    },
+    {
+      "id": "separable-verbs",
+      "term": "Trennbare Verben",
+      "aliases": [
+        "trennbares Verb",
+        "separable verbs",
+        "abholen aufstehen einkaufen"
+      ],
+      "bn": "বিচ্ছিন্ন উপসর্গযুক্ত ক্রিয়া",
+      "explanation_bn": "কিছু Verb-এর prefix Hauptsatz-এর Präsens-এ finite Verb থেকে আলাদা হয়ে বাক্যের শেষে যায়। Infinitiv ও Partizip II-তে prefix যুক্ত থাকে; Perfekt-এ সাধারণত ge prefix ও verb stem-এর মাঝে আসে (abholen → abgeholt)। সব prefix বিচ্ছিন্ন নয়।",
+      "example_de": "Ich stehe um sieben Uhr auf. Ich habe dich abgeholt.",
+      "example_bn": "আমি সাতটায় উঠি। আমি তোমাকে নিয়ে এসেছি।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "perfect-tense",
+      "term": "Perfekt",
+      "aliases": [
+        "Perfekt mit haben sein",
+        "Partizip II",
+        "present perfect German"
+      ],
+      "bn": "কথ্য অতীত কাল",
+      "explanation_bn": "Perfekt সাধারণত haben বা sein-এর Präsens রূপ + Partizip II দিয়ে গঠিত। Partizip II বাক্যের শেষে থাকে। অধিকাংশ Verb haben নেয়; কিছু intransitive movement/change-of-state Verb এবং sein নিজে sein নেয়। auxiliary নির্বাচন কেবল 'চলাচল' দেখে যান্ত্রিকভাবে করা যায় না—Verb-এর ব্যবহারও দেখতে হয়।",
+      "example_de": "Ich habe Deutsch gelernt. Ich bin nach Berlin gefahren.",
+      "example_bn": "আমি জার্মান শিখেছি। আমি বার্লিনে গিয়েছি।",
+      "level": "A1–A2",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "imperative",
+      "term": "Imperativ",
+      "aliases": [
+        "Imperativ du ihr Sie",
+        "Befehlsform"
+      ],
+      "bn": "আদেশ, অনুরোধ বা নির্দেশের রূপ",
+      "explanation_bn": "Imperativ-এর রূপ সম্বোধিত ব্যক্তির ওপর নির্ভর করে: du, ihr, Sie। du-র ক্ষেত্রে সাধারণত stem ব্যবহৃত হয়; কিছু Verb-এ stem vowel change থাকে এবং কিছু ক্ষেত্রে e ঐচ্ছিক/প্রয়োজনীয় হতে পারে। Sie-র আদেশে Verb + Sie ব্যবহৃত হয়।",
+      "example_de": "Komm bitte! Kommt bitte! Kommen Sie bitte!",
+      "example_bn": "দয়া করে এসো! তোমরা এসো! আপনি দয়া করে আসুন!",
+      "level": "A1–A2",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "adjective-predicative",
+      "term": "Prädikative Adjektive",
+      "aliases": [
+        "Adjektiv prädikativ",
+        "predicative adjective"
+      ],
+      "bn": "sein/werden/bleiben-এর পরে অপরিবর্তিত বিশেষণ",
+      "explanation_bn": "sein, werden, bleiben-এর মতো linking verb-এর পরে predicative অবস্থায় Adjektiv সাধারণত ending নেয় না। Nomen-এর আগে attributive অবস্থায় adjective declension হয়।",
+      "example_de": "Das Haus ist groß. Das ist ein großes Haus.",
+      "example_bn": "বাড়িটি বড়। এটি একটি বড় বাড়ি।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "possessive-articles",
+      "term": "Possessivartikel",
+      "aliases": [
+        "Possessivartikel Deklination",
+        "mein dein sein ihr unser euer"
+      ],
+      "bn": "অধিকারবাচক Article",
+      "explanation_bn": "mein, dein, sein, ihr, unser, euer, Ihr মালিকানা/সম্পর্ক বোঝায় এবং noun-এর gender, number ও case অনুযায়ী ein-Artikel-এর মতো ending নেয়। euer-এর ending যোগ হলে অনেক ক্ষেত্রে euer → eur- হয় (euer Vater, eure Mutter)।",
+      "example_de": "Das ist mein Buch. Ich sehe meinen Bruder.",
+      "example_bn": "এটি আমার বই। আমি আমার ভাইকে দেখি।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "plural-formation",
+      "term": "Pluralbildung",
+      "aliases": [
+        "Plural bilden",
+        "Pluralformen",
+        "German plural"
+      ],
+      "bn": "বিশেষ্যের বহুবচন গঠন",
+      "explanation_bn": "জার্মান Nomen-এর Plural একটিমাত্র নিয়মে হয় না। প্রচলিত pattern হলো -e, -(e)n, -er, -s, শূন্য ending; কিছু noun-এ Umlaut হয় বা ending-এর সঙ্গে Umlaut-ও হয়। Article সব Plural-এ die, কিন্তু Dativ Plural-এ noun-এ প্রায়ই অতিরিক্ত -n হয়। প্রতিটি noun-এর Plural আলাদাভাবে শেখা নিরাপদ।",
+      "example_de": "der Tag – die Tage; die Frau – die Frauen; das Kind – die Kinder; das Auto – die Autos.",
+      "example_bn": "দিন–দিনগুলো; নারী–নারীরা; শিশু–শিশুরা; গাড়ি–গাড়িগুলো।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    },
+    {
+      "id": "umlaut-spelling",
+      "term": "Umlaut: ä, ö, ü",
+      "aliases": [
+        "Umlaut",
+        "Umlaute",
+        "ä ö ü"
+      ],
+      "bn": "Umlaut-যুক্ত স্বরবর্ণ",
+      "explanation_bn": "ä, ö, ü জার্মান বর্ণমালার স্বতন্ত্র অক্ষর; এগুলো a, o, u-এর সঙ্গে এক করে লেখা বা উচ্চারণ করা যায় না। Umlaut অনেক শব্দে অর্থ/ব্যাকরণগত রূপ আলাদা করে, যেমন Mutter–Mütter।",
+      "example_de": "der Apfel – die Äpfel; der Bruder – die Brüder.",
+      "example_bn": "আপেল–আপেলগুলো; ভাই–ভাইয়েরা।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://grammis.ids-mannheim.de/rechtschreibung/6144"
+      ]
+    },
+    {
+      "id": "ss-ß-spelling",
+      "term": "ß und ss",
+      "aliases": [
+        "Eszett",
+        "scharfes S",
+        "ß ss Rechtschreibung"
+      ],
+      "bn": "ß ও ss বানানের পার্থক্য",
+      "explanation_bn": "আধুনিক মান বানানে দীর্ঘ স্বর বা diphthong-এর পরে সাধারণত ß হয় (Straße, heißen); সংক্ষিপ্ত স্বরের পরে ss হয় (Kasse, müssen)। ß-এর বড় হাতের রূপ ẞ; ß না থাকলে কিছু পরিবেশে ss দিয়ে লেখা হয়, তবে ä/ö/ü-কে ae/oe/ue-তে বদলানো আলাদা বিষয়।",
+      "example_de": "die Straße, ich weiß, die Kasse, ich muss.",
+      "example_bn": "রাস্তা, আমি জানি, ক্যাশ কাউন্টার, আমাকে করতে হবে।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://grammis.ids-mannheim.de/rechtschreibung/6144"
+      ]
+    },
+    {
+      "id": "compound-nouns",
+      "term": "Komposita",
+      "aliases": [
+        "Kompositum",
+        "Zusammengesetzte Nomen",
+        "compound nouns"
+      ],
+      "bn": "যৌগিক বিশেষ্য",
+      "explanation_bn": "জার্মান যৌগিক বিশেষ্যে একাধিক অংশ যুক্ত হয়ে একটি নতুন শব্দ হয়। সাধারণত শেষ অংশটি মূল অর্থশ্রেণি ও grammatical gender নির্ধারণ করে; প্রথম অংশ অর্থকে নির্দিষ্ট করে। মাঝখানে Fugen-s/-n/-en/-e/-er থাকতে পারে, আবার কোনো সংযোগ উপাদান নাও থাকতে পারে। প্রতিটি শব্দের ভাঙন অভিধান/ব্যবহার দেখে যাচাই করতে হয়।",
+      "example_de": "das Haus + die Tür → die Haustür; die Arbeit + s + der Platz → der Arbeitsplatz.",
+      "example_bn": "বাড়ি + দরজা → বাড়ির দরজা; কাজ + সংযোগ-s + স্থান → কর্মস্থল।",
+      "level": "A1",
+      "status": "reviewed",
+      "sources": [
+        "https://grammis.ids-mannheim.de/systematische-grammatik/547",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Das-Fugen-s"
+      ]
+    },
+    {
+      "id": "adjective-comparison",
+      "term": "Komparation der Adjektive",
+      "aliases": [
+        "Komparativ",
+        "Superlativ",
+        "Adjektiv steigern"
+      ],
+      "bn": "বিশেষণের তুলনামূলক ও সর্বোচ্চ রূপ",
+      "explanation_bn": "অনেক Adjektiv-এ Komparativ গঠনে -er এবং Superlativ-এ am ... -sten ব্যবহৃত হয়। কিছু শব্দে Umlaut বা অনিয়মিত রূপ হয় (gut–besser–am besten)। attributive Superlativ-এ am-এর বদলে der/die/das ... -ste গঠন হয়।",
+      "example_de": "Das Haus ist groß. Das andere ist größer. Dieses ist am größten.",
+      "example_bn": "বাড়িটি বড়। অন্যটি আরও বড়। এটিই সবচেয়ে বড়।",
+      "level": "A1–A2",
+      "status": "reviewed",
+      "sources": [
+        "https://www.goethe.de/ins/de/de/m/prf/grm.html"
+      ]
+    }
+  ]
+}
