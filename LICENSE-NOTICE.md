@@ -10,10 +10,8 @@ Creative Commons Attribution 4.0 International (CC BY 4.0), only to the extent
 the maintainer holds the relevant rights. See [DATA-LICENSE.md](DATA-LICENSE.md)
 for the scope, attribution instructions, and exclusions.
 
-Neither license grants rights in third-party material, including the identified
-transcribed reference fields, externally sourced dictionary text, Wiktionary
-content, audio recordings, trademarks, or material whose rights have not been
-verified. See [DATA-SOURCES.md](DATA-SOURCES.md) and
+Neither license grants rights in third-party material, including externally sourced dictionary text, Wiktionary content, audio
+recordings, trademarks, or material whose rights have not been verified. See [DATA-SOURCES.md](DATA-SOURCES.md) and
 [data/a1-vocabulary-third-party-exclusions.json](data/a1-vocabulary-third-party-exclusions.json).
 
 This notice does not claim ownership of material created by another person.
