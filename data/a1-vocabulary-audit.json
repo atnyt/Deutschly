@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_on": "2026-11-02",
+  "generated_on": "2026-11-03",
   "source_pdf": "A1 Vocabulary list_Deutsch mit Shakil(3).pdf",
   "source_pdf_pages": 40,
   "source_rows": 1715,
@@ -13,27 +13,21 @@
     "duplicate_rows_consolidated": 10,
     "duplicate_groups_after_merge": 0,
     "missing_bengali_meaning": 0,
-    "missing_german_example": 1,
-    "missing_bengali_example": 1,
-    "records_without_article": 654,
-    "noun_records_with_article_but_no_plural": 98,
+    "missing_german_example": 0,
+    "missing_bengali_example": 0,
+    "records_without_article": 657,
+    "noun_records_with_article_but_no_plural": 0,
     "records_needing_manual_review": [
       {
         "headword": "Stadtstaatin",
         "reason": "Marked not_individually_verified; keep visibly unverified until checked against a reliable dictionary."
       }
     ],
-    "remaining_incomplete_examples": [
-      {
-        "headword": "Würstel",
-        "missing_german_example": true,
-        "missing_bengali_example": true,
-        "reason": "The supplied PDF identifies it as a dialectal variant of Würstchen but supplies no dedicated example sentence; no example was invented."
-      }
-    ],
+    "remaining_incomplete_examples": [],
     "confidence_status_counts": {
-      "reviewed_draft": 1666,
-      "source_checked": 88,
+      "reviewed_draft": 1586,
+      "source_checked": 46,
+      "reviewed": 80,
       "needs_verification": 1
     },
     "source_json_reconciliation_pass_1": {
