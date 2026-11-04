@@ -108,6 +108,31 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     darf:"dürfen", darfst:"dürfen", dürfen:"dürfen", dürft:"dürfen",
     soll:"sollen", sollst:"sollen", sollen:"sollen", sollt:"sollen"
   };
+  // Verified common inflected forms whose lemmas may be absent from the A1 source list.
+  // Keep the searched form visible and explain its grammatical relation; never label it a typo.
+  var curatedVerbForms = {
+    freut: {
+      lemma: "sich freuen / freuen",
+      grammar: "Präsens · er/sie/es অথবা ihr",
+      meaning: "আনন্দিত হওয়া; কাউকে আনন্দিত করা",
+      note: "„freut“ হলো freuen ক্রিয়ার বর্তমান কালের রূপ। er/sie/es freut sich = সে আনন্দিত হয় / কোনো কিছুর জন্য আনন্দিত হয়। „Das freut mich“ = এতে আমি আনন্দিত হই। „ihr freut euch“ = তোমরা আনন্দিত হও।",
+      example: "Er freut sich auf den Urlaub.",
+      translation: "সে ছুটির দিনের জন্য আনন্দিত / অধীর আগ্রহে অপেক্ষা করছে।",
+      conjugation: "ich freue mich · du freust dich · er/sie/es freut sich · wir freuen uns · ihr freut euch · sie/Sie freuen sich"
+    }
+  };
+  function renderCuratedVerbForm(query) {
+    var item = curatedVerbForms[normalize(query)];
+    if (!item) return null;
+    return '<div class="panel"><span class="tag">Verb · ক্রিয়া</span>' +
+      '<h2 class="word-title">' + escapeHTML(query) + '</h2>' +
+      '<div class="meaning-glass"><div class="meaning-item">' + escapeHTML(item.meaning) + '</div></div>' +
+      '<p><span class="tag">মূল রূপ · ' + escapeHTML(item.lemma) + '</span><span class="tag">' + escapeHTML(item.grammar) + '</span></p>' +
+      '<p class="definition">' + escapeHTML(item.note) + '</p>' +
+      '<div class="group"><p class="definition">বর্তমান কালের রূপ</p><p class="bn">' + escapeHTML(item.conjugation) + '</p>' +
+      '<h3 style="font-size:16px;line-height:1.6;margin:10px 0 6px">' + escapeHTML(item.example) + '</h3><p class="bn">' + escapeHTML(item.translation) + '</p></div>' +
+      dictionarySourceLinks(query) + '</div>';
+  }
   // Curated personal-pronoun inflections. These forms are valid words in their own
   // right even when the source A1 vocabulary list does not contain a separate row.
   var personalPronounForms = {
@@ -432,6 +457,11 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       }
       if (compoundTerm) {
         results.innerHTML = renderCompoundAnalysis(compoundTerm);
+        return;
+      }
+      var curatedVerbResult = renderCuratedVerbForm(searched);
+      if (curatedVerbResult) {
+        results.innerHTML = curatedVerbResult;
         return;
       }
       var pronounResult = renderPronounForm(searched);
