@@ -331,9 +331,12 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       return '<div class="group"><span class="tag">অংশ ' + (index + 1) + '</span><strong>' +
         escapeHTML(part.form) + '</strong><p class="bn">' + escapeHTML(part.meaning_bn) + '</p></div>';
     }).join('');
+    var grammar = (item.headword_gender ? '<p class="bn"><strong>Article:</strong> ' + escapeHTML(item.headword_gender) +
+      ' &nbsp; <strong>Plural:</strong> ' + escapeHTML(item.headword_plural || 'উল্লেখ নেই') + '</p>' : '');
     return '<div class="panel"><span class="tag">যৌগিক শব্দ বিশ্লেষণ</span>' +
-      '<h2 class="word-title">' + escapeHTML(item.word) + '</h2>' +
+      '<h2 class="word-title">' + escapeHTML((item.headword_gender ? item.headword_gender + ' ' : '') + item.word) + '</h2>' +
       '<div class="meaning-glass"><div class="meaning-item">' + escapeHTML(item.meaning_bn) + '</div></div>' +
+      grammar +
       '<p class="definition">' + escapeHTML(item.explanation_bn || '') + '</p>' + parts +
       (item.note ? '<p class="muted">' + escapeHTML(item.note) + '</p>' : '') +
       '</div>';
