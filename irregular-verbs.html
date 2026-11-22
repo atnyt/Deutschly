@@ -70,6 +70,18 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 .count{font-size:.85rem;margin:0 0 9px}
 @media(max-width:420px){.pdf-verb-item{padding:13px}.pdf-verb-item strong{font-size:1.3rem}.pdf-verb-item p{font-size:1.02rem}.pdf-verb-item .past span{font-size:.88rem}}
 
+
+.search-row{align-items:center}
+.search-row button,.conjugation-form button{width:48px;min-width:48px;height:48px;padding:0;display:grid;place-items:center;border:1px solid rgba(190,202,255,.22);border-radius:13px;background:rgba(150,165,255,.13);color:#e5e8ff;cursor:pointer}
+.search-row button svg,.conjugation-form button svg{width:21px;height:21px}
+.conjugation-form button{height:44px;min-width:44px;width:44px}
+.catalog-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0;border:0;background:none;color:#f5f5f7;text-align:left;font:inherit;cursor:pointer}
+.catalog-toggle h2{margin:0;font-size:1.25rem}
+.catalog-toggle svg{width:23px;height:23px;flex:none;transition:transform .2s}
+.catalog-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
+.catalog-content{margin-top:10px}
+.catalog-content[hidden]{display:none}
+
 /* Compact conjugation layout with clearer German forms */
 .conjugation-output{margin-top:9px;gap:7px}
 .conjugation-heading{font-size:22px}
@@ -102,7 +114,7 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 <a class="menu-item" href="./irregular-verbs.html" aria-current="page"><span class="menu-number">2</span><span>Irregular Verbs</span></a>
 <div class="menu-divider"></div><a class="menu-item" href="./index.html"><span class="menu-number">3</span><span>Pronunciation Verifier</span></a>
 </nav></aside>
-<div class="search-row"><input id="pdfFilter" type="search" placeholder="২৪১টি ক্রিয়ার মধ্যে খুঁজুন…" autocomplete="off" aria-label="২৪১টি ক্রিয়ার তালিকা খুঁজুন"></div>
+<div class="search-row"><input id="pdfFilter" type="search" placeholder="" autocomplete="off" aria-label="Search 241 verbs"><button id="pdfSearchButton" type="button" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
 
 <section class="conjugator" id="conjugator" aria-labelledby="conjugatorTitle">
 <h2 id="conjugatorTitle">Verb Conjugation</h2>
@@ -117,10 +129,11 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 
 
 <section class="pdf-catalog" aria-labelledby="pdfCatalogTitle">
-<h2 id="pdfCatalogTitle">২৪১টি ক্রিয়া</h2>
-
-<p class="count" id="pdfCount">তালিকা লোড হচ্ছে…</p>
-<div class="pdf-verb-list" id="pdfVerbList"><div class="loading">লোড হচ্ছে…</div></div>
+<button class="catalog-toggle" id="catalogToggle" type="button" aria-expanded="false" aria-controls="catalogContent"><h2 id="pdfCatalogTitle">241 Verbs</h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+<div class="catalog-content" id="catalogContent" hidden>
+<p class="count" id="pdfCount">Loading…</p>
+<div class="pdf-verb-list" id="pdfVerbList"><div class="loading">Loading…</div></div>
+</div>
 </section>
 </main>
 <script>
@@ -152,12 +165,12 @@ async function run(word){
  input.value=word;
  button.disabled=true;
  output.hidden=true;
- status.textContent='Conjugation তৈরি হচ্ছে…';
+ status.textContent='Loading…';
  try{
   const engine=await getEngine();
   const table=engine.conjugate(word);
   renderTable(table);
-  status.textContent='রূপ তৈরি হয়েছে। নিচে সব প্রধান Tense ও Mood দেখানো হয়েছে।';
+  status.textContent='Conjugation ready.';
   output.scrollIntoView({behavior:'smooth',block:'start'});
  }catch(error){
   output.innerHTML='<div class="conjugation-error">এই Infinitiv-এর Conjugation তৈরি করা যায়নি। বানান যাচাই করো এবং Infinitiv দাও (যেমন: ging নয়, gehen)।<br><small>'+esc(error&&error.message?error.message:'Unknown error')+'</small></div>';
@@ -172,7 +185,7 @@ getEngine().catch(()=>{});
 
 </script>
 <script>
-(function(){const box=document.getElementById('pdfVerbList'),input=document.getElementById('pdfFilter'),count=document.getElementById('pdfCount');if(!box||!input||!count)return;let rows=[];const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));let conjugatorPromise;
+(function(){const box=document.getElementById('pdfVerbList'),input=document.getElementById('pdfFilter'),count=document.getElementById('pdfCount'),toggle=document.getElementById('catalogToggle'),content=document.getElementById('catalogContent');if(!box||!input||!count||!toggle||!content)return;let rows=[];function setOpen(open){content.hidden=!open;toggle.setAttribute('aria-expanded',String(open));}toggle.addEventListener('click',()=>setOpen(content.hidden));input.addEventListener('input',()=>{if(input.value.trim())setOpen(true);});document.getElementById('pdfSearchButton').addEventListener('click',()=>{setOpen(true);input.focus();render();});const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));let conjugatorPromise;
 async function getPresentForms(word){try{if(!conjugatorPromise)conjugatorPromise=import('./vendor/ablaut/ablaut.js').then(async m=>{await m.default();return m;});const m=await conjugatorPromise;const result=m.conjugate(word);return Array.isArray(result.present)?result.present:null;}catch(_){return null;}}
 function regularPresent(word){let stem=word.replace(/en$/,'').replace(/n$/,'');let ich=stem+'e',du,er=stem+'t',wir=stem+'en',ihr=stem+'t',sie=stem+'en';if(stem.endsWith('eln')){ich=stem.slice(0,-1)+'e';du=stem+'st';er=stem+'t';ihr=stem+'t';}else{const needsE=/[dtt]$/.test(stem)||(/[mn]$/.test(stem)&&/[bcdfghklmpqrstvwxyz][mn]$/.test(stem));du=stem+(needsE?'e':'')+(/[szßxz]$/.test(stem)?'t':'st');er=stem+(needsE?'e':'')+'t';ihr=er;}return [ich,du,er,wir,ihr,sie];}
 async function render(){const q=input.value.trim().toLocaleLowerCase();const found=rows.filter(v=>[v.infinitive,v.meaningBn,v.prateritum,v.partizipII].join(' ').toLocaleLowerCase().includes(q));count.textContent=found.length+' / '+rows.length+'টি ক্রিয়া';const labels={'strong':'শক্তিশালী','weak':'দুর্বল/নিয়মিত','mixed':'মিশ্র','modal':'Modalverb','dual-strong-weak':'শক্তিশালী ও দুর্বল—দুই রূপ','irregular-suppletive':'বিশেষ অনিয়মিত'};const cards=await Promise.all(found.map(async v=>{const forms=await getPresentForms(v.infinitive);const regular=regularPresent(v.infinitive);const extraLabels=['ich','wir','ihr','Sie'];const extraIndexes=[0,3,4,5];const extras=forms?extraIndexes.filter(i=>forms[i]&&forms[i]!==regular[i]).map(i=>'<span><b>'+extraLabels[extraIndexes.indexOf(i)]+':</b> '+esc(forms[i])+'</span>').join(''):'';return '<article class="pdf-verb-item"><header><strong>'+esc(v.sourceId)+'. '+esc(v.infinitive)+'</strong><small>'+esc(labels[v.classification]||v.classification)+'</small></header><p>'+esc(v.meaningBn||'অর্থ যাচাই বাকি')+'</p><p><b>du:</b> '+esc(v.presentDu||'—')+' &nbsp; <b>er/sie/es:</b> '+esc(v.presentErSieEs||'—')+'</p>'+(extras?'<div class="past exceptional-forms">'+extras+'</div>':'')+'<div class="past"><span>Präteritum: <b>'+esc(v.prateritum||'—')+'</b></span><span>Partizip II: <b>'+esc(v.partizipII||'—')+'</b></span></div><p><b>Perfekt-এর সহায়ক ক্রিয়া:</b> '+esc(v.perfektAuxiliary||'যাচাই বাকি')+'</p>'+(v.auxiliaryNoteBn?'<p class="verb-note"><b>সহায়ক ক্রিয়ার ব্যবহার:</b> '+esc(v.auxiliaryNoteBn)+'</p>':'')+(v.sourceExampleDe?'<div class="verb-note"><b>উদাহরণ:</b> '+esc(v.sourceExampleDe)+(v.sourceExampleBn?'<br>'+esc(v.sourceExampleBn):'')+'</div>':'')+(v.notes?'<p class="verb-note"><b>ব্যবহার:</b> '+esc(v.notes)+'</p>':'')+'<p><button type="button" data-conjugate="'+esc(v.infinitive)+'">পূর্ণ রূপ দেখো ↑</button></p></article>';}));box.innerHTML=cards.join('')||'<div class="empty">কোনো ক্রিয়া পাওয়া যায়নি।</div>';box.querySelectorAll('[data-conjugate]').forEach(b=>b.addEventListener('click',()=>{const i=document.getElementById('conjugationInput');if(i){i.value=b.dataset.conjugate;document.getElementById('conjugationForm').requestSubmit();window.scrollTo({top:0,behavior:'smooth'});}}));}fetch('./data/irregular-verbs-pdf-241.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('catalog unavailable');return r.json();}).then(d=>{rows=d.records||[];render();}).catch(()=>{count.textContent='তালিকা লোড হয়নি';box.textContent='PDF তালিকা লোড করা যায়নি।';});input.addEventListener('input',render);})();
