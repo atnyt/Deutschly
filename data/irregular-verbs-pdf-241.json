@@ -1138,12 +1138,13 @@
       "sourceInfinitive": "gelingen",
       "infinitive": "gelingen",
       "classification": "strong",
-      "presentDu": "gelingst",
+      "presentDu": null,
       "presentErSieEs": "gelingt",
       "prateritum": "gelang",
       "partizipII": "gelungen",
       "meaningBn": "সফল হওয়া; সফলভাবে সম্পন্ন হওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "notes": "gelingen সাধারণত impersonal গঠনে ব্যবহৃত হয়: Es gelingt mir. তাই du-রূপ এই শিক্ষার্থী তালিকায় দেখানো হয়নি।"
     },
     {
       "sourceId": 96,
@@ -1349,7 +1350,8 @@
       "prateritum": "bedurfte",
       "partizipII": "bedurft",
       "meaningBn": "প্রয়োজন হওয়া; দরকার পড়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "notes": "bedürfen-এর অতীত bedurfte, Partizip II bedurft—রূপগুলো দুর্বল/নিয়মিত; বর্তমানের bedarf-এ স্বরবদল আছে বলে একে প্রচলিত শক্ত ক্রিয়ার সঙ্গে গুলিয়ে ফেলো না।"
     },
     {
       "sourceId": 113,
@@ -2366,10 +2368,10 @@
       "presentDu": "unterhältst dich",
       "presentErSieEs": "unterhält sich",
       "prateritum": "unterhielt sich",
-      "partizipII": "sich unterhalten",
+      "partizipII": "unterhalten",
       "meaningBn": "আলাপ করা; বিনোদন দেওয়া",
       "reviewStatus": "verified-batch-4",
-      "notes": "‘আলাপ করা’ অর্থে reflexive sich লাগে।"
+      "notes": "‘আলাপ করা’ অর্থে sich reflexive pronoun লাগে: Wir haben uns gut unterhalten. Partizip II হলো unterhalten। ‘বিনোদন দেওয়া’ অর্থে haben + unterhalten।"
     },
     {
       "sourceId": 197,
@@ -2745,7 +2747,7 @@
       "partizipII": "bekannt",
       "meaningBn": "স্বীকার করা; মত/বিশ্বাস ঘোষণা করা",
       "reviewStatus": "verified-batch-4",
-      "notes": "দুর্বল/নিয়মিত অতীত: bekannte, bekannt; PDF-তে irregular list-এ রাখা হলেও এটি নিজে নিয়মিত ক্রিয়া।"
+      "notes": "bekennen-এর অতীত bekannte, Partizip II bekannt—দুর্বল/নিয়মিত রূপ; PDF-তে irregular list-এ থাকলেও এটি শক্ত ক্রিয়া নয়।"
     },
     {
       "sourceId": 228,
@@ -2979,6 +2981,20 @@
         218
       ],
       "note": "Alternative strong/weak forms added only where the IDS Mannheim reference lists them; rare alternatives are labeled."
+    },
+    "finalPass": {
+      "status": "targeted-corrections-applied",
+      "checkedAgainst": [
+        "Uploaded source PDF (241 entries)",
+        "IDS Mannheim grammis strong/weak verb variants"
+      ],
+      "corrections": [
+        95,
+        112,
+        196,
+        227
+      ],
+      "remaining": "A full lexeme-by-lexeme dictionary review of all rare verbs, auxiliary selection and example sentences remains before claiming publication-grade verification."
     }
   }
 }
