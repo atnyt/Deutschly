@@ -146,7 +146,7 @@ document.getElementById('verbList').addEventListener('click',e=>{
  run(trigger.dataset.verb);
  document.getElementById('conjugator').scrollIntoView({behavior:'smooth',block:'start'});
 });
-getEngine().then(()=>{status.textContent='Ablaut Engine প্রস্তুত · অফলাইনেও কাজ করবে (প্রথমবার ফাইল লোডের পর)।';}).catch(()=>{status.textContent='Engine ফাইল তৈরি/লোড হয়নি। GitHub Actions build শেষ হলে আবার চেষ্টা করো।';});
+getEngine().catch(()=>{});
 })();
 
 </script>
