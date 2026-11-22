@@ -1874,7 +1874,7 @@
       "prateritum": "kroch",
       "partizipII": "gekrochen",
       "meaningBn": "হামাগুড়ি দেওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "corrected-infinitive;forms-checked"
     },
     {
       "sourceId": 157,
@@ -2349,10 +2349,10 @@
       "sourceInfinitive": "unterhalten",
       "infinitive": "unterhalten",
       "classification": "mixed",
-      "presentDu": "unterhältst dich",
-      "presentErSieEs": "unterhält sich",
-      "prateritum": "unterhielt sich",
-      "partizipII": "sich unterhalten",
+      "presentDu": "unterhältst",
+      "presentErSieEs": "unterhält",
+      "prateritum": "unterhielt",
+      "partizipII": "unterhalten",
       "meaningBn": "আলাপ করা; বিনোদন দেওয়া",
       "reviewStatus": "verified-batch-4"
     },
@@ -2748,7 +2748,7 @@
       "presentDu": "bestichst",
       "presentErSieEs": "besticht",
       "prateritum": "bestach",
-      "partizipII": "best ochen",
+      "partizipII": "bestochen",
       "meaningBn": "ঘুষ দেওয়া",
       "reviewStatus": "verified-batch-4"
     },
