@@ -2314,14 +2314,13 @@
       "sourceId": 192,
       "sourceInfinitive": "streichen",
       "infinitive": "streichen",
-      "classification": "dual-strong-weak",
+      "classification": "strong",
       "presentDu": "streichst",
       "presentErSieEs": "streicht",
-      "prateritum": "strich / streichte (rare)",
-      "partizipII": "gestrichen / (gestreicht)",
+      "prateritum": "strich",
+      "partizipII": "gestrichen",
       "meaningBn": "মাখানো; দাগ কাটা; বাতিল করা",
-      "reviewStatus": "verified-batch-4",
-      "notes": "দুর্বল বিকল্প বিরল; রং করা অর্থে সাধারণ রূপ strich, gestrichen।"
+      "reviewStatus": "verified-batch-4"
     },
     {
       "sourceId": 193,
@@ -2953,9 +2952,11 @@
       ]
     },
     "qualityStatus": {
-      "coreForms": "populated for 241/241 entries",
-      "classification": "cross-checked with IDS grammis, University of Michigan and Hueber reference lists",
-      "remaining": "final dictionary review for rare entries; auxiliary selection; six-person present forms; example sentences and expanded Bengali meanings"
+      "entries": 241,
+      "infinitivesCorrected": 1,
+      "coreForms": "Präsens du/er-sie-es (except geschehen, which is impersonal), Präteritum and Partizip II populated",
+      "variantNotes": "Meaning-sensitive strong/weak alternatives documented for selected verbs",
+      "remaining": "Final human dictionary pass for all 241 present forms, auxiliary verbs, examples and extended Bengali senses; this catalog is not yet certified error-free."
     },
     "variantReview": {
       "status": "cross-checked",
@@ -2973,12 +2974,11 @@
         179,
         184,
         186,
-        192,
         211,
         212,
         218
       ],
-      "note": "Alternative strong/weak forms added with meaning distinctions where supported; rare alternatives are labeled."
+      "note": "Alternative strong/weak forms added only where the IDS Mannheim reference lists them; rare alternatives are labeled."
     }
   }
 }
