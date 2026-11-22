@@ -2,7 +2,7 @@
   "title": "PDF Irregular Verb List — source-preserving audit catalog",
   "source": "Irregular Verb List.pdf (Deutsch mit Shakil), 5 pages",
   "sourceEntryCount": 241,
-  "description": "Original PDF numbering and spellings are preserved. Forms/classifications are intentionally blank until independently verified; do not treat null fields as verified forms.",
+  "description": "Source-preserving 241-entry catalog. Core forms and Bengali glosses are populated; classifications and selected variant notes are cross-checked. Some rare forms, auxiliaries, example sentences and detailed meanings still need final dictionary review.",
   "records": [
     {
       "sourceId": 1,
@@ -2935,6 +2935,11 @@
         "Not every item in the source PDF is exclusively irregular.",
         "Context-dependent forms are annotated where identified."
       ]
+    },
+    "qualityStatus": {
+      "coreForms": "populated for 241/241 entries",
+      "classification": "cross-checked with IDS grammis, University of Michigan and Hueber reference lists",
+      "remaining": "final dictionary review for rare entries; auxiliary selection; six-person present forms; example sentences and expanded Bengali meanings"
     }
   }
 }
