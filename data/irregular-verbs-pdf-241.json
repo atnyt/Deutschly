@@ -2324,7 +2324,7 @@
       "meaningBn": "উদ্ভাবন করা",
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er erfindet eine Geschichte.",
-      "sourceExampleBn": "সে একটি গল্প বানাচ্ছে।",
+      "sourceExampleBn": "সে একটি গল্প বানিয়েছে।",
       "sourceExampleStatus": "manually-transcribed-from-original-pdf",
       "perfektAuxiliary": "haben",
       "auxiliaryReview": "default-haben-rule"
@@ -4215,7 +4215,7 @@
       "status": "source-extraction-and-manual-review",
       "extracted": 241,
       "notExtracted": 0,
-      "note": "All 241 German and Bengali example rows have been checked against the uploaded PDF pages; five previously missed rows were manually transcribed. Original source spellings/spacing are retained."
+      "note": "All 241 German and Bengali example rows were checked against the uploaded PDF pages. Five previously missed rows were manually transcribed from the page images; obvious OCR spacing was normalized in those five rows."
     },
     "perfektAuxiliary": {
       "status": "initial-reference-pass",
