@@ -202,7 +202,15 @@ function validateConjugation(t,word){
 }
 function referenceLinks(word){
  const slug=encodeURIComponent(word.toLowerCase());
- return '<div class="conjugation-resources"><span>Verify with trusted references:</span><a href="https://en.pons.com/verb-tables/german/'+slug+'" target="_blank" rel="noopener noreferrer">PONS Verb Tables ↗</a><a href="https://www.duden.de/konjugation/'+slug+'" target="_blank" rel="noopener noreferrer">Duden ↗</a></div>';
+ return '<div class="conjugation-resources"><span>Cross-check with trusted references:</span><a href="https://conjugator.reverso.net/conjugation-german-verb-'+slug+'.html" target="_blank" rel="noopener noreferrer">Reverso ↗</a><a href="https://en.pons.com/verb-tables/german/'+slug+'" target="_blank" rel="noopener noreferrer">PONS ↗</a><a href="https://www.duden.de/konjugation/'+slug+'" target="_blank" rel="noopener noreferrer">Duden ↗</a></div>';
+}
+let verbIndexPromise;
+async function resolveKnownForm(query){
+ if(!verbIndexPromise)verbIndexPromise=fetch('./data/irregular-verbs-pdf-241.json').then(r=>{if(!r.ok)throw new Error('Verb reference list unavailable');return r.json();}).then(d=>d.records||[]);
+ const records=await verbIndexPromise;
+ const q=query.trim().toLocaleLowerCase('de');
+ const hit=records.find(v=>[v.infinitive,v.sourceInfinitive,v.presentDu,v.presentErSieEs,v.prateritum,v.partizipII].some(x=>String(x||'').toLocaleLowerCase('de')===q));
+ return hit||null;
 }
 function renderTable(t){
  const labels=['ich','du','er/sie/es','wir','ihr','sie'];
@@ -220,17 +228,24 @@ async function run(word){
  button.disabled=true;
  output.hidden=true;
  status.textContent='Loading…';
+ let infinitive=word;
+ let resolvedFromForm=false;
  try{
+  const known=await resolveKnownForm(word);
+  if(known){infinitive=known.infinitive;resolvedFromForm=infinitive.toLocaleLowerCase('de')!==word.toLocaleLowerCase('de');}
   const engine=await getEngine();
-  const table=engine.conjugate(word);
-  validateConjugation(table,word);
+  const table=engine.conjugate(infinitive);
+  validateConjugation(table,infinitive);
   renderTable(table);
-  status.textContent='Conjugation ready.';
+  if(resolvedFromForm){
+   const note=document.createElement('p');note.className='conjugation-meta';note.textContent='Matched form: '+word+' → infinitive: '+infinitive;output.prepend(note);
+  }
+  status.textContent='Conjugation ready. Cross-check the forms with the reference links.';
   output.scrollIntoView({behavior:'smooth',block:'start'});
  }catch(error){
-  output.innerHTML='<div class="conjugation-error">Could not generate a complete conjugation for this verb. To avoid showing potentially incorrect forms, please check the spelling or use the reference resources below.<br><small>'+esc(error&&error.message?error.message:'Unknown error')+'</small></div>'+referenceLinks(word);
+  output.innerHTML='<div class="conjugation-error">Could not generate a complete conjugation for this verb. No unverified forms are shown. Check the spelling or open one of the reference resources below.<br><small>'+esc(error&&error.message?error.message:'Unknown error')+'</small></div>'+referenceLinks(infinitive);
   output.hidden=false;
-  status.textContent='No conjugation found for this word.';
+  status.textContent='Conjugation unavailable — use a reference source.';
  }finally{button.disabled=false;}
 }
 form.addEventListener('submit',e=>{e.preventDefault();run(input.value);});
