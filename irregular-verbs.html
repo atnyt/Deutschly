@@ -126,6 +126,19 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 .pdf-verb-item header{grid-template-columns:minmax(0,1fr) auto}
 @media(max-width:420px){.pdf-verb-item .verb-header-actions{gap:5px}.pdf-verb-item .verb-header-actions button{font-size:.72rem;padding:6px 7px}}
 
+
+/* Conjugation results: compact English person tiles */
+.conjugation-summary{padding:12px 13px;border:1px solid #30313b;border-radius:14px;background:#111116}
+.conjugation-summary .conjugation-heading{font-size:1.65rem;line-height:1.2;margin-bottom:5px}
+.conjugation-summary .conjugation-meta{font-size:.88rem;line-height:1.55}
+.tense-card{padding:12px;border-radius:14px;background:#111116;border-color:#30313b}
+.tense-card h3{font-size:1.05rem;margin:0 0 9px}
+.tense-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.tense-person{min-width:0;display:flex;align-items:center;justify-content:space-between;gap:7px;padding:10px;border:1px solid #30313b;border-radius:10px;background:#202027}
+.tense-person span{font-size:.78rem;color:#b9bac7;min-width:0;overflow-wrap:anywhere}
+.tense-person strong{font-size:1.08rem;color:#fff;text-align:right;overflow-wrap:anywhere}
+@media(max-width:420px){.tense-card{padding:10px}.tense-person{padding:8px;gap:5px}.tense-person span{font-size:.72rem}.tense-person strong{font-size:1rem}}
+
 </style>
 </head>
 <body><main>
@@ -178,11 +191,11 @@ async function getEngine(){
 }
 function renderTable(t){
  const labels=['ich','du','er/sie/es','wir','ihr','sie'];
- const bn=['I','You','He/She/It','We','You','They'];
+ const persons=['I','You','He/She/It','We','You','They'];
  const groups=[['Präsens','present'],['Präteritum','preterite'],['Perfekt','perfect'],['Plusquamperfekt','pluperfect'],['Futur I','future1'],['Futur II','future2'],['Konjunktiv I','konjunktiv1'],['Konjunktiv II','konjunktiv2']];
- const cards=groups.map(([title,key])=>'<article class="tense-card"><h3>'+title+'</h3><div class="tense-table-wrap"><table class="tense-table"><tbody>'+t[key].map((form,i)=>'<tr><td>'+bn[i]+' · '+labels[i]+'</td><td>'+esc(form)+'</td></tr>').join('')+'</tbody></table></div></article>').join('');
- const imp=t.imperative&&t.imperative.some(Boolean)?'<div class="conjugation-meta">Imperativ: du — '+esc(t.imperative[0]||'—')+' · ihr — '+esc(t.imperative[1]||'—')+' · Sie — '+esc(t.imperativeExtended[1])+'</div>':'<div class="conjugation-meta">Imperativ: নেই (Modalverb হলে এটি স্বাভাবিক)</div>';
- output.innerHTML='<div><div class="conjugation-heading">'+esc(t.infinitive)+'</div><div class="conjugation-meta">Hilfsverb: <b>'+esc(t.auxiliary)+'</b> · Partizip II: <b>'+esc(t.pastParticiple)+'</b> · zu-Infinitiv: <b>'+esc(t.zuInfinitive)+'</b></div>'+imp+'</div>'+cards+'';
+ const cards=groups.map(([title,key])=>'<article class="tense-card"><h3>'+title+'</h3><div class="tense-grid">'+t[key].map((form,i)=>'<div class="tense-person"><span>'+persons[i]+' · '+labels[i]+'</span><strong>'+esc(form)+'</strong></div>').join('')+'</div></article>').join('');
+ const imp=t.imperative&&t.imperative.some(Boolean)?'<div class="conjugation-meta"><b>Imperative:</b> du — '+esc(t.imperative[0]||'—')+' · ihr — '+esc(t.imperative[1]||'—')+' · Sie — '+esc(t.imperativeExtended[1]||'—')+'</div>':'<div class="conjugation-meta"><b>Imperative:</b> Not applicable (normal for modal verbs)</div>';
+ output.innerHTML='<div class="conjugation-summary"><div class="conjugation-heading">'+esc(t.infinitive)+'</div><div class="conjugation-meta">Auxiliary: <b>'+esc(t.auxiliary)+'</b> · Participle II: <b>'+esc(t.pastParticiple)+'</b> · zu-Infinitive: <b>'+esc(t.zuInfinitive)+'</b></div>'+imp+'</div>'+cards;
  output.hidden=false;
 }
 async function run(word){
@@ -199,7 +212,7 @@ async function run(word){
   status.textContent='Conjugation ready.';
   output.scrollIntoView({behavior:'smooth',block:'start'});
  }catch(error){
-  output.innerHTML='<div class="conjugation-error">এই Infinitiv-এর Conjugation তৈরি করা যায়নি। বানান যাচাই করো এবং Infinitiv দাও (যেমন: ging নয়, gehen)।<br><small>'+esc(error&&error.message?error.message:'Unknown error')+'</small></div>';
+  output.innerHTML='<div class="conjugation-error">Could not generate this conjugation. Check the spelling and enter an infinitive (e.g. gehen, not ging).<br><small>'+esc(error&&error.message?error.message:'Unknown error')+'</small></div>';
   output.hidden=false;
   status.textContent='No conjugation found for this word.';
  }finally{button.disabled=false;}
