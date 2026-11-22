@@ -1164,10 +1164,11 @@
       "classification": "dual-strong-weak",
       "presentDu": "hängst",
       "presentErSieEs": "hängt",
-      "prateritum": "hing",
-      "partizipII": "gehangen",
+      "prateritum": "hing / hängte",
+      "partizipII": "gehangen / gehängt",
       "meaningBn": "ঝুলে থাকা; ঝোলানো (অর্থভেদে hängen/hing/gehangen বনাম hängte/gehängt)",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "notes": "অবস্থান/ঝুলে থাকা: hing, gehangen; কিছু ঝোলানো: hängte, gehängt।"
     },
     {
       "sourceId": 98,
@@ -1332,10 +1333,11 @@
       "classification": "dual-strong-weak",
       "presentDu": "backst",
       "presentErSieEs": "backt",
-      "prateritum": "backte/buk",
+      "prateritum": "buk / backte",
       "partizipII": "gebacken",
       "meaningBn": "সেঁকা; বেক করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "notes": "buk ও backte—দুটিই প্রচলিত; Partizip II সাধারণত gebacken।"
     },
     {
       "sourceId": 112,
@@ -1476,10 +1478,11 @@
       "classification": "dual-strong-weak",
       "presentDu": "bewegst",
       "presentErSieEs": "bewegt",
-      "prateritum": "bewegte / bewog",
-      "partizipII": "bewegt / bewogen",
+      "prateritum": "bewog / bewegte",
+      "partizipII": "bewogen / bewegt",
       "meaningBn": "নড়ানো; প্রভাবিত করা (অর্থভেদে দুর্বল/শক্ত রূপ)",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "notes": "প্রভাবিত/প্ররোচিত করা: bewog, bewogen; নড়ানো/স্থানান্তর করা: bewegte, bewegt।"
     },
     {
       "sourceId": 124,
@@ -1828,7 +1831,8 @@
       "prateritum": "hieb / haute",
       "partizipII": "gehauen / gehaut",
       "meaningBn": "আঘাত করা; কেটে ফেলা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "notes": "hieb সাহিত্যিক/কম প্রচলিত; haute ও gehauen আধুনিক সাধারণ ব্যবহারে বেশি প্রচলিত।"
     },
     {
       "sourceId": 153,
@@ -2021,7 +2025,7 @@
       "partizipII": "geschaffen / geschafft",
       "meaningBn": "সৃষ্টি করা (schuf); সম্পন্ন করা (schaffte)",
       "reviewStatus": "verified-batch-3",
-      "notes": "সৃষ্টি করা: schuf, geschaffen; কোনো কাজ সম্পন্ন করা: schaffte, geschafft।"
+      "notes": "সৃষ্টি করা: schuf, geschaffen; কাজ সম্পন্ন করা/সময়মতো পারা: schaffte, geschafft।"
     },
     {
       "sourceId": 169,
@@ -2094,43 +2098,46 @@
       "partizipII": "geschliffen / geschleift",
       "meaningBn": "ধার দেওয়া/ঘষা (schliff); টেনে নেওয়া (schleifte)",
       "reviewStatus": "verified-batch-3",
-      "notes": "ধার/ঘষা: schliff, geschliffen; টেনে নেওয়া: schleifte, geschleift।"
+      "notes": "ধার দেওয়া/ঘষে মসৃণ করা: schliff, geschliffen; টেনে/ঘষটে নিয়ে যাওয়া: schleifte, geschleift।"
     },
     {
       "sourceId": 175,
       "sourceInfinitive": "schleißen",
       "infinitive": "schleißen",
-      "classification": "strong",
+      "classification": "dual-strong-weak",
       "presentDu": "schleißt",
       "presentErSieEs": "schleißt",
-      "prateritum": "schliss",
-      "partizipII": "geschlissen",
+      "prateritum": "schliss / schleißte",
+      "partizipII": "geschlissen / geschleißt",
       "meaningBn": "ক্ষয়/ছিঁড়ে যাওয়া (দুর্লভ)",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "notes": "শক্ত ও দুর্বল—দুই রূপই অভিধানে আছে; দুর্লভ ক্রিয়া।"
     },
     {
       "sourceId": 176,
       "sourceInfinitive": "schmeißen",
       "infinitive": "schmeißen",
-      "classification": "strong",
+      "classification": "dual-strong-weak",
       "presentDu": "schmeißt",
       "presentErSieEs": "schmeißt",
-      "prateritum": "schmiss",
-      "partizipII": "geschmissen",
+      "prateritum": "schmiss / schmeißte",
+      "partizipII": "geschmissen / geschmeißt",
       "meaningBn": "ছুড়ে ফেলা (কথ্য)",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "notes": "schmiss/geschmissen প্রধান শক্ত রূপ; দুর্বল বিকল্পও নথিভুক্ত।"
     },
     {
       "sourceId": 177,
       "sourceInfinitive": "schmelzen",
       "infinitive": "schmelzen",
-      "classification": "strong",
+      "classification": "dual-strong-weak",
       "presentDu": "schmilzt",
       "presentErSieEs": "schmilzt",
-      "prateritum": "schmolz",
-      "partizipII": "geschmolzen",
+      "prateritum": "schmolz / (schmelzte)",
+      "partizipII": "geschmolzen / (geschmelzt)",
       "meaningBn": "গলে যাওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "notes": "schmolz/geschmolzen প্রচলিত; দুর্বল বিকল্প বিরল।"
     },
     {
       "sourceId": 178,
@@ -2148,13 +2155,14 @@
       "sourceId": 179,
       "sourceInfinitive": "schwellen",
       "infinitive": "schwellen",
-      "classification": "strong",
+      "classification": "dual-strong-weak",
       "presentDu": "schwillst",
       "presentErSieEs": "schwillt",
-      "prateritum": "schwoll",
-      "partizipII": "geschwollen",
+      "prateritum": "schwoll / schwellte",
+      "partizipII": "geschwollen / geschwellt",
       "meaningBn": "ফুলে ওঠা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "notes": "ফুলে ওঠা: schwoll, geschwollen; কিছু ব্যবহারে schwellte/geschwellt।"
     },
     {
       "sourceId": 180,
@@ -2214,7 +2222,8 @@
       "prateritum": "sott / siedete",
       "partizipII": "gesotten / gesiedet",
       "meaningBn": "সিদ্ধ করা; ফুটানো",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "notes": "দুই রূপই স্বীকৃত; সাধারণ বর্ণনায় siedete/siedet-ও দেখা যায়।"
     },
     {
       "sourceId": 185,
@@ -2238,7 +2247,8 @@
       "prateritum": "spaltete",
       "partizipII": "gespalten / gespaltet",
       "meaningBn": "চেরা; বিভক্ত করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "notes": "Präteritum সাধারণত spaltete; Partizip II-তে gespalten বেশি প্রচলিত, gespaltet-ও আছে।"
     },
     {
       "sourceId": 187,
@@ -2304,13 +2314,14 @@
       "sourceId": 192,
       "sourceInfinitive": "streichen",
       "infinitive": "streichen",
-      "classification": "strong",
+      "classification": "dual-strong-weak",
       "presentDu": "streichst",
       "presentErSieEs": "streicht",
-      "prateritum": "strich",
-      "partizipII": "gestrichen",
+      "prateritum": "strich / streichte (rare)",
+      "partizipII": "gestrichen / (gestreicht)",
       "meaningBn": "মাখানো; দাগ কাটা; বাতিল করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "notes": "দুর্বল বিকল্প বিরল; রং করা অর্থে সাধারণ রূপ strich, gestrichen।"
     },
     {
       "sourceId": 193,
@@ -2533,13 +2544,14 @@
       "sourceId": 211,
       "sourceInfinitive": "wägen",
       "infinitive": "wägen",
-      "classification": "strong",
+      "classification": "dual-strong-weak",
       "presentDu": "wägst",
       "presentErSieEs": "wägt",
-      "prateritum": "wog",
-      "partizipII": "gewogen",
+      "prateritum": "wog / wägte",
+      "partizipII": "gewogen / gewägt",
       "meaningBn": "ওজন করা; বিবেচনা করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "notes": "ওজন করা অর্থে শক্ত ও দুর্বল উভয় অতীতরূপ নথিভুক্ত।"
     },
     {
       "sourceId": 212,
@@ -2548,10 +2560,11 @@
       "classification": "dual-strong-weak",
       "presentDu": "webst",
       "presentErSieEs": "webt",
-      "prateritum": "webte / wob",
-      "partizipII": "gewebt / gewoben",
+      "prateritum": "wob / webte",
+      "partizipII": "gewoben / gewebt",
       "meaningBn": "বোনা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "notes": "দুই ধরনের রূপই ব্যবহৃত; webte/gewebt সাধারণ, wob/gewoben-ও স্বীকৃত।"
     },
     {
       "sourceId": 213,
@@ -2620,10 +2633,11 @@
       "classification": "dual-strong-weak",
       "presentDu": "wiegst",
       "presentErSieEs": "wiegt",
-      "prateritum": "wog",
-      "partizipII": "gewogen",
+      "prateritum": "wog / wiegte",
+      "partizipII": "gewogen / gewiegt",
       "meaningBn": "ওজন করা; দোলানো (অর্থভেদ)",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "notes": "ওজন হওয়া/করা: wog, gewogen; দোলানো/কোলের মধ্যে দোলানো: wiegte, gewiegt।"
     },
     {
       "sourceId": 219,
@@ -2942,6 +2956,29 @@
       "coreForms": "populated for 241/241 entries",
       "classification": "cross-checked with IDS grammis, University of Michigan and Hueber reference lists",
       "remaining": "final dictionary review for rare entries; auxiliary selection; six-person present forms; example sentences and expanded Bengali meanings"
+    },
+    "variantReview": {
+      "status": "cross-checked",
+      "reference": "IDS Mannheim grammis table of strong/weak verb variants",
+      "entries": [
+        97,
+        111,
+        123,
+        152,
+        168,
+        174,
+        175,
+        176,
+        177,
+        179,
+        184,
+        186,
+        192,
+        211,
+        212,
+        218
+      ],
+      "note": "Alternative strong/weak forms added with meaning distinctions where supported; rare alternatives are labeled."
     }
   }
 }
