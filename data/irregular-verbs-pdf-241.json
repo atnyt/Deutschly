@@ -14,7 +14,10 @@
       "prateritum": "war",
       "partizipII": "gewesen",
       "meaningBn": "হওয়া; থাকা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er ist müde.",
+      "sourceExampleBn": "সে ক্লান্ত।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 2,
@@ -26,7 +29,10 @@
       "prateritum": "hatte",
       "partizipII": "gehabt",
       "meaningBn": "থাকা; অধিকারী হওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du hast eine Schwester.",
+      "sourceExampleBn": "তোমার একজন বোন আছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 3,
@@ -38,7 +44,10 @@
       "prateritum": "wurde",
       "partizipII": "geworden",
       "meaningBn": "হয়ে ওঠা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er wird Lehrer.",
+      "sourceExampleBn": "সে শিক্ষক হচ্ছে/হবে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 4,
@@ -50,7 +59,10 @@
       "prateritum": "konnte",
       "partizipII": "gekonnt",
       "meaningBn": "পারা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du kannst schwimmen.",
+      "sourceExampleBn": "তু মি সাঁতার কাটতে পারো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 5,
@@ -62,7 +74,10 @@
       "prateritum": "musste",
       "partizipII": "gemusst",
       "meaningBn": "অবশ্যই করা; বাধ্য হওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er muss arbeiten.",
+      "sourceExampleBn": "তাকে কাজ করতে হবে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 6,
@@ -74,7 +89,10 @@
       "prateritum": "wollte",
       "partizipII": "gewollt",
       "meaningBn": "চাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du willst essen.",
+      "sourceExampleBn": "তু মি খেতে চাও।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 7,
@@ -86,7 +104,10 @@
       "prateritum": "sollte",
       "partizipII": "gesollt",
       "meaningBn": "উচিত হওয়া; নির্দেশ পাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er soll lernen.",
+      "sourceExampleBn": "তার শেখা উচিত।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 8,
@@ -98,7 +119,10 @@
       "prateritum": "durfte",
       "partizipII": "gedurft",
       "meaningBn": "অনুমতি থাকা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du darfst gehen.",
+      "sourceExampleBn": "তু মি যেতে পারো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 9,
@@ -110,7 +134,10 @@
       "prateritum": "mochte",
       "partizipII": "gemocht",
       "meaningBn": "পছন্দ করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er mag Sushi.",
+      "sourceExampleBn": "সে সুশি পছন্দ করে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 10,
@@ -122,7 +149,10 @@
       "prateritum": "wusste",
       "partizipII": "gewusst",
       "meaningBn": "জানা (তথ্য)",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du weißt das.",
+      "sourceExampleBn": "তু মি এটি জানো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 11,
@@ -134,7 +164,10 @@
       "prateritum": "ging",
       "partizipII": "gegangen",
       "meaningBn": "যাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er geht ins Kino.",
+      "sourceExampleBn": "সে সিনেমা দেখতে যায়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 12,
@@ -146,7 +179,10 @@
       "prateritum": "kam",
       "partizipII": "gekommen",
       "meaningBn": "আসা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du kommst heute.",
+      "sourceExampleBn": "তু মি আজ আসছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 13,
@@ -158,7 +194,10 @@
       "prateritum": "gab",
       "partizipII": "gegeben",
       "meaningBn": "দেওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er gibt mir ein Buch.",
+      "sourceExampleBn": "সে আমাকে একটি বই দেয়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 14,
@@ -170,7 +209,10 @@
       "prateritum": "sah",
       "partizipII": "gesehen",
       "meaningBn": "দেখা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du siehst fern.",
+      "sourceExampleBn": "তু মি টিভি দেখছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 15,
@@ -182,7 +224,10 @@
       "prateritum": "stand",
       "partizipII": "gestanden",
       "meaningBn": "দাঁড়িয়ে থাকা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er steht an der Kasse.",
+      "sourceExampleBn": "সে ক্যাশ কাউন্টারে দাঁড়িয়ে আছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 16,
@@ -194,7 +239,10 @@
       "prateritum": "blieb",
       "partizipII": "geblieben",
       "meaningBn": "থাকা; থেকে যাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du bleibst hier.",
+      "sourceExampleBn": "তু মি এখানে থাকো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 17,
@@ -206,7 +254,10 @@
       "prateritum": "ließ",
       "partizipII": "gelassen",
       "meaningBn": "করতে দেওয়া; ছেড়ে দেওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er lässt mich gehen.",
+      "sourceExampleBn": "সে আমাকে যেতে দেয়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 18,
@@ -218,7 +269,10 @@
       "prateritum": "sprach",
       "partizipII": "gesprochen",
       "meaningBn": "কথা বলা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du sprichst Deutsch.",
+      "sourceExampleBn": "তু মি জার্মান ভাষায় কথা বলো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 19,
@@ -230,7 +284,10 @@
       "prateritum": "fand",
       "partizipII": "gefunden",
       "meaningBn": "খুঁজে পাওয়া; মনে করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er findet den Schlüssel.",
+      "sourceExampleBn": "সে চাবিটি খুঁজে পায়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 20,
@@ -242,7 +299,10 @@
       "prateritum": "nahm",
       "partizipII": "genommen",
       "meaningBn": "নেওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du nimmst einen Tee.",
+      "sourceExampleBn": "তু মি এক কাপ চা নাও।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 21,
@@ -254,7 +314,10 @@
       "prateritum": "fuhr",
       "partizipII": "gefahren",
       "meaningBn": "যানবাহনে যাওয়া; চালানো",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er fährt nach Italien.",
+      "sourceExampleBn": "সে ইতালি যাচ্ছে (গাড়িতে)।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 22,
@@ -266,7 +329,10 @@
       "prateritum": "aß",
       "partizipII": "gegessen",
       "meaningBn": "খাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du isst Pizza.",
+      "sourceExampleBn": "তু মি পিৎজা খাচ্ছ।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 23,
@@ -278,7 +344,10 @@
       "prateritum": "hielt",
       "partizipII": "gehalten",
       "meaningBn": "ধরা; থামা/থামানো",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er hält das Buch.",
+      "sourceExampleBn": "সে বইটি ধরে আছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 24,
@@ -290,7 +359,10 @@
       "prateritum": "brachte",
       "partizipII": "gebracht",
       "meaningBn": "আনা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du bringst Blumen.",
+      "sourceExampleBn": "তু মি ফু ল আনছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 25,
@@ -302,7 +374,10 @@
       "prateritum": "hieß",
       "partizipII": "geheißen",
       "meaningBn": "নাম হওয়া; বলে ডাকা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er heißt Hans.",
+      "sourceExampleBn": "তার নাম হান্স।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 26,
@@ -314,7 +389,10 @@
       "prateritum": "schrieb",
       "partizipII": "geschrieben",
       "meaningBn": "লেখা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du schreibst einen Brief.",
+      "sourceExampleBn": "তু মি একটি চিঠি লিখছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 27,
@@ -326,7 +404,10 @@
       "prateritum": "lag",
       "partizipII": "gelegen",
       "meaningBn": "শোয়া; অবস্থিত থাকা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Das Buch liegt hier.",
+      "sourceExampleBn": "বইটি এখানে আছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 28,
@@ -338,7 +419,10 @@
       "prateritum": "tat",
       "partizipII": "getan",
       "meaningBn": "করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Was tust du?",
+      "sourceExampleBn": "তু মি কি করছো?",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 29,
@@ -350,7 +434,10 @@
       "prateritum": "half",
       "partizipII": "geholfen",
       "meaningBn": "সাহায্য করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du hilfst mir.",
+      "sourceExampleBn": "তু মি আমাকে সাহায্য করছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 30,
@@ -362,7 +449,10 @@
       "prateritum": "dachte",
       "partizipII": "gedacht",
       "meaningBn": "ভাবা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er denkt an dich.",
+      "sourceExampleBn": "সে তোমার কথা ভাবছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 31,
@@ -374,7 +464,10 @@
       "prateritum": "lief",
       "partizipII": "gelaufen",
       "meaningBn": "দৌড়ানো; চলা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du läufst schnell.",
+      "sourceExampleBn": "তু মি দ্রুত দৌড়াচ্ছ।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 32,
@@ -386,7 +479,10 @@
       "prateritum": "trug",
       "partizipII": "getragen",
       "meaningBn": "বহন করা; পরিধান করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er trägt ein T-Shirt.",
+      "sourceExampleBn": "সে একটি টি-শার্ট পরে আছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 33,
@@ -398,7 +494,10 @@
       "prateritum": "saß",
       "partizipII": "gesessen",
       "meaningBn": "বসে থাকা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du sitzt auf dem Stuhl.",
+      "sourceExampleBn": "তু মি চেয়ারের উপর বসে আছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 34,
@@ -410,7 +509,10 @@
       "prateritum": "traf",
       "partizipII": "getroffen",
       "meaningBn": "সাক্ষাৎ করা; লক্ষ্যভেদ করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er trifft Freunde.",
+      "sourceExampleBn": "সে বন্ধু দের সাথে দেখা করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 35,
@@ -422,7 +524,10 @@
       "prateritum": "schlug",
       "partizipII": "geschlagen",
       "meaningBn": "আঘাত করা; পেটানো",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du schlägst den Ball.",
+      "sourceExampleBn": "তু মি বলটিকে আঘাত করছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 36,
@@ -434,7 +539,10 @@
       "prateritum": "fiel",
       "partizipII": "gefallen",
       "meaningBn": "পড়ে যাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er fällt langsam.",
+      "sourceExampleBn": "সে ধীরে ধীরে পড়ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 37,
@@ -446,7 +554,10 @@
       "prateritum": "starb",
       "partizipII": "gestorben",
       "meaningBn": "মারা যাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Am Ende stirbt Hamlet.",
+      "sourceExampleBn": "শেষে হ্যামলেট মারা যায়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 38,
@@ -458,7 +569,10 @@
       "prateritum": "kannte",
       "partizipII": "gekannt",
       "meaningBn": "চেনা; পরিচিত হওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du kennst ihn.",
+      "sourceExampleBn": "তু মি তাকে চেনো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 39,
@@ -470,7 +584,10 @@
       "prateritum": "las",
       "partizipII": "gelesen",
       "meaningBn": "পড়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er liest ein Buch.",
+      "sourceExampleBn": "সে একটি বই পড়ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 40,
@@ -482,7 +599,10 @@
       "prateritum": "verstand",
       "partizipII": "verstanden",
       "meaningBn": "বোঝা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du verstehst alles.",
+      "sourceExampleBn": "তু মি সব বু ঝতে পারছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 41,
@@ -494,7 +614,10 @@
       "prateritum": "bekam",
       "partizipII": "bekommen",
       "meaningBn": "পাওয়া; গ্রহণ করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er bekommt ein Paket.",
+      "sourceExampleBn": "সে একটি পার্সেল পেয়েছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 42,
@@ -506,7 +629,10 @@
       "prateritum": "vergaß",
       "partizipII": "vergessen",
       "meaningBn": "ভুলে যাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du vergisst das.",
+      "sourceExampleBn": "তু মি এটি ভু লে যাও।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 43,
@@ -518,7 +644,10 @@
       "prateritum": "zog",
       "partizipII": "gezogen",
       "meaningBn": "টানা; সরানো",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er zieht an der Tür.",
+      "sourceExampleBn": "সে দরজা ধরে টানছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 44,
@@ -530,7 +659,10 @@
       "prateritum": "verlor",
       "partizipII": "verloren",
       "meaningBn": "হারানো",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du verlierst den Schlüssel.",
+      "sourceExampleBn": "তু মি চাবিটি হারিয়ে ফেলছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 45,
@@ -542,7 +674,10 @@
       "prateritum": "wusch",
       "partizipII": "gewaschen",
       "meaningBn": "ধোয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er wäscht sich.",
+      "sourceExampleBn": "সে নিজেকে পরিষ্কার করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 46,
@@ -554,7 +689,10 @@
       "prateritum": "fing",
       "partizipII": "gefangen",
       "meaningBn": "ধরা; আটকানো",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du fängst den Ball.",
+      "sourceExampleBn": "তু মি বলটি ধরছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 47,
@@ -566,7 +704,10 @@
       "prateritum": "schloss",
       "partizipII": "geschlossen",
       "meaningBn": "বন্ধ করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er schließt die Tür.",
+      "sourceExampleBn": "সে দরজাটি বন্ধ করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 48,
@@ -578,7 +719,10 @@
       "prateritum": "begann",
       "partizipII": "begonnen",
       "meaningBn": "শুরু করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Die Schule beginnt.",
+      "sourceExampleBn": "স্কু ল শুরু হচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 49,
@@ -590,7 +734,10 @@
       "prateritum": "bot",
       "partizipII": "geboten",
       "meaningBn": "প্রস্তাব করা; সরবরাহ করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er bietet Hilfe an.",
+      "sourceExampleBn": "সে সাহায্যের প্রস্তাব দিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 50,
@@ -602,7 +749,10 @@
       "prateritum": "sang",
       "partizipII": "gesungen",
       "meaningBn": "গান গাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Du singst in einer Band.",
+      "sourceExampleBn": "তু মি একটি ব্যান্ডের হয়ে গান গাও।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 51,
@@ -614,7 +764,10 @@
       "prateritum": "trank",
       "partizipII": "getrunken",
       "meaningBn": "পান করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er trinkt Bier.",
+      "sourceExampleBn": "সে বিয়ার পান করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 52,
@@ -626,7 +779,10 @@
       "prateritum": "schlief",
       "partizipII": "geschlafen",
       "meaningBn": "ঘুমানো",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Sie schläft bis elf Uhr.",
+      "sourceExampleBn": "সে এগারোটা পর্যন্ত ঘুমায়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 53,
@@ -638,7 +794,10 @@
       "prateritum": "rief",
       "partizipII": "gerufen",
       "meaningBn": "ডাকা; চিৎকার করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er ruft dich.",
+      "sourceExampleBn": "সে তোমাকে ডাকছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 54,
@@ -650,7 +809,10 @@
       "prateritum": "gewann",
       "partizipII": "gewonnen",
       "meaningBn": "জেতা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er gewinnt das Spiel.",
+      "sourceExampleBn": "সে খেলায় জেতে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 55,
@@ -662,7 +824,10 @@
       "prateritum": "sprang",
       "partizipII": "gesprungen",
       "meaningBn": "লাফ দেওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er springt über den Zaun.",
+      "sourceExampleBn": "সে বেড়ার উপর দিয়ে লাফ দিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 56,
@@ -674,7 +839,10 @@
       "prateritum": "stieg",
       "partizipII": "gestiegen",
       "meaningBn": "ওঠা; আরোহণ করা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er steigt auf die Leiter.",
+      "sourceExampleBn": "সে মইয়ে চড়ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 57,
@@ -686,7 +854,10 @@
       "prateritum": "sank",
       "partizipII": "gesunken",
       "meaningBn": "নিচে নামা; হ্রাস পাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Die Preise sinken.",
+      "sourceExampleBn": "দাম কমছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 58,
@@ -698,7 +869,10 @@
       "prateritum": "verschwand",
       "partizipII": "verschwunden",
       "meaningBn": "অদৃশ্য হয়ে যাওয়া",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Der Chef verschwindet.",
+      "sourceExampleBn": "বস অদৃশ্য হয়ে যান।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 59,
@@ -710,7 +884,10 @@
       "prateritum": "lud ein",
       "partizipII": "eingeladen",
       "meaningBn": "আমন্ত্রণ জানানো",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er lädt mich ein.",
+      "sourceExampleBn": "সে আমাকে আমন্ত্রণ জানায়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 60,
@@ -722,7 +899,10 @@
       "prateritum": "warf",
       "partizipII": "geworfen",
       "meaningBn": "ছুড়ে মারা",
-      "reviewStatus": "verified-batch-1"
+      "reviewStatus": "verified-batch-1",
+      "sourceExampleDe": "Er wirft den Ball.",
+      "sourceExampleBn": "সে বলটি ছু ড়ে মারে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 61,
@@ -734,7 +914,10 @@
       "prateritum": "empfahl",
       "partizipII": "empfohlen",
       "meaningBn": "সুপারিশ করা; পরামর্শ দেওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": null,
+      "sourceExampleBn": null,
+      "sourceExampleStatus": "not-extracted-check-source"
     },
     {
       "sourceId": 62,
@@ -746,7 +929,10 @@
       "prateritum": "briet",
       "partizipII": "gebraten",
       "meaningBn": "ভাজা; সেঁকা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er brät das Fleisch.",
+      "sourceExampleBn": "সে মাংস ভাজছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 63,
@@ -758,7 +944,10 @@
       "prateritum": "fraß",
       "partizipII": "gefressen",
       "meaningBn": "খাওয়া (পশু)",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Das Tier frisst.",
+      "sourceExampleBn": "পশুটি খাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 64,
@@ -770,7 +959,10 @@
       "prateritum": "band",
       "partizipII": "gebunden",
       "meaningBn": "বাঁধা; সংযুক্ত করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du bindest den Schuh.",
+      "sourceExampleBn": "তু মি জুতো বাঁধো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 65,
@@ -782,7 +974,10 @@
       "prateritum": "bat",
       "partizipII": "gebeten",
       "meaningBn": "অনুরোধ করা; চাওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Sie bittet ihn um Hilfe.",
+      "sourceExampleBn": "সে তার কাছে সাহায্য চাইছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 66,
@@ -794,7 +989,10 @@
       "prateritum": "log",
       "partizipII": "gelogen",
       "meaningBn": "মিথ্যা বলা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er lügt ständig.",
+      "sourceExampleBn": "সে সব সময় মিথ্যা বলে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 67,
@@ -806,7 +1004,10 @@
       "prateritum": "flog",
       "partizipII": "geflogen",
       "meaningBn": "উড়ে যাওয়া; বিমানে যাওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er fliegt nach Berlin.",
+      "sourceExampleBn": "সে বার্লিনে উড়ে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 68,
@@ -818,7 +1019,10 @@
       "prateritum": "floss",
       "partizipII": "geflossen",
       "meaningBn": "প্রবাহিত হওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Das Wasser fließt.",
+      "sourceExampleBn": "পানি প্রবাহিত হচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 69,
@@ -830,7 +1034,10 @@
       "prateritum": "schien",
       "partizipII": "geschienen",
       "meaningBn": "আলো দেওয়া; মনে হওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Die Sonne scheint.",
+      "sourceExampleBn": "সূর্য কিরণ দিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 70,
@@ -842,7 +1049,10 @@
       "prateritum": "schnitt",
       "partizipII": "geschnitten",
       "meaningBn": "কাটা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er schneidet das Brot.",
+      "sourceExampleBn": "সে রুটি কাটছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 71,
@@ -854,7 +1064,10 @@
       "prateritum": "schrie",
       "partizipII": "geschrien",
       "meaningBn": "চিৎকার করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er schreit laut.",
+      "sourceExampleBn": "সে জোরে চিৎকার করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 72,
@@ -866,7 +1079,10 @@
       "prateritum": "schwieg",
       "partizipII": "geschwiegen",
       "meaningBn": "নীরব থাকা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du schweigst oft.",
+      "sourceExampleBn": "তু মি প্রায়ই নীরব থাকো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 73,
@@ -878,7 +1094,10 @@
       "prateritum": "stank",
       "partizipII": "gestunken",
       "meaningBn": "দুর্গন্ধ ছড়ানো",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Der Fisch stinkt.",
+      "sourceExampleBn": "মাছটি দুর্গন্ধ ছড়াচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 74,
@@ -890,7 +1109,10 @@
       "prateritum": "trieb",
       "partizipII": "getrieben",
       "meaningBn": "চালিত করা; তাড়ানো; ভাসা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er treibt Sport.",
+      "sourceExampleBn": "সে খেলাধুলা করে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 75,
@@ -902,7 +1124,10 @@
       "prateritum": "riet",
       "partizipII": "geraten",
       "meaningBn": "পরামর্শ দেওয়া; অনুমান করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Mutter rät mir gut.",
+      "sourceExampleBn": "মা আমাকে ভালো পরামর্শ দেন।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 76,
@@ -914,7 +1139,10 @@
       "prateritum": "versprach",
       "partizipII": "versprochen",
       "meaningBn": "প্রতিশ্রুতি দেওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du versprichst es.",
+      "sourceExampleBn": "তু মি এটার প্রতিশ্রুতি দিচ্ছ।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 77,
@@ -926,7 +1154,10 @@
       "prateritum": "wuchs",
       "partizipII": "gewachsen",
       "meaningBn": "বেড়ে ওঠা; জন্মানো",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Diese Blume wächst nicht.",
+      "sourceExampleBn": "এই ফু লটি এখানে জন্মায় না।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 78,
@@ -938,7 +1169,10 @@
       "prateritum": "zwang",
       "partizipII": "gezwungen",
       "meaningBn": "বাধ্য করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er zwingt mich.",
+      "sourceExampleBn": "সে আমাকে বাধ্য করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 79,
@@ -950,7 +1184,10 @@
       "prateritum": "betrog",
       "partizipII": "betrogen",
       "meaningBn": "প্রতারণা করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er betrügt beim Spiel.",
+      "sourceExampleBn": "সে খেলায় প্রতারণা করে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 80,
@@ -962,7 +1199,10 @@
       "prateritum": "befahl",
       "partizipII": "befohlen",
       "meaningBn": "আদেশ দেওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er befiehlt den Soldaten.",
+      "sourceExampleBn": "সে সৈন্যদের আদেশ দেয়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 81,
@@ -974,7 +1214,10 @@
       "prateritum": "barg",
       "partizipII": "geborgen",
       "meaningBn": "উদ্ধার করা; আশ্রয় দেওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er birgt das Paket.",
+      "sourceExampleBn": "সে পার্সেলটি রক্ষা করে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 82,
@@ -986,7 +1229,10 @@
       "prateritum": "brach",
       "partizipII": "gebrochen",
       "meaningBn": "ভাঙা; ভেঙে ফেলা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er bricht das Glas.",
+      "sourceExampleBn": "সে গ্লাসটি ভাঙছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 83,
@@ -999,7 +1245,10 @@
       "partizipII": "geschehen",
       "meaningBn": "ঘটা; সংঘটিত হওয়া",
       "reviewStatus": "verified-batch-2",
-      "notes": "মূলত তৃতীয় পুরুষে ব্যবহৃত; সাধারণ কথায় du-রূপ ব্যবহৃত হয় না।"
+      "notes": "মূলত তৃতীয় পুরুষে ব্যবহৃত; সাধারণ কথায় du-রূপ ব্যবহৃত হয় না।",
+      "sourceExampleDe": "So etwas geschieht oft.",
+      "sourceExampleBn": "এমনটা প্রায়ই ঘটে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 84,
@@ -1011,7 +1260,10 @@
       "prateritum": "maß",
       "partizipII": "gemessen",
       "meaningBn": "মাপা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du misst das Zimmer.",
+      "sourceExampleBn": "তু মি ঘরটি মাপছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 85,
@@ -1023,7 +1275,10 @@
       "prateritum": "trat",
       "partizipII": "getreten",
       "meaningBn": "পা ফেলা; প্রবেশ করা; লাথি মারা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er tritt auf die Bremse.",
+      "sourceExampleBn": "সে ব্রেকে পা রাখছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 86,
@@ -1035,7 +1290,10 @@
       "prateritum": "hob",
       "partizipII": "gehoben",
       "meaningBn": "তোলা; উঁচু করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er hebt das Paket.",
+      "sourceExampleBn": "সে পার্সেলটি তু লছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 87,
@@ -1047,7 +1305,10 @@
       "prateritum": "lieh",
       "partizipII": "geliehen",
       "meaningBn": "ধার দেওয়া/নেওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du leihst mir Geld.",
+      "sourceExampleBn": "তু মি আমাকে টাকা ধার দাও।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 88,
@@ -1059,7 +1320,10 @@
       "prateritum": "ritt",
       "partizipII": "geritten",
       "meaningBn": "ঘোড়ায় চড়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er reitet ein Pferd.",
+      "sourceExampleBn": "সে ঘোড়ায় চড়ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 89,
@@ -1071,7 +1335,10 @@
       "prateritum": "stritt",
       "partizipII": "gestritten",
       "meaningBn": "বিতর্ক/ঝগড়া করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er streitet immer.",
+      "sourceExampleBn": "সে সব সময় ঝগড়া করে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 90,
@@ -1083,7 +1350,10 @@
       "prateritum": "stach",
       "partizipII": "gestochen",
       "meaningBn": "খোঁচা/হুল ফোটানো",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Die Mücke sticht.",
+      "sourceExampleBn": "মশা কামড়ায়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 91,
@@ -1095,7 +1365,10 @@
       "prateritum": "galt",
       "partizipII": "gegolten",
       "meaningBn": "প্রযোজ্য/গণ্য হওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Das Ticket gilt noch.",
+      "sourceExampleBn": "টিকিটটি এখনও কার্যকর।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 92,
@@ -1107,7 +1380,10 @@
       "prateritum": "bog",
       "partizipII": "gebogen",
       "meaningBn": "বাঁকানো; মোড় নেওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er biegt um die Ecke.",
+      "sourceExampleBn": "সে মোড় ঘুরছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 93,
@@ -1119,7 +1395,10 @@
       "prateritum": "floh",
       "partizipII": "geflohen",
       "meaningBn": "পালিয়ে যাওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er flieht vor der Gefahr.",
+      "sourceExampleBn": "সে বিপদ থেকে পালাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 94,
@@ -1131,7 +1410,10 @@
       "prateritum": "genoss",
       "partizipII": "genossen",
       "meaningBn": "উপভোগ করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du genießt das Essen.",
+      "sourceExampleBn": "তু মি খাবারটি উপভোগ করছ।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 95,
@@ -1144,7 +1426,10 @@
       "partizipII": "gelungen",
       "meaningBn": "সফল হওয়া; সফলভাবে সম্পন্ন হওয়া",
       "reviewStatus": "verified-batch-2",
-      "notes": "gelingen সাধারণত impersonal গঠনে ব্যবহৃত হয়: Es gelingt mir. তাই du-রূপ এই শিক্ষার্থী তালিকায় দেখানো হয়নি।"
+      "notes": "gelingen সাধারণত impersonal গঠনে ব্যবহৃত হয়: Es gelingt mir. তাই du-রূপ এই শিক্ষার্থী তালিকায় দেখানো হয়নি।",
+      "sourceExampleDe": "Es gelingt ihm.",
+      "sourceExampleBn": "সে সফল হয়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 96,
@@ -1156,7 +1441,10 @@
       "prateritum": "blies",
       "partizipII": "geblasen",
       "meaningBn": "ফুঁ দেওয়া; বাজানো",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Der Wind bläst.",
+      "sourceExampleBn": "বাতাস বইছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 97,
@@ -1169,7 +1457,10 @@
       "partizipII": "gehangen / gehängt",
       "meaningBn": "ঝুলে থাকা; ঝোলানো (অর্থভেদে hängen/hing/gehangen বনাম hängte/gehängt)",
       "reviewStatus": "verified-batch-2",
-      "notes": "অবস্থান/ঝুলে থাকা: hing, gehangen; কিছু ঝোলানো: hängte, gehängt।"
+      "notes": "অবস্থান/ঝুলে থাকা: hing, gehangen; কিছু ঝোলানো: hängte, gehängt।",
+      "sourceExampleDe": "Er hängt das Bild auf.",
+      "sourceExampleBn": "সে ছবিটি ঝোলাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 98,
@@ -1181,7 +1472,10 @@
       "prateritum": "fing an",
       "partizipII": "angefangen",
       "meaningBn": "শুরু করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er fängt die Arbeit an.",
+      "sourceExampleBn": "সে কাজ শুরু করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 99,
@@ -1193,7 +1487,10 @@
       "prateritum": "kam an",
       "partizipII": "angekommen",
       "meaningBn": "পৌঁছানো",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Der Zug kommt an.",
+      "sourceExampleBn": "ট্রেনটি পৌঁছাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 100,
@@ -1205,7 +1502,10 @@
       "prateritum": "rief an",
       "partizipII": "angerufen",
       "meaningBn": "ফোন করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du rufst mich an.",
+      "sourceExampleBn": "তু মি আমাকে ফোন করছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 101,
@@ -1217,7 +1517,10 @@
       "prateritum": "sah an",
       "partizipII": "angesehen",
       "meaningBn": "তাকানো; বিবেচনা করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er sieht das Bild an.",
+      "sourceExampleBn": "সে ছবিটি দেখছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 102,
@@ -1229,7 +1532,10 @@
       "prateritum": "zog an",
       "partizipII": "angezogen",
       "meaningBn": "পরা; টানা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du ziehst die Jacke an.",
+      "sourceExampleBn": "তু মি জ্যাকেটটি পরছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 103,
@@ -1241,7 +1547,10 @@
       "prateritum": "gab auf",
       "partizipII": "aufgegeben",
       "meaningBn": "হাল ছাড়া; জমা দেওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er gibt niemals auf!",
+      "sourceExampleBn": "সে কখনও হাল ছাড়ে না!",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 104,
@@ -1253,7 +1562,10 @@
       "prateritum": "hob auf",
       "partizipII": "aufgehoben",
       "meaningBn": "তুলে রাখা; বাতিল করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er hebt den Brief auf.",
+      "sourceExampleBn": "সে চিঠিটি তু লে নিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 105,
@@ -1265,7 +1577,10 @@
       "prateritum": "stand auf",
       "partizipII": "aufgestanden",
       "meaningBn": "ঘুম থেকে ওঠা; দাঁড়ানো",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du stehst früh auf.",
+      "sourceExampleBn": "তু মি ভোরে ওঠো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 106,
@@ -1277,7 +1592,10 @@
       "prateritum": "gab aus",
       "partizipII": "ausgegeben",
       "meaningBn": "খরচ করা; বিতরণ করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er gibt viel Geld aus.",
+      "sourceExampleBn": "সে অনেক টাকা খরচ করে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 107,
@@ -1289,7 +1607,10 @@
       "prateritum": "ging aus",
       "partizipII": "ausgegangen",
       "meaningBn": "বাইরে যাওয়া; নিভে যাওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Wir gehen abends aus.",
+      "sourceExampleBn": "আমরা সন্ধ্যায় বাইরে যাই।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 108,
@@ -1301,7 +1622,10 @@
       "prateritum": "sah aus",
       "partizipII": "ausgesehen",
       "meaningBn": "দেখতে হওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er sieht gut aus.",
+      "sourceExampleBn": "তাকে ভালো দেখাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 109,
@@ -1313,7 +1637,10 @@
       "prateritum": "sprach aus",
       "partizipII": "ausgesprochen",
       "meaningBn": "উচ্চারণ করা; স্পষ্টভাবে বলা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du sprichst es aus.",
+      "sourceExampleBn": "তু মি এটি উচ্চারণ করো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 110,
@@ -1325,7 +1652,10 @@
       "prateritum": "zog aus",
       "partizipII": "ausgezogen",
       "meaningBn": "খুলে ফেলা; বাসা ছেড়ে যাওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er zieht die Schuhe aus.",
+      "sourceExampleBn": "সে জুতো খু লে ফেলছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 111,
@@ -1338,7 +1668,10 @@
       "partizipII": "gebacken",
       "meaningBn": "সেঁকা; বেক করা",
       "reviewStatus": "verified-batch-2",
-      "notes": "buk ও backte—দুটিই প্রচলিত; Partizip II সাধারণত gebacken।"
+      "notes": "buk ও backte—দুটিই প্রচলিত; Partizip II সাধারণত gebacken।",
+      "sourceExampleDe": "Du bäckst einen Kuchen.",
+      "sourceExampleBn": "তু মি একটি কেক বানাচ্ছ।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 112,
@@ -1351,7 +1684,10 @@
       "partizipII": "bedurft",
       "meaningBn": "প্রয়োজন হওয়া; দরকার পড়া",
       "reviewStatus": "verified-batch-2",
-      "notes": "bedürfen-এর অতীত bedurfte, Partizip II bedurft—রূপগুলো দুর্বল/নিয়মিত; বর্তমানের bedarf-এ স্বরবদল আছে বলে একে প্রচলিত শক্ত ক্রিয়ার সঙ্গে গুলিয়ে ফেলো না।"
+      "notes": "bedürfen-এর অতীত bedurfte, Partizip II bedurft—রূপগুলো দুর্বল/নিয়মিত; বর্তমানের bedarf-এ স্বরবদল আছে বলে একে প্রচলিত শক্ত ক্রিয়ার সঙ্গে গুলিয়ে ফেলো না।",
+      "sourceExampleDe": "Es bedarf einer Lösung.",
+      "sourceExampleBn": "একটি সমাধান প্রয়োজন।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 113,
@@ -1363,7 +1699,10 @@
       "prateritum": "beging",
       "partizipII": "begangen",
       "meaningBn": "কোনো কাজ/অপরাধ সংঘটন করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er begeht einen Fehler.",
+      "sourceExampleBn": "সে একটি ভু ল করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 114,
@@ -1375,7 +1714,10 @@
       "prateritum": "begrub",
       "partizipII": "begraben",
       "meaningBn": "সমাহিত করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er wird begraben.",
+      "sourceExampleBn": "তাকে সমাহিত করা হচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 115,
@@ -1387,7 +1729,10 @@
       "prateritum": "begriff",
       "partizipII": "begriffen",
       "meaningBn": "বুঝতে পারা; উপলব্ধি করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du begreifst das Problem.",
+      "sourceExampleBn": "তু মি সমস্যাটি বু ঝতে পারছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 116,
@@ -1399,7 +1744,10 @@
       "prateritum": "behielt",
       "partizipII": "behalten",
       "meaningBn": "রেখে দেওয়া; ধরে রাখা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er behält das Geheimnis.",
+      "sourceExampleBn": "সে গোপন কথাটি রাখছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 117,
@@ -1411,7 +1759,10 @@
       "prateritum": "biss",
       "partizipII": "gebissen",
       "meaningBn": "কামড়ানো",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Der Hund beißt.",
+      "sourceExampleBn": "কু কু রটি কামড়ায়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 118,
@@ -1423,7 +1774,10 @@
       "prateritum": "beriet",
       "partizipII": "beraten",
       "meaningBn": "পরামর্শ দেওয়া",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Mutter berät mich.",
+      "sourceExampleBn": "মা আমাকে পরামর্শ দিচ্ছেন।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 119,
@@ -1435,7 +1789,10 @@
       "prateritum": "beschrieb",
       "partizipII": "beschrieben",
       "meaningBn": "বর্ণনা করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Du beschreibst das Bild.",
+      "sourceExampleBn": "তু মি ছবিটি বর্ণনা করছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 120,
@@ -1447,7 +1804,10 @@
       "prateritum": "besaß",
       "partizipII": "besessen",
       "meaningBn": "মালিক হওয়া; অধিকার করা",
-      "reviewStatus": "verified-batch-2"
+      "reviewStatus": "verified-batch-2",
+      "sourceExampleDe": "Er besitzt ein Haus.",
+      "sourceExampleBn": "সে একটি বাড়ির মালিক।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 121,
@@ -1459,7 +1819,10 @@
       "prateritum": "bestand",
       "partizipII": "bestanden",
       "meaningBn": "বিদ্যমান থাকা; পাস করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er besteht auf der Regel.",
+      "sourceExampleBn": "সে নিয়মের ব্যাপারে জেদ করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 122,
@@ -1471,7 +1834,10 @@
       "prateritum": "betrug",
       "partizipII": "betragen",
       "meaningBn": "পরিমাণ হওয়া; দাঁড়ানো",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Die Miete beträgt 500 Euro.",
+      "sourceExampleBn": "ভাড়া ৫০০ ইউরো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 123,
@@ -1484,7 +1850,10 @@
       "partizipII": "bewogen / bewegt",
       "meaningBn": "নড়ানো; প্রভাবিত করা (অর্থভেদে দুর্বল/শক্ত রূপ)",
       "reviewStatus": "verified-batch-3",
-      "notes": "প্রভাবিত/প্ররোচিত করা: bewog, bewogen; নড়ানো/স্থানান্তর করা: bewegte, bewegt।"
+      "notes": "প্রভাবিত/প্ররোচিত করা: bewog, bewogen; নড়ানো/স্থানান্তর করা: bewegte, bewegt।",
+      "sourceExampleDe": "Er bewegt den Arm.",
+      "sourceExampleBn": "সে হাত নাড়াচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 124,
@@ -1496,7 +1865,10 @@
       "prateritum": "bewarb sich",
       "partizipII": "beworben",
       "meaningBn": "আবেদন করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er bewirbt sich um den Job.",
+      "sourceExampleBn": "সে চাকরির জন্য আবেদন করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 125,
@@ -1508,7 +1880,10 @@
       "prateritum": "bewies",
       "partizipII": "bewiesen",
       "meaningBn": "প্রমাণ করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Du beweist dein Können.",
+      "sourceExampleBn": "তু মি তোমার দক্ষতা প্রমাণ করো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 126,
@@ -1520,7 +1895,10 @@
       "prateritum": "bezog",
       "partizipII": "bezogen",
       "meaningBn": "অর্জন/গ্রহণ করা; সম্পর্কিত হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er bezieht sich auf mich.",
+      "sourceExampleBn": "সে আমাকে উল্লেখ করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 127,
@@ -1532,7 +1910,10 @@
       "prateritum": "drang",
       "partizipII": "gedrungen",
       "meaningBn": "ভেতরে প্রবেশ করা; অনুপ্রবেশ করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Das Wasser dringt ein.",
+      "sourceExampleBn": "জল ভেতরে ঢু কছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 128,
@@ -1544,7 +1925,9 @@
       "prateritum": "empfing",
       "partizipII": "empfangen",
       "meaningBn": "গ্রহণ করা; অভ্যর্থনা করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er empfängt einen Gast.",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 129,
@@ -1556,7 +1939,10 @@
       "prateritum": "empfand",
       "partizipII": "empfunden",
       "meaningBn": "অনুভব করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Du empfindest Freude.",
+      "sourceExampleBn": "তু মি আনন্দ অনুভব করছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 130,
@@ -1568,7 +1954,10 @@
       "prateritum": "entließ",
       "partizipII": "entlassen",
       "meaningBn": "বরখাস্ত করা; মুক্তি দেওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Der Chef entlässt ihn.",
+      "sourceExampleBn": "বস তাকে বরখাস্ত করছেন।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 131,
@@ -1580,7 +1969,10 @@
       "prateritum": "entschied",
       "partizipII": "entschieden",
       "meaningBn": "সিদ্ধান্ত নেওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": null,
+      "sourceExampleBn": null,
+      "sourceExampleStatus": "not-extracted-check-source"
     },
     {
       "sourceId": 132,
@@ -1592,7 +1984,10 @@
       "prateritum": "entschloss sich",
       "partizipII": "entschlossen",
       "meaningBn": "সিদ্ধান্তে উপনীত হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er entschließt sich dazu.",
+      "sourceExampleBn": "সে এই ব্যাপারে সংকল্প করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 133,
@@ -1604,7 +1999,10 @@
       "prateritum": "entsprach",
       "partizipII": "entsprochen",
       "meaningBn": "অনুরূপ হওয়া; মেনে চলা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": null,
+      "sourceExampleBn": null,
+      "sourceExampleStatus": "not-extracted-check-source"
     },
     {
       "sourceId": 134,
@@ -1616,7 +2014,10 @@
       "prateritum": "entstand",
       "partizipII": "entstanden",
       "meaningBn": "সৃষ্টি/উৎপত্তি হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Ein Problem entsteht.",
+      "sourceExampleBn": "একটি সমস্যা তৈরি হচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 135,
@@ -1628,7 +2029,10 @@
       "prateritum": "erfuhr",
       "partizipII": "erfahren",
       "meaningBn": "জানা; অভিজ্ঞতা লাভ করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er erfährt die Neuigkeit.",
+      "sourceExampleBn": "সে খবরটি জানতে পেরেছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 136,
@@ -1640,7 +2044,10 @@
       "prateritum": "erfand",
       "partizipII": "erfunden",
       "meaningBn": "উদ্ভাবন করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": null,
+      "sourceExampleBn": null,
+      "sourceExampleStatus": "not-extracted-check-source"
     },
     {
       "sourceId": 137,
@@ -1652,7 +2059,10 @@
       "prateritum": "erhielt",
       "partizipII": "erhalten",
       "meaningBn": "পাওয়া; বজায় রাখা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Du erhältst einen Brief.",
+      "sourceExampleBn": "তু মি একটি চিঠি পেয়েছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 138,
@@ -1664,7 +2074,10 @@
       "prateritum": "erkannte",
       "partizipII": "erkannt",
       "meaningBn": "চিনতে পারা; উপলব্ধি করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er erkennt mich nicht.",
+      "sourceExampleBn": "সে আমাকে চিনতে পারছে না।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 139,
@@ -1676,7 +2089,10 @@
       "prateritum": "erlosch",
       "partizipII": "erloschen",
       "meaningBn": "নিভে যাওয়া; বিলুপ্ত হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Das Licht erlischt.",
+      "sourceExampleBn": "আলোটি নিভে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 140,
@@ -1688,7 +2104,10 @@
       "prateritum": "erschien",
       "partizipII": "erschienen",
       "meaningBn": "আবির্ভূত হওয়া; প্রকাশিত হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Das Buch erscheint bald.",
+      "sourceExampleBn": "বইটি শীঘ্রই প্রকাশিত হবে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 141,
@@ -1701,7 +2120,10 @@
       "partizipII": "erschrocken / erschreckt",
       "meaningBn": "ভয় পেয়ে চমকে ওঠা (অকর্মক); কাউকে ভয় দেখানোতে দুর্বল রূপ",
       "reviewStatus": "verified-batch-3",
-      "notes": "নিজে ভয় পেয়ে চমকে ওঠা: erschrak, ist erschrocken; কাউকে ভয় দেখানো: erschreckte, hat erschreckt।"
+      "notes": "নিজে ভয় পেয়ে চমকে ওঠা: erschrak, ist erschrocken; কাউকে ভয় দেখানো: erschreckte, hat erschreckt।",
+      "sourceExampleDe": "Du erschrickst mich.",
+      "sourceExampleBn": "তু মি আমাকে ভয় পাইয়ে দিলে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 142,
@@ -1713,7 +2135,10 @@
       "prateritum": "fror",
       "partizipII": "gefroren",
       "meaningBn": "ঠান্ডায় কাঁপা; জমে যাওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er friert sehr.",
+      "sourceExampleBn": "তার খু ব শীত করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 143,
@@ -1725,7 +2150,10 @@
       "prateritum": "gebar",
       "partizipII": "geboren",
       "meaningBn": "সন্তান জন্ম দেওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Sie gebiert ein Kind.",
+      "sourceExampleBn": "সে একটি সন্তানের জন্ম দেয়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 144,
@@ -1737,7 +2165,10 @@
       "prateritum": "gedieh",
       "partizipII": "gediehen",
       "meaningBn": "বিকশিত হওয়া; সমৃদ্ধ হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Die Pflanze gedeiht.",
+      "sourceExampleBn": "গাছটি ভালো বাড়ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 145,
@@ -1749,7 +2180,10 @@
       "prateritum": "gefiel",
       "partizipII": "gefallen",
       "meaningBn": "ভালো লাগা; মনঃপূত হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Das gefällt mir.",
+      "sourceExampleBn": "এটি আমার পছন্দ হয়েছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 146,
@@ -1761,7 +2195,10 @@
       "prateritum": "geriet",
       "partizipII": "geraten",
       "meaningBn": "পড়ে যাওয়া (অবস্থায়); পৌঁছে যাওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er gerät in Zorn.",
+      "sourceExampleBn": "সে রাগান্বিত হচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 147,
@@ -1773,7 +2210,10 @@
       "prateritum": "gestand",
       "partizipII": "gestanden",
       "meaningBn": "স্বীকার করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er gesteht seine Schuld.",
+      "sourceExampleBn": "সে নিজের দোষ স্বীকার করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 148,
@@ -1785,7 +2225,10 @@
       "prateritum": "goss",
       "partizipII": "gegossen",
       "meaningBn": "ঢালা; পানি দেওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Du gießt die Blumen.",
+      "sourceExampleBn": "তু মি ফু লে জল দিচ্ছ।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 149,
@@ -1797,7 +2240,10 @@
       "prateritum": "glich",
       "partizipII": "geglichen",
       "meaningBn": "সদৃশ হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er gleicht seinem Vater.",
+      "sourceExampleBn": "সে তার বাবার মতো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 150,
@@ -1809,7 +2255,10 @@
       "prateritum": "grub",
       "partizipII": "gegraben",
       "meaningBn": "খনন করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er gräbt ein Loch.",
+      "sourceExampleBn": "সে একটি গর্ত খুঁড়ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 151,
@@ -1821,7 +2270,10 @@
       "prateritum": "griff",
       "partizipII": "gegriffen",
       "meaningBn": "ধরা; আঁকড়ে ধরা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er greift nach dem Ball.",
+      "sourceExampleBn": "সে বলটি ধরার চেষ্টা করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 152,
@@ -1834,7 +2286,10 @@
       "partizipII": "gehauen / gehaut",
       "meaningBn": "আঘাত করা; কেটে ফেলা",
       "reviewStatus": "verified-batch-3",
-      "notes": "hieb সাহিত্যিক/কম প্রচলিত; haute ও gehauen আধুনিক সাধারণ ব্যবহারে বেশি প্রচলিত।"
+      "notes": "hieb সাহিত্যিক/কম প্রচলিত; haute ও gehauen আধুনিক সাধারণ ব্যবহারে বেশি প্রচলিত।",
+      "sourceExampleDe": "Du haust auf den Tisch.",
+      "sourceExampleBn": "তু মি টেবিলের ওপর মারছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 153,
@@ -1846,7 +2301,10 @@
       "prateritum": "kam her",
       "partizipII": "hergekommen",
       "meaningBn": "এদিকে আসা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Komm mal her!",
+      "sourceExampleBn": "এদিকে এসো!",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 154,
@@ -1858,7 +2316,10 @@
       "prateritum": "fuhr hin",
       "partizipII": "hingefahren",
       "meaningBn": "সেখানে/ওদিকে যাওয়া (যানবাহনে)",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er fährt dorthin.",
+      "sourceExampleBn": "সে সেখানে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 155,
@@ -1870,7 +2331,10 @@
       "prateritum": "hinterließ",
       "partizipII": "hinterlassen",
       "meaningBn": "পেছনে রেখে যাওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": null,
+      "sourceExampleBn": null,
+      "sourceExampleStatus": "not-extracted-check-source"
     },
     {
       "sourceId": 156,
@@ -1882,7 +2346,10 @@
       "prateritum": "kroch",
       "partizipII": "gekrochen",
       "meaningBn": "হামাগুড়ি দেওয়া",
-      "reviewStatus": "corrected-infinitive;forms-checked"
+      "reviewStatus": "corrected-infinitive;forms-checked",
+      "sourceExampleDe": "Das Baby kriecht.",
+      "sourceExampleBn": "বাচ্চাটি হামাগুড়ি দিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 157,
@@ -1894,7 +2361,10 @@
       "prateritum": "lud",
       "partizipII": "geladen",
       "meaningBn": "বোঝাই করা; আমন্ত্রণ জানানো (অর্থভেদে)",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er lädt das Auto.",
+      "sourceExampleBn": "সে গাড়িতে মালামাল তু লছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 158,
@@ -1906,7 +2376,10 @@
       "prateritum": "litt",
       "partizipII": "gelitten",
       "meaningBn": "কষ্ট ভোগ করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er leidet an Gicht.",
+      "sourceExampleBn": "সে গেঁটে বাতে ভু গছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 159,
@@ -1918,7 +2391,10 @@
       "prateritum": "mied",
       "partizipII": "gemieden",
       "meaningBn": "এড়িয়ে চলা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er meidet die Gefahr.",
+      "sourceExampleBn": "সে বিপদ এড়িয়ে চলে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 160,
@@ -1930,7 +2406,10 @@
       "prateritum": "misslang",
       "partizipII": "misslungen",
       "meaningBn": "ব্যর্থ হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Der Plan misslingt.",
+      "sourceExampleBn": "পরিকল্পনাটি ব্যর্থ হচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 161,
@@ -1942,7 +2421,10 @@
       "prateritum": "dachte nach",
       "partizipII": "nachgedacht",
       "meaningBn": "গভীরভাবে চিন্তা করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er denkt darüber nach.",
+      "sourceExampleBn": "সে এই নিয়ে ভাবছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 162,
@@ -1954,7 +2436,10 @@
       "prateritum": "pfiff",
       "partizipII": "gepfiffen",
       "meaningBn": "শিস দেওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Du pfeifst ein Lied.",
+      "sourceExampleBn": "তু মি একটি গান শিস দিচ্ছ।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 163,
@@ -1966,7 +2451,10 @@
       "prateritum": "pries",
       "partizipII": "gepriesen",
       "meaningBn": "প্রশংসা/গুণকীর্তন করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er preist den Herrn.",
+      "sourceExampleBn": "সে প্রভু র প্রশংসা করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 164,
@@ -1978,7 +2466,10 @@
       "prateritum": "quoll",
       "partizipII": "gequollen",
       "meaningBn": "ফুলে ওঠা; উৎসারিত হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Das Wasser quillt hervor.",
+      "sourceExampleBn": "জল উপচে পড়ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 165,
@@ -1990,7 +2481,10 @@
       "prateritum": "rieb",
       "partizipII": "gerieben",
       "meaningBn": "ঘষা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Du reibst dir die Augen.",
+      "sourceExampleBn": "তু মি চোখ ঘষছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 166,
@@ -2002,7 +2496,10 @@
       "prateritum": "riss",
       "partizipII": "gerissen",
       "meaningBn": "ছিঁড়ে ফেলা; টেনে নেওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er reißt das Papier.",
+      "sourceExampleBn": "সে কাগজটি ছিঁড়ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 167,
@@ -2014,7 +2511,10 @@
       "prateritum": "roch",
       "partizipII": "gerochen",
       "meaningBn": "গন্ধ পাওয়া; শোঁকা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Es riecht gut.",
+      "sourceExampleBn": "এটি সুন্দর গন্ধ দিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 168,
@@ -2027,7 +2527,10 @@
       "partizipII": "geschaffen / geschafft",
       "meaningBn": "সৃষ্টি করা (schuf); সম্পন্ন করা (schaffte)",
       "reviewStatus": "verified-batch-3",
-      "notes": "সৃষ্টি করা: schuf, geschaffen; কাজ সম্পন্ন করা/সময়মতো পারা: schaffte, geschafft।"
+      "notes": "সৃষ্টি করা: schuf, geschaffen; কাজ সম্পন্ন করা/সময়মতো পারা: schaffte, geschafft।",
+      "sourceExampleDe": "Gott schuf die Welt.",
+      "sourceExampleBn": "ঈশ্বর পৃথিবী সৃষ্টি করেছেন।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 169,
@@ -2039,7 +2542,10 @@
       "prateritum": "schied",
       "partizipII": "geschieden",
       "meaningBn": "আলাদা করা; বিচ্ছেদ হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Sie lassen sich scheiden.",
+      "sourceExampleBn": "তাদের বিবাহবিচ্ছেদ হচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 170,
@@ -2051,7 +2557,10 @@
       "prateritum": "schalt",
       "partizipII": "gescholten",
       "meaningBn": "তিরস্কার করা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Mutter schilt das Kind.",
+      "sourceExampleBn": "মা শিশুটিকে বকছেন।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 171,
@@ -2063,7 +2572,10 @@
       "prateritum": "schob",
       "partizipII": "geschoben",
       "meaningBn": "ঠেলা; সরানো",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er schiebt den Wagen.",
+      "sourceExampleBn": "সে গাড়িটি ঠেলছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 172,
@@ -2075,7 +2587,10 @@
       "prateritum": "schoss",
       "partizipII": "geschossen",
       "meaningBn": "গুলি ছোড়া; লাথি মারা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er schießt ein Tor.",
+      "sourceExampleBn": "সে একটি গোল করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 173,
@@ -2087,7 +2602,10 @@
       "prateritum": "schlich",
       "partizipII": "geschlichen",
       "meaningBn": "চুপিসারে চলা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er schleicht aus dem Haus.",
+      "sourceExampleBn": "সে চু পিচু পি বাড়ি থেকে বেরোচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 174,
@@ -2100,7 +2618,10 @@
       "partizipII": "geschliffen / geschleift",
       "meaningBn": "ধার দেওয়া/ঘষা (schliff); টেনে নেওয়া (schleifte)",
       "reviewStatus": "verified-batch-3",
-      "notes": "ধার দেওয়া/ঘষে মসৃণ করা: schliff, geschliffen; টেনে/ঘষটে নিয়ে যাওয়া: schleifte, geschleift।"
+      "notes": "ধার দেওয়া/ঘষে মসৃণ করা: schliff, geschliffen; টেনে/ঘষটে নিয়ে যাওয়া: schleifte, geschleift।",
+      "sourceExampleDe": "Er schleift das Messer.",
+      "sourceExampleBn": "সে চাকু টি ধার দিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 175,
@@ -2113,7 +2634,10 @@
       "partizipII": "geschlissen / geschleißt",
       "meaningBn": "ক্ষয়/ছিঁড়ে যাওয়া (দুর্লভ)",
       "reviewStatus": "verified-batch-3",
-      "notes": "শক্ত ও দুর্বল—দুই রূপই অভিধানে আছে; দুর্লভ ক্রিয়া।"
+      "notes": "শক্ত ও দুর্বল—দুই রূপই অভিধানে আছে; দুর্লভ ক্রিয়া।",
+      "sourceExampleDe": "Das Seil schleißt.",
+      "sourceExampleBn": "দড়িটি ছিঁড়ে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 176,
@@ -2126,7 +2650,10 @@
       "partizipII": "geschmissen / geschmeißt",
       "meaningBn": "ছুড়ে ফেলা (কথ্য)",
       "reviewStatus": "verified-batch-3",
-      "notes": "schmiss/geschmissen প্রধান শক্ত রূপ; দুর্বল বিকল্পও নথিভুক্ত।"
+      "notes": "schmiss/geschmissen প্রধান শক্ত রূপ; দুর্বল বিকল্পও নথিভুক্ত।",
+      "sourceExampleDe": "Er schmeißt den Stein.",
+      "sourceExampleBn": "সে পাথরটি ছু ড়ে মারছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 177,
@@ -2139,7 +2666,10 @@
       "partizipII": "geschmolzen / (geschmelzt)",
       "meaningBn": "গলে যাওয়া",
       "reviewStatus": "verified-batch-3",
-      "notes": "schmolz/geschmolzen প্রচলিত; দুর্বল বিকল্প বিরল।"
+      "notes": "schmolz/geschmolzen প্রচলিত; দুর্বল বিকল্প বিরল।",
+      "sourceExampleDe": "Das Eis schmilzt.",
+      "sourceExampleBn": "বরফ গলে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 178,
@@ -2151,7 +2681,10 @@
       "prateritum": "schritt",
       "partizipII": "geschritten",
       "meaningBn": "পা ফেলে অগ্রসর হওয়া",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er schreitet voran.",
+      "sourceExampleBn": "সে সামনের দিকে এগিয়ে চলেছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 179,
@@ -2164,7 +2697,10 @@
       "partizipII": "geschwollen / geschwellt",
       "meaningBn": "ফুলে ওঠা",
       "reviewStatus": "verified-batch-3",
-      "notes": "ফুলে ওঠা: schwoll, geschwollen; কিছু ব্যবহারে schwellte/geschwellt।"
+      "notes": "ফুলে ওঠা: schwoll, geschwollen; কিছু ব্যবহারে schwellte/geschwellt।",
+      "sourceExampleDe": "Der Fuß schwillt an.",
+      "sourceExampleBn": "পা ফু লে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 180,
@@ -2176,7 +2712,10 @@
       "prateritum": "schwamm",
       "partizipII": "geschwommen",
       "meaningBn": "সাঁতার কাটা",
-      "reviewStatus": "verified-batch-3"
+      "reviewStatus": "verified-batch-3",
+      "sourceExampleDe": "Er schwimmt im See.",
+      "sourceExampleBn": "সে হ্রদে সাঁতার কাটছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 181,
@@ -2188,7 +2727,10 @@
       "prateritum": "schwand",
       "partizipII": "geschwunden",
       "meaningBn": "কমে যাওয়া; বিলীন হওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Die Hoffnung schwindet.",
+      "sourceExampleBn": "আশা ফিকে হয়ে আসছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 182,
@@ -2200,7 +2742,10 @@
       "prateritum": "schwang",
       "partizipII": "geschwungen",
       "meaningBn": "দোলানো; ঘোরানো",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er schwingt das Seil.",
+      "sourceExampleBn": "সে দড়িটি দোলাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 183,
@@ -2212,7 +2757,10 @@
       "prateritum": "schwor",
       "partizipII": "geschworen",
       "meaningBn": "শপথ করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Ich schwöre es.",
+      "sourceExampleBn": "আমি শপথ করছি।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 184,
@@ -2225,7 +2773,10 @@
       "partizipII": "gesotten / gesiedet",
       "meaningBn": "সিদ্ধ করা; ফুটানো",
       "reviewStatus": "verified-batch-4",
-      "notes": "দুই রূপই স্বীকৃত; সাধারণ বর্ণনায় siedete/siedet-ও দেখা যায়।"
+      "notes": "দুই রূপই স্বীকৃত; সাধারণ বর্ণনায় siedete/siedet-ও দেখা যায়।",
+      "sourceExampleDe": "Das Wasser siedet.",
+      "sourceExampleBn": "জল ফু টছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 185,
@@ -2237,7 +2788,10 @@
       "prateritum": " sann",
       "partizipII": "gesonnen",
       "meaningBn": "গভীরভাবে চিন্তা করা; অভিপ্রায় করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er sinnt über das Leben.",
+      "sourceExampleBn": "সে জীবন নিয়ে ভাবছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 186,
@@ -2250,7 +2804,10 @@
       "partizipII": "gespalten / gespaltet",
       "meaningBn": "চেরা; বিভক্ত করা",
       "reviewStatus": "verified-batch-4",
-      "notes": "Präteritum সাধারণত spaltete; Partizip II-তে gespalten বেশি প্রচলিত, gespaltet-ও আছে।"
+      "notes": "Präteritum সাধারণত spaltete; Partizip II-তে gespalten বেশি প্রচলিত, gespaltet-ও আছে।",
+      "sourceExampleDe": "Er spaltet das Holz.",
+      "sourceExampleBn": "সে কাঠ চেরাই করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 187,
@@ -2262,7 +2819,10 @@
       "prateritum": "spie",
       "partizipII": "gespieen",
       "meaningBn": "থুতু ফেলা; উদ্গীরণ করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Der Vulkan speit Feuer.",
+      "sourceExampleBn": "আগ্নেয়গিরি আগুন উগরাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 188,
@@ -2274,7 +2834,10 @@
       "prateritum": "spann",
       "partizipII": "gesponnen",
       "meaningBn": "সুতা কাটা; জাল বোনা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Du spinnst wohl!",
+      "sourceExampleBn": "তু মি নিশ্চয়ই পাগল হয়েছ!",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 189,
@@ -2286,7 +2849,10 @@
       "prateritum": "spross",
       "partizipII": "gesprossen",
       "meaningBn": "অঙ্কুরিত হওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Die Blumen sprießen.",
+      "sourceExampleBn": "ফু লগুলো ফু টছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 190,
@@ -2298,7 +2864,10 @@
       "prateritum": "stahl",
       "partizipII": "gestohlen",
       "meaningBn": "চুরি করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er stiehlt das Geld.",
+      "sourceExampleBn": "সে টাকা চু রি করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 191,
@@ -2310,7 +2879,10 @@
       "prateritum": "stieß",
       "partizipII": "gestoßen",
       "meaningBn": "ধাক্কা দেওয়া; ঠেলা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er stößt an den Tisch.",
+      "sourceExampleBn": "সে টেবিলে ধাক্কা খেল।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 192,
@@ -2322,7 +2894,10 @@
       "prateritum": "strich",
       "partizipII": "gestrichen",
       "meaningBn": "মাখানো; দাগ কাটা; বাতিল করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er streicht die Wand.",
+      "sourceExampleBn": "সে দেওয়ালে রং করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 193,
@@ -2334,7 +2909,10 @@
       "prateritum": "stieg um",
       "partizipII": "umgestiegen",
       "meaningBn": "যানবাহন বদলানো",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Du steigst hier um.",
+      "sourceExampleBn": "তু মি এখানে (ট্রেন/বাস) বদলাচ্ছ।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 194,
@@ -2346,7 +2924,10 @@
       "prateritum": "unternahm",
       "partizipII": "unternommen",
       "meaningBn": "কোনো কাজ/উদ্যোগ নেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er unternimmt eine Reise.",
+      "sourceExampleBn": "সে একটি ভ্রমণে বেরোচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 195,
@@ -2358,7 +2939,10 @@
       "prateritum": "unterbrach",
       "partizipII": "unterbrochen",
       "meaningBn": "বাধা দেওয়া; থামিয়ে দেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Bitte unterbrich mich nicht!",
+      "sourceExampleBn": "দয়া করে আমাকে বাধা দিও না!",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 196,
@@ -2371,7 +2955,10 @@
       "partizipII": "unterhalten",
       "meaningBn": "আলাপ করা; বিনোদন দেওয়া",
       "reviewStatus": "verified-batch-4",
-      "notes": "‘আলাপ করা’ অর্থে sich reflexive pronoun লাগে: Wir haben uns gut unterhalten. Partizip II হলো unterhalten। ‘বিনোদন দেওয়া’ অর্থে haben + unterhalten।"
+      "notes": "‘আলাপ করা’ অর্থে sich reflexive pronoun লাগে: Wir haben uns gut unterhalten. Partizip II হলো unterhalten। ‘বিনোদন দেওয়া’ অর্থে haben + unterhalten।",
+      "sourceExampleDe": "Er unterhält sich.",
+      "sourceExampleBn": "সে আলাপ করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 197,
@@ -2383,7 +2970,10 @@
       "prateritum": "unterlag",
       "partizipII": "unterlegen",
       "meaningBn": "পরাজিত হওয়া; অধীন থাকা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er unterliegt ihm.",
+      "sourceExampleBn": "সে তার কাছে পরাজিত হয়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 198,
@@ -2395,7 +2985,10 @@
       "prateritum": "verbot",
       "partizipII": "verboten",
       "meaningBn": "নিষেধ করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er verbietet das.",
+      "sourceExampleBn": "সে এটি নিষেধ করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 199,
@@ -2407,7 +3000,10 @@
       "prateritum": "verband",
       "partizipII": "verbunden",
       "meaningBn": "যুক্ত করা; বাঁধা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Du verbindest uns.",
+      "sourceExampleBn": "তু মি আমাদের যু ক্ত করছো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 200,
@@ -2419,7 +3015,10 @@
       "prateritum": "verdarb",
       "partizipII": "verdorben",
       "meaningBn": "নষ্ট হওয়া/করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Das Fleisch verdirbt.",
+      "sourceExampleBn": "মাংসটি নষ্ট হয়ে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 201,
@@ -2431,7 +3030,10 @@
       "prateritum": "verdross",
       "partizipII": "verdrossen",
       "meaningBn": "বিরক্ত করা (দুর্লভ)",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Es verdrießt mich.",
+      "sourceExampleBn": "এটি আমাকে বিরক্ত করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 202,
@@ -2443,7 +3045,10 @@
       "prateritum": "verließ",
       "partizipII": "verlassen",
       "meaningBn": "ত্যাগ করা; ছেড়ে যাওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er verlässt das Haus.",
+      "sourceExampleBn": "সে বাড়িটি ছেড়ে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 203,
@@ -2455,7 +3060,10 @@
       "prateritum": "vermied",
       "partizipII": "vermieden",
       "meaningBn": "এড়িয়ে চলা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Du vermeidest ihn.",
+      "sourceExampleBn": "তু মি তাকে এড়িয়ে চলো।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 204,
@@ -2467,7 +3075,9 @@
       "prateritum": "verriet",
       "partizipII": "verraten",
       "meaningBn": "ফাঁস করা; বিশ্বাসঘাতকতা করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er verrät uns.",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 205,
@@ -2479,7 +3089,10 @@
       "prateritum": "verschob",
       "partizipII": "verschoben",
       "meaningBn": "সরানো; স্থগিত করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er verschiebt den Termin.",
+      "sourceExampleBn": "সে অ্যাপয়েন্টমেন্টটি স্থগিত করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 206,
@@ -2491,7 +3104,10 @@
       "prateritum": "verzieh",
       "partizipII": "verziehen",
       "meaningBn": "ক্ষমা করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er verzeiht dir.",
+      "sourceExampleBn": "সে তোমাকে ক্ষমা করে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 207,
@@ -2503,7 +3119,10 @@
       "prateritum": "kam vor",
       "partizipII": "vorgekommen",
       "meaningBn": "ঘটা; মনে হওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "So etwas kommt vor.",
+      "sourceExampleBn": "এমনটা ঘটে থাকে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 208,
@@ -2515,7 +3134,10 @@
       "prateritum": "hatte vor",
       "partizipII": "vorgehabt",
       "meaningBn": "পরিকল্পনা করা; ইচ্ছা থাকা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Was hast du vor?",
+      "sourceExampleBn": "তোমার পরিকল্পনা কি?",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 209,
@@ -2527,7 +3149,10 @@
       "prateritum": "schlug vor",
       "partizipII": "vorgeschlagen",
       "meaningBn": "প্রস্তাব করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er schlägt das vor.",
+      "sourceExampleBn": "সে এটির প্রস্তাব দিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 210,
@@ -2539,7 +3164,10 @@
       "prateritum": "zog vor",
       "partizipII": "vorgezogen",
       "meaningBn": "অগ্রাধিকার দেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er zieht das vor.",
+      "sourceExampleBn": "সে এটিই বেশি পছন্দ করে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 211,
@@ -2552,7 +3180,10 @@
       "partizipII": "gewogen / gewägt",
       "meaningBn": "ওজন করা; বিবেচনা করা",
       "reviewStatus": "verified-batch-4",
-      "notes": "ওজন করা অর্থে শক্ত ও দুর্বল উভয় অতীতরূপ নথিভুক্ত।"
+      "notes": "ওজন করা অর্থে শক্ত ও দুর্বল উভয় অতীতরূপ নথিভুক্ত।",
+      "sourceExampleDe": "Er wägt das Gold.",
+      "sourceExampleBn": "সে সোনা ওজন করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 212,
@@ -2565,7 +3196,10 @@
       "partizipII": "gewoben / gewebt",
       "meaningBn": "বোনা",
       "reviewStatus": "verified-batch-4",
-      "notes": "দুই ধরনের রূপই ব্যবহৃত; webte/gewebt সাধারণ, wob/gewoben-ও স্বীকৃত।"
+      "notes": "দুই ধরনের রূপই ব্যবহৃত; webte/gewebt সাধারণ, wob/gewoben-ও স্বীকৃত।",
+      "sourceExampleDe": "Sie webt ein Tuch.",
+      "sourceExampleBn": "সে একটি কাপড় বু নছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 213,
@@ -2577,7 +3211,10 @@
       "prateritum": "wich",
       "partizipII": "gewichen",
       "meaningBn": "সরে দাঁড়ানো; নতি স্বীকার করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er weicht nicht.",
+      "sourceExampleBn": "সে নতি স্বীকার করে না।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 214,
@@ -2589,7 +3226,10 @@
       "prateritum": "wies",
       "partizipII": "gewiesen",
       "meaningBn": "নির্দেশ করা; দেখিয়ে দেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er weist den Weg.",
+      "sourceExampleBn": "সে পথ দেখাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 215,
@@ -2601,7 +3241,10 @@
       "prateritum": "warb",
       "partizipII": "geworben",
       "meaningBn": "প্রচার/নিয়োগের জন্য আহ্বান করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er wirbt Kunden.",
+      "sourceExampleBn": "সে গ্রাহক সংগ্রহ করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 216,
@@ -2613,7 +3256,9 @@
       "prateritum": "widersprach",
       "partizipII": "widersprochen",
       "meaningBn": "বিরোধিতা করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Du widersprichst mir.",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 217,
@@ -2625,7 +3270,10 @@
       "prateritum": "widerstand",
       "partizipII": "widerstanden",
       "meaningBn": "প্রতিরোধ করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er widersteht ihm.",
+      "sourceExampleBn": "সে তাকে প্রতিরোধ করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 218,
@@ -2638,7 +3286,10 @@
       "partizipII": "gewogen / gewiegt",
       "meaningBn": "ওজন করা; দোলানো (অর্থভেদ)",
       "reviewStatus": "verified-batch-4",
-      "notes": "ওজন হওয়া/করা: wog, gewogen; দোলানো/কোলের মধ্যে দোলানো: wiegte, gewiegt।"
+      "notes": "ওজন হওয়া/করা: wog, gewogen; দোলানো/কোলের মধ্যে দোলানো: wiegte, gewiegt।",
+      "sourceExampleDe": "Das Paket wiegt viel.",
+      "sourceExampleBn": "পার্সেলটির ওজন অনেক।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 219,
@@ -2650,7 +3301,10 @@
       "prateritum": "wand",
       "partizipII": "gewunden",
       "meaningBn": "পেঁচানো; মোড়ানো",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er windet das Seil.",
+      "sourceExampleBn": "সে দড়িটি পাকাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 220,
@@ -2662,7 +3316,10 @@
       "prateritum": "wrang",
       "partizipII": "gewrungen",
       "meaningBn": "মোচড় দিয়ে পানি বের করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er wringt das Tuch.",
+      "sourceExampleBn": "সে কাপড়টি নিড়াচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 221,
@@ -2674,7 +3331,10 @@
       "prateritum": "gab zu",
       "partizipII": "zugegeben",
       "meaningBn": "স্বীকার করা; মেনে নেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er gibt es zu.",
+      "sourceExampleBn": "সে এটি স্বীকার করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 222,
@@ -2686,7 +3346,10 @@
       "prateritum": "nahm zu",
       "partizipII": "zugenommen",
       "meaningBn": "বৃদ্ধি পাওয়া; ওজন বাড়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Du nimmst zu.",
+      "sourceExampleBn": "তোমার ওজন বাড়ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 223,
@@ -2698,7 +3361,10 @@
       "prateritum": "gab zurück",
       "partizipII": "zurückgegeben",
       "meaningBn": "ফেরত দেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er gibt das Buch zurück.",
+      "sourceExampleBn": "সে বইটি ফেরত দিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 224,
@@ -2710,7 +3376,10 @@
       "prateritum": "bot an",
       "partizipII": "angeboten",
       "meaningBn": "প্রস্তাব/সেবা দেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er bietet Hilfe an.",
+      "sourceExampleBn": "সে সাহায্যের প্রস্তাব দেয়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 225,
@@ -2722,7 +3391,10 @@
       "prateritum": "schloss ab",
       "partizipII": "abgeschlossen",
       "meaningBn": "শেষ করা; চুক্তি সম্পন্ন করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er schließt die Tür ab.",
+      "sourceExampleBn": "সে দরজায় তালা দিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 226,
@@ -2734,7 +3406,10 @@
       "prateritum": "befuhr",
       "partizipII": "befahren",
       "meaningBn": "কোনো পথে/এলাকায় চলাচল করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er befährt die Straße.",
+      "sourceExampleBn": "সে এই রাস্তা দিয়ে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 227,
@@ -2747,7 +3422,10 @@
       "partizipII": "bekannt",
       "meaningBn": "স্বীকার করা; মত/বিশ্বাস ঘোষণা করা",
       "reviewStatus": "verified-batch-4",
-      "notes": "bekennen-এর অতীত bekannte, Partizip II bekannt—দুর্বল/নিয়মিত রূপ; PDF-তে irregular list-এ থাকলেও এটি শক্ত ক্রিয়া নয়।"
+      "notes": "bekennen-এর অতীত bekannte, Partizip II bekannt—দুর্বল/নিয়মিত রূপ; PDF-তে irregular list-এ থাকলেও এটি শক্ত ক্রিয়া নয়।",
+      "sourceExampleDe": "Er bekennt seine Schuld.",
+      "sourceExampleBn": "সে নিজের দোষ স্বীকার করে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 228,
@@ -2759,7 +3437,10 @@
       "prateritum": "beschloss",
       "partizipII": "beschlossen",
       "meaningBn": "সিদ্ধান্ত নেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er beschließt zu gehen.",
+      "sourceExampleBn": "সে যাওয়ার সিদ্ধান্ত নেয়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 229,
@@ -2771,7 +3452,10 @@
       "prateritum": "bestach",
       "partizipII": "bestochen",
       "meaningBn": "ঘুষ দেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er besticht den Beamten.",
+      "sourceExampleBn": "সে কর্মকর্তাকে ঘুষ দিচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 230,
@@ -2783,7 +3467,10 @@
       "prateritum": "betraf",
       "partizipII": "betroffen",
       "meaningBn": "সম্পর্কিত হওয়া; প্রভাবিত করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Das betrifft dich.",
+      "sourceExampleBn": "এটি তোমার সাথে সংশ্লিষ্ট।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 231,
@@ -2795,7 +3482,10 @@
       "prateritum": "betrat",
       "partizipII": "betreten",
       "meaningBn": "প্রবেশ করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er betritt den Raum.",
+      "sourceExampleBn": "সে ঘরে ঢু কছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 232,
@@ -2807,7 +3497,10 @@
       "prateritum": "drosch",
       "partizipII": "gedroschen",
       "meaningBn": "শস্য মাড়াই করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er drischt das Korn.",
+      "sourceExampleBn": "সে শস্য মাড়াই করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 233,
@@ -2819,7 +3512,10 @@
       "prateritum": "ging durch",
       "partizipII": "durchgegangen",
       "meaningBn": "ভেতর দিয়ে যাওয়া; অতিক্রম করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er geht durch.",
+      "sourceExampleBn": "সে ভেতর দিয়ে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 234,
@@ -2831,7 +3527,9 @@
       "prateritum": "las durch",
       "partizipII": "durchgelesen",
       "meaningBn": "সম্পূর্ণ পড়ে ফেলা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Du liest das Buch durch.",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 235,
@@ -2843,7 +3541,10 @@
       "prateritum": "fuhr ein",
       "partizipII": "eingefahren",
       "meaningBn": "ভেতরে প্রবেশ করা (যানবাহন)",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Der Zug fährt ein.",
+      "sourceExampleBn": "ট্রেনটি স্টেশনে ঢু কছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 236,
@@ -2855,7 +3556,10 @@
       "prateritum": "ging ein",
       "partizipII": "eingegangen",
       "meaningBn": "প্রবেশ করা; নষ্ট হওয়া; সাড়া দেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er geht darauf ein.",
+      "sourceExampleBn": "সে এটিতে সম্মত হয়।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 237,
@@ -2867,7 +3571,10 @@
       "prateritum": "nahm ein",
       "partizipII": "eingenommen",
       "meaningBn": "গ্রহণ/সেবন করা; দখল করা",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er nimmt die Medizin ein.",
+      "sourceExampleBn": "সে ঔষধটি সেবন করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 238,
@@ -2879,7 +3586,10 @@
       "prateritum": "trat ein",
       "partizipII": "eingetreten",
       "meaningBn": "প্রবেশ করা; সংঘটিত হওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er tritt ein.",
+      "sourceExampleBn": "সে ভেতরে প্রবেশ করছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 239,
@@ -2891,7 +3601,9 @@
       "prateritum": "erzog",
       "partizipII": "erzogen",
       "meaningBn": "লালন-পালন করা; শিক্ষা দেওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Sie erzieht das Kind.",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 240,
@@ -2903,7 +3615,10 @@
       "prateritum": "fuhr fort",
       "partizipII": "fortgefahren",
       "meaningBn": "চালিয়ে যাওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er fährt mit der Arbeit fort.",
+      "sourceExampleBn": "সে কাজ চালিয়ে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     },
     {
       "sourceId": 241,
@@ -2915,7 +3630,10 @@
       "prateritum": "ging fort",
       "partizipII": "fortgegangen",
       "meaningBn": "চলে যাওয়া",
-      "reviewStatus": "verified-batch-4"
+      "reviewStatus": "verified-batch-4",
+      "sourceExampleDe": "Er geht fort.",
+      "sourceExampleBn": "সে চলে যাচ্ছে।",
+      "sourceExampleStatus": "extracted-from-original-pdf"
     }
   ],
   "audit": {
@@ -2995,6 +3713,12 @@
         227
       ],
       "remaining": "A full lexeme-by-lexeme dictionary review of all rare verbs, auxiliary selection and example sentences remains before claiming publication-grade verification."
+    },
+    "sourceExamples": {
+      "status": "source-extraction-pass",
+      "extracted": 236,
+      "notExtracted": 5,
+      "note": "German and Bengali example sentences copied from the uploaded PDF where column boundaries could be identified confidently; ambiguous rows are left blank for manual review."
     }
   }
 }
