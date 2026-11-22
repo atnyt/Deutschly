@@ -29,6 +29,19 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 .verb-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.verb-title{font-size:19px;font-weight:700}.verb-meaning{font-size:13px;color:#e5e5ec;margin-top:4px;line-height:1.5}.level{font-size:10px;color:#c7d0ff;border:1px solid rgba(190,202,255,.2);border-radius:999px;padding:4px 8px;white-space:nowrap}
 .forms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:13px}.form-cell{padding:8px 9px;border-radius:10px;background:rgba(255,255,255,.045);min-width:0}.form-cell small{display:block;font-size:10px;color:#9295a8;margin-bottom:3px}.form-cell strong{display:block;font-size:13px;font-weight:600;overflow-wrap:anywhere}
 .past{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.past span{font-size:11px;color:#c8c8d1;background:rgba(255,255,255,.05);padding:6px 9px;border-radius:8px}.example{border-top:1px solid rgba(255,255,255,.09);margin-top:12px;padding-top:10px;font-size:12px;line-height:1.65}.example b{color:#e5e8ff;font-weight:600}.example .bn{color:#b6b6c1}
+.conjugator{margin:0 0 18px;padding:15px;border:1px solid rgba(190,202,255,.2);border-radius:16px;background:linear-gradient(145deg,rgba(130,150,255,.09),rgba(255,255,255,.025))}
+.conjugator h2{font-size:15px;margin:0 0 6px}.conjugator-intro{font-size:11px;color:#a5a5b1;line-height:1.55;margin:0 0 12px}
+.conjugation-form{display:flex;gap:8px}.conjugation-form input{flex:1;min-width:0;height:44px;border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:0 12px;background:rgba(255,255,255,.06);color:#fff;font-size:14px;outline:none}
+.conjugation-form button,.conjugate-inline{border:1px solid rgba(190,202,255,.22);border-radius:11px;background:rgba(150,165,255,.13);color:#e5e8ff;padding:0 13px;font-size:12px;font-weight:650;cursor:pointer}
+.conjugation-form button{min-height:44px}.conjugation-form button:disabled{opacity:.55;cursor:wait}
+.engine-status{font-size:11px;color:#92929e;line-height:1.5;margin:9px 0 0}
+.conjugation-output{margin-top:13px;display:grid;gap:10px}.conjugation-heading{font-size:18px;font-weight:750}.conjugation-meta{font-size:11px;color:#a8a8b4;line-height:1.6}
+.tense-card{border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:11px;background:rgba(0,0,0,.22);min-width:0}.tense-card h3{font-size:12px;margin:0 0 8px;color:#dce2ff}
+.tense-table-wrap{overflow-x:auto}.tense-table{width:100%;border-collapse:collapse;font-size:11px;white-space:nowrap}.tense-table td{padding:6px 7px;border-top:1px solid rgba(255,255,255,.07)}.tense-table td:first-child{color:#9fa2b2;width:75px}.tense-table td:last-child{font-weight:600}
+.conjugate-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;align-items:center}.conjugate-inline{padding:7px 10px}.reverso-link{display:inline-flex;align-items:center;gap:5px;padding:7px 10px;border:1px solid rgba(255,255,255,.13);border-radius:10px;color:#c7c7d1;text-decoration:none;font-size:11px}
+.reverso-note{display:block;margin-top:5px;color:#777783;font-size:10px}
+.conjugation-error{padding:11px;border:1px solid rgba(255,150,150,.2);border-radius:10px;color:#e7b5b5;font-size:12px;line-height:1.55}
+
 .reverso-row{margin-top:12px}.reverso-link{display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border:1px solid rgba(190,202,255,.22);border-radius:10px;background:rgba(150,165,255,.09);color:#dce2ff;text-decoration:none;font-size:11px;font-weight:650}.reverso-link:hover{background:rgba(150,165,255,.16);border-color:rgba(190,202,255,.35)}.reverso-note{display:block;margin-top:6px;color:#777783;font-size:10px}
 .empty,.loading{padding:25px;text-align:center;color:#aaaab5;font-size:13px;border:1px solid rgba(255,255,255,.1);border-radius:14px}
 .footnote{margin:18px 0 0;color:#777783;font-size:11px;line-height:1.6}
@@ -49,6 +62,17 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 </nav></aside>
 <h1>Irregular Verbs</h1>
 <p class="intro">গুরুত্বপূর্ণ জার্মান অনিয়মিত ক্রিয়া—বর্তমান কালের ছয়টি রূপ, Präteritum, Partizip II এবং বাংলা অর্থসহ।</p>
+<section class="conjugator" id="conjugator" aria-labelledby="conjugatorTitle">
+<h2 id="conjugatorTitle">সম্পূর্ণ Verb Conjugation</h2>
+<p class="conjugator-intro">যেকোনো জার্মান Infinitiv লিখে Präsens থেকে Konjunktiv পর্যন্ত রূপ দেখো। এটি Deutschly-এর ভেতরেই চলবে।</p>
+<form class="conjugation-form" id="conjugationForm">
+<input id="conjugationInput" type="search" placeholder="যেমন: können, wissen, aufstehen" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="100" aria-label="জার্মান ক্রিয়ার Infinitiv" required>
+<button id="conjugationButton" type="submit">রূপ দেখো</button>
+</form>
+<p class="engine-status" id="engineStatus" aria-live="polite">Conjugation Engine প্রস্তুত হচ্ছে…</p>
+<section class="conjugation-output" id="conjugationOutput" hidden aria-live="polite"></section>
+</section>
+
 <div class="search-row"><input id="filter" type="search" placeholder="ক্রিয়া বা বাংলা অর্থ খুঁজুন…" autocomplete="off" aria-label="Search irregular verbs"></div>
 <p class="count" id="count">তালিকা লোড হচ্ছে…</p>
 <section class="verb-list" id="verbList" aria-live="polite"><div class="loading">লোড হচ্ছে…</div></section>
@@ -59,10 +83,62 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 (function(){
 const list=document.getElementById('verbList'),filter=document.getElementById('filter'),count=document.getElementById('count');let records=[];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function card(v){const labels=[['ich','আমি'],['du','তুমি'],['er/sie/es','সে'],['wir','আমরা'],['ihr','তোমরা'],['sie/Sie','তারা/আপনি']];const reversoUrl="https://conjugator.reverso.net/conjugation-german-verb-"+encodeURIComponent(String(v.infinitive||"").trim().toLocaleLowerCase("de"))+".html";return '<article class="verb-card"><div class="verb-top"><div><div class="verb-title">'+esc(v.infinitive)+'</div><div class="verb-meaning">'+esc(v.meaningBn)+'</div></div><span class="level">'+esc(v.level)+'</span></div><div class="forms">'+labels.map(([k,b])=>'<div class="form-cell"><small>'+b+' · '+k+'</small><strong>'+esc(v.present[k])+'</strong></div>').join('')+'</div><div class="past"><span>Präteritum: <b>'+esc(v.prateritum)+'</b></span><span>Partizip II: <b>'+esc(v.partizipII)+'</b></span></div><div class="example"><b>'+esc(v.exampleDe)+'</b><br><span class="bn">'+esc(v.exampleBn)+'</span></div><div class="reverso-row"><a class="reverso-link" href="'+reversoUrl+'" target="_blank" rel="noopener noreferrer">Reverso Conjugation <span aria-hidden="true">↗</span></a><span class="reverso-note">পূর্ণ Conjugation ও অতিরিক্ত Tense যাচাই করতে</span></div></article>';}
+function card(v){const labels=[['ich','আমি'],['du','তুমি'],['er/sie/es','সে'],['wir','আমরা'],['ihr','তোমরা'],['sie/Sie','তারা/আপনি']];const reversoUrl="https://conjugator.reverso.net/conjugation-german-verb-"+encodeURIComponent(String(v.infinitive||"").trim().toLocaleLowerCase("de"))+".html";return '<article class="verb-card"><div class="verb-top"><div><div class="verb-title">'+esc(v.infinitive)+'</div><div class="verb-meaning">'+esc(v.meaningBn)+'</div></div><span class="level">'+esc(v.level)+'</span></div><div class="forms">'+labels.map(([k,b])=>'<div class="form-cell"><small>'+b+' · '+k+'</small><strong>'+esc(v.present[k])+'</strong></div>').join('')+'</div><div class="past"><span>Präteritum: <b>'+esc(v.prateritum)+'</b></span><span>Partizip II: <b>'+esc(v.partizipII)+'</b></span></div><div class="example"><b>'+esc(v.exampleDe)+'</b><br><span class="bn">'+esc(v.exampleBn)+'</span></div><div class="conjugate-actions"><button class="conjugate-inline" type="button" data-verb="'+esc(v.infinitive)+'">Deutschly-তে পূর্ণ রূপ দেখো</button><a class="reverso-link" href="'+reversoUrl+'" target="_blank" rel="noopener noreferrer">Reverso ↗</a></div></article>';}
 function render(){const q=filter.value.trim().toLocaleLowerCase();const found=records.filter(v=>[v.infinitive,v.meaningBn,v.exampleDe].join(' ').toLocaleLowerCase().includes(q));count.textContent=found.length+' / '+records.length+'টি ক্রিয়া';list.innerHTML=found.length?found.map(card).join(''):'<div class="empty">কোনো ক্রিয়া পাওয়া যায়নি।</div>';}
 fetch('./data/irregular-verbs-a1.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Database unavailable');return r.json();}).then(d=>{records=d.records||[];render();}).catch(()=>{count.textContent='তালিকা লোড করা যায়নি';list.innerHTML='<div class="empty">ডেটাবেস লোড হয়নি। পরে আবার চেষ্টা করো।</div>';});
+
 filter.addEventListener('input',render);
 })();
+
+(function(){
+const form=document.getElementById('conjugationForm');
+const input=document.getElementById('conjugationInput');
+const button=document.getElementById('conjugationButton');
+const status=document.getElementById('engineStatus');
+const output=document.getElementById('conjugationOutput');
+let enginePromise;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+async function getEngine(){
+ if(!enginePromise)enginePromise=import('./vendor/ablaut/ablaut.js').then(async m=>{await m.default();return m;});
+ return enginePromise;
+}
+function renderTable(t){
+ const labels=['ich','du','er/sie/es','wir','ihr','sie'];
+ const bn=['আমি','তুমি','সে','আমরা','তোমরা','তারা'];
+ const groups=[['Präsens','present'],['Präteritum','preterite'],['Perfekt','perfect'],['Plusquamperfekt','pluperfect'],['Futur I','future1'],['Futur II','future2'],['Konjunktiv I','konjunktiv1'],['Konjunktiv II','konjunktiv2']];
+ const cards=groups.map(([title,key])=>'<article class="tense-card"><h3>'+title+'</h3><div class="tense-table-wrap"><table class="tense-table"><tbody>'+t[key].map((form,i)=>'<tr><td>'+bn[i]+' · '+labels[i]+'</td><td>'+esc(form)+'</td></tr>').join('')+'</tbody></table></div></article>').join('');
+ const imp=t.imperative&&t.imperative.some(Boolean)?'<div class="conjugation-meta">Imperativ: du — '+esc(t.imperative[0]||'—')+' · ihr — '+esc(t.imperative[1]||'—')+' · Sie — '+esc(t.imperativeExtended[1])+'</div>':'<div class="conjugation-meta">Imperativ: নেই (Modalverb হলে এটি স্বাভাবিক)</div>';
+ output.innerHTML='<div><div class="conjugation-heading">'+esc(t.infinitive)+'</div><div class="conjugation-meta">Hilfsverb: <b>'+esc(t.auxiliary)+'</b> · Partizip II: <b>'+esc(t.pastParticiple)+'</b> · zu-Infinitiv: <b>'+esc(t.zuInfinitive)+'</b></div>'+imp+'</div>'+cards+'<p class="engine-status">Engine: Ablaut 0.11.0 · ব্রাউজারে স্থানীয়ভাবে গণনা করা হয়েছে। নির্দিষ্ট ব্যতিক্রম বা একাধিক গ্রহণযোগ্য রূপ থাকলে অভিধানেও যাচাই করো।</p>';
+ output.hidden=false;
+}
+async function run(word){
+ word=String(word||'').trim();
+ if(!word)return;
+ input.value=word;
+ button.disabled=true;
+ output.hidden=true;
+ status.textContent='Conjugation তৈরি হচ্ছে…';
+ try{
+  const engine=await getEngine();
+  const table=engine.conjugate(word);
+  renderTable(table);
+  status.textContent='রূপ তৈরি হয়েছে। নিচে সব প্রধান Tense ও Mood দেখানো হয়েছে।';
+  output.scrollIntoView({behavior:'smooth',block:'start'});
+ }catch(error){
+  output.innerHTML='<div class="conjugation-error">এই Infinitiv-এর Conjugation তৈরি করা যায়নি। বানান যাচাই করো এবং Infinitiv দাও (যেমন: ging নয়, gehen)।<br><small>'+esc(error&&error.message?error.message:'Unknown error')+'</small></div>';
+  output.hidden=false;
+  status.textContent='এই শব্দের রূপ পাওয়া যায়নি।';
+ }finally{button.disabled=false;}
+}
+form.addEventListener('submit',e=>{e.preventDefault();run(input.value);});
+document.getElementById('verbList').addEventListener('click',e=>{
+ const trigger=e.target.closest('.conjugate-inline');
+ if(!trigger)return;
+ run(trigger.dataset.verb);
+ document.getElementById('conjugator').scrollIntoView({behavior:'smooth',block:'start'});
+});
+getEngine().then(()=>{status.textContent='Ablaut Engine প্রস্তুত · অফলাইনেও কাজ করবে (প্রথমবার ফাইল লোডের পর)।';}).catch(()=>{status.textContent='Engine ফাইল তৈরি/লোড হয়নি। GitHub Actions build শেষ হলে আবার চেষ্টা করো।';});
+})();
+
 </script>
 </body></html>
