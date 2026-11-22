@@ -134,10 +134,10 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 .tense-card{padding:12px;border-radius:14px;background:#111116;border-color:#30313b}
 .tense-card h3{font-size:1.05rem;margin:0 0 9px}
 .tense-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
-.tense-person{min-width:0;display:flex;align-items:center;justify-content:space-between;gap:7px;padding:10px;border:1px solid #30313b;border-radius:10px;background:#202027}
-.tense-person span{font-size:.78rem;color:#b9bac7;min-width:0;overflow-wrap:anywhere}
-.tense-person strong{font-size:1.08rem;color:#fff;text-align:right;overflow-wrap:anywhere}
-@media(max-width:420px){.tense-card{padding:10px}.tense-person{padding:8px;gap:5px}.tense-person span{font-size:.72rem}.tense-person strong{font-size:1rem}}
+.tense-person{min-width:0;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:center;gap:7px;padding:10px;border:1px solid #30313b;border-radius:10px;background:#202027}
+.tense-person span{font-size:.76rem;color:#b9bac7;min-width:0;overflow-wrap:break-word;word-break:normal}
+.tense-person strong{min-width:0;font-size:1.02rem;color:#fff;text-align:right;white-space:normal;overflow-wrap:normal;word-break:normal;hyphens:none;letter-spacing:-.035em}
+@media(max-width:420px){.tense-card{padding:10px}.tense-person{padding:8px;gap:5px;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr)}.tense-person span{font-size:.7rem}.tense-person strong{font-size:.96rem;letter-spacing:-.04em}}
 
 </style>
 </head>
