@@ -915,9 +915,9 @@
       "partizipII": "empfohlen",
       "meaningBn": "সুপারিশ করা; পরামর্শ দেওয়া",
       "reviewStatus": "verified-batch-2",
-      "sourceExampleDe": null,
-      "sourceExampleBn": null,
-      "sourceExampleStatus": "not-extracted-check-source"
+      "sourceExampleDe": "Empfiehlst du dieses Geschäft?",
+      "sourceExampleBn": "তুমি কি এই দোকানটি সুপারিশ করো?",
+      "sourceExampleStatus": "manually-transcribed-from-original-pdf"
     },
     {
       "sourceId": 62,
@@ -1970,9 +1970,9 @@
       "partizipII": "entschieden",
       "meaningBn": "সিদ্ধান্ত নেওয়া",
       "reviewStatus": "verified-batch-3",
-      "sourceExampleDe": null,
-      "sourceExampleBn": null,
-      "sourceExampleStatus": "not-extracted-check-source"
+      "sourceExampleDe": "Du entscheidest das selbst.",
+      "sourceExampleBn": "তুমি এটি নিজেই সিদ্ধান্ত নাও।",
+      "sourceExampleStatus": "manually-transcribed-from-original-pdf"
     },
     {
       "sourceId": 132,
@@ -2000,9 +2000,9 @@
       "partizipII": "entsprochen",
       "meaningBn": "অনুরূপ হওয়া; মেনে চলা",
       "reviewStatus": "verified-batch-3",
-      "sourceExampleDe": null,
-      "sourceExampleBn": null,
-      "sourceExampleStatus": "not-extracted-check-source"
+      "sourceExampleDe": "Das entspricht der Wahrheit.",
+      "sourceExampleBn": "এটি সত্যের অনুরূপ।",
+      "sourceExampleStatus": "manually-transcribed-from-original-pdf"
     },
     {
       "sourceId": 134,
@@ -2045,9 +2045,9 @@
       "partizipII": "erfunden",
       "meaningBn": "উদ্ভাবন করা",
       "reviewStatus": "verified-batch-3",
-      "sourceExampleDe": null,
-      "sourceExampleBn": null,
-      "sourceExampleStatus": "not-extracted-check-source"
+      "sourceExampleDe": "Er erfindet eine Geschichte.",
+      "sourceExampleBn": "সে একটি গল্প বানাচ্ছে।",
+      "sourceExampleStatus": "manually-transcribed-from-original-pdf"
     },
     {
       "sourceId": 137,
@@ -2332,9 +2332,9 @@
       "partizipII": "hinterlassen",
       "meaningBn": "পেছনে রেখে যাওয়া",
       "reviewStatus": "verified-batch-3",
-      "sourceExampleDe": null,
-      "sourceExampleBn": null,
-      "sourceExampleStatus": "not-extracted-check-source"
+      "sourceExampleDe": "Er hinterlässt eine Nachricht.",
+      "sourceExampleBn": "সে একটি বার্তা রেখে যাচ্ছে।",
+      "sourceExampleStatus": "manually-transcribed-from-original-pdf"
     },
     {
       "sourceId": 156,
@@ -3715,10 +3715,10 @@
       "remaining": "A full lexeme-by-lexeme dictionary review of all rare verbs, auxiliary selection and example sentences remains before claiming publication-grade verification."
     },
     "sourceExamples": {
-      "status": "source-extraction-pass",
-      "extracted": 236,
-      "notExtracted": 5,
-      "note": "German and Bengali example sentences copied from the uploaded PDF where column boundaries could be identified confidently; ambiguous rows are left blank for manual review."
+      "status": "source-extraction-and-manual-review",
+      "extracted": 241,
+      "notExtracted": 0,
+      "note": "All 241 German and Bengali example rows have been checked against the uploaded PDF pages; five previously missed rows were manually transcribed. Original source spellings/spacing are retained."
     }
   }
 }
