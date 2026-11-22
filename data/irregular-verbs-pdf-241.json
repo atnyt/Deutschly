@@ -17,7 +17,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er ist müde.",
       "sourceExampleBn": "সে ক্লান্ত।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 2,
@@ -32,7 +34,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du hast eine Schwester.",
       "sourceExampleBn": "তোমার একজন বোন আছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 3,
@@ -47,7 +51,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er wird Lehrer.",
       "sourceExampleBn": "সে শিক্ষক হচ্ছে/হবে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 4,
@@ -62,7 +68,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du kannst schwimmen.",
       "sourceExampleBn": "তু মি সাঁতার কাটতে পারো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 5,
@@ -77,7 +85,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er muss arbeiten.",
       "sourceExampleBn": "তাকে কাজ করতে হবে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 6,
@@ -92,7 +102,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du willst essen.",
       "sourceExampleBn": "তু মি খেতে চাও।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 7,
@@ -107,7 +119,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er soll lernen.",
       "sourceExampleBn": "তার শেখা উচিত।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 8,
@@ -122,7 +136,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du darfst gehen.",
       "sourceExampleBn": "তু মি যেতে পারো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 9,
@@ -137,7 +153,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er mag Sushi.",
       "sourceExampleBn": "সে সুশি পছন্দ করে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 10,
@@ -152,7 +170,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du weißt das.",
       "sourceExampleBn": "তু মি এটি জানো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 11,
@@ -167,7 +187,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er geht ins Kino.",
       "sourceExampleBn": "সে সিনেমা দেখতে যায়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 12,
@@ -182,7 +204,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du kommst heute.",
       "sourceExampleBn": "তু মি আজ আসছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 13,
@@ -197,7 +221,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er gibt mir ein Buch.",
       "sourceExampleBn": "সে আমাকে একটি বই দেয়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 14,
@@ -212,7 +238,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du siehst fern.",
       "sourceExampleBn": "তু মি টিভি দেখছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 15,
@@ -227,7 +255,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er steht an der Kasse.",
       "sourceExampleBn": "সে ক্যাশ কাউন্টারে দাঁড়িয়ে আছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 16,
@@ -242,7 +272,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du bleibst hier.",
       "sourceExampleBn": "তু মি এখানে থাকো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 17,
@@ -257,7 +289,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er lässt mich gehen.",
       "sourceExampleBn": "সে আমাকে যেতে দেয়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 18,
@@ -272,7 +306,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du sprichst Deutsch.",
       "sourceExampleBn": "তু মি জার্মান ভাষায় কথা বলো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 19,
@@ -287,7 +323,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er findet den Schlüssel.",
       "sourceExampleBn": "সে চাবিটি খুঁজে পায়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 20,
@@ -302,7 +340,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du nimmst einen Tee.",
       "sourceExampleBn": "তু মি এক কাপ চা নাও।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 21,
@@ -317,7 +357,10 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er fährt nach Italien.",
       "sourceExampleBn": "সে ইতালি যাচ্ছে (গাড়িতে)।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "গাড়ি চালানো/কোনো বস্তু চালানো হলে haben (Ich habe das Auto gefahren); কোনো গন্তব্যে যাতায়াত বোঝালে sein (Ich bin nach Berlin gefahren)।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 22,
@@ -332,7 +375,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du isst Pizza.",
       "sourceExampleBn": "তু মি পিৎজা খাচ্ছ।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 23,
@@ -347,7 +392,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er hält das Buch.",
       "sourceExampleBn": "সে বইটি ধরে আছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 24,
@@ -362,7 +409,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du bringst Blumen.",
       "sourceExampleBn": "তু মি ফু ল আনছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 25,
@@ -377,7 +426,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er heißt Hans.",
       "sourceExampleBn": "তার নাম হান্স।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 26,
@@ -392,7 +443,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du schreibst einen Brief.",
       "sourceExampleBn": "তু মি একটি চিঠি লিখছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 27,
@@ -407,7 +460,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Das Buch liegt hier.",
       "sourceExampleBn": "বইটি এখানে আছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 28,
@@ -422,7 +477,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Was tust du?",
       "sourceExampleBn": "তু মি কি করছো?",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 29,
@@ -437,7 +494,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du hilfst mir.",
       "sourceExampleBn": "তু মি আমাকে সাহায্য করছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 30,
@@ -452,7 +511,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er denkt an dich.",
       "sourceExampleBn": "সে তোমার কথা ভাবছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 31,
@@ -467,7 +528,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du läufst schnell.",
       "sourceExampleBn": "তু মি দ্রুত দৌড়াচ্ছ।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 32,
@@ -482,7 +545,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er trägt ein T-Shirt.",
       "sourceExampleBn": "সে একটি টি-শার্ট পরে আছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 33,
@@ -497,7 +562,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du sitzt auf dem Stuhl.",
       "sourceExampleBn": "তু মি চেয়ারের উপর বসে আছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 34,
@@ -512,7 +579,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er trifft Freunde.",
       "sourceExampleBn": "সে বন্ধু দের সাথে দেখা করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 35,
@@ -527,7 +596,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du schlägst den Ball.",
       "sourceExampleBn": "তু মি বলটিকে আঘাত করছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 36,
@@ -542,7 +613,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er fällt langsam.",
       "sourceExampleBn": "সে ধীরে ধীরে পড়ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 37,
@@ -557,7 +630,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Am Ende stirbt Hamlet.",
       "sourceExampleBn": "শেষে হ্যামলেট মারা যায়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 38,
@@ -572,7 +647,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du kennst ihn.",
       "sourceExampleBn": "তু মি তাকে চেনো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 39,
@@ -587,7 +664,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er liest ein Buch.",
       "sourceExampleBn": "সে একটি বই পড়ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 40,
@@ -602,7 +681,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du verstehst alles.",
       "sourceExampleBn": "তু মি সব বু ঝতে পারছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 41,
@@ -617,7 +698,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er bekommt ein Paket.",
       "sourceExampleBn": "সে একটি পার্সেল পেয়েছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 42,
@@ -632,7 +715,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du vergisst das.",
       "sourceExampleBn": "তু মি এটি ভু লে যাও।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 43,
@@ -647,7 +732,10 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er zieht an der Tür.",
       "sourceExampleBn": "সে দরজা ধরে টানছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "কিছু টানা বোঝালে haben; বাসা/স্থান পরিবর্তন বা সরে যাওয়া বোঝালে sein।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 44,
@@ -662,7 +750,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du verlierst den Schlüssel.",
       "sourceExampleBn": "তু মি চাবিটি হারিয়ে ফেলছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 45,
@@ -677,7 +767,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er wäscht sich.",
       "sourceExampleBn": "সে নিজেকে পরিষ্কার করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 46,
@@ -692,7 +784,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du fängst den Ball.",
       "sourceExampleBn": "তু মি বলটি ধরছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 47,
@@ -707,7 +801,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er schließt die Tür.",
       "sourceExampleBn": "সে দরজাটি বন্ধ করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 48,
@@ -722,7 +818,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Die Schule beginnt.",
       "sourceExampleBn": "স্কু ল শুরু হচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 49,
@@ -737,7 +835,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er bietet Hilfe an.",
       "sourceExampleBn": "সে সাহায্যের প্রস্তাব দিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 50,
@@ -752,7 +852,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Du singst in einer Band.",
       "sourceExampleBn": "তু মি একটি ব্যান্ডের হয়ে গান গাও।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 51,
@@ -767,7 +869,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er trinkt Bier.",
       "sourceExampleBn": "সে বিয়ার পান করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 52,
@@ -782,7 +886,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Sie schläft bis elf Uhr.",
       "sourceExampleBn": "সে এগারোটা পর্যন্ত ঘুমায়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 53,
@@ -797,7 +903,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er ruft dich.",
       "sourceExampleBn": "সে তোমাকে ডাকছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 54,
@@ -812,7 +920,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er gewinnt das Spiel.",
       "sourceExampleBn": "সে খেলায় জেতে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 55,
@@ -827,7 +937,10 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er springt über den Zaun.",
       "sourceExampleBn": "সে বেড়ার উপর দিয়ে লাফ দিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "কোনো স্থান থেকে/দিকে লাফিয়ে যাওয়া বোঝালে sein; কাজটির ক্রিয়া বা সময়কাল বোঝালে haben-ও হতে পারে।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 56,
@@ -842,7 +955,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er steigt auf die Leiter.",
       "sourceExampleBn": "সে মইয়ে চড়ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 57,
@@ -857,7 +972,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Die Preise sinken.",
       "sourceExampleBn": "দাম কমছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 58,
@@ -872,7 +989,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Der Chef verschwindet.",
       "sourceExampleBn": "বস অদৃশ্য হয়ে যান।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 59,
@@ -887,7 +1006,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er lädt mich ein.",
       "sourceExampleBn": "সে আমাকে আমন্ত্রণ জানায়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 60,
@@ -902,7 +1023,9 @@
       "reviewStatus": "verified-batch-1",
       "sourceExampleDe": "Er wirft den Ball.",
       "sourceExampleBn": "সে বলটি ছু ড়ে মারে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 61,
@@ -917,7 +1040,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Empfiehlst du dieses Geschäft?",
       "sourceExampleBn": "তুমি কি এই দোকানটি সুপারিশ করো?",
-      "sourceExampleStatus": "manually-transcribed-from-original-pdf"
+      "sourceExampleStatus": "manually-transcribed-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 62,
@@ -932,7 +1057,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er brät das Fleisch.",
       "sourceExampleBn": "সে মাংস ভাজছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 63,
@@ -947,7 +1074,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Das Tier frisst.",
       "sourceExampleBn": "পশুটি খাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 64,
@@ -962,7 +1091,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du bindest den Schuh.",
       "sourceExampleBn": "তু মি জুতো বাঁধো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 65,
@@ -977,7 +1108,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Sie bittet ihn um Hilfe.",
       "sourceExampleBn": "সে তার কাছে সাহায্য চাইছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 66,
@@ -992,7 +1125,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er lügt ständig.",
       "sourceExampleBn": "সে সব সময় মিথ্যা বলে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 67,
@@ -1007,7 +1142,10 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er fliegt nach Berlin.",
       "sourceExampleBn": "সে বার্লিনে উড়ে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "কোনো গন্তব্যে উড়ে যাওয়া বোঝালে sein; বিমান চালানো বা কোনো কিছুকে উড়ানো বোঝালে haben।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 68,
@@ -1022,7 +1160,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Das Wasser fließt.",
       "sourceExampleBn": "পানি প্রবাহিত হচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 69,
@@ -1037,7 +1177,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Die Sonne scheint.",
       "sourceExampleBn": "সূর্য কিরণ দিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 70,
@@ -1052,7 +1194,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er schneidet das Brot.",
       "sourceExampleBn": "সে রুটি কাটছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 71,
@@ -1067,7 +1211,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er schreit laut.",
       "sourceExampleBn": "সে জোরে চিৎকার করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 72,
@@ -1082,7 +1228,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du schweigst oft.",
       "sourceExampleBn": "তু মি প্রায়ই নীরব থাকো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 73,
@@ -1097,7 +1245,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Der Fisch stinkt.",
       "sourceExampleBn": "মাছটি দুর্গন্ধ ছড়াচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 74,
@@ -1112,7 +1262,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er treibt Sport.",
       "sourceExampleBn": "সে খেলাধুলা করে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 75,
@@ -1127,7 +1279,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Mutter rät mir gut.",
       "sourceExampleBn": "মা আমাকে ভালো পরামর্শ দেন।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 76,
@@ -1142,7 +1296,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du versprichst es.",
       "sourceExampleBn": "তু মি এটার প্রতিশ্রুতি দিচ্ছ।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 77,
@@ -1157,7 +1313,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Diese Blume wächst nicht.",
       "sourceExampleBn": "এই ফু লটি এখানে জন্মায় না।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 78,
@@ -1172,7 +1330,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er zwingt mich.",
       "sourceExampleBn": "সে আমাকে বাধ্য করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 79,
@@ -1187,7 +1347,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er betrügt beim Spiel.",
       "sourceExampleBn": "সে খেলায় প্রতারণা করে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 80,
@@ -1202,7 +1364,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er befiehlt den Soldaten.",
       "sourceExampleBn": "সে সৈন্যদের আদেশ দেয়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 81,
@@ -1217,7 +1381,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er birgt das Paket.",
       "sourceExampleBn": "সে পার্সেলটি রক্ষা করে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 82,
@@ -1232,7 +1398,10 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er bricht das Glas.",
       "sourceExampleBn": "সে গ্লাসটি ভাঙছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "নিজে ভেঙে যাওয়া বোঝালে sein; কোনো কিছু ভাঙা বোঝালে haben।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 83,
@@ -1248,7 +1417,9 @@
       "notes": "মূলত তৃতীয় পুরুষে ব্যবহৃত; সাধারণ কথায় du-রূপ ব্যবহৃত হয় না।",
       "sourceExampleDe": "So etwas geschieht oft.",
       "sourceExampleBn": "এমনটা প্রায়ই ঘটে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 84,
@@ -1263,7 +1434,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du misst das Zimmer.",
       "sourceExampleBn": "তু মি ঘরটি মাপছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 85,
@@ -1278,7 +1451,10 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er tritt auf die Bremse.",
       "sourceExampleBn": "সে ব্রেকে পা রাখছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "কোথাও পা রাখা/প্রবেশ করা বোঝালে sein; কাউকে বা কিছুকে লাথি/আঘাত করা বোঝালে haben।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 86,
@@ -1293,7 +1469,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er hebt das Paket.",
       "sourceExampleBn": "সে পার্সেলটি তু লছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 87,
@@ -1308,7 +1486,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du leihst mir Geld.",
       "sourceExampleBn": "তু মি আমাকে টাকা ধার দাও।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 88,
@@ -1323,7 +1503,10 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er reitet ein Pferd.",
       "sourceExampleBn": "সে ঘোড়ায় চড়ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "কোনো গন্তব্যে ঘোড়ায় যাওয়া বোঝালে sein; ঘোড়ায় চড়ার কাজ বোঝালে haben-ও ব্যবহৃত হয়।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 89,
@@ -1338,7 +1521,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er streitet immer.",
       "sourceExampleBn": "সে সব সময় ঝগড়া করে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 90,
@@ -1353,7 +1538,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Die Mücke sticht.",
       "sourceExampleBn": "মশা কামড়ায়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 91,
@@ -1368,7 +1555,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Das Ticket gilt noch.",
       "sourceExampleBn": "টিকিটটি এখনও কার্যকর।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 92,
@@ -1383,7 +1572,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er biegt um die Ecke.",
       "sourceExampleBn": "সে মোড় ঘুরছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 93,
@@ -1398,7 +1589,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er flieht vor der Gefahr.",
       "sourceExampleBn": "সে বিপদ থেকে পালাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 94,
@@ -1413,7 +1606,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du genießt das Essen.",
       "sourceExampleBn": "তু মি খাবারটি উপভোগ করছ।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 95,
@@ -1429,7 +1624,9 @@
       "notes": "gelingen সাধারণত impersonal গঠনে ব্যবহৃত হয়: Es gelingt mir. তাই du-রূপ এই শিক্ষার্থী তালিকায় দেখানো হয়নি।",
       "sourceExampleDe": "Es gelingt ihm.",
       "sourceExampleBn": "সে সফল হয়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 96,
@@ -1444,7 +1641,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Der Wind bläst.",
       "sourceExampleBn": "বাতাস বইছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 97,
@@ -1460,7 +1659,10 @@
       "notes": "অবস্থান/ঝুলে থাকা: hing, gehangen; কিছু ঝোলানো: hängte, gehängt।",
       "sourceExampleDe": "Er hängt das Bild auf.",
       "sourceExampleBn": "সে ছবিটি ঝোলাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "কোনো কিছু ঝোলানো: haben; ঝুলে থাকা অর্থে সাধারণত haben-ই; আঞ্চলিক ব্যবহারে sein-ও শোনা যায়।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 98,
@@ -1475,7 +1677,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er fängt die Arbeit an.",
       "sourceExampleBn": "সে কাজ শুরু করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 99,
@@ -1490,7 +1694,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Der Zug kommt an.",
       "sourceExampleBn": "ট্রেনটি পৌঁছাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 100,
@@ -1505,7 +1711,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du rufst mich an.",
       "sourceExampleBn": "তু মি আমাকে ফোন করছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 101,
@@ -1520,7 +1728,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er sieht das Bild an.",
       "sourceExampleBn": "সে ছবিটি দেখছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 102,
@@ -1535,7 +1745,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du ziehst die Jacke an.",
       "sourceExampleBn": "তু মি জ্যাকেটটি পরছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 103,
@@ -1550,7 +1762,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er gibt niemals auf!",
       "sourceExampleBn": "সে কখনও হাল ছাড়ে না!",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 104,
@@ -1565,7 +1779,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er hebt den Brief auf.",
       "sourceExampleBn": "সে চিঠিটি তু লে নিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 105,
@@ -1580,7 +1796,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du stehst früh auf.",
       "sourceExampleBn": "তু মি ভোরে ওঠো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 106,
@@ -1595,7 +1813,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er gibt viel Geld aus.",
       "sourceExampleBn": "সে অনেক টাকা খরচ করে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 107,
@@ -1610,7 +1830,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Wir gehen abends aus.",
       "sourceExampleBn": "আমরা সন্ধ্যায় বাইরে যাই।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 108,
@@ -1625,7 +1847,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er sieht gut aus.",
       "sourceExampleBn": "তাকে ভালো দেখাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 109,
@@ -1640,7 +1864,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du sprichst es aus.",
       "sourceExampleBn": "তু মি এটি উচ্চারণ করো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 110,
@@ -1655,7 +1881,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er zieht die Schuhe aus.",
       "sourceExampleBn": "সে জুতো খু লে ফেলছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 111,
@@ -1671,7 +1899,9 @@
       "notes": "buk ও backte—দুটিই প্রচলিত; Partizip II সাধারণত gebacken।",
       "sourceExampleDe": "Du bäckst einen Kuchen.",
       "sourceExampleBn": "তু মি একটি কেক বানাচ্ছ।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 112,
@@ -1687,7 +1917,9 @@
       "notes": "bedürfen-এর অতীত bedurfte, Partizip II bedurft—রূপগুলো দুর্বল/নিয়মিত; বর্তমানের bedarf-এ স্বরবদল আছে বলে একে প্রচলিত শক্ত ক্রিয়ার সঙ্গে গুলিয়ে ফেলো না।",
       "sourceExampleDe": "Es bedarf einer Lösung.",
       "sourceExampleBn": "একটি সমাধান প্রয়োজন।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 113,
@@ -1702,7 +1934,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er begeht einen Fehler.",
       "sourceExampleBn": "সে একটি ভু ল করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 114,
@@ -1717,7 +1951,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er wird begraben.",
       "sourceExampleBn": "তাকে সমাহিত করা হচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 115,
@@ -1732,7 +1968,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du begreifst das Problem.",
       "sourceExampleBn": "তু মি সমস্যাটি বু ঝতে পারছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 116,
@@ -1747,7 +1985,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er behält das Geheimnis.",
       "sourceExampleBn": "সে গোপন কথাটি রাখছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 117,
@@ -1762,7 +2002,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Der Hund beißt.",
       "sourceExampleBn": "কু কু রটি কামড়ায়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 118,
@@ -1777,7 +2019,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Mutter berät mich.",
       "sourceExampleBn": "মা আমাকে পরামর্শ দিচ্ছেন।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 119,
@@ -1792,7 +2036,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Du beschreibst das Bild.",
       "sourceExampleBn": "তু মি ছবিটি বর্ণনা করছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 120,
@@ -1807,7 +2053,9 @@
       "reviewStatus": "verified-batch-2",
       "sourceExampleDe": "Er besitzt ein Haus.",
       "sourceExampleBn": "সে একটি বাড়ির মালিক।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 121,
@@ -1822,7 +2070,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er besteht auf der Regel.",
       "sourceExampleBn": "সে নিয়মের ব্যাপারে জেদ করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 122,
@@ -1837,7 +2087,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Die Miete beträgt 500 Euro.",
       "sourceExampleBn": "ভাড়া ৫০০ ইউরো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 123,
@@ -1853,7 +2105,9 @@
       "notes": "প্রভাবিত/প্ররোচিত করা: bewog, bewogen; নড়ানো/স্থানান্তর করা: bewegte, bewegt।",
       "sourceExampleDe": "Er bewegt den Arm.",
       "sourceExampleBn": "সে হাত নাড়াচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 124,
@@ -1868,7 +2122,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er bewirbt sich um den Job.",
       "sourceExampleBn": "সে চাকরির জন্য আবেদন করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 125,
@@ -1883,7 +2139,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Du beweist dein Können.",
       "sourceExampleBn": "তু মি তোমার দক্ষতা প্রমাণ করো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 126,
@@ -1898,7 +2156,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er bezieht sich auf mich.",
       "sourceExampleBn": "সে আমাকে উল্লেখ করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 127,
@@ -1913,7 +2173,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Das Wasser dringt ein.",
       "sourceExampleBn": "জল ভেতরে ঢু কছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 128,
@@ -1927,7 +2189,9 @@
       "meaningBn": "গ্রহণ করা; অভ্যর্থনা করা",
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er empfängt einen Gast.",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 129,
@@ -1942,7 +2206,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Du empfindest Freude.",
       "sourceExampleBn": "তু মি আনন্দ অনুভব করছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 130,
@@ -1957,7 +2223,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Der Chef entlässt ihn.",
       "sourceExampleBn": "বস তাকে বরখাস্ত করছেন।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 131,
@@ -1972,7 +2240,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Du entscheidest das selbst.",
       "sourceExampleBn": "তুমি এটি নিজেই সিদ্ধান্ত নাও।",
-      "sourceExampleStatus": "manually-transcribed-from-original-pdf"
+      "sourceExampleStatus": "manually-transcribed-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 132,
@@ -1987,7 +2257,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er entschließt sich dazu.",
       "sourceExampleBn": "সে এই ব্যাপারে সংকল্প করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 133,
@@ -2002,7 +2274,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Das entspricht der Wahrheit.",
       "sourceExampleBn": "এটি সত্যের অনুরূপ।",
-      "sourceExampleStatus": "manually-transcribed-from-original-pdf"
+      "sourceExampleStatus": "manually-transcribed-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 134,
@@ -2017,7 +2291,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Ein Problem entsteht.",
       "sourceExampleBn": "একটি সমস্যা তৈরি হচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 135,
@@ -2032,7 +2308,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er erfährt die Neuigkeit.",
       "sourceExampleBn": "সে খবরটি জানতে পেরেছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 136,
@@ -2047,7 +2325,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er erfindet eine Geschichte.",
       "sourceExampleBn": "সে একটি গল্প বানাচ্ছে।",
-      "sourceExampleStatus": "manually-transcribed-from-original-pdf"
+      "sourceExampleStatus": "manually-transcribed-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 137,
@@ -2062,7 +2342,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Du erhältst einen Brief.",
       "sourceExampleBn": "তু মি একটি চিঠি পেয়েছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 138,
@@ -2077,7 +2359,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er erkennt mich nicht.",
       "sourceExampleBn": "সে আমাকে চিনতে পারছে না।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 139,
@@ -2092,7 +2376,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Das Licht erlischt.",
       "sourceExampleBn": "আলোটি নিভে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 140,
@@ -2107,7 +2393,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Das Buch erscheint bald.",
       "sourceExampleBn": "বইটি শীঘ্রই প্রকাশিত হবে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 141,
@@ -2123,7 +2411,10 @@
       "notes": "নিজে ভয় পেয়ে চমকে ওঠা: erschrak, ist erschrocken; কাউকে ভয় দেখানো: erschreckte, hat erschreckt।",
       "sourceExampleDe": "Du erschrickst mich.",
       "sourceExampleBn": "তু মি আমাকে ভয় পাইয়ে দিলে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "নিজে ভয় পেয়ে যাওয়া: sein (ist erschrocken); কাউকে ভয় দেখানো: haben (hat erschreckt)।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 142,
@@ -2138,7 +2429,10 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er friert sehr.",
       "sourceExampleBn": "তার খু ব শীত করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "শীত লাগা/ঠান্ডা অনুভব করা: haben; জমে বরফ হওয়া অর্থে sein-ও হতে পারে।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 143,
@@ -2153,7 +2447,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Sie gebiert ein Kind.",
       "sourceExampleBn": "সে একটি সন্তানের জন্ম দেয়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 144,
@@ -2168,7 +2464,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Die Pflanze gedeiht.",
       "sourceExampleBn": "গাছটি ভালো বাড়ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 145,
@@ -2183,7 +2481,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Das gefällt mir.",
       "sourceExampleBn": "এটি আমার পছন্দ হয়েছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 146,
@@ -2198,7 +2498,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er gerät in Zorn.",
       "sourceExampleBn": "সে রাগান্বিত হচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 147,
@@ -2213,7 +2515,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er gesteht seine Schuld.",
       "sourceExampleBn": "সে নিজের দোষ স্বীকার করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 148,
@@ -2228,7 +2532,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Du gießt die Blumen.",
       "sourceExampleBn": "তু মি ফু লে জল দিচ্ছ।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 149,
@@ -2243,7 +2549,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er gleicht seinem Vater.",
       "sourceExampleBn": "সে তার বাবার মতো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 150,
@@ -2258,7 +2566,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er gräbt ein Loch.",
       "sourceExampleBn": "সে একটি গর্ত খুঁড়ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 151,
@@ -2273,7 +2583,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er greift nach dem Ball.",
       "sourceExampleBn": "সে বলটি ধরার চেষ্টা করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 152,
@@ -2289,7 +2601,9 @@
       "notes": "hieb সাহিত্যিক/কম প্রচলিত; haute ও gehauen আধুনিক সাধারণ ব্যবহারে বেশি প্রচলিত।",
       "sourceExampleDe": "Du haust auf den Tisch.",
       "sourceExampleBn": "তু মি টেবিলের ওপর মারছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 153,
@@ -2304,7 +2618,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Komm mal her!",
       "sourceExampleBn": "এদিকে এসো!",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 154,
@@ -2319,7 +2635,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er fährt dorthin.",
       "sourceExampleBn": "সে সেখানে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 155,
@@ -2334,7 +2652,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er hinterlässt eine Nachricht.",
       "sourceExampleBn": "সে একটি বার্তা রেখে যাচ্ছে।",
-      "sourceExampleStatus": "manually-transcribed-from-original-pdf"
+      "sourceExampleStatus": "manually-transcribed-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 156,
@@ -2349,7 +2669,9 @@
       "reviewStatus": "corrected-infinitive;forms-checked",
       "sourceExampleDe": "Das Baby kriecht.",
       "sourceExampleBn": "বাচ্চাটি হামাগুড়ি দিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 157,
@@ -2364,7 +2686,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er lädt das Auto.",
       "sourceExampleBn": "সে গাড়িতে মালামাল তু লছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 158,
@@ -2379,7 +2703,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er leidet an Gicht.",
       "sourceExampleBn": "সে গেঁটে বাতে ভু গছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 159,
@@ -2394,7 +2720,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er meidet die Gefahr.",
       "sourceExampleBn": "সে বিপদ এড়িয়ে চলে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 160,
@@ -2409,7 +2737,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Der Plan misslingt.",
       "sourceExampleBn": "পরিকল্পনাটি ব্যর্থ হচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 161,
@@ -2424,7 +2754,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er denkt darüber nach.",
       "sourceExampleBn": "সে এই নিয়ে ভাবছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 162,
@@ -2439,7 +2771,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Du pfeifst ein Lied.",
       "sourceExampleBn": "তু মি একটি গান শিস দিচ্ছ।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 163,
@@ -2454,7 +2788,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er preist den Herrn.",
       "sourceExampleBn": "সে প্রভু র প্রশংসা করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 164,
@@ -2469,7 +2805,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Das Wasser quillt hervor.",
       "sourceExampleBn": "জল উপচে পড়ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 165,
@@ -2484,7 +2822,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Du reibst dir die Augen.",
       "sourceExampleBn": "তু মি চোখ ঘষছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 166,
@@ -2499,7 +2839,10 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er reißt das Papier.",
       "sourceExampleBn": "সে কাগজটি ছিঁড়ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "নিজে ছিঁড়ে যাওয়া বোঝালে sein; কিছু ছেঁড়া বোঝালে haben।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 167,
@@ -2514,7 +2857,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Es riecht gut.",
       "sourceExampleBn": "এটি সুন্দর গন্ধ দিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 168,
@@ -2530,7 +2875,9 @@
       "notes": "সৃষ্টি করা: schuf, geschaffen; কাজ সম্পন্ন করা/সময়মতো পারা: schaffte, geschafft।",
       "sourceExampleDe": "Gott schuf die Welt.",
       "sourceExampleBn": "ঈশ্বর পৃথিবী সৃষ্টি করেছেন।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 169,
@@ -2545,7 +2892,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Sie lassen sich scheiden.",
       "sourceExampleBn": "তাদের বিবাহবিচ্ছেদ হচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 170,
@@ -2560,7 +2909,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Mutter schilt das Kind.",
       "sourceExampleBn": "মা শিশুটিকে বকছেন।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 171,
@@ -2575,7 +2926,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er schiebt den Wagen.",
       "sourceExampleBn": "সে গাড়িটি ঠেলছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 172,
@@ -2590,7 +2943,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er schießt ein Tor.",
       "sourceExampleBn": "সে একটি গোল করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 173,
@@ -2605,7 +2960,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er schleicht aus dem Haus.",
       "sourceExampleBn": "সে চু পিচু পি বাড়ি থেকে বেরোচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 174,
@@ -2621,7 +2978,9 @@
       "notes": "ধার দেওয়া/ঘষে মসৃণ করা: schliff, geschliffen; টেনে/ঘষটে নিয়ে যাওয়া: schleifte, geschleift।",
       "sourceExampleDe": "Er schleift das Messer.",
       "sourceExampleBn": "সে চাকু টি ধার দিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 175,
@@ -2637,7 +2996,9 @@
       "notes": "শক্ত ও দুর্বল—দুই রূপই অভিধানে আছে; দুর্লভ ক্রিয়া।",
       "sourceExampleDe": "Das Seil schleißt.",
       "sourceExampleBn": "দড়িটি ছিঁড়ে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 176,
@@ -2653,7 +3014,9 @@
       "notes": "schmiss/geschmissen প্রধান শক্ত রূপ; দুর্বল বিকল্পও নথিভুক্ত।",
       "sourceExampleDe": "Er schmeißt den Stein.",
       "sourceExampleBn": "সে পাথরটি ছু ড়ে মারছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 177,
@@ -2669,7 +3032,10 @@
       "notes": "schmolz/geschmolzen প্রচলিত; দুর্বল বিকল্প বিরল।",
       "sourceExampleDe": "Das Eis schmilzt.",
       "sourceExampleBn": "বরফ গলে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "নিজে গলে যাওয়া বোঝালে sein; কোনো কিছু গলানো বোঝালে haben।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 178,
@@ -2684,7 +3050,9 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er schreitet voran.",
       "sourceExampleBn": "সে সামনের দিকে এগিয়ে চলেছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 179,
@@ -2700,7 +3068,9 @@
       "notes": "ফুলে ওঠা: schwoll, geschwollen; কিছু ব্যবহারে schwellte/geschwellt।",
       "sourceExampleDe": "Der Fuß schwillt an.",
       "sourceExampleBn": "পা ফু লে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 180,
@@ -2715,7 +3085,10 @@
       "reviewStatus": "verified-batch-3",
       "sourceExampleDe": "Er schwimmt im See.",
       "sourceExampleBn": "সে হ্রদে সাঁতার কাটছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "দিক/গন্তব্যসহ চলাচল বোঝালে sein; সাঁতার কাটার কাজ/সময়কাল বোঝালে haben-ও হয়।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 181,
@@ -2730,7 +3103,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Die Hoffnung schwindet.",
       "sourceExampleBn": "আশা ফিকে হয়ে আসছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 182,
@@ -2745,7 +3120,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er schwingt das Seil.",
       "sourceExampleBn": "সে দড়িটি দোলাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 183,
@@ -2760,7 +3137,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Ich schwöre es.",
       "sourceExampleBn": "আমি শপথ করছি।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 184,
@@ -2776,7 +3155,9 @@
       "notes": "দুই রূপই স্বীকৃত; সাধারণ বর্ণনায় siedete/siedet-ও দেখা যায়।",
       "sourceExampleDe": "Das Wasser siedet.",
       "sourceExampleBn": "জল ফু টছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 185,
@@ -2791,7 +3172,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er sinnt über das Leben.",
       "sourceExampleBn": "সে জীবন নিয়ে ভাবছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 186,
@@ -2807,7 +3190,9 @@
       "notes": "Präteritum সাধারণত spaltete; Partizip II-তে gespalten বেশি প্রচলিত, gespaltet-ও আছে।",
       "sourceExampleDe": "Er spaltet das Holz.",
       "sourceExampleBn": "সে কাঠ চেরাই করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 187,
@@ -2822,7 +3207,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Der Vulkan speit Feuer.",
       "sourceExampleBn": "আগ্নেয়গিরি আগুন উগরাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 188,
@@ -2837,7 +3224,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Du spinnst wohl!",
       "sourceExampleBn": "তু মি নিশ্চয়ই পাগল হয়েছ!",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 189,
@@ -2852,7 +3241,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Die Blumen sprießen.",
       "sourceExampleBn": "ফু লগুলো ফু টছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 190,
@@ -2867,7 +3258,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er stiehlt das Geld.",
       "sourceExampleBn": "সে টাকা চু রি করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 191,
@@ -2882,7 +3275,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er stößt an den Tisch.",
       "sourceExampleBn": "সে টেবিলে ধাক্কা খেল।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 192,
@@ -2897,7 +3292,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er streicht die Wand.",
       "sourceExampleBn": "সে দেওয়ালে রং করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 193,
@@ -2912,7 +3309,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Du steigst hier um.",
       "sourceExampleBn": "তু মি এখানে (ট্রেন/বাস) বদলাচ্ছ।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 194,
@@ -2927,7 +3326,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er unternimmt eine Reise.",
       "sourceExampleBn": "সে একটি ভ্রমণে বেরোচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 195,
@@ -2942,7 +3343,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Bitte unterbrich mich nicht!",
       "sourceExampleBn": "দয়া করে আমাকে বাধা দিও না!",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 196,
@@ -2958,7 +3361,9 @@
       "notes": "‘আলাপ করা’ অর্থে sich reflexive pronoun লাগে: Wir haben uns gut unterhalten. Partizip II হলো unterhalten। ‘বিনোদন দেওয়া’ অর্থে haben + unterhalten।",
       "sourceExampleDe": "Er unterhält sich.",
       "sourceExampleBn": "সে আলাপ করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 197,
@@ -2973,7 +3378,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er unterliegt ihm.",
       "sourceExampleBn": "সে তার কাছে পরাজিত হয়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 198,
@@ -2988,7 +3395,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er verbietet das.",
       "sourceExampleBn": "সে এটি নিষেধ করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 199,
@@ -3003,7 +3412,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Du verbindest uns.",
       "sourceExampleBn": "তু মি আমাদের যু ক্ত করছো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 200,
@@ -3018,7 +3429,10 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Das Fleisch verdirbt.",
       "sourceExampleBn": "মাংসটি নষ্ট হয়ে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "খাবার/কিছু নিজে নষ্ট হয়ে যাওয়া বোঝালে sein; নষ্ট করা বোঝালে haben।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 201,
@@ -3033,7 +3447,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Es verdrießt mich.",
       "sourceExampleBn": "এটি আমাকে বিরক্ত করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 202,
@@ -3048,7 +3464,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er verlässt das Haus.",
       "sourceExampleBn": "সে বাড়িটি ছেড়ে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 203,
@@ -3063,7 +3481,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Du vermeidest ihn.",
       "sourceExampleBn": "তু মি তাকে এড়িয়ে চলো।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 204,
@@ -3077,7 +3497,9 @@
       "meaningBn": "ফাঁস করা; বিশ্বাসঘাতকতা করা",
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er verrät uns.",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 205,
@@ -3092,7 +3514,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er verschiebt den Termin.",
       "sourceExampleBn": "সে অ্যাপয়েন্টমেন্টটি স্থগিত করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 206,
@@ -3107,7 +3531,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er verzeiht dir.",
       "sourceExampleBn": "সে তোমাকে ক্ষমা করে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 207,
@@ -3122,7 +3548,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "So etwas kommt vor.",
       "sourceExampleBn": "এমনটা ঘটে থাকে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 208,
@@ -3137,7 +3565,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Was hast du vor?",
       "sourceExampleBn": "তোমার পরিকল্পনা কি?",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 209,
@@ -3152,7 +3582,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er schlägt das vor.",
       "sourceExampleBn": "সে এটির প্রস্তাব দিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 210,
@@ -3167,7 +3599,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er zieht das vor.",
       "sourceExampleBn": "সে এটিই বেশি পছন্দ করে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 211,
@@ -3183,7 +3617,9 @@
       "notes": "ওজন করা অর্থে শক্ত ও দুর্বল উভয় অতীতরূপ নথিভুক্ত।",
       "sourceExampleDe": "Er wägt das Gold.",
       "sourceExampleBn": "সে সোনা ওজন করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 212,
@@ -3199,7 +3635,9 @@
       "notes": "দুই ধরনের রূপই ব্যবহৃত; webte/gewebt সাধারণ, wob/gewoben-ও স্বীকৃত।",
       "sourceExampleDe": "Sie webt ein Tuch.",
       "sourceExampleBn": "সে একটি কাপড় বু নছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 213,
@@ -3214,7 +3652,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er weicht nicht.",
       "sourceExampleBn": "সে নতি স্বীকার করে না।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 214,
@@ -3229,7 +3669,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er weist den Weg.",
       "sourceExampleBn": "সে পথ দেখাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 215,
@@ -3244,7 +3686,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er wirbt Kunden.",
       "sourceExampleBn": "সে গ্রাহক সংগ্রহ করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 216,
@@ -3258,7 +3702,9 @@
       "meaningBn": "বিরোধিতা করা",
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Du widersprichst mir.",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 217,
@@ -3273,7 +3719,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er widersteht ihm.",
       "sourceExampleBn": "সে তাকে প্রতিরোধ করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 218,
@@ -3289,7 +3737,9 @@
       "notes": "ওজন হওয়া/করা: wog, gewogen; দোলানো/কোলের মধ্যে দোলানো: wiegte, gewiegt।",
       "sourceExampleDe": "Das Paket wiegt viel.",
       "sourceExampleBn": "পার্সেলটির ওজন অনেক।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 219,
@@ -3304,7 +3754,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er windet das Seil.",
       "sourceExampleBn": "সে দড়িটি পাকাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 220,
@@ -3319,7 +3771,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er wringt das Tuch.",
       "sourceExampleBn": "সে কাপড়টি নিড়াচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 221,
@@ -3334,7 +3788,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er gibt es zu.",
       "sourceExampleBn": "সে এটি স্বীকার করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 222,
@@ -3349,7 +3805,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Du nimmst zu.",
       "sourceExampleBn": "তোমার ওজন বাড়ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 223,
@@ -3364,7 +3822,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er gibt das Buch zurück.",
       "sourceExampleBn": "সে বইটি ফেরত দিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 224,
@@ -3379,7 +3839,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er bietet Hilfe an.",
       "sourceExampleBn": "সে সাহায্যের প্রস্তাব দেয়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 225,
@@ -3394,7 +3856,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er schließt die Tür ab.",
       "sourceExampleBn": "সে দরজায় তালা দিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 226,
@@ -3409,7 +3873,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er befährt die Straße.",
       "sourceExampleBn": "সে এই রাস্তা দিয়ে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 227,
@@ -3425,7 +3891,9 @@
       "notes": "bekennen-এর অতীত bekannte, Partizip II bekannt—দুর্বল/নিয়মিত রূপ; PDF-তে irregular list-এ থাকলেও এটি শক্ত ক্রিয়া নয়।",
       "sourceExampleDe": "Er bekennt seine Schuld.",
       "sourceExampleBn": "সে নিজের দোষ স্বীকার করে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 228,
@@ -3440,7 +3908,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er beschließt zu gehen.",
       "sourceExampleBn": "সে যাওয়ার সিদ্ধান্ত নেয়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 229,
@@ -3455,7 +3925,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er besticht den Beamten.",
       "sourceExampleBn": "সে কর্মকর্তাকে ঘুষ দিচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 230,
@@ -3470,7 +3942,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Das betrifft dich.",
       "sourceExampleBn": "এটি তোমার সাথে সংশ্লিষ্ট।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 231,
@@ -3485,7 +3959,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er betritt den Raum.",
       "sourceExampleBn": "সে ঘরে ঢু কছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 232,
@@ -3500,7 +3976,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er drischt das Korn.",
       "sourceExampleBn": "সে শস্য মাড়াই করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 233,
@@ -3515,7 +3993,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er geht durch.",
       "sourceExampleBn": "সে ভেতর দিয়ে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 234,
@@ -3529,7 +4009,9 @@
       "meaningBn": "সম্পূর্ণ পড়ে ফেলা",
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Du liest das Buch durch.",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 235,
@@ -3544,7 +4026,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Der Zug fährt ein.",
       "sourceExampleBn": "ট্রেনটি স্টেশনে ঢু কছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 236,
@@ -3559,7 +4043,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er geht darauf ein.",
       "sourceExampleBn": "সে এটিতে সম্মত হয়।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 237,
@@ -3574,7 +4060,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er nimmt die Medizin ein.",
       "sourceExampleBn": "সে ঔষধটি সেবন করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 238,
@@ -3589,7 +4077,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er tritt ein.",
       "sourceExampleBn": "সে ভেতরে প্রবেশ করছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     },
     {
       "sourceId": 239,
@@ -3603,7 +4093,9 @@
       "meaningBn": "লালন-পালন করা; শিক্ষা দেওয়া",
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Sie erzieht das Kind.",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben",
+      "auxiliaryReview": "default-haben-rule"
     },
     {
       "sourceId": 240,
@@ -3618,7 +4110,10 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er fährt mit der Arbeit fort.",
       "sourceExampleBn": "সে কাজ চালিয়ে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "haben/sein",
+      "auxiliaryNoteBn": "কাজ চালিয়ে যাওয়া অর্থে haben; গাড়ি/যান নিয়ে চলে যাওয়া অর্থে sein।",
+      "auxiliaryReview": "context-dependent"
     },
     {
       "sourceId": 241,
@@ -3633,7 +4128,9 @@
       "reviewStatus": "verified-batch-4",
       "sourceExampleDe": "Er geht fort.",
       "sourceExampleBn": "সে চলে যাচ্ছে।",
-      "sourceExampleStatus": "extracted-from-original-pdf"
+      "sourceExampleStatus": "extracted-from-original-pdf",
+      "perfektAuxiliary": "sein",
+      "auxiliaryReview": "initial-reference-checked"
     }
   ],
   "audit": {
@@ -3719,6 +4216,19 @@
       "extracted": 241,
       "notExtracted": 0,
       "note": "All 241 German and Bengali example rows have been checked against the uploaded PDF pages; five previously missed rows were manually transcribed. Original source spellings/spacing are retained."
+    },
+    "perfektAuxiliary": {
+      "status": "initial-reference-pass",
+      "total": 241,
+      "haben": 189,
+      "sein": 37,
+      "contextDependent": 15,
+      "note": "Initial auxiliary assignment uses the general German Perfekt rules and cross-checks common sein-verbs against University of Michigan German Resources, Deutsche Welle verb-list guidance, and Lingolia. Context-dependent verbs carry Bengali notes. Rare verbs and dialect/meaning-specific alternatives still need lexeme-level dictionary verification; do not treat this pass as final certification.",
+      "sources": [
+        "https://sites.lsa.umich.edu/german-resources/grammatik/tenses/",
+        "https://static.dw.com/downloads/26560646/05.pdf",
+        "https://deutsch.lingolia.com/en/grammar/verbs/sein-haben"
+      ]
     }
   }
 }
