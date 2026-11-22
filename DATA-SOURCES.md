@@ -74,7 +74,20 @@ description page and include creator, source, license, and modification
 information if the file is redistributed or embedded in a way requiring
 attribution.
 
-## 7. External reference sites
+## 7. Software dependencies and conjugation engine
+
+Deutschly bundles the Ablaut German verb-conjugation engine as a compiled
+WebAssembly dependency. Ablaut is a separate open-source software project
+licensed under MIT OR Apache-2.0; its license files are distributed beside
+the generated WebAssembly assets in `vendor/ablaut/`. The engine's
+conjugation rules and factual exception lexicon are not copied from Duden or
+Reverso. Its upstream maintainers document the independent reference
+lexicons and verification process.
+
+- Ablaut source and license: https://github.com/ablaut-dev/ablaut
+- German engine design: https://github.com/ablaut-dev/ablaut/blob/main/docs/design.md
+
+## 8. External reference sites
 
 Duden, PONS, Goethe-Institut, IDS grammis, and other learning sites are cited
 as references for checking facts. A reference link is not a license to copy
@@ -82,7 +95,7 @@ their definitions, examples, explanations, images, or other protected
 content. Keep Deutschly's explanations independently written and use only
 material that may lawfully be reused.
 
-## 8. License boundaries
+## 9. License boundaries
 
 The root MIT License covers original software code only. Original Deutschly-authored data contributions are licensed under CC BY 4.0 only where the maintainer controls the relevant rights. The explicit field-level exclusions are recorded in `data/a1-vocabulary-third-party-exclusions.json`. A source citation is not reuse permission.
 
