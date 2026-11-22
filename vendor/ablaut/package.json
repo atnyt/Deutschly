@@ -1,0 +1,15 @@
+{
+  "name": "deutschly-ablaut-wasm",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "ablaut_bg.wasm",
+    "ablaut.js",
+    "ablaut.d.ts"
+  ],
+  "main": "ablaut.js",
+  "types": "ablaut.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
