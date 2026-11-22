@@ -58,6 +58,24 @@ The embedded JavaScript in both HTML pages was syntax-checked after the latest c
 - `data/a1-vocabulary-audit.json` records the first-pass audit and unresolved items. A blank plural is not automatically an error: many entries are mass nouns, collective nouns, months, or have uncommon/context-specific plurals.
 - Dictionary records expose a confidence label: source-checked correction, reviewed draft, or needs verification. A review batch is not the same as a guarantee that every grammatical detail has been independently verified.
 
+## German verb conjugation engine
+
+The Irregular Verbs page includes the Ablaut German conjugation engine (version
+0.11.0), compiled to WebAssembly and served from this repository. It calculates
+full verb paradigms in the browser rather than sending each searched verb to a
+third-party API. The engine covers regular and irregular classes, modal verbs,
+wissen, separable prefixes, and the main synthetic and analytic tenses.
+
+A GitHub Actions workflow builds the pinned Ablaut crate and commits the
+generated browser assets to `vendor/ablaut/`. The upstream project reports
+99.2% agreement across 194,254 German forms on slots where its two independent
+reference lexicons agree; this is a benchmark, not a guarantee for every
+possible form. Reverso remains available as an external secondary reference.
+
+- Ablaut source: https://github.com/ablaut-dev/ablaut
+- Ablaut license: MIT OR Apache-2.0 (license files are bundled with the engine)
+- German engine design and verification: https://github.com/ablaut-dev/ablaut/blob/main/docs/design.md
+
 ## Optional AI assistant deployment
 
 The AI assistant interface is `ai-assistant.html`. It is deliberately shown as **not connected** until a private backend is deployed and configured.
