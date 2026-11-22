@@ -5,7 +5,9 @@
   "files": [
     "ablaut_bg.wasm",
     "ablaut.js",
-    "ablaut.d.ts"
+    "ablaut.d.ts",
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
   ],
   "main": "ablaut.js",
   "types": "ablaut.d.ts",
