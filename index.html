@@ -13,7 +13,7 @@
 :root{color-scheme:dark}
 html,body{margin:0;min-height:100%;background:#000;color:#f5f5f7;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
 body{min-height:100vh;min-height:100dvh;padding:calc(22px + env(safe-area-inset-top)) 20px calc(22px + env(safe-area-inset-bottom));display:flex;justify-content:center;align-items:flex-start}
-main{width:min(100%,620px);margin:clamp(20px,7vh,68px) auto 0}
+main{width:min(100%,620px);margin:0 auto 0}
 form{display:flex;align-items:center;gap:10px;width:100%}
 input{flex:1;min-width:0;height:56px;border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:0 18px;font-size:16px;outline:none;background:rgba(255,255,255,.065);color:#f7f7f9;box-shadow:inset 0 1px 0 rgba(255,255,255,.055),0 8px 28px rgba(0,0,0,.35);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:border-color .18s,background .18s,box-shadow .18s}
 input:focus{border-color:rgba(255,255,255,.34);background:rgba(255,255,255,.085);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 3px rgba(255,255,255,.035)}
@@ -75,7 +75,7 @@ svg{width:22px;height:22px}
 
 .corner-brand{display:inline-flex;align-items:center;gap:8px;max-width:78%;padding:9px 14px;border:1px solid rgba(190,202,255,.18);border-radius:12px;background:linear-gradient(120deg,rgba(130,150,255,.045),rgba(255,255,255,.018));box-shadow:0 0 2px rgba(110,130,255,.015),inset 0 1px 0 rgba(255,255,255,.035);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);font-size:13px;font-weight:650;letter-spacing:.075em;text-transform:uppercase;color:#dce1ff}.corner-brand:before{content:"";width:6px;height:6px;flex:0 0 6px;border-radius:50%;background:#b8c5ff;box-shadow:none}@keyframes brandGlow{0%,100%{box-shadow:0 0 1px rgba(110,130,255,.01),inset 0 1px 0 rgba(255,255,255,.035)}50%{box-shadow:0 0 2px rgba(110,130,255,.015),inset 0 1px 0 rgba(255,255,255,.04)}}@media(prefers-reduced-motion:reduce){.corner-brand{animation:none}}
 
-.app-menu{position:relative;z-index:50;display:flex;align-items:center;gap:10px;margin:0 0 18px}
+.app-menu{position:relative;z-index:50;display:flex;align-items:center;gap:10px;margin:0 0 6px}
 .menu-trigger{width:40px;height:40px;flex:0 0 40px;border:1px solid rgba(255,255,255,.16);border-radius:13px;background:rgba(255,255,255,.07);color:#f5f5f7;display:grid;place-items:center;cursor:pointer}
 .menu-trigger svg{width:19px;height:19px}
 .menu-title{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#cbd2f7;font-weight:650}
@@ -90,11 +90,15 @@ svg{width:22px;height:22px}
 .menu-item[aria-current="page"]{background:rgba(150,165,255,.13);border-color:rgba(190,202,255,.22);color:#dce2ff}
 .menu-number{width:23px;height:23px;display:grid;place-items:center;border-radius:8px;background:rgba(255,255,255,.08);font-size:11px;color:#bfc8ff}
 .menu-divider{height:1px;background:rgba(255,255,255,.09);margin:4px 0}
+
+.app-menu{position:relative;z-index:50;display:flex;align-items:center;gap:12px;margin:0 0 8px;min-height:42px}
+.menu-trigger{width:42px;height:42px;flex:0 0 42px;border:1px solid rgba(255,255,255,.24);border-radius:12px;background:rgba(255,255,255,.13);color:#fff;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 12px rgba(255,255,255,.06)}
+.menu-trigger svg{width:21px;height:21px}.menu-title{font-size:15px;letter-spacing:-.01em;text-transform:none;color:#fff;font-weight:700}
 </style>
 </head>
 <body>
 <main>
-<div class="app-menu"><button class="menu-trigger" id="menuTrigger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="menuDrawer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="19" r="1.8"/></svg></button></div><div class="menu-backdrop" id="menuBackdrop" hidden></div><aside class="menu-drawer" id="menuDrawer" hidden aria-label="Learning sections"><div class="menu-drawer-head"><span>LEARNING MENU</span><button class="menu-close" id="menuClose" type="button" aria-label="Close menu">×</button></div><nav class="menu-list"><a class="menu-item" id="dictionaryLink" href="./dictionary.html" ><span class="menu-number">1</span><span>Dictionary</span></a><a class="menu-item" href="./irregular-verbs.html" ><span class="menu-number">2</span><span>Irregular Verbs</span></a><div class="menu-divider"></div><a class="menu-item" href="./index.html" aria-current="page"><span class="menu-number">3</span><span>Pronunciation Verifier</span></a></nav></aside><script>(function(){const t=document.getElementById('menuTrigger'),d=document.getElementById('menuDrawer'),b=document.getElementById('menuBackdrop'),c=document.getElementById('menuClose');if(!t||!d||!b||!c)return;function s(o){d.hidden=!o;b.hidden=!o;t.setAttribute('aria-expanded',String(o));}t.addEventListener('click',()=>s(d.hidden));c.addEventListener('click',()=>s(false));b.addEventListener('click',()=>s(false));document.addEventListener('keydown',e=>{if(e.key==='Escape')s(false);});})();</script>
+<div class="app-menu"><button class="menu-trigger" id="menuTrigger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="menuDrawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><span class="menu-title">Pronunciation Verifier</span></div><div class="menu-backdrop" id="menuBackdrop" hidden></div><aside class="menu-drawer" id="menuDrawer" hidden aria-label="Learning sections"><div class="menu-drawer-head"><span>LEARNING MENU</span><button class="menu-close" id="menuClose" type="button" aria-label="Close menu">×</button></div><nav class="menu-list"><a class="menu-item" id="dictionaryLink" href="./dictionary.html" ><span class="menu-number">1</span><span>Dictionary</span></a><a class="menu-item" href="./irregular-verbs.html" ><span class="menu-number">2</span><span>Irregular Verbs</span></a><div class="menu-divider"></div><a class="menu-item" href="./index.html" aria-current="page"><span class="menu-number">3</span><span>Pronunciation Verifier</span></a></nav></aside><script>(function(){const t=document.getElementById('menuTrigger'),d=document.getElementById('menuDrawer'),b=document.getElementById('menuBackdrop'),c=document.getElementById('menuClose');if(!t||!d||!b||!c)return;function s(o){d.hidden=!o;b.hidden=!o;t.setAttribute('aria-expanded',String(o));}t.addEventListener('click',()=>s(d.hidden));c.addEventListener('click',()=>s(false));b.addEventListener('click',()=>s(false));document.addEventListener('keydown',e=>{if(e.key==='Escape')s(false);});})();</script>
 <form id="searchForm" role="search">
 <input id="word" name="word" type="search" placeholder="Search a German word" aria-label="German word" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="100" required>
 <button id="searchButton" type="submit" aria-label="Search">
