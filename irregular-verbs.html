@@ -46,6 +46,8 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 .empty,.loading{padding:25px;text-align:center;color:#aaaab5;font-size:13px;border:1px solid rgba(255,255,255,.1);border-radius:14px}
 .footnote{margin:18px 0 0;color:#777783;font-size:11px;line-height:1.6}
 @media(min-width:600px){.verb-list{grid-template-columns:repeat(2,minmax(0,1fr))}.forms{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.pdf-catalog{margin:34px 0 24px}.pdf-catalog h2{font-size:1.15rem;margin:0 0 8px}.catalog-note{color:var(--muted,#777);font-size:.9rem}.pdf-verb-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}.pdf-verb-item{border:1px solid var(--border,#ddd);border-radius:12px;padding:12px;background:var(--card,#fff)}.pdf-verb-item header{display:flex;justify-content:space-between;gap:8px;align-items:center}.pdf-verb-item strong{font-size:1rem}.pdf-verb-item small{color:var(--muted,#777)}.pdf-verb-item p{margin:6px 0;font-size:.9rem}.pdf-verb-item button{border:0;border-radius:8px;padding:7px 10px;cursor:pointer}.pdf-verb-item .past{font-size:.84rem;display:flex;gap:12px;flex-wrap:wrap}
 </style>
 </head>
 <body><main>
@@ -76,6 +78,13 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 <div class="search-row"><input id="filter" type="search" placeholder="ক্রিয়া বা বাংলা অর্থ খুঁজুন…" autocomplete="off" aria-label="Search irregular verbs"></div>
 <p class="count" id="count">তালিকা লোড হচ্ছে…</p>
 <section class="verb-list" id="verbList" aria-live="polite"><div class="loading">লোড হচ্ছে…</div></section>
+<section class="pdf-catalog" aria-labelledby="pdfCatalogTitle">
+<h2 id="pdfCatalogTitle">সম্পূর্ণ ২৪১টি ক্রিয়ার তালিকা</h2>
+<p class="catalog-note">মূল PDF-এর ক্রম অনুযায়ী। রূপগুলো দেখো এবং যেকোনো ক্রিয়ার পূর্ণ conjugation উপরে পরীক্ষা করো।</p>
+<div class="search-row"><input id="pdfFilter" type="search" placeholder="২৪১টি ক্রিয়ার মধ্যে খুঁজুন…" autocomplete="off" aria-label="PDF verb catalog search"></div>
+<p class="count" id="pdfCount">তালিকা লোড হচ্ছে…</p>
+<div class="pdf-verb-list" id="pdfVerbList"><div class="loading">লোড হচ্ছে…</div></div>
+</section>
 <p class="footnote">এটি Deutschly-এর নিজস্বভাবে প্রস্তুত করা প্রাথমিক গুরুত্বপূর্ণ ক্রিয়ার তালিকা; সব জার্মান অনিয়মিত ক্রিয়ার সম্পূর্ণ তালিকা নয়। একই ক্রিয়ার অর্থ ও ব্যবহার প্রসঙ্গভেদে বদলাতে পারে।</p>
 </main>
 <script>
@@ -141,4 +150,6 @@ getEngine().then(()=>{status.textContent='Ablaut Engine প্রস্তুত
 })();
 
 </script>
-</body></html>
+<script>
+(function(){const box=document.getElementById('pdfVerbList'),input=document.getElementById('pdfFilter'),count=document.getElementById('pdfCount');if(!box||!input||!count)return;let rows=[];const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function render(){const q=input.value.trim().toLocaleLowerCase();const found=rows.filter(v=>[v.infinitive,v.meaningBn,v.prateritum,v.partizipII].join(' ').toLocaleLowerCase().includes(q));count.textContent=found.length+' / '+rows.length+'টি ক্রিয়া';box.innerHTML=found.map(v=>'<article class="pdf-verb-item"><header><strong>'+esc(v.sourceId)+'. '+esc(v.infinitive)+'</strong><small>'+esc(v.classification)+'</small></header><p>'+esc(v.meaningBn||'অর্থ যাচাই বাকি')+'</p><p><b>du:</b> '+esc(v.presentDu||'—')+' &nbsp; <b>er/sie/es:</b> '+esc(v.presentErSieEs||'—')+'</p><div class="past"><span>Präteritum: <b>'+esc(v.prateritum||'—')+'</b></span><span>Partizip II: <b>'+esc(v.partizipII||'—')+'</b></span></div><p><button type="button" data-conjugate="'+esc(v.infinitive)+'">পূর্ণ রূপ দেখো ↑</button></p></article>').join('')||'<div class="empty">কোনো ক্রিয়া পাওয়া যায়নি।</div>';box.querySelectorAll('[data-conjugate]').forEach(b=>b.addEventListener('click',()=>{const i=document.getElementById('conjugationInput');if(i){i.value=b.dataset.conjugate;document.getElementById('conjugationForm').requestSubmit();window.scrollTo({top:0,behavior:'smooth'});}}));}fetch('./data/irregular-verbs-pdf-241.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('catalog unavailable');return r.json();}).then(d=>{rows=d.records||[];render();}).catch(()=>{count.textContent='তালিকা লোড হয়নি';box.textContent='PDF তালিকা লোড করা যায়নি।';});input.addEventListener('input',render);})();
+</script></body></html>
