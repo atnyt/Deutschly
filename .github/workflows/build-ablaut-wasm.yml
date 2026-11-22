@@ -1,0 +1,96 @@
+name: Build Ablaut WebAssembly engine
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "irregular-verbs.html"
+      - ".github/workflows/build-ablaut-wasm.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ablaut-wasm-main
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Deutschly
+        uses: actions/checkout@v4
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+
+      - name: Install wasm-pack
+        run: cargo install wasm-pack --locked
+
+      - name: Build pinned Ablaut engine
+        shell: bash
+        run: |
+          mkdir -p /tmp/deutschly-ablaut/src vendor/ablaut
+          cat > /tmp/deutschly-ablaut/Cargo.toml <<'EOF'
+          [package]
+          name = "deutschly-ablaut-wasm"
+          version = "0.1.0"
+          edition = "2021"
+
+          [lib]
+          crate-type = ["cdylib"]
+
+          [dependencies]
+          ablaut = { version = "=0.11.0", features = ["serde"] }
+          wasm-bindgen = "0.2"
+          serde-wasm-bindgen = "0.6"
+
+          [profile.release]
+          opt-level = "s"
+          lto = true
+          codegen-units = 1
+          EOF
+
+          cat > /tmp/deutschly-ablaut/src/lib.rs <<'EOF'
+          use wasm_bindgen::prelude::*;
+
+          #[wasm_bindgen]
+          pub fn conjugate(infinitive: &str) -> Result<JsValue, JsError> {
+              let verb = ablaut::Verb::from_infinitive(infinitive)
+                  .map_err(|error| JsError::new(&error.to_string()))?;
+              let table = ablaut::table::Table::build(&verb);
+              serde_wasm_bindgen::to_value(&table)
+                  .map_err(|error| JsError::new(&error.to_string()))
+          }
+          EOF
+
+          cd /tmp/deutschly-ablaut
+          wasm-pack build --target web --out-dir "$GITHUB_WORKSPACE/vendor/ablaut" --out-name ablaut --release
+
+          cargo fetch --manifest-path Cargo.toml
+          cp "$HOME"/.cargo/registry/src/*/ablaut-0.11.0/LICENSE-MIT "$GITHUB_WORKSPACE/vendor/ablaut/"
+          cp "$HOME"/.cargo/registry/src/*/ablaut-0.11.0/LICENSE-APACHE "$GITHUB_WORKSPACE/vendor/ablaut/"
+          cat > "$GITHUB_WORKSPACE/vendor/ablaut/NOTICE.md" <<'EOF'
+          Deutschly bundles the Ablaut German conjugation engine, version 0.11.0.
+          Upstream: https://github.com/ablaut-dev/ablaut
+          License: MIT OR Apache-2.0. See the adjacent license files.
+          The upstream project reports 99.2% agreement across 194,254 German forms
+          where its two reference lexicons agree. This is a measured benchmark,
+          not a guarantee that every possible form or lexical interpretation is error-free.
+          EOF
+
+      - name: Commit generated WebAssembly assets
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vendor/ablaut
+          if git diff --cached --quiet; then
+            echo "Ablaut WebAssembly assets are already up to date."
+          else
+            git commit -m "Build Ablaut WebAssembly conjugation engine"
+            git push
+          fi
