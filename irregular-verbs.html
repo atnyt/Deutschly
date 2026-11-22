@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#000000">
-<title>Irregular Verbs · Deutschly</title>
+<title>Irregular Verbs</title>
 <style>
 *{box-sizing:border-box}:root{color-scheme:dark}
 html,body{margin:0;min-height:100%;background:#000;color:#f5f5f7;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
@@ -52,10 +52,10 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 </head>
 <body><main>
 <div class="app-menu">
-<button class="menu-trigger" id="menuTrigger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="menuDrawer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="19" r="1.8"/></svg></button><span class="menu-title">Deutschly</span>
+<button class="menu-trigger" id="menuTrigger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="menuDrawer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="19" r="1.8"/></svg></button>
 </div>
 <div class="menu-backdrop" id="menuBackdrop" hidden></div>
-<aside class="menu-drawer" id="menuDrawer" hidden aria-label="Deutschly sections">
+<aside class="menu-drawer" id="menuDrawer" hidden aria-label="Learning sections">
 <div class="menu-drawer-head"><span>LEARNING MENU</span><button class="menu-close" id="menuClose" type="button" aria-label="Close menu">×</button></div>
 <nav class="menu-list">
 <a class="menu-item" href="./dictionary.html"><span class="menu-number">1</span><span>Dictionary</span></a>
@@ -71,7 +71,7 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 <input id="conjugationInput" type="search" placeholder="যেমন: können, wissen, aufstehen" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="100" aria-label="জার্মান ক্রিয়ার Infinitiv" required>
 <button id="conjugationButton" type="submit">রূপ দেখো</button>
 </form>
-<p class="engine-status" id="engineStatus" aria-live="polite">Conjugation Engine প্রস্তুত হচ্ছে…</p>
+<p class="engine-status" id="engineStatus" aria-live="polite" hidden></p>
 <section class="conjugation-output" id="conjugationOutput" hidden aria-live="polite"></section>
 </section>
 
@@ -85,14 +85,14 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 <p class="count" id="pdfCount">তালিকা লোড হচ্ছে…</p>
 <div class="pdf-verb-list" id="pdfVerbList"><div class="loading">লোড হচ্ছে…</div></div>
 </section>
-<p class="footnote">এটি Deutschly-এর নিজস্বভাবে প্রস্তুত করা প্রাথমিক গুরুত্বপূর্ণ ক্রিয়ার তালিকা; সব জার্মান অনিয়মিত ক্রিয়ার সম্পূর্ণ তালিকা নয়। একই ক্রিয়ার অর্থ ও ব্যবহার প্রসঙ্গভেদে বদলাতে পারে।</p>
+<p class="footnote">এটি প্রস্তুত করা প্রাথমিক গুরুত্বপূর্ণ ক্রিয়ার তালিকা; সব জার্মান অনিয়মিত ক্রিয়ার সম্পূর্ণ তালিকা নয়। একই ক্রিয়ার অর্থ ও ব্যবহার প্রসঙ্গভেদে বদলাতে পারে।</p>
 </main>
 <script>
 (function(){const t=document.getElementById('menuTrigger'),d=document.getElementById('menuDrawer'),b=document.getElementById('menuBackdrop'),c=document.getElementById('menuClose');function s(o){d.hidden=!o;b.hidden=!o;t.setAttribute('aria-expanded',String(o));}t.addEventListener('click',()=>s(d.hidden));c.addEventListener('click',()=>s(false));b.addEventListener('click',()=>s(false));document.addEventListener('keydown',e=>{if(e.key==='Escape')s(false);});})();
 (function(){
 const list=document.getElementById('verbList'),filter=document.getElementById('filter'),count=document.getElementById('count');let records=[];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function card(v){const labels=[['ich','আমি'],['du','তুমি'],['er/sie/es','সে'],['wir','আমরা'],['ihr','তোমরা'],['sie/Sie','তারা/আপনি']];const reversoUrl="https://conjugator.reverso.net/conjugation-german-verb-"+encodeURIComponent(String(v.infinitive||"").trim().toLocaleLowerCase("de"))+".html";return '<article class="verb-card"><div class="verb-top"><div><div class="verb-title">'+esc(v.infinitive)+'</div><div class="verb-meaning">'+esc(v.meaningBn)+'</div></div><span class="level">'+esc(v.level)+'</span></div><div class="forms">'+labels.map(([k,b])=>'<div class="form-cell"><small>'+b+' · '+k+'</small><strong>'+esc(v.present[k])+'</strong></div>').join('')+'</div><div class="past"><span>Präteritum: <b>'+esc(v.prateritum)+'</b></span><span>Partizip II: <b>'+esc(v.partizipII)+'</b></span></div><div class="example"><b>'+esc(v.exampleDe)+'</b><br><span class="bn">'+esc(v.exampleBn)+'</span></div><div class="conjugate-actions"><button class="conjugate-inline" type="button" data-verb="'+esc(v.infinitive)+'">Deutschly-তে পূর্ণ রূপ দেখো</button><a class="reverso-link" href="'+reversoUrl+'" target="_blank" rel="noopener noreferrer">Reverso ↗</a></div></article>';}
+function card(v){const labels=[['ich','আমি'],['du','তুমি'],['er/sie/es','সে'],['wir','আমরা'],['ihr','তোমরা'],['sie/Sie','তারা/আপনি']];const reversoUrl="https://conjugator.reverso.net/conjugation-german-verb-"+encodeURIComponent(String(v.infinitive||"").trim().toLocaleLowerCase("de"))+".html";return '<article class="verb-card"><div class="verb-top"><div><div class="verb-title">'+esc(v.infinitive)+'</div><div class="verb-meaning">'+esc(v.meaningBn)+'</div></div><span class="level">'+esc(v.level)+'</span></div><div class="forms">'+labels.map(([k,b])=>'<div class="form-cell"><small>'+b+' · '+k+'</small><strong>'+esc(v.present[k])+'</strong></div>').join('')+'</div><div class="past"><span>Präteritum: <b>'+esc(v.prateritum)+'</b></span><span>Partizip II: <b>'+esc(v.partizipII)+'</b></span></div><div class="example"><b>'+esc(v.exampleDe)+'</b><br><span class="bn">'+esc(v.exampleBn)+'</span></div><div class="conjugate-actions"><button class="conjugate-inline" type="button" data-verb="'+esc(v.infinitive)+'">পূর্ণ রূপ দেখো</button><a class="reverso-link" href="'+reversoUrl+'" target="_blank" rel="noopener noreferrer">Reverso ↗</a></div></article>';}
 function render(){const q=filter.value.trim().toLocaleLowerCase();const found=records.filter(v=>[v.infinitive,v.meaningBn,v.exampleDe].join(' ').toLocaleLowerCase().includes(q));count.textContent=found.length+' / '+records.length+'টি ক্রিয়া';list.innerHTML=found.length?found.map(card).join(''):'<div class="empty">কোনো ক্রিয়া পাওয়া যায়নি।</div>';}
 fetch('./data/irregular-verbs-a1.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Database unavailable');return r.json();}).then(d=>{records=d.records||[];render();}).catch(()=>{count.textContent='তালিকা লোড করা যায়নি';list.innerHTML='<div class="empty">ডেটাবেস লোড হয়নি। পরে আবার চেষ্টা করো।</div>';});
 
@@ -117,7 +117,7 @@ function renderTable(t){
  const groups=[['Präsens','present'],['Präteritum','preterite'],['Perfekt','perfect'],['Plusquamperfekt','pluperfect'],['Futur I','future1'],['Futur II','future2'],['Konjunktiv I','konjunktiv1'],['Konjunktiv II','konjunktiv2']];
  const cards=groups.map(([title,key])=>'<article class="tense-card"><h3>'+title+'</h3><div class="tense-table-wrap"><table class="tense-table"><tbody>'+t[key].map((form,i)=>'<tr><td>'+bn[i]+' · '+labels[i]+'</td><td>'+esc(form)+'</td></tr>').join('')+'</tbody></table></div></article>').join('');
  const imp=t.imperative&&t.imperative.some(Boolean)?'<div class="conjugation-meta">Imperativ: du — '+esc(t.imperative[0]||'—')+' · ihr — '+esc(t.imperative[1]||'—')+' · Sie — '+esc(t.imperativeExtended[1])+'</div>':'<div class="conjugation-meta">Imperativ: নেই (Modalverb হলে এটি স্বাভাবিক)</div>';
- output.innerHTML='<div><div class="conjugation-heading">'+esc(t.infinitive)+'</div><div class="conjugation-meta">Hilfsverb: <b>'+esc(t.auxiliary)+'</b> · Partizip II: <b>'+esc(t.pastParticiple)+'</b> · zu-Infinitiv: <b>'+esc(t.zuInfinitive)+'</b></div>'+imp+'</div>'+cards+'<p class="engine-status">Engine: Ablaut 0.11.0 · ব্রাউজারে স্থানীয়ভাবে গণনা করা হয়েছে। নির্দিষ্ট ব্যতিক্রম বা একাধিক গ্রহণযোগ্য রূপ থাকলে অভিধানেও যাচাই করো।</p>';
+ output.innerHTML='<div><div class="conjugation-heading">'+esc(t.infinitive)+'</div><div class="conjugation-meta">Hilfsverb: <b>'+esc(t.auxiliary)+'</b> · Partizip II: <b>'+esc(t.pastParticiple)+'</b> · zu-Infinitiv: <b>'+esc(t.zuInfinitive)+'</b></div>'+imp+'</div>'+cards+'';
  output.hidden=false;
 }
 async function run(word){
