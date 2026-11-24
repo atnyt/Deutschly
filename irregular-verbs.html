@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#000000">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Irregular Verbs</title>
 <style>
 *{box-sizing:border-box}:root{color-scheme:dark}
@@ -30,10 +33,17 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 .forms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:13px}.form-cell{padding:8px 9px;border-radius:10px;background:rgba(255,255,255,.045);min-width:0}.form-cell small{display:block;font-size:10px;color:#9295a8;margin-bottom:3px}.form-cell strong{display:block;font-size:13px;font-weight:600;overflow-wrap:anywhere}
 .past{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.past span{font-size:11px;color:#c8c8d1;background:rgba(255,255,255,.05);padding:6px 9px;border-radius:8px}.example{border-top:1px solid rgba(255,255,255,.09);margin-top:12px;padding-top:10px;font-size:12px;line-height:1.65}.example b{color:#e5e8ff;font-weight:600}.example .bn{color:#b6b6c1}
 .conjugator{margin:0 0 18px;padding:0;border:0;border-radius:0;background:none}
-.conjugator h2{display:none}.conjugator-intro{font-size:11px;color:#a5a5b1;line-height:1.55;margin:0 0 12px}
-.conjugation-form{display:flex;align-items:center;gap:10px;width:100%;margin:0 0 12px}.conjugation-form input{flex:1;min-width:0;height:56px;border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:0 18px;font-size:16px;outline:none;background:rgba(255,255,255,.065);color:#f7f7f9;box-shadow:inset 0 1px 0 rgba(255,255,255,.055),0 8px 28px rgba(0,0,0,.35);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:border-color .18s,background .18s,box-shadow .18s}.conjugation-form input:focus{border-color:rgba(255,255,255,.34);background:rgba(255,255,255,.085);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 3px rgba(255,255,255,.035)}.conjugation-form input::placeholder{color:#85858c}
-.conjugation-form button,.conjugate-inline{border:1px solid rgba(255,255,255,.16);border-radius:18px;background:rgba(255,255,255,.12);color:#fff;padding:0;font-size:12px;font-weight:650;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 8px 28px rgba(0,0,0,.35);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:background .18s,border-color .18s}
-.conjugation-form button{width:56px;min-width:56px;height:56px;min-height:56px;flex:0 0 56px;display:grid;place-items:center}.conjugation-form button:active{background:rgba(255,255,255,.2)}.conjugation-form button:disabled{opacity:.55;cursor:wait}.conjugation-form button:focus-visible,.conjugation-form input:focus-visible{outline:2px solid rgba(255,255,255,.65);outline-offset:3px}@media(max-width:420px){.conjugation-form{gap:8px}.conjugation-form input,.conjugation-form button{height:54px}.conjugation-form button{width:54px;min-width:54px;flex-basis:54px}}
+.conjugator h2{display:none}
+.conjugation-form{display:flex;align-items:center;gap:10px;width:100%;margin:0 0 12px}
+.conjugation-form input{flex:1;min-width:0;height:56px;border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:0 18px;font-size:16px;outline:none;background:rgba(255,255,255,.065);color:#f7f7f9;box-shadow:inset 0 1px 0 rgba(255,255,255,.055),0 8px 28px rgba(0,0,0,.35);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:border-color .18s,background .18s,box-shadow .18s}
+.conjugation-form input:focus{border-color:rgba(255,255,255,.34);background:rgba(255,255,255,.085);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 3px rgba(255,255,255,.035)}
+.conjugation-form input::placeholder{color:#85858c}
+.conjugation-form button{width:56px;height:56px;min-width:56px;min-height:56px;flex:0 0 56px;border:1px solid rgba(255,255,255,.16);border-radius:18px;background:rgba(255,255,255,.12);color:#fff;padding:0;display:grid;place-items:center;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 8px 28px rgba(0,0,0,.35);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:background .18s,border-color .18s}
+.conjugation-form button:active{background:rgba(255,255,255,.2)}
+.conjugation-form button:disabled{opacity:.55;cursor:wait}
+.conjugation-form button:focus-visible,.conjugation-form input:focus-visible{outline:2px solid rgba(255,255,255,.65);outline-offset:3px}
+.conjugation-form button svg{width:22px;height:22px}
+@media(max-width:420px){.conjugation-form{gap:10px}.conjugation-form input,.conjugation-form button{height:56px}.conjugation-form button{width:56px;min-width:56px;flex-basis:56px}}
 .engine-status{font-size:11px;color:#92929e;line-height:1.5;margin:9px 0 0}
 .conjugation-output{margin-top:13px;display:grid;gap:10px}.conjugation-heading{font-size:18px;font-weight:750}.conjugation-meta{font-size:11px;color:#a8a8b4;line-height:1.6}
 .tense-card{border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:11px;background:rgba(0,0,0,.22);min-width:0}.tense-card h3{font-size:12px;margin:0 0 8px;color:#dce2ff}
@@ -159,7 +169,7 @@ h1{font-size:25px;letter-spacing:-.03em;margin:0 0 7px}.intro{font-size:13px;col
 <div class="menu-divider"></div><a class="menu-item" href="./index.html"><span class="menu-number">3</span><span>Pronunciation Verifier</span></a>
 </nav></aside>
 <section class="conjugator" id="conjugator" aria-labelledby="conjugatorTitle">
-<h2 id="conjugatorTitle">Verb Conjugation</h2>
+
 
 <form class="conjugation-form" id="conjugationForm">
 <input id="conjugationInput" type="search" placeholder="" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="100" aria-label="German infinitive" required>
