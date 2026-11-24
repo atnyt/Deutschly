@@ -3,11 +3,10 @@ name: Deploy German Pronunciation Verifier to GitHub Pages
 on:
   push:
     branches: ["main"]
+    paths-ignore:
+      - "irregular-verbs.html"
+      - ".github/workflows/build-ablaut-wasm.yml"
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Build Ablaut WebAssembly engine"]
-    types: [completed]
-    branches: ["main"]
 
 permissions:
   contents: read
@@ -16,7 +15,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
