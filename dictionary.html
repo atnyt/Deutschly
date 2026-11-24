@@ -298,7 +298,6 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       '<h2 class="word-title">'+escapeHTML(query)+'</h2>' +
       '<div class="meaning-glass"><div class="meaning-item">'+escapeHTML(record.bengali_meaning || "মূল শব্দের বাংলা অর্থ ডেটাবেসে নেই।")+'</div></div>' +
       '<p><span class="tag">মূল রূপ · '+escapeHTML(record.headword)+'</span><span class="tag">'+escapeHTML(form.label)+'</span></p>' +
-      '<p class="definition">ডেটাবেসের নিয়মিত ক্রিয়ার রূপ-গঠন অনুযায়ী এই মিল পাওয়া গেছে। এটি স্বয়ংক্রিয় রূপ-শনাক্তকরণ; বাক্যের প্রসঙ্গ ছাড়া সব ক্ষেত্রে নিশ্চিত ব্যাখ্যা নয়।</p>' +
       (record.example_de ? '<div class="group"><h3 style="font-size:16px;margin:0 0 6px">'+escapeHTML(record.example_de)+'</h3>'+(record.example_bn?'<p class="bn">'+escapeHTML(record.example_bn)+'</p>':'')+'</div>' : '') +
       '<p class="source">এই বিশ্লেষণ শুধু নিয়মিত Präsens রূপের জন্য। Strong/irregular verb, Präteritum ও Partizip II-কে অনুমান করে দেখানো হয় না।</p>' +
       dictionarySourceLinks(record.headword) + '</div>';
