@@ -141,6 +141,73 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       conjugation: "ich freue mich · du freust dich · er/sie/es freut sich · wir freuen uns · ihr freut euch · sie/Sie freuen sich"
     }
   };
+  // Verified general-dictionary entries: these are not restricted to the A1 course list.
+  // Sources checked: Duden and PONS (see source links rendered below).
+  var generalDictionaryEntries = {
+    klingel: {
+      noun: {
+        headword: "Klingel", article: "die", plural: "Klingeln",
+        meaning: "দরজার ঘণ্টি / কলিং বেল; সাইকেলের ঘণ্টি; ছোট ঘণ্টি",
+        note: "বিশেষ্য হিসেবে জার্মান ভাষায় সবসময় বড় হাতের অক্ষরে লেখা হয়: die Klingel।",
+        example: "Die Klingel ist kaputt.",
+        translation: "দরজার ঘণ্টিটি নষ্ট।"
+      },
+      verb: {
+        lemma: "klingeln", grammar: "Imperativ · du (একবচন আদেশ)",
+        meaning: "ঘণ্টি বাজাও! / বেল বাজাও!",
+        note: "ছোট হাতের „klingel!“ হলো klingeln ক্রিয়ার du-সম্বোধনের Imperativ। এটি ভুল বানান নয়। Präsens-এ ich-এর রূপ kling(e)le বা klingle; du klingelst; er/sie/es klingelt।",
+        example: "Klingel bitte, wenn du da bist.",
+        translation: "তুমি পৌঁছালে দয়া করে ঘণ্টি বাজিও।",
+        conjugation: "ich klingele / klingle · du klingelst · er/sie/es klingelt · wir klingeln · ihr klingelt · sie/Sie klingeln"
+      }
+    },
+    klingeln: {
+      verb: {
+        lemma: "klingeln", grammar: "Verb · schwaches Verb · Hilfsverb haben",
+        meaning: "১. ঘণ্টি/বেল বাজা বা শব্দ করা; ২. ঘণ্টি বাজানো; ৩. কাউকে ডাকতে বা জানাতে ঘণ্টি বাজানো",
+        note: "এটি Infinitiv (ক্রিয়ার মূল রূপ)। Duden-এ আরও একটি বিশেষ ব্যবহার হিসেবে মোটরের ধাতব ঠকঠক শব্দ করাকেও „klingeln“ বলা হয়েছে।",
+        example: "Das Telefon klingelt.",
+        translation: "ফোনটি বাজছে।",
+        conjugation: "ich klingele / klingle · du klingelst · er/sie/es klingelt · wir klingeln · ihr klingelt · sie/Sie klingeln",
+        past: "Präteritum: klingelte · Partizip II: geklingelt · Perfekt: hat geklingelt"
+      }
+    }
+  };
+  function renderGeneralDictionaryEntry(query) {
+    var key = normalize(query);
+    var entry = generalDictionaryEntries[key];
+    if (!entry) return null;
+    var capitalized = String(query).trim().charAt(0) === String(query).trim().charAt(0).toLocaleUpperCase('de-DE');
+    var sections = [];
+    if (key === "klingel" && capitalized) {
+      sections.push({type:"noun", item:entry.noun});
+      sections.push({type:"verb", item:entry.verb});
+    } else if (key === "klingel") {
+      sections.push({type:"verb", item:entry.verb});
+      sections.push({type:"noun", item:entry.noun});
+    } else {
+      sections.push({type:"verb", item:entry.verb});
+    }
+    return '<div class="panel"><span class="tag">Allgemeines Wörterbuch · অভিধান</span><h2 class="word-title">' +
+      escapeHTML(query) + '</h2>' +
+      sections.map(function(section) {
+        var item=section.item;
+        var label=section.type==="noun" ? "Nomen · বিশেষ্য" : "Verb · ক্রিয়া";
+        var title=section.type==="noun" ? item.article+" "+item.headword : item.lemma;
+        return '<div class="group"><span class="tag">'+label+'</span><h3 style="font-size:18px;margin:4px 0 8px">'+escapeHTML(title)+'</h3>' +
+          '<div class="meaning-glass"><div class="meaning-item">'+escapeHTML(item.meaning)+'</div></div>' +
+          (section.type==="noun" ? '<p><span class="tag">Article · '+escapeHTML(item.article)+'</span><span class="tag">Plural · die '+escapeHTML(item.plural)+'</span></p>' : '<p><span class="tag">মূল রূপ · '+escapeHTML(item.lemma)+'</span><span class="tag">'+escapeHTML(item.grammar)+'</span></p>') +
+          '<p class="definition">'+escapeHTML(item.note)+'</p>' +
+          (item.conjugation ? '<p class="bn">'+escapeHTML(item.conjugation)+'</p>' : '') +
+          (item.past ? '<p class="definition">'+escapeHTML(item.past)+'</p>' : '') +
+          '<h3 style="font-size:15px;margin:10px 0 5px">'+escapeHTML(item.example)+'</h3><p class="bn">'+escapeHTML(item.translation)+'</p></div>';
+      }).join('') +
+      '<details class="source-details"><summary>তথ্যসূত্র</summary><div class="source-links">' +
+      '<a href="https://www.duden.de/rechtschreibung/Klingel" target="_blank" rel="noopener noreferrer">Duden · Klingel ↗</a>' +
+      '<a href="https://www.duden.de/rechtschreibung/klingeln" target="_blank" rel="noopener noreferrer">Duden · klingeln ↗</a>' +
+      '<a href="https://de.pons.com/verbtabellen/deutsch/klingeln" target="_blank" rel="noopener noreferrer">PONS · Verbtabellen ↗</a>' +
+      '</div></details><p class="source">এই শব্দের তথ্য A1 তালিকা থেকে নয়; সাধারণ অভিধান-তথ্য হিসেবে যোগ করা হয়েছে।</p></div>';
+  }
   function renderCuratedVerbForm(query) {
     var item = curatedVerbForms[normalize(query)];
     if (!item) return null;
@@ -480,6 +547,11 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
       }
       if (compoundTerm) {
         results.innerHTML = renderCompoundAnalysis(compoundTerm);
+        return;
+      }
+      var generalEntryResult = renderGeneralDictionaryEntry(searched);
+      if (generalEntryResult) {
+        results.innerHTML = generalEntryResult;
         return;
       }
       var curatedVerbResult = renderCuratedVerbForm(searched);
