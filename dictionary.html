@@ -259,6 +259,10 @@ form{display:flex;gap:9px}input{flex:1;min-width:0;height:54px;border:1px solid 
     var matches = [];
     records.forEach(function(record) {
       var lemma = normalize(record.headword || "");
+      var pos = String(record.part_of_speech || record.pos || record.word_type || "").toLowerCase();
+      var gloss = String(record.english_gloss || "").trim().toLowerCase();
+      if (pos && pos.indexOf("verb") === -1) return;
+      if (!pos && gloss.indexOf("to ") !== 0) return;
       if (!/^[a-zäöüß]+(?:en|n)$/.test(lemma) || irregular.has(lemma)) return;
       var stem = lemma.endsWith("en") ? lemma.slice(0,-2) : lemma.slice(0,-1);
       if (!stem) return;
